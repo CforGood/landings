@@ -4,6 +4,11 @@
 
 # Time.zone = "UTC"
 
+
+# Remove .html extension from pages
+activate :directory_indexes
+
+# Blog Activation
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.prefix = "blog"

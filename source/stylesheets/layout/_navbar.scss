@@ -1,0 +1,50 @@
+nav {
+  display: flex;
+  position: fixed;
+  margin-top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-top: 0;
+  z-index: 4;
+
+  a {
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    opacity: .8;
+  }
+
+  a.is-active {
+    color: $turquoise;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+
+    .nav-left {
+      display: flex;
+
+      svg {
+        height: 25px;
+      }
+
+      ul {
+        display: flex;
+        margin-left: 30px;
+        li {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .nav-right {
+    display: flex;
+  }
+}

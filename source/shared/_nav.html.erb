@@ -1,0 +1,68 @@
+<nav id="nav">
+  <div class="container">
+    <div class="nav-items">
+      <!-- NAVIGATION LINKS -->
+      <div class="nav-left">
+        <!-- LOGO -->
+        <% link_to 'index.html' do %>
+          <%= partial "shared/svg/logo" %>
+        <% end %>
+        <!-- MENU LIST -->
+        <ul>
+          <li><%= link_to 'Membres', 'index.html', class: "is-active" %></li>
+          <li><%= link_to 'Associations', 'index.html' %></li>
+          <li><%= link_to 'Espace Partenaire', 'index.html' %></li>
+          <li><%= link_to 'Blog', 'blog.html' %></li>
+        </ul>
+      </div>
+      <!-- SIGNUP/SIGNIN BUTTONS -->
+      <div class="nav-right">
+        <button class="sign-up" type="button">
+          <div class="ripple-area js-ripple">
+            <span class="ripple-circle"></span>
+          </div>
+          Je m'inscris
+        </button>
+        <button class="sign-in" type="button">
+          <div class="ripple-area js-ripple">
+            <span class="ripple-circle"></span>
+          </div>
+          Se connecter
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<script>
+;(function($, window, document, undefined) {
+
+  'use strict';
+
+  var $ripple = $('.js-ripple');
+
+  $ripple.on('click.ui.ripple', function(e) {
+
+    var $this = $(this);
+    var $offset = $this.parent().offset();
+    var $circle = $this.find('.ripple-circle');
+
+    var x = e.pageX - $offset.left;
+    var y = e.pageY - $offset.top;
+
+    $circle.css({
+      top: y + 'px',
+      left: x + 'px'
+    });
+
+    $this.addClass('is-active');
+
+  });
+
+  $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(e) {
+    $(this).removeClass('is-active');
+  });
+
+})(jQuery, window, document);
+</script>
