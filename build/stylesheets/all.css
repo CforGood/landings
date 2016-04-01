@@ -9976,7 +9976,6 @@ nav {
   left: 0;
   right: 0;
   background-color: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   margin-top: 0;
   z-index: 4; }
   /* line 12, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_navbar.scss */
@@ -10125,6 +10124,10 @@ button.sign-in {
     width: 200%;
     padding-bottom: 200%;
     opacity: 0; } }
+/* line 2, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+#home-page svg {
+  max-width: 100%; }
+
 /*
 ==============================================
 CSS3 ANIMATION CHEAT SHEET

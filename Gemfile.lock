@@ -153,6 +153,7 @@ DEPENDENCIES
   middleman-autoprefixer
   middleman-blog (~> 3.5.3)
   middleman-deploy (~> 1.0)
+  middleman-sprockets
 
 BUNDLED WITH
    1.10.6

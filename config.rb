@@ -113,6 +113,10 @@ configure :build do
   activate :build_cleaner
 end
 
+after_configuration do
+  sprockets.append_path 'vendor/javascripts'
+end
+
 # Deployment
 activate :deploy do |deploy|
   deploy.method = :git

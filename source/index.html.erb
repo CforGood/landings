@@ -3,7 +3,28 @@ pageable: true
 per_page: 10
 ---
 
-<div id="home-page">
+<header id="home-page" class="container">
+  <div class="vision">
+    <%= partial "shared/svg/logo" %>
+    <h1>La Révolution Positive.</h1>
+    <div id="typed-strings">
+      <p>Texte 1</p>
+      <p>Texte 2</p>
+      <p>Texte 3</p>
+    </div>
+    <span id="typed"></span>
+  </div>
   <%= partial "shared/svg/main_illustration" %>
-</div>
+</header>
 
+<script>
+  jQuery(document).ready(function() {
+    $("#typed").typed({
+      stringsElement: $('#typed-strings'),
+      loop: true,
+      typeSpeed: 50,
+      backDelay: 1000,
+      backSpeed: 0,
+    });
+  });
+</script>

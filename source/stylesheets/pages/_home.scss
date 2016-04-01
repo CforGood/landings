@@ -1,5 +1,16 @@
 #home-page {
+  padding-top: 70px;
+  .logo {
+    width: 220px;
+    height: 50px;
+  }
+
+  .vision {
+    padding-top: 40px;
+    text-align: center;
+  }
   svg {
     max-width: 100%;
+    height: 450px;
   }
 }
