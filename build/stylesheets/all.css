@@ -10124,9 +10124,21 @@ button.sign-in {
     width: 200%;
     padding-bottom: 200%;
     opacity: 0; } }
-/* line 2, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
-#home-page svg {
-  max-width: 100%; }
+/* line 1, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+#home-page {
+  padding-top: 70px; }
+  /* line 3, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  #home-page .logo {
+    width: 220px;
+    height: 50px; }
+  /* line 8, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  #home-page .vision {
+    padding-top: 40px;
+    text-align: center; }
+  /* line 12, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  #home-page svg {
+    max-width: 100%;
+    height: 450px; }
 
 /*
 ==============================================
