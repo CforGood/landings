@@ -1,0 +1,51 @@
+#bicycle {
+  position: relative;
+  animation-duration: 24s;
+  animation-name: slidein;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(-1170px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#tail {
+  position: absolute;
+  animation-duration: 1s;
+  animation-name: cattail;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cattail {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(180deg);
+
+  }
+}
