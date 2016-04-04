@@ -39,6 +39,76 @@ body {
     font-weight: 600;
     text-transform: uppercase; }
 
+/* line 1, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
+#bicycle {
+  position: relative;
+  -webkit-animation-duration: 24s;
+          animation-duration: 24s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes slidein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px); }
+  5% {
+    opacity: 1; }
+  45% {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateX(-1170px);
+            transform: translateX(-1170px); }
+  100% {
+    opacity: 0; } }
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px); }
+  5% {
+    opacity: 1; }
+  45% {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateX(-1170px);
+            transform: translateX(-1170px); }
+  100% {
+    opacity: 0; } }
+/* line 34, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
+#tail {
+  position: absolute;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: cattail;
+          animation-name: cattail;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes cattail {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg); }
+  100% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg); } }
+
+@keyframes cattail {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg); }
+  100% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg); } }
 /* External Frameworks */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)

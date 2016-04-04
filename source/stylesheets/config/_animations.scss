@@ -1,8 +1,74 @@
+/* MARKERS ********************************************************************/
+
+#marker-epicerie,
+#marker-forme,
+#marker-loisir {
+  position: absolute;
+  animation-duration: 2s;
+  animation-name: marker;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes marker {
+  0% {
+    transform: translateY(-2px) translateX(150%);
+  }
+
+  50% {
+    transform: translateY(2px) translateX(150%);
+  }
+
+  100% {
+    transform: translateY(-2px) translateX(150%);
+  }
+}
+
+#Cloud-1 {
+  position: relative;
+  animation-duration: 24s;
+  animation-name: cloudyleft;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes cloudyleft {
+  0% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#Cloud-2 {
+  position: relative;
+  animation-duration: 24s;
+  animation-name: cloudyright;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes cloudyright {
+  0% {
+    transform: translateX(650px) translateY(50px);
+  }
+
+  100% {
+    transform: translateX(730px) translateY(50px);
+  }
+}
+
+
+
+
 #bicycle {
   position: relative;
   animation-duration: 24s;
   animation-name: slidein;
-
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -47,5 +113,27 @@
   100% {
     transform: rotateX(180deg);
 
+  }
+}
+
+#businessman {
+  position: absolute;
+  animation-duration: 2s;
+  animation-name: floating;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(-2px);
+  }
+
+  50% {
+    transform: translateY(2px);
+  }
+
+  100% {
+    transform: translateY(-2px);
   }
 }
