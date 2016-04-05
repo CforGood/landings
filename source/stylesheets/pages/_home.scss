@@ -1,16 +1,99 @@
 #home-page {
-  padding-top: 70px;
-  .logo {
-    width: 220px;
-    height: 50px;
+
+  header {
+    padding-top: 70px;
+
+    .logo {
+      width: 220px;
+      height: 50px;
+    }
+
+    .vision {
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    svg {
+      max-width: 100%;
+      height: 450px;
+    }
   }
 
-  .vision {
-    padding-top: 30px;
-    text-align: center;
+  section#video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  svg {
-    max-width: 100%;
-    height: 450px;
+
+  section#how-to {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+    border-top: 1px solid #E5E5E5;
+    overflow: hidden;
+
+    .how-to-specifics {
+      padding: 0 5%;
+      width: 50%;
+      justify-content: flex-end;
+
+      ul.specifics {
+        li {
+          padding: 20px;
+          cursor: pointer;
+        }
+
+        li.active {
+          background: rgba(132,146,165,.1);
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .how-to-images {
+      position: relative;
+      width: 50%;
+      justify-content: flex-start;
+
+      svg {
+        max-height: 540px;
+      }
+
+      .how-to-mobile {
+        position: absolute;
+        z-index: 0;
+
+        .mockup-mobile {
+          transform: scale(0.7);
+          opacity: 0.25;
+          @include transition(all 0.3s ease-in-out);
+        }
+      }
+
+      .mobile-is-visible {
+        .mockup-mobile {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .how-to-browser {
+        position: absolute;
+        z-index: 1;
+        @include transition(all 0.3s ease-in-out);
+
+        img {
+          position: absolute;
+          top: 40px;
+          left: 1px;
+          height: 499px;
+        }
+      }
+
+      .browser-is-hidden {
+        transform: translateX(320px);
+        opacity: 0.25;
+      }
+    }
   }
 }

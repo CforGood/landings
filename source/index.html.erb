@@ -3,21 +3,82 @@ pageable: true
 per_page: 10
 ---
 
-<header id="home-page" class="container">
-  <div class="vision">
-    <%= partial "shared/svg/logo" %>
-    <h1>Rejoignez la Révolution Positive.</h1>
-    <div id="typed-strings">
-      <p>Texte 1</p>
-      <p>Texte 2</p>
-      <p>Texte 3</p>
+<div id="home-page">
+  <header class="container">
+    <div class="vision">
+      <%= partial "shared/svg/logo" %>
+      <h1>Rejoignez la Révolution Positive.</h1>
+      <div id="typed-strings">
+        <p>Texte 1</p>
+        <p>Texte 2</p>
+        <p>Texte 3</p>
+      </div>
+      <span id="typed"></span>
     </div>
-    <span id="typed"></span>
-  </div>
-  <%= partial "shared/svg/main_illustration" %>
-</header>
+    <%= partial "shared/svg/main_illustration" %>
+  </header>
+
+  <section id="video">
+    <button class="video-launcher" type="button">
+      <div class="ripple-area js-ripple">
+        <span class="ripple-circle"></span>
+      </div>
+      Voir la vidéo
+    </button>
+  </section>
+
+  <section id="how-to">
+    <div class="how-to-specifics">
+      <h2>Comment ça marche ?</h2>
+      <div class="switch-device">
+        <button id="switcher" class="video-launcher" type="button">
+          <div class="ripple-area js-ripple">
+            <span class="ripple-circle"></span>
+          </div>
+          Voir la vidéo
+        </button>
+      </div>
+      <ul class="specifics">
+        <li class="active">
+          <h3>Rejoignez-nous</h3>
+          <p>Soutenez l'association de votre choix en leur reversant la moitié de votre abonnement</p>
+        </li>
+        <li>
+          <h3>Localisez</h3>
+          <p>Redécouvrez votre ville en localisant les commerces responsables autour de vous.</p>
+        </li>
+        <li>
+          <h3>Découvrez</h3>
+          <p>Consultez les bons plans exclusifs proposés par chacun d'eux.</p>
+        </li>
+        <li>
+          <h3>Profitez</h3>
+          <p>Profitez en simplement en montrant votre carte de membre !</p>
+        </li>
+      </ul>
+    </div>
+    <div class="how-to-images">
+      <div class="how-to-mobile mobile-is-visible">
+        <%= partial "shared/svg/mobile" %>
+      </div>
+      <div class="how-to-browser browser-is-hidden">
+        <%= partial "shared/svg/browser" %>
+        <ul>
+          <li><img src="<%= image_path 'cforgood-login.jpg' %>" alt=""></li>
+          <li><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="">
+  </section>
+</button>
 
 <script>
+  // TYPED SCRIPT ACTIVATION
   jQuery(document).ready(function() {
     $("#typed").typed({
       stringsElement: $('#typed-strings'),
@@ -25,6 +86,43 @@ per_page: 10
       typeSpeed: 50,
       backDelay: 1000,
       backSpeed: 0,
+    });
+  });
+
+  // SWITCH DEVICE ON CLICK
+  $('#switcher').click(function(e) {
+    $('.how-to-browser').toggleClass('browser-is-hidden');
+    $('.how-to-mobile').toggleClass('mobile-is-visible');
+    //$(this).siblings('li').find('#member-description').not('description-hidden').addClass('description-hidden');
+    //$(this).closest('li').find('#member-description').toggleClass('description-hidden');
+    e.preventDefault() /*ignores actual link*/
+  });
+
+  // BUTTON RIPPLE EFFECT
+  jQuery(document).ready(function($, window, document, undefined) {
+
+    'use strict';
+
+    var $ripple = $('.js-ripple');
+
+    $ripple.on('click.ui.ripple', function(e) {
+      var $this = $(this);
+      var $offset = $this.parent().offset();
+      var $circle = $this.find('.ripple-circle');
+
+      var x = e.pageX - $offset.left;
+      var y = e.pageY - $offset.top;
+
+      $circle.css({
+        top: y + 'px',
+        left: x + 'px'
+      });
+
+      $this.addClass('is-active');
+    });
+
+    $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(e) {
+      $(this).removeClass('is-active');
     });
   });
 </script>

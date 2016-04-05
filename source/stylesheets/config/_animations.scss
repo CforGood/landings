@@ -2,7 +2,8 @@
 
 #marker-epicerie,
 #marker-forme,
-#marker-loisir {
+#marker-loisir,
+#marker-restaurant {
   position: absolute;
   animation-duration: 2s;
   animation-name: marker;
@@ -112,7 +113,6 @@
 
   100% {
     transform: rotateX(180deg);
-
   }
 }
 
@@ -135,5 +135,74 @@
 
   100% {
     transform: translateY(-2px);
+  }
+}
+
+#dancerman {
+  position: absolute;
+  animation-duration: 2s;
+  animation-name: danceboy;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes danceboy {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(8px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+#dancerwoman {
+  position: absolute;
+  animation-duration: 6s;
+  animation-name: dancegirl;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes dancegirl {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(95px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+#moving-sport {
+  position: relative;
+  animation-duration: 5s;
+  animation-name: pushup;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes pushup {
+  0% {
+    transform: translateZ(-20px);
+  }
+
+  50% {
+    transform: translateZ(0px);
+  }
+
+  100% {
+    transform: translateZ(-20px);
   }
 }

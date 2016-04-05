@@ -38,8 +38,106 @@ body {
     font-size: 0.8em;
     font-weight: 600;
     text-transform: uppercase; }
+  /* line 32, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_bases.scss */
+  body section {
+    padding: 80px 0; }
 
-/* line 1, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
+/* MARKERS ********************************************************************/
+/* line 3, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
+#marker-epicerie,
+#marker-forme,
+#marker-loisir,
+#marker-restaurant {
+  position: absolute;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: marker;
+          animation-name: marker;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes marker {
+  0% {
+    -webkit-transform: translateY(-2px) translateX(150%);
+            transform: translateY(-2px) translateX(150%); }
+  50% {
+    -webkit-transform: translateY(2px) translateX(150%);
+            transform: translateY(2px) translateX(150%); }
+  100% {
+    -webkit-transform: translateY(-2px) translateX(150%);
+            transform: translateY(-2px) translateX(150%); } }
+
+@keyframes marker {
+  0% {
+    -webkit-transform: translateY(-2px) translateX(150%);
+            transform: translateY(-2px) translateX(150%); }
+  50% {
+    -webkit-transform: translateY(2px) translateX(150%);
+            transform: translateY(2px) translateX(150%); }
+  100% {
+    -webkit-transform: translateY(-2px) translateX(150%);
+            transform: translateY(-2px) translateX(150%); } }
+/* line 28, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
+#Cloud-1 {
+  position: relative;
+  -webkit-animation-duration: 24s;
+          animation-duration: 24s;
+  -webkit-animation-name: cloudyleft;
+          animation-name: cloudyleft;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate; }
+
+@-webkit-keyframes cloudyleft {
+  0% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px); }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px); } }
+
+@keyframes cloudyleft {
+  0% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px); }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px); } }
+/* line 47, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
+#Cloud-2 {
+  position: relative;
+  -webkit-animation-duration: 24s;
+          animation-duration: 24s;
+  -webkit-animation-name: cloudyright;
+          animation-name: cloudyright;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate; }
+
+@-webkit-keyframes cloudyright {
+  0% {
+    -webkit-transform: translateX(650px) translateY(50px);
+            transform: translateX(650px) translateY(50px); }
+  100% {
+    -webkit-transform: translateX(730px) translateY(50px);
+            transform: translateX(730px) translateY(50px); } }
+
+@keyframes cloudyright {
+  0% {
+    -webkit-transform: translateX(650px) translateY(50px);
+            transform: translateX(650px) translateY(50px); }
+  100% {
+    -webkit-transform: translateX(730px) translateY(50px);
+            transform: translateX(730px) translateY(50px); } }
+/* line 69, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
 #bicycle {
   position: relative;
   -webkit-animation-duration: 24s;
@@ -82,7 +180,7 @@ body {
             transform: translateX(-1170px); }
   100% {
     opacity: 0; } }
-/* line 34, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
+/* line 101, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
 #tail {
   position: absolute;
   -webkit-animation-duration: 1s;
@@ -109,6 +207,127 @@ body {
   100% {
     -webkit-transform: rotateX(180deg);
             transform: rotateX(180deg); } }
+/* line 119, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
+#businessman {
+  position: absolute;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px); }
+  50% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+  100% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px); } }
+/* line 141, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
+#dancerman {
+  position: absolute;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: danceboy;
+          animation-name: danceboy;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes danceboy {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+  50% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px); }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); } }
+
+@keyframes danceboy {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+  50% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px); }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); } }
+/* line 164, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
+#dancerwoman {
+  position: absolute;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-name: dancegirl;
+          animation-name: dancegirl;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes dancegirl {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+  50% {
+    -webkit-transform: translateX(95px) rotateY(180deg);
+            transform: translateX(95px) rotateY(180deg); }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); } }
+
+@keyframes dancegirl {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+  50% {
+    -webkit-transform: translateX(95px) rotateY(180deg);
+            transform: translateX(95px) rotateY(180deg); }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); } }
+/* line 187, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_animations.scss */
+#moving-sport {
+  position: relative;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: pushup;
+          animation-name: pushup;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes pushup {
+  0% {
+    -webkit-transform: translateZ(-20px);
+            transform: translateZ(-20px); }
+  50% {
+    -webkit-transform: translateZ(0px);
+            transform: translateZ(0px); }
+  100% {
+    -webkit-transform: translateZ(-20px);
+            transform: translateZ(-20px); } }
+
+@keyframes pushup {
+  0% {
+    -webkit-transform: translateZ(-20px);
+            transform: translateZ(-20px); }
+  50% {
+    -webkit-transform: translateZ(0px);
+            transform: translateZ(0px); }
+  100% {
+    -webkit-transform: translateZ(-20px);
+            transform: translateZ(-20px); } }
 /* External Frameworks */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
@@ -10141,11 +10360,18 @@ button.sign-in {
   button.sign-in:hover {
     background-color: #A3A5A8; }
 
+/* line 50, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+button.video-launcher {
+  background-color: #36D3DA; }
+  /* line 53, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+  button.video-launcher:hover {
+    background-color: #19A2C2; }
+
 /**
  * Component: Button
  * --------------------------------------------------
  */
-/* line 55, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+/* line 63, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
 .ripple-area {
   position: absolute;
   top: 0;
@@ -10155,7 +10381,7 @@ button.sign-in {
   overflow: hidden;
   background: transparent; }
 
-/* line 65, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+/* line 73, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
 .ripple-circle {
   position: absolute;
   top: 50%;
@@ -10167,7 +10393,7 @@ button.sign-in {
   height: 0;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.25); }
-  /* line 75, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+  /* line 83, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
   .ripple-area.is-active .ripple-circle {
     -webkit-animation: a-ripple .4s ease-in;
             animation: a-ripple .4s ease-in; }
@@ -10194,21 +10420,35 @@ button.sign-in {
     width: 200%;
     padding-bottom: 200%;
     opacity: 0; } }
-/* line 1, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
-#home-page {
+/* line 3, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+#home-page header {
   padding-top: 70px; }
-  /* line 3, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
-  #home-page .logo {
+  /* line 6, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  #home-page header .logo {
     width: 220px;
     height: 50px; }
-  /* line 8, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
-  #home-page .vision {
+  /* line 11, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  #home-page header .vision {
     padding-top: 30px;
     text-align: center; }
-  /* line 12, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
-  #home-page svg {
+  /* line 16, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  #home-page header svg {
     max-width: 100%;
     height: 450px; }
+/* line 22, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+#home-page section.video {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 /*
 ==============================================
