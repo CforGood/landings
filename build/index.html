@@ -3832,27 +3832,58 @@
     <div class="how-to-specifics">
       <h2>Comment ça marche ?</h2>
       <div class="switch-device">
-        <button id="switcher" class="video-launcher" type="button">
+        <button id="switcher" class="video-launcher hint--top" data-hint="Changez de support !" type="button">
           <div class="ripple-area js-ripple">
             <span class="ripple-circle"></span>
           </div>
-          Voir la vidéo
+          <div id="icon-desktop">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="21px" viewBox="0 0 31 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 143</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-568.000000, -463.000000)" fill="#FFFFFF">
+            <path d="M597,481 L570,481 L570,467 C570,465.896 570.896,465 572,465 L595,465 C596.104,465 597,465.896 597,467 L597,481 L597,481 Z M597,485 C597,486.104 596.104,487 595,487 L572,487 C570.896,487 570,486.104 570,485 L570,483 L597,483 L597,485 L597,485 Z M582,489 L586,489 L586,493 L582,493 L582,489 Z M595,463 L572,463 C569.791,463 568,464.791 568,467 L568,485 C568,487.209 569.791,489 572,489 L580,489 L580,493 L578,493 C577.447,493 577,493.448 577,494 C577,494.553 577.447,495 578,495 L590,495 C590.553,495 591,494.553 591,494 C591,493.448 590.553,493 590,493 L588,493 L588,489 L595,489 C597.209,489 599,487.209 599,485 L599,467 C599,464.791 597.209,463 595,463 L595,463 Z" id="Fill-143" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
+          </div>
+          <div id="icon-mobile" class="icon-mobile-is-hidden">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="22px" viewBox="0 0 23 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_mobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_mobile" fill="#FFFFFF">
+            <g id="Page-1">
+                <g id="Icon-Set">
+                    <path d="M11.5,31 C12.328,31 13,30.328 13,29.5 C13,28.672 12.328,28 11.5,28 C10.672,28 10,28.672 10,29.5 C10,30.328 10.672,31 11.5,31 L11.5,31 L11.5,31 Z M21,5 L2,5 L2,4 C2,2.896 2.896,2 4,2 L19,2 C20.104,2 21,2.896 21,4 L21,5 L21,5 L21,5 Z M2,6 L21,6 L21,25 L2,25 L2,6 L2,6 Z M21,30 C21,31.104 20.104,32 19,32 L4,32 C2.896,32 2,31.104 2,30 L2,27 L21,27 L21,30 L21,30 L21,30 Z M19,0 L4,0 C1.791,0 0,1.9029375 0,4.25 L0,29.75 C0,32.0970625 1.791,34 4,34 L19,34 C21.209,34 23,32.0970625 23,29.75 L23,4.25 C23,1.9029375 21.209,0 19,0 L19,0 L19,0 Z" id="Fill-144"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+          </div>
         </button>
       </div>
       <ul class="specifics">
-        <li class="active">
+        <li id="specific-1" class="active">
           <h3>Rejoignez-nous</h3>
           <p>Soutenez l'association de votre choix en leur reversant la moitié de votre abonnement</p>
         </li>
-        <li>
+        <li id="specific-2">
           <h3>Localisez</h3>
           <p>Redécouvrez votre ville en localisant les commerces responsables autour de vous.</p>
         </li>
-        <li>
+        <li id="specific-3">
           <h3>Découvrez</h3>
           <p>Consultez les bons plans exclusifs proposés par chacun d'eux.</p>
         </li>
-        <li>
+        <li id="specific-4">
           <h3>Profitez</h3>
           <p>Profitez en simplement en montrant votre carte de membre !</p>
         </li>
@@ -3884,6 +3915,12 @@
         </g>
     </g>
 </svg>
+        <ul>
+          <li><img src="images/cforgood-login.jpg" alt=""></li>
+          <li><img src="images/cforgood-map.jpg" alt=""></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
       <div class="how-to-browser browser-is-hidden">
         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -3911,8 +3948,8 @@
         <ul>
           <li><img src="images/cforgood-login.jpg" alt=""></li>
           <li><img src="images/cforgood-map.jpg" alt=""></li>
-          <li></li>
-          <li></li>
+          <li><img src="images/cforgood-bonplan.jpg" alt=""></li>
+          <li><img src="images/cforgood-use.jpg" alt=""></li>
         </ul>
       </div>
     </div>
@@ -3938,6 +3975,8 @@
   $('#switcher').click(function(e) {
     $('.how-to-browser').toggleClass('browser-is-hidden');
     $('.how-to-mobile').toggleClass('mobile-is-visible');
+    $('#icon-mobile').toggleClass('icon-mobile-is-hidden');
+    $('#icon-desktop').toggleClass('icon-desktop-is-hidden');
     //$(this).siblings('li').find('#member-description').not('description-hidden').addClass('description-hidden');
     //$(this).closest('li').find('#member-description').toggleClass('description-hidden');
     e.preventDefault() /*ignores actual link*/

@@ -95,10 +95,21 @@
           opacity: 0.25;
           @include transition(all 0.3s ease-in-out);
         }
+
+        img {
+          position: absolute;
+          top: 74px;
+          width: 218px;
+          left: 29px;
+          transform: scale(0.7);
+          opacity: 0.25;
+          @include transition(all 0.3s ease-in-out);
+        }
       }
 
       .mobile-is-visible {
-        .mockup-mobile {
+        .mockup-mobile,
+        img {
           transform: scale(1);
           opacity: 1;
         }
@@ -114,12 +125,17 @@
           top: 40px;
           left: 1px;
           height: 499px;
+          z-index: 0;
         }
       }
 
       .browser-is-hidden {
         transform: translateX(320px);
         opacity: 0.25;
+      }
+
+      img.showing {
+        z-index: 1;
       }
     }
   }
