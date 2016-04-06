@@ -19,19 +19,48 @@ per_page: 10
   </header>
 
   <section id="video">
+    <h2>Devenez acteur du changement</h2>
+    <p>Intégrez un réseau de solidarité permettant de connecter le citoyen aux acteurs responsables du territoire pour favoriser les comportements positifs.</p>
     <button class="video-launcher" type="button">
       <div class="ripple-area js-ripple">
         <span class="ripple-circle"></span>
       </div>
-      Voir la vidéo
+      Voir la vidéo <%= partial "shared/svg/play" %>
     </button>
+  </section>
+
+  <section id="own-scale">
+    <div class="section-icon">
+    </div>
+    <div class="section-description">
+      <h3>Je change le monde à mon échelle</h3>
+      <p>Je soutiens l’association de mon choix en lui reversant la moitié de ma participation de 5€/mois</p>
+    </div>
+  </section>
+
+  <section id="consumption">
+    <div class="section-icon">
+    </div>
+    <div class="section-description">
+      <h3>Je consomme autrement</h3>
+      <p>Je me connecte aux acteurs du changement et découvre ma ville autrement en localisant les commerces responsables autour de moi et en bénéficiant de réductions exclusives.</p>
+    </div>
+  </section>
+
+  <section id="solidarity-network">
+    <div class="section-icon">
+    </div>
+    <div class="section-description">
+      <h3>Je rejoins un véritable réseau de solidarité</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin id mauris vitae scelerisque. Sed pretium neque vitae neque rhoncus convallis. Vestibulum ante lacus, bibendum vitae quam quis, faucibus efficitur nunc. Praesent volutpat ante non lacus tincidunt congue.</p>
+    </div>
   </section>
 
   <section id="how-to">
     <div class="how-to-specifics">
       <h2>Comment ça marche ?</h2>
       <div class="switch-device">
-        <button id="switcher" class="video-launcher hint--top" data-hint="Changez de support !" type="button">
+        <button id="switcher" class="device-switcher hint--top" data-hint="Changez de support !" type="button">
           <div class="ripple-area js-ripple">
             <span class="ripple-circle"></span>
           </div>
@@ -83,10 +112,7 @@ per_page: 10
       </div>
     </div>
   </section>
-
-  <section class="">
-  </section>
-</button>
+</div>
 
 <script>
   // TYPED SCRIPT ACTIVATION

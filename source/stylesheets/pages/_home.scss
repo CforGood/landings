@@ -21,8 +21,43 @@
 
   section#video {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    p {
+      max-width: 570px;
+      text-align: center;
+    }
+  }
+
+  section#solidarity-network,
+  section#own-scale,
+  section#consumption {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+    border-top: 1px solid #E5E5E5;
+
+    .section-icon {
+      padding: 0 6%;
+      width: 50%;
+    }
+
+    .section-description {
+      padding: 0 6%;
+      width: 50%;
+    }
+  }
+
+  section#consumption {
+    .section-icon {
+      order: 2;
+    }
+
+    .section-description {
+      order: 1;
+    }
   }
 
   section#how-to {
@@ -32,6 +67,10 @@
     max-width: 1400px;
     border-top: 1px solid #E5E5E5;
     overflow: hidden;
+
+    h2 {
+      padding-left: 20px;
+    }
 
     .how-to-specifics {
       position: relative;

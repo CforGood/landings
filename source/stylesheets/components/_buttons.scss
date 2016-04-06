@@ -48,7 +48,24 @@ button.sign-in {
 }
 
 button.video-launcher {
-   background-color: $turquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  margin-top: 30px;
+  background-color: $turquoise;
+
+  &:hover {
+    background-color: $darken-turquoise;
+  }
+
+  svg {
+    margin-left: 5px;
+  }
+}
+
+button.device-switcher {
+  background-color: $turquoise;
 
   &:hover {
     background-color: $darken-turquoise;

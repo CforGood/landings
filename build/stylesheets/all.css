@@ -10550,28 +10550,44 @@ button.video-launcher {
         opacity: 0.25;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
-    /* line 101, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
-    #home-page section#how-to .how-to-images .mobile-is-visible .mockup-mobile {
+      /* line 99, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      #home-page section#how-to .how-to-images .how-to-mobile img {
+        position: absolute;
+        top: 74px;
+        width: 218px;
+        left: 29px;
+        -webkit-transform: scale(0.7);
+                transform: scale(0.7);
+        opacity: 0.25;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+    /* line 111, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    #home-page section#how-to .how-to-images .mobile-is-visible .mockup-mobile,
+    #home-page section#how-to .how-to-images .mobile-is-visible img {
       -webkit-transform: scale(1);
               transform: scale(1);
       opacity: 1; }
-    /* line 107, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 118, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#how-to .how-to-images .how-to-browser {
       position: absolute;
       z-index: 1;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
-      /* line 112, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 123, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#how-to .how-to-images .how-to-browser img {
         position: absolute;
         top: 40px;
         left: 1px;
-        height: 499px; }
-    /* line 120, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        height: 499px;
+        z-index: 0; }
+    /* line 132, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#how-to .how-to-images .browser-is-hidden {
       -webkit-transform: translateX(320px);
               transform: translateX(320px);
       opacity: 0.25; }
+    /* line 137, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    #home-page section#how-to .how-to-images img.showing {
+      z-index: 1; }
 
 /*
 ==============================================

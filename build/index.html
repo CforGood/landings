@@ -3870,7 +3870,7 @@
           </div>
         </button>
       </div>
-      <ul class="specifics">
+      <ul id="specifics-list" class="specifics">
         <li id="specific-1" class="active">
           <h3>Rejoignez-nous</h3>
           <p>Soutenez l'association de votre choix en leur reversant la moitié de votre abonnement</p>
@@ -3915,11 +3915,11 @@
         </g>
     </g>
 </svg>
-        <ul>
-          <li><img src="images/cforgood-login.jpg" alt=""></li>
-          <li><img src="images/cforgood-map.jpg" alt=""></li>
-          <li></li>
-          <li></li>
+        <ul id="specifics-images-list">
+          <li id="specific-image-1"><img src="images/cforgood-login-mobile.jpg" class="showing" alt=""></li>
+          <li id="specific-image-2"><img src="images/cforgood-map-mobile.jpg" alt=""></li>
+          <li id="specific-image-3"><img src="images/cforgood-bonplan-mobile.jpg" alt=""></li>
+          <li id="specific-image-4"><img src="images/cforgood-use-mobile.jpg" alt=""></li>
         </ul>
       </div>
       <div class="how-to-browser browser-is-hidden">
@@ -3945,11 +3945,11 @@
         </g>
     </g>
 </svg>
-        <ul>
-          <li><img src="images/cforgood-login.jpg" alt=""></li>
-          <li><img src="images/cforgood-map.jpg" alt=""></li>
-          <li><img src="images/cforgood-bonplan.jpg" alt=""></li>
-          <li><img src="images/cforgood-use.jpg" alt=""></li>
+        <ul id="specifics-images-list">
+          <li id="specific-image-1"><img src="images/cforgood-login.jpg" class="showing" alt=""></li>
+          <li id="specific-image-2"><img src="images/cforgood-map.jpg" alt=""></li>
+          <li id="specific-image-3"><img src="images/cforgood-bonplan.jpg" alt=""></li>
+          <li id="specific-image-4"><img src="images/cforgood-use.jpg" alt=""></li>
         </ul>
       </div>
     </div>
@@ -3977,8 +3977,41 @@
     $('.how-to-mobile').toggleClass('mobile-is-visible');
     $('#icon-mobile').toggleClass('icon-mobile-is-hidden');
     $('#icon-desktop').toggleClass('icon-desktop-is-hidden');
-    //$(this).siblings('li').find('#member-description').not('description-hidden').addClass('description-hidden');
-    //$(this).closest('li').find('#member-description').toggleClass('description-hidden');
+    e.preventDefault() /*ignores actual link*/
+  });
+
+  // TOGGLE HIGHLIGHT SPECIFIC
+  $('#specifics-list li').click(function(e) {
+    $(this).siblings('li').removeClass('active');
+    $(this).closest('li').addClass('active');
+    e.preventDefault() /*ignores actual link*/
+  });
+
+  // SHOW IMAGE FOR SPECIFC 1
+  $('#specific-1').click(function(e) {
+    $('#specifics-images-list li img').removeClass('showing');
+    $('#specific-image-1 img').addClass('showing');
+    e.preventDefault() /*ignores actual link*/
+  });
+
+  // SHOW IMAGE FOR SPECIFC 2
+  $('#specific-2').click(function(e) {
+    $('#specifics-images-list li img').removeClass('showing');
+    $('#specific-image-2 img').addClass('showing');
+    e.preventDefault() /*ignores actual link*/
+  });
+
+  // SHOW IMAGE FOR SPECIFC 3
+  $('#specific-3').click(function(e) {
+    $('#specifics-images-list li img').removeClass('showing');
+    $('#specific-image-3 img').addClass('showing');
+    e.preventDefault() /*ignores actual link*/
+  });
+
+  // SHOW IMAGE FOR SPECIFC 4
+  $('#specific-4').click(function(e) {
+    $('#specifics-images-list li img').removeClass('showing');
+    $('#specific-image-4 img').addClass('showing');
     e.preventDefault() /*ignores actual link*/
   });
 
