@@ -1,0 +1,68 @@
+#modal-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #3E4149;
+  //background: #402f44;
+  background-size: cover;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+
+  .modal-close {
+    position: absolute;
+    z-index: 15;
+    height: 60px;
+    width: 60px;
+    top: 20px;
+    right: 5%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+    line-height: 75px;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+    -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+    transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .video-modal-content {
+    padding: 6em 5% 0;
+    margin: 0 auto;
+    width: 80%;
+    overflow-y: auto;
+    text-align: center;
+  }
+}
+
+#modal-video.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.7s, visibility 0s;
+
+  .modal-close {
+    transform: scale(1);
+  }
+}
+
+.modal-backdrop.in {
+  opacity: 0;
+  z-index: 1;
+}

@@ -21,12 +21,13 @@ per_page: 10
   <section id="video">
     <h2>Devenez acteur du changement</h2>
     <p>Intégrez un réseau de solidarité permettant de connecter le citoyen aux acteurs responsables du territoire pour favoriser les comportements positifs.</p>
-    <button class="video-launcher" type="button">
+    <button id="video-launcher" class="video-launcher" type="button" data-toggle="video-modal" data-target="#modal-video" data-theVideo="http://www.youtube.com/embed/4tYrdTm6lwQ">
       <div class="ripple-area js-ripple">
         <span class="ripple-circle"></span>
       </div>
       Voir la vidéo <%= partial "shared/svg/play" %>
     </button>
+    <%= partial "shared/modal_video" %>
   </section>
 
   <section id="own-scale">
@@ -124,6 +125,36 @@ per_page: 10
       backDelay: 1000,
       backSpeed: 0,
     });
+  });
+
+  // LAUNCH MODAL
+  $('#video-launcher').click(function(e) {
+    $('#modal-video').toggleClass('is-visible');
+  });
+
+  // TOGGLE AUTOPLAY YOUTUBE VIDEO ON MODAL OPENING/CLOSING
+  jQuery(document).ready(function(){
+    //LAUNCH FUCTION AUTOPLAY
+    autoPlayYouTubeModal();
+    //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+    function autoPlayYouTubeModal() {
+      var trigger = $("#video").find('[data-toggle="video-modal"]');
+      trigger.click(function () {
+          var theModal = $(this).data("target"),
+              videoSRC = $(this).attr("data-theVideo"),
+              videoSRCauto = videoSRC + "?autoplay=1";
+          $(theModal + ' iframe').attr('src', videoSRCauto);
+           $('.modal-close').click(function(e) {
+              $('#modal-video').removeClass('is-visible');
+              //$('.modal-backdrop').remove();
+              //$('body').removeClass('modal-open');
+              $(theModal + ' iframe').attr('src', videoSRC);
+            });
+          $('#modal-video').click(function () {
+              $(theModal + ' iframe').attr('src', videoSRC);
+          });
+      });
+    }
   });
 
   // SWITCH DEVICE ON CLICK
