@@ -31,27 +31,32 @@ per_page: 10
     <div class="how-to-specifics">
       <h2>Comment ça marche ?</h2>
       <div class="switch-device">
-        <button id="switcher" class="video-launcher" type="button">
+        <button id="switcher" class="video-launcher hint--top" data-hint="Changez de support !" type="button">
           <div class="ripple-area js-ripple">
             <span class="ripple-circle"></span>
           </div>
-          Voir la vidéo
+          <div id="icon-desktop">
+            <%= partial "shared/svg/icon_desktop" %>
+          </div>
+          <div id="icon-mobile" class="icon-mobile-is-hidden">
+            <%= partial "shared/svg/icon_mobile" %>
+          </div>
         </button>
       </div>
       <ul class="specifics">
-        <li class="active">
+        <li id="specific-1" class="active">
           <h3>Rejoignez-nous</h3>
           <p>Soutenez l'association de votre choix en leur reversant la moitié de votre abonnement</p>
         </li>
-        <li>
+        <li id="specific-2">
           <h3>Localisez</h3>
           <p>Redécouvrez votre ville en localisant les commerces responsables autour de vous.</p>
         </li>
-        <li>
+        <li id="specific-3">
           <h3>Découvrez</h3>
           <p>Consultez les bons plans exclusifs proposés par chacun d'eux.</p>
         </li>
-        <li>
+        <li id="specific-4">
           <h3>Profitez</h3>
           <p>Profitez en simplement en montrant votre carte de membre !</p>
         </li>
@@ -60,14 +65,20 @@ per_page: 10
     <div class="how-to-images">
       <div class="how-to-mobile mobile-is-visible">
         <%= partial "shared/svg/mobile" %>
+        <ul>
+          <li><img src="<%= image_path 'cforgood-login.jpg' %>" alt=""></li>
+          <li><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
       <div class="how-to-browser browser-is-hidden">
         <%= partial "shared/svg/browser" %>
         <ul>
           <li><img src="<%= image_path 'cforgood-login.jpg' %>" alt=""></li>
           <li><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
-          <li></li>
-          <li></li>
+          <li><img src="<%= image_path 'cforgood-bonplan.jpg' %>" alt=""></li>
+          <li><img src="<%= image_path 'cforgood-use.jpg' %>" alt=""></li>
         </ul>
       </div>
     </div>
@@ -93,6 +104,8 @@ per_page: 10
   $('#switcher').click(function(e) {
     $('.how-to-browser').toggleClass('browser-is-hidden');
     $('.how-to-mobile').toggleClass('mobile-is-visible');
+    $('#icon-mobile').toggleClass('icon-mobile-is-hidden');
+    $('#icon-desktop').toggleClass('icon-desktop-is-hidden');
     //$(this).siblings('li').find('#member-description').not('description-hidden').addClass('description-hidden');
     //$(this).closest('li').find('#member-description').toggleClass('description-hidden');
     e.preventDefault() /*ignores actual link*/

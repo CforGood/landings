@@ -27,15 +27,42 @@
 
   section#how-to {
     display: flex;
+    position: relative;
     margin: 0 auto;
     max-width: 1400px;
     border-top: 1px solid #E5E5E5;
     overflow: hidden;
 
     .how-to-specifics {
+      position: relative;
       padding: 0 5%;
       width: 50%;
       justify-content: flex-end;
+
+      .switch-device {
+        position: absolute;
+        margin: 0 10% 0 0;
+        top: 2px;
+        right: 0;
+
+        #switcher {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 40px;
+          max-width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+
+        .icon-desktop-is-hidden {
+          display: none;
+        }
+
+        .icon-mobile-is-hidden {
+          display: none;
+        }
+      }
 
       ul.specifics {
         li {
