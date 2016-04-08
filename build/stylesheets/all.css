@@ -10480,18 +10480,19 @@ button.video-launcher {
           justify-content: center;
   padding: 15px 20px;
   margin-top: 30px;
+  line-height: 22px;
   background-color: #36D3DA; }
-  /* line 59, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+  /* line 60, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
   button.video-launcher:hover {
     background-color: #19A2C2; }
-  /* line 63, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+  /* line 64, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
   button.video-launcher svg {
     margin-left: 5px; }
 
-/* line 68, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+/* line 69, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
 button.device-switcher {
   background-color: #36D3DA; }
-  /* line 71, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+  /* line 72, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
   button.device-switcher:hover {
     background-color: #19A2C2; }
 
@@ -10499,7 +10500,7 @@ button.device-switcher {
  * Component: Button
  * --------------------------------------------------
  */
-/* line 81, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+/* line 82, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
 .ripple-area {
   position: absolute;
   top: 0;
@@ -10509,7 +10510,7 @@ button.device-switcher {
   overflow: hidden;
   background: transparent; }
 
-/* line 91, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+/* line 92, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
 .ripple-circle {
   position: absolute;
   top: 50%;
@@ -10521,7 +10522,7 @@ button.device-switcher {
   height: 0;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.25); }
-  /* line 101, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+  /* line 102, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
   .ripple-area.is-active .ripple-circle {
     -webkit-animation: a-ripple .4s ease-in;
             animation: a-ripple .4s ease-in; }
@@ -10707,39 +10708,40 @@ button.device-switcher {
       /* line 138, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#how-to .how-to-images .how-to-mobile img {
         position: absolute;
-        top: 74px;
-        width: 218px;
-        left: 29px;
+        top: 106px;
+        width: 231px;
+        left: 21px;
+        border-radius: 0 0 3px 3px;
         -webkit-transform: scale(0.7);
                 transform: scale(0.7);
         opacity: 0.25;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
-    /* line 150, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 151, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#how-to .how-to-images .mobile-is-visible .mockup-mobile,
     #home-page section#how-to .how-to-images .mobile-is-visible img {
       -webkit-transform: scale(1);
               transform: scale(1);
       opacity: 1; }
-    /* line 157, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 158, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#how-to .how-to-images .how-to-browser {
       position: absolute;
       z-index: 1;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
-      /* line 162, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 163, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#how-to .how-to-images .how-to-browser img {
         position: absolute;
         top: 40px;
         left: 1px;
         height: 499px;
         z-index: 0; }
-    /* line 171, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 172, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#how-to .how-to-images .browser-is-hidden {
       -webkit-transform: translateX(320px);
               transform: translateX(320px);
       opacity: 0.25; }
-    /* line 176, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 177, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#how-to .how-to-images img.showing {
       z-index: 1; }
 
