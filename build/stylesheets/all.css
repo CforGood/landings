@@ -55,6 +55,25 @@ body {
   /* line 40, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_bases.scss */
   body section {
     padding: 80px 0; }
+  /* line 44, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_bases.scss */
+  body iframe {
+    border: none; }
+  /* line 48, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_bases.scss */
+  body .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; }
+  /* line 54, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/config/_bases.scss */
+  body .video-container iframe,
+  body .video-container object,
+  body .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 @font-face {
   font-family: 'adellelight';
@@ -10274,6 +10293,70 @@ button.close {
   content: ""; }
 
 /* Our CSS */
+/* line 1, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_modals.scss */
+#modal-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #3E4149;
+  background-size: cover;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s; }
+  /* line 18, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_modals.scss */
+  #modal-video .modal-close {
+    position: absolute;
+    z-index: 15;
+    height: 60px;
+    width: 60px;
+    top: 20px;
+    right: 5%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+    line-height: 75px;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+    -webkit-transition: visibility 0s 0.3s, opacity 0.3s 0s, -webkit-transform 0.3s 0s;
+    transition: visibility 0s 0.3s, opacity 0.3s 0s, -webkit-transform 0.3s 0s;
+    transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+    transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s, -webkit-transform 0.3s 0s; }
+    /* line 41, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_modals.scss */
+    #modal-video .modal-close:hover {
+      background-color: rgba(0, 0, 0, 0.5); }
+  /* line 46, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_modals.scss */
+  #modal-video .video-modal-content {
+    padding: 6em 5% 0;
+    margin: 0 auto;
+    width: 80%;
+    overflow-y: auto;
+    text-align: center; }
+
+/* line 55, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_modals.scss */
+#modal-video.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.7s, visibility 0s;
+  transition: opacity 0.7s, visibility 0s; }
+  /* line 60, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_modals.scss */
+  #modal-video.is-visible .modal-close {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+
+/* line 65, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_modals.scss */
+.modal-backdrop.in {
+  opacity: 0;
+  z-index: 1; }
+
 /* line 1, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_navbar.scss */
 nav {
   display: -webkit-box;
