@@ -30,6 +30,16 @@ per_page: 10
     <%= partial "shared/modal_video" %>
   </section>
 
+  <section id="articles">
+    <div class="articles-carousel">
+      <% data.articles.each do |article| %>
+        <a href="<%= article.url %>" alt="<%= article.title %>" %>
+          <%= image_tag article.logo %>
+        </a>
+      <% end %>
+    </div>
+  </section>
+
   <section id="own-scale">
     <div class="section-icon">
     </div>
@@ -41,6 +51,7 @@ per_page: 10
 
   <section id="consumption">
     <div class="section-icon">
+       <%= partial "shared/svg/markers" %>
     </div>
     <div class="section-description">
       <h3>Je consomme autrement</h3>
@@ -54,6 +65,23 @@ per_page: 10
     <div class="section-description">
       <h3>Je change le monde à mon échelle</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin id mauris vitae scelerisque. Sed pretium neque vitae neque rhoncus convallis. Vestibulum ante lacus, bibendum vitae quam quis, faucibus efficitur nunc. Praesent volutpat ante non lacus tincidunt congue.</p>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="testimonials-carousel">
+      <% data.testimonials.each do |testimony| %>
+        <div class="testimony">
+          <p><%= testimony.content %></p>
+          <div class="witness">
+            <%= image_tag testimony.picture %>
+            <div class="witness-details">
+              <span><%= testimony.name %></span>
+              <i>Le <%= testimony.date %></i>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
   </section>
 
@@ -129,12 +157,31 @@ per_page: 10
     </div>
   </section>
 
-  <section id="partnerships">
-    <h2>Ils nous soutiennent</h2>
-  </section>
-
   <section id="call-to-action">
     <h2>Rejoignez la révolution positive !</h2>
+  </section>
+
+  <section id="partnerships">
+    <h2>Ils nous soutiennent</h2>
+    <ul class="partners-silver">
+      <li><img src="<%= image_path 'logos/banquepostale.png' %>" alt=""></li>
+      <li><img src="<%= image_path 'logos/makesense.png' %>" alt=""></li>
+      <li><img src="<%= image_path 'logos/metropole.png' %>" alt=""></li>
+      <li><img src="<%= image_path 'logos/darwin.png' %>" alt=""></li>
+      <li><img src="<%= image_path 'logos/ticket-for-change.png' %>" alt=""></li>
+    </ul>
+    <ul class="partners-gold">
+      <li><img src="<%= image_path 'logos/kisskissbankbank.png' %>" alt=""></li>
+      <li><img src="<%= image_path 'logos/mazars.png' %>" alt=""></li>
+      <li><img src="<%= image_path 'logos/bordeaux.png' %>" alt=""></li>
+    </ul>
+    <ul class="partners-bronze">
+      <li><img src="<%= image_path 'logos/french-tech.png' %>" alt=""></li>
+      <li><img src="<%= image_path 'logos/aec.png' %>" alt=""></li>
+      <li><img src="<%= image_path 'logos/ecolo-info.png' %>" alt=""></li>
+      <li><img src="<%= image_path 'logos/bpi.png' %>" alt=""></li>
+      <li><img src="<%= image_path 'logos/keep-a-breast.png' %>" alt=""></li>
+    </ul>
   </section>
 </div>
 
@@ -153,6 +200,25 @@ per_page: 10
   // LAUNCH MODAL
   $('#video-launcher').click(function(e) {
     $('#modal-video').toggleClass('is-visible');
+  });
+
+  // SLICK
+  jQuery(document).ready(function(){
+    $('.articles-carousel').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 6
+    });
+
+    $('.testimonials-carousel').slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4
+    });
   });
 
   // TOGGLE AUTOPLAY YOUTUBE VIDEO ON MODAL OPENING/CLOSING

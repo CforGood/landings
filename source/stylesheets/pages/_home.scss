@@ -31,6 +31,10 @@
     }
   }
 
+  section#articles {
+   padding: 0;
+  }
+
   section#solidarity-network,
   section#own-scale,
   section#consumption,
@@ -58,6 +62,59 @@
 
     .section-description {
       order: 1;
+    }
+  }
+
+  section#testimonials {
+    padding: 0 0 60px;
+
+    p {
+      position: relative;
+      padding: 20px;
+      margin-bottom: 2.5rem;
+      background-color: #7E89A3;
+      color: #fff;
+      border-radius: 10px;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 100%;
+        left: 15%;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        pointer-events: none;
+        border-top-color: #7E89A3;
+        border-width: 10px;
+        margin-left: -10px;
+      }
+    }
+
+    img {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .witness {
+      display: flex;
+      padding: 0 10px;
+
+      .witness-details {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+
+        span {
+          font-family: "Raleway", "Helvetica", "sans-serif";
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+
+        i {
+          font-size: 1rem;
+        }
+      }
     }
   }
 
@@ -306,12 +363,52 @@
       li {
         display: flex;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
 
         svg {
           margin-right: 10px;
         }
       }
     }
+  }
+
+  section#partnerships {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: #7E89A3;
+
+    h2 {
+      color: #fff;
+      margin-bottom: 4rem;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 2rem;
+      width: 60%;
+      justify-content: space-around;
+
+      li {
+        img {
+          height: 50px;
+        }
+      }
+    }
+
+    ul.partners-gold {
+      width: 55%;
+    }
+
+    ul.partners-silver,
+    ul.partners-bronze {
+      width: 65%;
+    }
+
   }
 }

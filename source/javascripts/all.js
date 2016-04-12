@@ -3,3 +3,4 @@
 //= require_tree .
 
 //= require typed
+//= require slick

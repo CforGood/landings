@@ -1,0 +1,41 @@
+#articles {
+  .slick-slider {
+    width: 90%;
+    margin: 0 auto;
+
+    .slick-slide {
+      padding: 25px;
+      outline: none;
+
+      img {
+        width: 100%;
+        filter: grayscale(100%);
+        opacity: 0.4;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        img {
+          filter: grayscale(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+#testimonials {
+  .slick-slider {
+    width: 90%;
+    margin: 0 auto;
+
+    .slick-slide {
+      padding: 25px;
+      outline: none;
+    }
+
+    .slick-dots {
+      bottom: -30px;
+    }
+  }
+}
