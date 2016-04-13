@@ -1,6 +1,6 @@
 <footer>
   <div class="newsletter-form">
-    <h2>Inscrivez-vous pour recevoir notre actualité</h2>
+    <h3>Inscrivez-vous pour recevoir notre actualité</h3>
     <div id="mc_embed_signup">
       <form action="//cforgood.us9.list-manage.com/subscribe/post?u=a43e05af521d3632c30f4c0c8&amp;id=3cef42ed6e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
@@ -8,7 +8,7 @@
             <input type="email" placeholder="Email*" name="EMAIL" class="required email asterisk br5 w-90cent pl-2cent" id="mce-EMAIL">
           </div>
 
-          <div id="mce-responses" class="clear">
+          <div id="mce-responses">
             <div class="response" id="mce-error-response" style="display:none"></div>
             <div class="response" id="mce-success-response" style="display:none"></div>
           </div>
@@ -16,9 +16,12 @@
           <div style="position: absolute; left: -5000px;">
             <input type="text" name="b_a43e05af521d3632c30f4c0c8_3cef42ed6e" tabindex="-1" value="">
           </div>
-          <div class="clear">
-            <input type="submit" value="S'INSCRIRE" name="subscribe" id="mc-embedded-subscribe" class="">
-          </div>
+          <button class="nl-submit" type="submit" name="subscribe" id="mc-embedded-subscribe">
+            <div class="ripple-area js-ripple">
+              <span class="ripple-circle"></span>
+            </div>
+            S'inscrire
+          </button>
         </div>
       </form>
     </div>
@@ -26,34 +29,34 @@
   <div class="links">
     <!-- List 1 -->
     <ul>
-      <li class="list-title">Cforgood</li>
+      <li class="list-title"><h3>Cforgood</h3></li>
       <li><a href="#" alt="">À propos</a></li>
       <li><a href="#" alt="">Notre charte</a></li>
       <li><a href="#" alt="">F.A.Q</a></li>
     </ul>
      <!-- List 2 -->
     <ul>
-      <li class="list-title">Communauté</li>
+      <li class="list-title"><h3>Communauté</h3></li>
       <li><a href="#" alt="">Devenir Ambassadeur</a></li>
       <li><a href="#" alt="">Vous êtes une entreprise</a></li>
       <li><a href="#" alt="">Vous êtes une association</a></li>
     </ul>
      <!-- List 3 -->
     <ul>
-      <li class="list-title">Légal</li>
+      <li class="list-title"><h3>Légal</h3></li>
       <li><a href="#" alt="">Conditions Générales</a></li>
       <li><a href="#" alt="">Charte de confidentialité</a></li>
       <li><a href="#" alt="">Mentions légales</a></li>
     </ul>
     <ul>
-      <li><a href="#" alt="">Facebook</a></li>
-      <li><a href="#" alt="">Twitter</a></li>
-      <li><a href="#" alt="">Instagram</a></li>
-      <li><a href="#" alt="">Linkedin</a></li>
+      <li><a href="https://www.facebook.com/cforgood" alt=""><%= partial 'shared/svg/icon_facebook' %>Facebook</a></li>
+      <li><a href="https://twitter.com/CforGood" alt=""><%= partial 'shared/svg/icon_twitter' %>Twitter</a></li>
+      <li><a href="https://www.instagram.com/cforgood/" alt=""><%= partial 'shared/svg/icon_instagram' %>Instagram</a></li>
+      <li><a href="https://fr.linkedin.com/company/cforgood" alt=""><%= partial 'shared/svg/icon_linkedin' %>Linkedin</a></li>
     </ul>
   </div>
 
   <div class="copyright">
-    <p>Réalisé avec love à Bordeaux - © CforGood 2016</p>
+    <p>Réalisé avec <%= partial 'shared/svg/icon_heart' %> à Bordeaux - © CforGood 2016</p>
   </div>
 </footer>

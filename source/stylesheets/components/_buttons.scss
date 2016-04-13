@@ -83,6 +83,14 @@ button.cta-home {
   }
 }
 
+button.nl-submit {
+  background-color: $turquoise;
+
+  &:hover {
+    background-color: $darken-turquoise;
+  }
+}
+
 /**
  * Component: Button
  * --------------------------------------------------

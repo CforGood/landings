@@ -9,42 +9,37 @@
 
 .newsletter-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 25px;
-  padding: 0 20px;
+  align-items: center;
+
+  h3 {
+    margin-bottom: 20px;
+  }
 
   form {
-    display: flex;
-    flex-wrap: wrap;
-    width: 430px;
 
-    input {
-      flex: 1;
-      flex-grow: 10;
-      margin-right: 10px;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 2px;
-    }
+    #mc_embed_signup_scroll {
+      display: flex;
 
-    input[type="email"]:focus {
-      border-color: rgba(126, 239, 104, 0.8);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(25, 162, 194, 1);
-      outline: 0 none;
-    }
+      input {
+        flex: 1;
+        flex-grow: 10;
+        margin-right: 10px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 2px;
+      }
 
-    button {
-      flex-grow: 1;
-      border-radius: 2px;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: 100;
-      border: 1px solid #19A2C2;
-      background-color: #36D3DA;
-      @include transition(all, .3s, ease-in-out);
+      input[type="email"]{
+        min-width: 300px;
+        color: $grey;
+      }
 
-      &:hover {
-        background-color: #19A2C2;
+      input[type="email"]:focus {
+        border-color: rgba(126, 239, 104, 0.8);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(25, 162, 194, 1);
+        outline: 0 none;
       }
     }
   }
