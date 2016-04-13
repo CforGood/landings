@@ -372,6 +372,25 @@
     }
   }
 
+  section#call-to-action {
+    padding: 0 0 80px;
+
+    .cta-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 40%;
+
+      a {
+        padding-top: 10px;
+        font-size: 1.3rem;
+        text-decoration: underline;
+      }
+    }
+  }
+
   section#partnerships {
     display: flex;
     justify-content: center;

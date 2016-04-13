@@ -73,6 +73,16 @@ button.device-switcher {
   }
 }
 
+button.cta-home {
+  padding: 20px 40px;
+  font-size: 1.7rem;
+  background-color: $turquoise;
+
+  &:hover {
+    background-color: $darken-turquoise;
+  }
+}
+
 /**
  * Component: Button
  * --------------------------------------------------
