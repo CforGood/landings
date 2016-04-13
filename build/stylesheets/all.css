@@ -10297,10 +10297,66 @@ button.close {
 /* Our CSS */
 /* line 1, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_footer.scss */
 footer {
-  padding: 80px 0;
+  padding: 80px 0 0;
   margin: 0 auto;
   max-width: 1280px;
+  color: #fff;
   background-color: #3E4149; }
+  /* line 8, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_footer.scss */
+  footer a, footer a:active, footer a:focus {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #A3A5A8; }
+    /* line 13, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_footer.scss */
+    footer a:hover, footer a:active:hover, footer a:focus:hover {
+      color: #fff; }
+  /* line 18, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_footer.scss */
+  footer .links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 80px 0;
+    margin: 0 auto;
+    max-width: 960px; }
+    /* line 26, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_footer.scss */
+    footer .links ul li {
+      margin-bottom: 5px; }
+      /* line 29, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_footer.scss */
+      footer .links ul li svg {
+        margin-right: 7px; }
+  /* line 36, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_footer.scss */
+  footer .copyright {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 50px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 42, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_footer.scss */
+    footer .copyright p {
+      padding: 0;
+      margin: 0; }
+    /* line 47, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_footer.scss */
+    footer .copyright svg {
+      position: relative;
+      top: 5px; }
 
 /* line 1, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/layout/_modals.scss */
 #modal-video {
@@ -10514,11 +10570,18 @@ button.cta-home {
   button.cta-home:hover {
     background-color: #19A2C2; }
 
+/* line 87, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+button.nl-submit {
+  background-color: #36D3DA; }
+  /* line 90, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+  button.nl-submit:hover {
+    background-color: #19A2C2; }
+
 /**
  * Component: Button
  * --------------------------------------------------
  */
-/* line 92, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+/* line 100, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
 .ripple-area {
   position: absolute;
   top: 0;
@@ -10528,7 +10591,7 @@ button.cta-home {
   overflow: hidden;
   background: transparent; }
 
-/* line 102, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+/* line 110, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
 .ripple-circle {
   position: absolute;
   top: 50%;
@@ -10540,7 +10603,7 @@ button.cta-home {
   height: 0;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.25); }
-  /* line 112, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
+  /* line 120, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_buttons.scss */
   .ripple-area.is-active .ripple-circle {
     -webkit-animation: a-ripple .4s ease-in;
             animation: a-ripple .4s ease-in; }
@@ -10580,24 +10643,30 @@ button.cta-home {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 25px;
-  padding: 0 20px; }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
   /* line 17, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
-  .newsletter-form form {
+  .newsletter-form h3 {
+    margin-bottom: 20px; }
+  /* line 23, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
+  .newsletter-form form #mc_embed_signup_scroll {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    width: 430px; }
-    /* line 22, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
-    .newsletter-form form input {
+    display: flex; }
+    /* line 26, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
+    .newsletter-form form #mc_embed_signup_scroll input {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
           -ms-flex: 1;
@@ -10610,40 +10679,27 @@ button.cta-home {
       padding: 10px 15px;
       border: none;
       border-radius: 2px; }
-    /* line 31, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
-    .newsletter-form form input[type="email"]:focus {
+    /* line 35, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
+    .newsletter-form form #mc_embed_signup_scroll input[type="email"] {
+      min-width: 300px;
+      color: #A3A5A8; }
+    /* line 40, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
+    .newsletter-form form #mc_embed_signup_scroll input[type="email"]:focus {
       border-color: rgba(126, 239, 104, 0.8);
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #19a2c2;
       outline: 0 none; }
-    /* line 37, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
-    .newsletter-form form button {
-      -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-      border-radius: 2px;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: 100;
-      border: 1px solid #19A2C2;
-      background-color: #36D3DA;
-      -webkit-transition: all, 0.3s, ease-in-out;
-      transition: all, 0.3s, ease-in-out; }
-      /* line 47, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
-      .newsletter-form form button:hover {
-        background-color: #19A2C2; }
 
 @media only screen and (max-width: 768px) {
-  /* line 56, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
+  /* line 51, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
   .newsletter-form form {
     display: block;
     border: 1px solid #19A2C2; }
-    /* line 60, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
+    /* line 55, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
     .newsletter-form form input {
       width: 100%;
       border-radius: 2px 2px 0 0;
       text-align: center; }
-    /* line 66, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
+    /* line 61, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_newsletter.scss */
     .newsletter-form form button {
       width: 100%;
       padding: 10px;
