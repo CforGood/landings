@@ -1,5 +1,12 @@
 <div class="container">
   <h1>Le blog de CforGood</h1>
+
+    <h2>Recent Articles</h2>
+    <% blog.articles[0...5].each do |article| %>
+      <h2><%= link_to article.title, article %></h2>
+    <% end %>
+
+
   <% if paginate && num_pages > 1 %>
     <p>Page <%= page_number %> of <%= num_pages %></p>
 
