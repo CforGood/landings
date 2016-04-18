@@ -45,11 +45,16 @@
     border-top: 1px solid #E5E5E5;
 
     .section-icon {
+      display: flex;
+      justify-content: center;
       padding: 0 6%;
       width: 50%;
     }
 
     .section-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding: 0 6%;
       width: 50%;
     }
