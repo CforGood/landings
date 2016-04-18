@@ -1209,7 +1209,8 @@
 
 })(jQuery, window, document);
 </script>
-    Hello World
+    <p>Hello World</p>
+
     <footer>
   <div class="newsletter-form">
     <h3>Inscrivez-vous pour recevoir notre actualité</h3>

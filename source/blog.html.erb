@@ -3,7 +3,7 @@
 
     <h2>Recent Articles</h2>
     <% blog.articles[0...5].each do |article| %>
-      <h2><%= link_to article.title, article %></h2>
+      <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
     <% end %>
 
 

@@ -18,6 +18,7 @@
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">Hello World</content>
+    <content type="html">&lt;p&gt;Hello World&lt;/p&gt;
+</content>
   </entry>
 </feed>
