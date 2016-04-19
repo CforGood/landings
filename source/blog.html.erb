@@ -1,8 +1,14 @@
+---
+pageable: true
+per_page: 10
+---
+
 <div class="container">
   <h1>Le blog de CforGood</h1>
 
     <h2>Recent Articles</h2>
     <% blog.articles[0...5].each do |article| %>
+
       <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
     <% end %>
 

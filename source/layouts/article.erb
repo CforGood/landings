@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <%= partial "shared/head" %>
+  </head>
+
+  <body class="article">
+    <%= partial "shared/nav" %>
+    <header class="article-header" style="background-image: url('<%= image_path current_article.data.thumbnail %>')">
+      <div class="article-header-info">
+        <i><%= current_article.data.category %></i>
+        <h1><%= current_article.title %></h1>
+        <span><%= current_article.data.synopsis %></span>
+      </div>
+      <div class="article-header-author">
+        <% author = find_author(current_article.data.author) %>
+        <img src="<%= image_path author.photo %>" alt="<%= author.name %>">
+        <i>rédigé par<br><strong><%= author.name %></strong><br>le<time><%= current_article.date.strftime('%e %b %Y') %></time></i>
+      </div>
+    </header>
+    <article class="article-content">
+      <%= yield %>
+    </article>
+    <div class="article-author">
+      <h4>Auteur</h4>
+      <div class="author-details">
+        <img src="<%= image_path author.photo %>" alt="<%= author.name %>">
+        <div class="author-info">
+          <h5><%= author.name %></h5>
+          <p><%= author.introduction %></h4></p>
+          <a href="http://twitter.com/<%= author.twitter%>"><%= partial "shared/svg/icon_twitter" %></a>
+        </div>
+      </div>
+    </div>
+    <div id="disqus_thread"></div>
+    <%= partial "shared/footer" %>
+    <!-- Disqus Comments area -->
+    <%= partial "shared/disqus" %>
+  </body>
+</html>

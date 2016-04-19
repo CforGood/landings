@@ -1,0 +1,29 @@
+- allan:
+  name: Allan Floury
+  introduction: Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper.
+  photo: authors/allan_floury.jpg
+  twitter: michaelrshannon
+
+- damien:
+  name: Damien Bernay
+  introduction: Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper.
+  photo: authors/damien_bernay.jpg
+  twitter: damien_brn
+
+- sarah:
+  name: Sarah Harmach
+  introduction: Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper.
+  photo: authors/sarah_harmach.jpg
+  twitter: sarah_cforgood
+
+- frederique:
+  name: Frédérique Petris
+  introduction: Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper.
+  photo: authors/frederique_petris.jpg
+  twitter: fredpetris
+
+- cedric:
+  name: Cédric Menteau
+  introduction: Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper.
+  photo: authors/cedric_menteau.jpg
+  twitter: cedricmenteau

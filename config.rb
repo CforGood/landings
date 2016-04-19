@@ -59,7 +59,7 @@ activate :autoprefixer
 #
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
-#
+
 # A path which all have the same layout
 # with_layout :admin do
 #   page "/admin/*"
@@ -80,11 +80,20 @@ activate :autoprefixer
 # activate :livereload
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def find_author(author_slug)
+    author_slug = author_slug.downcase
+    result = data.authors.select {|author| author.keys.first == author_slug }
+    raise ArgumentError unless result.any?
+    result.first
+  end
+
+  def articles_by_author(author)
+    sitemap.resources.select do |resource|
+    resource.data.author == author.name
+    end.sort_by { |resource| resource.data.date }
+  end
+end
 
 set :css_dir, 'stylesheets'
 

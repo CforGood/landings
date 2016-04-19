@@ -149,6 +149,7 @@ DEPENDENCIES
   builder (~> 3.0)
   font-awesome-sass (= 4.5.0)
   jquery-middleman
+  kramdown
   middleman (~> 3.4.1)
   middleman-autoprefixer
   middleman-blog (~> 3.5.3)
