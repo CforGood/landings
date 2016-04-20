@@ -4,3 +4,4 @@
 
 //= require typed
 //= require slick
+//= require readingTime

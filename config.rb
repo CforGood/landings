@@ -11,7 +11,7 @@ activate :directory_indexes
 # Blog Activation
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
-  #blog.prefix = "blog"
+  # blog.prefix = "blog"
 
   # Matcher for blog source files
   blog.permalink = "blog/:title"

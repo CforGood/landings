@@ -3,34 +3,64 @@ pageable: true
 per_page: 10
 ---
 
-<div class="container">
-  <h1>Le blog de CforGood</h1>
 
-    <h2>Recent Articles</h2>
-    <% blog.articles[0...5].each do |article| %>
-
-      <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
-    <% end %>
-
-
-  <% if paginate && num_pages > 1 %>
-    <p>Page <%= page_number %> of <%= num_pages %></p>
-
-    <% if prev_page %>
-      <p><%= link_to 'Previous page', prev_page %></p>
-    <% end %>
+<div class="blog-index">
+  <% blog.articles[0...1].each do |article, i| %>
+    <a href="<%= article.url %>" alt="<%= article.title %>">
+      <header class="article-header" style="background-image: url('<%= image_path article.data.thumbnail %>')">
+        <div class="article-header-info">
+          <i><%= article.data.category %></i>
+          <h1><%= article.title %></h1>
+          <span><%= article.data.synopsis %></span>
+        </div>
+        <div class="article-header-author">
+          <% author = find_author(article.data.author) %>
+          <img src="<%= image_path author.photo %>" alt="<%= author.name %>">
+          <i>rédigé par<br><strong><%= author.name %></strong><br>le<time><%= article.date.strftime('%e %b %Y') %></time></i>
+        </div>
+      </header>
+    </a>
   <% end %>
 
-  <% page_articles.each_with_index do |article, i| %>
-    <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
-    <!-- use article.summary(250) if you have Nokogiri available to show just
-         the first 250 characters -->
-    <%= article.body %>
-  <% end %>
+  <div class="container blog-all">
+    <ul >
+      <% blog.articles[1... blog.articles.size].each do |article| %>
+        <li data-file="<%= article.url %>" data-target="article">
 
-  <% if paginate %>
-    <% if next_page %>
-      <p><%= link_to 'Next page', next_page %></p>
+          <div class="article-thumbnail" style="background-image: url('<%= image_path article.data.thumbnail %>')">
+            <i><%= article.data.category %></i>
+          </div>
+          <h3><%= link_to article.title, article %><span><%= article.date.strftime('%b %e') %></span></h3>
+          <p><%= article.data.synopsis %></p>
+          <div class="eta"></div>
+
+          <script>
+            $(function() {
+              $('li').each(function() {
+                $(this).readingTime({
+                  readingTimeTarget: $(this).find('.eta'),
+                  remotePath: $(this).attr('data-file'),
+                  remoteTarget: $(this).attr('data-target')
+                });
+              });
+            });
+          </script>
+
+        </li>
+      <% end %>
+    </ul>
+
+    <% if paginate && num_pages > 1 %>
+      <p>Page <%= page_number %> of <%= num_pages %></p>
+      <% if prev_page %>
+        <p><%= link_to 'Previous page', prev_page %></p>
+      <% end %>
     <% end %>
-  <% end %>
+
+    <% if paginate %>
+      <% if next_page %>
+        <p><%= link_to 'Next page', next_page %></p>
+      <% end %>
+    <% end %>
+  </div>
 </div>

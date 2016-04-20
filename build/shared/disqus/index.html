@@ -21,7 +21,7 @@
 <![endif]-->
   </head>
 
-  <body class="x2016 x2016_01 x2016_01_01">
+  <body class="shared shared_disqus shared_disqus_index">
     <nav id="nav">
   <div class="container">
     <div class="nav-items">
@@ -1209,16 +1209,27 @@
 
 })(jQuery, window, document);
 </script>
-    <h1>Archive for
-    Jan  1 2016
-</h1>
+    <script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
 
+s.src = '//cforgood.disqus.com/embed.js';
 
-<ul>
-    <li><a href="../../blog/test-article">My Middleman Blog Post :cat:</a> <span>Jan  1</span></li>
-</ul>
-
-
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     <footer>
   <div class="newsletter-form">
     <h3>Inscrivez-vous pour recevoir notre actualité</h3>

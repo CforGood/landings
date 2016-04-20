@@ -19,6 +19,7 @@
       </div>
     </header>
     <article class="article-content">
+      <div class="eta"></div>
       <%= yield %>
     </article>
     <div class="article-author">
@@ -38,3 +39,7 @@
     <%= partial "shared/disqus" %>
   </body>
 </html>
+
+<script>
+  $('article').readingTime();
+</script>
