@@ -1,7 +1,7 @@
 ---
 title: "My Middleman Blog Post 2"
 date: 2016-01-02 3:43
-category: CforGood
+category: tendance
 author: cedric
 thumbnail: blog/test.jpg
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.

@@ -6,6 +6,7 @@ author: cedric
 thumbnail: blog/test.jpg
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
 layout: article
+tags: cforgood
 ---
 
 ## Lorem ipsum dolor

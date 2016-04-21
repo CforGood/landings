@@ -14,7 +14,7 @@ activate :blog do |blog|
   # blog.prefix = "blog"
 
   # Matcher for blog source files
-  blog.permalink = "blog/:title"
+  blog.permalink = "blog/{category}/:title"
   blog.sources = "articles/:year-:month-:day-:title.html"
   blog.layout = "layout"
   # blog.taglink = "tags/{tag}.html"
@@ -32,6 +32,14 @@ activate :blog do |blog|
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = "page/{num}"
+
+  # Enable Categories
+  blog.custom_collections = {
+    category: {
+      link: 'blog/categories/{category}',
+      template: '/category.html'
+    }
+  }
 end
 
 page "/feed.xml", layout: false

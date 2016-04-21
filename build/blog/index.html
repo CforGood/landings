@@ -1209,53 +1209,191 @@
 
 })(jQuery, window, document);
 </script>
-    <div class="container">
-  <h1>Le blog de CforGood</h1>
+    <div class="blog-index">
+    <a href="/blog/test-article-5" alt="My Middleman Blog Post 5">
+      <header class="article-header" style="background-image: url('../images/blog/test.jpg')">
+        <div class="article-header-info">
+          <i>CforGood</i>
+          <h1>My Middleman Blog Post 5</h1>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.</span>
+        </div>
+        <div class="article-header-author">
+          <img src="../images/authors/cedric_menteau.jpg" alt="Cédric Menteau">
+          <i>rédigé par<br><strong>Cédric Menteau</strong><br>le<time> 5 Jan 2016</time></i>
+        </div>
+      </header>
+    </a>
 
-    <h2>Recent Articles</h2>
+  <div class="container blog-all">
+    <ul >
+        <a href="/blog/test-article-4" alt="My Middleman Blog Post 4">
+          <li data-file="/blog/test-article-4" data-target="article">
+            <div class="frame-thumbnail">
+              <i>CforGood</i>
+              <div class="article-thumbnail" style="background-image: url('../images/blog/test.jpg')">
+              </div>
+            </div>
+            <h3>My Middleman Blog Post 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.</p>
+            <div class="article-info">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="15px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>clock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="clock" sketch:type="MSLayerGroup">
+            <path d="M16,0.003 C24.837,0.003 32,7.166 32,16.003 C32,24.84 24.837,32.004 16,32.004 C7.163,32.004 0,24.84 0,16.003 C0,7.166 7.163,0.003 16,0.003 L16,0.003 Z" id="Shape" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M23,15.004 L17,15.004 L17,8.002 C17,7.449 16.552,7.002 16,7.002 C15.448,7.002 15,7.449 15,8.002 L15,16.002 C15,16.555 15.448,17.002 16,17.002 L23,17.002 C23.553,17.002 24,16.555 24,16.002 C24,15.452 23.553,15.004 23,15.004 L23,15.004 Z" id="Shape" fill="#333333" sketch:type="MSShapeGroup"></path>
+            <path d="M16,0.003 C7.163,0.003 0,7.166 0,16.003 C0,24.84 7.163,32.004 16,32.004 C24.837,32.004 32,24.84 32,16.003 C32,7.166 24.837,0.003 16,0.003 L16,0.003 Z M16,29.004 C8.832,29.004 3,23.172 3,16.003 C3,8.835 8.832,3.003 16,3.003 C23.168,3.003 29,8.835 29,16.003 C29,23.172 23.168,29.004 16,29.004 L16,29.004 Z" id="Shape" fill="#333333" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
+              <i><div class="eta"></div> de lecture - Partagé le<time> 4 Jan 2016</time> par <strong>cedric</strong></i>
+            </div>
 
-      <h2><a href="/blog/test-article">My Middleman Blog Post :cat:</a></h2>
+            <script>
+              $(function() {
+                $('li').each(function() {
+                  $(this).readingTime({
+                    readingTimeTarget: $(this).find('.eta'),
+                    remotePath: $(this).attr('data-file'),
+                    remoteTarget: $(this).attr('data-target')
+                  });
+                });
+              });
+            </script>
+
+          </li>
+        </a>
+        <a href="/blog/test-article-3" alt="My Middleman Blog Post 3">
+          <li data-file="/blog/test-article-3" data-target="article">
+            <div class="frame-thumbnail">
+              <i>CforGood</i>
+              <div class="article-thumbnail" style="background-image: url('../images/blog/test.jpg')">
+              </div>
+            </div>
+            <h3>My Middleman Blog Post 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.</p>
+            <div class="article-info">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="15px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>clock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="clock" sketch:type="MSLayerGroup">
+            <path d="M16,0.003 C24.837,0.003 32,7.166 32,16.003 C32,24.84 24.837,32.004 16,32.004 C7.163,32.004 0,24.84 0,16.003 C0,7.166 7.163,0.003 16,0.003 L16,0.003 Z" id="Shape" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M23,15.004 L17,15.004 L17,8.002 C17,7.449 16.552,7.002 16,7.002 C15.448,7.002 15,7.449 15,8.002 L15,16.002 C15,16.555 15.448,17.002 16,17.002 L23,17.002 C23.553,17.002 24,16.555 24,16.002 C24,15.452 23.553,15.004 23,15.004 L23,15.004 Z" id="Shape" fill="#333333" sketch:type="MSShapeGroup"></path>
+            <path d="M16,0.003 C7.163,0.003 0,7.166 0,16.003 C0,24.84 7.163,32.004 16,32.004 C24.837,32.004 32,24.84 32,16.003 C32,7.166 24.837,0.003 16,0.003 L16,0.003 Z M16,29.004 C8.832,29.004 3,23.172 3,16.003 C3,8.835 8.832,3.003 16,3.003 C23.168,3.003 29,8.835 29,16.003 C29,23.172 23.168,29.004 16,29.004 L16,29.004 Z" id="Shape" fill="#333333" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
+              <i><div class="eta"></div> de lecture - Partagé le<time> 3 Jan 2016</time> par <strong>cedric</strong></i>
+            </div>
+
+            <script>
+              $(function() {
+                $('li').each(function() {
+                  $(this).readingTime({
+                    readingTimeTarget: $(this).find('.eta'),
+                    remotePath: $(this).attr('data-file'),
+                    remoteTarget: $(this).attr('data-target')
+                  });
+                });
+              });
+            </script>
+
+          </li>
+        </a>
+        <a href="/blog/test-article-2" alt="My Middleman Blog Post 2">
+          <li data-file="/blog/test-article-2" data-target="article">
+            <div class="frame-thumbnail">
+              <i>CforGood</i>
+              <div class="article-thumbnail" style="background-image: url('../images/blog/test.jpg')">
+              </div>
+            </div>
+            <h3>My Middleman Blog Post 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.</p>
+            <div class="article-info">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="15px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>clock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="clock" sketch:type="MSLayerGroup">
+            <path d="M16,0.003 C24.837,0.003 32,7.166 32,16.003 C32,24.84 24.837,32.004 16,32.004 C7.163,32.004 0,24.84 0,16.003 C0,7.166 7.163,0.003 16,0.003 L16,0.003 Z" id="Shape" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M23,15.004 L17,15.004 L17,8.002 C17,7.449 16.552,7.002 16,7.002 C15.448,7.002 15,7.449 15,8.002 L15,16.002 C15,16.555 15.448,17.002 16,17.002 L23,17.002 C23.553,17.002 24,16.555 24,16.002 C24,15.452 23.553,15.004 23,15.004 L23,15.004 Z" id="Shape" fill="#333333" sketch:type="MSShapeGroup"></path>
+            <path d="M16,0.003 C7.163,0.003 0,7.166 0,16.003 C0,24.84 7.163,32.004 16,32.004 C24.837,32.004 32,24.84 32,16.003 C32,7.166 24.837,0.003 16,0.003 L16,0.003 Z M16,29.004 C8.832,29.004 3,23.172 3,16.003 C3,8.835 8.832,3.003 16,3.003 C23.168,3.003 29,8.835 29,16.003 C29,23.172 23.168,29.004 16,29.004 L16,29.004 Z" id="Shape" fill="#333333" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
+              <i><div class="eta"></div> de lecture - Partagé le<time> 2 Jan 2016</time> par <strong>cedric</strong></i>
+            </div>
+
+            <script>
+              $(function() {
+                $('li').each(function() {
+                  $(this).readingTime({
+                    readingTimeTarget: $(this).find('.eta'),
+                    remotePath: $(this).attr('data-file'),
+                    remoteTarget: $(this).attr('data-target')
+                  });
+                });
+              });
+            </script>
+
+          </li>
+        </a>
+        <a href="/blog/test-article" alt="My Middleman Blog Post :cat:">
+          <li data-file="/blog/test-article" data-target="article">
+            <div class="frame-thumbnail">
+              <i>CforGood</i>
+              <div class="article-thumbnail" style="background-image: url('../images/blog/test.jpg')">
+              </div>
+            </div>
+            <h3>My Middleman Blog Post :cat:</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.</p>
+            <div class="article-info">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="15px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>clock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="clock" sketch:type="MSLayerGroup">
+            <path d="M16,0.003 C24.837,0.003 32,7.166 32,16.003 C32,24.84 24.837,32.004 16,32.004 C7.163,32.004 0,24.84 0,16.003 C0,7.166 7.163,0.003 16,0.003 L16,0.003 Z" id="Shape" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M23,15.004 L17,15.004 L17,8.002 C17,7.449 16.552,7.002 16,7.002 C15.448,7.002 15,7.449 15,8.002 L15,16.002 C15,16.555 15.448,17.002 16,17.002 L23,17.002 C23.553,17.002 24,16.555 24,16.002 C24,15.452 23.553,15.004 23,15.004 L23,15.004 Z" id="Shape" fill="#333333" sketch:type="MSShapeGroup"></path>
+            <path d="M16,0.003 C7.163,0.003 0,7.166 0,16.003 C0,24.84 7.163,32.004 16,32.004 C24.837,32.004 32,24.84 32,16.003 C32,7.166 24.837,0.003 16,0.003 L16,0.003 Z M16,29.004 C8.832,29.004 3,23.172 3,16.003 C3,8.835 8.832,3.003 16,3.003 C23.168,3.003 29,8.835 29,16.003 C29,23.172 23.168,29.004 16,29.004 L16,29.004 Z" id="Shape" fill="#333333" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
+              <i><div class="eta"></div> de lecture - Partagé le<time> 1 Jan 2016</time> par <strong>cedric</strong></i>
+            </div>
+
+            <script>
+              $(function() {
+                $('li').each(function() {
+                  $(this).readingTime({
+                    readingTimeTarget: $(this).find('.eta'),
+                    remotePath: $(this).attr('data-file'),
+                    remoteTarget: $(this).attr('data-target')
+                  });
+                });
+              });
+            </script>
+
+          </li>
+        </a>
+    </ul>
 
 
-
-    <h2><a href="test-article">My Middleman Blog Post :cat:</a> <span>Jan  1</span></h2>
-    <!-- use article.summary(250) if you have Nokogiri available to show just
-         the first 250 characters -->
-    <h2 id="lorem-ipsum-dolor">Lorem ipsum dolor</h2>
-
-<h3 id="lorem-ipsum-dolor-1">Lorem ipsum dolor</h3>
-
-<ul>
-  <li>Lorem ipsum dolor</li>
-  <li>Lorem ipsum dolor</li>
-  <li>Lorem ipsum dolor</li>
-</ul>
-
-<blockquote>
-  <p>Lorem ipsum dolor</p>
-</blockquote>
-
-<p><a href="www.cforgood.com">Lorest link test</a></p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue. Vestibulum auctor augue nec erat iaculis tempor. Cras in urna quis purus pharetra vehicula nec nec turpis. Vivamus elit erat, dapibus nec molestie eget, dictum in nibh. Cras sed leo nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec facilisis non nunc ut fringilla. Integer gravida quis justo ut sagittis. Aenean in rutrum sem. Donec volutpat odio eget placerat facilisis. Curabitur vel neque eleifend, gravida quam ac, accumsan ipsum. Sed eget sagittis ex. Donec ac bibendum mi. Maecenas sit amet malesuada arcu, ac tincidunt ante. Duis fringilla ante felis, at ullamcorper enim posuere congue. Donec in ligula a felis luctus auctor.</p>
-
-<p><img alt="Ceci est un test" src="../images/blog/test_2.jpg" /></p>
-
-<p>Donec ultricies non nisl sit amet auctor. Praesent vitae massa nisi. Etiam vel cursus mi, id rutrum nunc. Suspendisse sit amet volutpat ligula. Aenean ultrices sit amet nisi malesuada tristique. In placerat ligula est. Curabitur volutpat sem arcu, vitae cursus eros tincidunt mollis. Nulla sollicitudin mi rutrum tincidunt vestibulum.</p>
-
-<p>Integer non ipsum lobortis, scelerisque enim eu, elementum neque. Duis facilisis gravida libero eget rhoncus. Praesent scelerisque risus nec rhoncus interdum. Maecenas imperdiet commodo orci feugiat volutpat. Phasellus metus metus, imperdiet a semper ut, commodo at lectus. Nunc odio tellus, cursus sed erat a, congue mollis est. Pellentesque id turpis eget augue elementum venenatis vitae in lorem. Praesent lobortis eu lorem et imperdiet. Proin sit amet neque id metus mollis imperdiet. Duis et nibh non massa auctor feugiat vel quis metus. Praesent malesuada justo tellus. Quisque dignissim nunc quis elit pretium, sit amet posuere diam imperdiet. Curabitur magna dui, convallis sed lorem et, iaculis euismod odio. Mauris eros mi, pulvinar sit amet justo vitae, sodales ornare turpis.</p>
-
-<div class="article-video">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/jh0PosdTgTQ" frameborder="0" allowfullscreen=""></iframe>
-</div>
-
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat justo vel tortor interdum, quis porta lectus venenatis. Nulla eros justo, tincidunt eget purus at, viverra laoreet orci. Quisque ornare luctus felis. Nunc sed lobortis neque. Nulla augue nunc, aliquet eu mauris eu, maximus efficitur quam. Etiam sodales dui ac arcu pretium, ullamcorper fringilla lacus sagittis. Integer vel porttitor ligula. Phasellus vel diam mauris. Integer ornare sagittis tellus. Mauris nec sem sapien. Aliquam efficitur sem quis enim luctus dictum. Fusce quis suscipit odio. Nulla pellentesque, orci nec fermentum rhoncus, sapien neque interdum sapien, nec pretium nulla massa sed nulla.</p>
-
-<p><img alt="Ceci est un test" src="../images/blog/test_3.gif" /></p>
-
-<p>Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper. Quisque sit amet laoreet ipsum. Duis dapibus erat at volutpat malesuada. Integer vitae orci nec nunc laoreet tincidunt sed sed nunc. Nam finibus turpis ac pellentesque dictum. Morbi pretium elit in nulla iaculis, ac semper ante sollicitudin. Integer fringilla placerat justo, nec tempus turpis venenatis in. Quisque eu ante sem. Donec feugiat mi arcu, ac volutpat turpis consequat nec. Aenean id libero vestibulum, egestas augue eu, iaculis felis. Aliquam at ligula lacus. Aenean egestas, ex egestas accumsan efficitur, magna mauris cursus metus, auctor condimentum justo metus non lorem. Vivamus tempor ligula nibh, vitae suscipit tortor posuere vitae. Morbi malesuada eros at tortor venenatis, vel placerat justo faucibus.</p>
-
-
+  </div>
 </div>
     <footer>
   <div class="newsletter-form">

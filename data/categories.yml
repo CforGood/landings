@@ -1,0 +1,19 @@
+- name: CforGood
+  url: "blog/categories/cforgood"
+  color: '#000'
+
+- name: Tendance
+  url: "blog/categories/tendance"
+  color: '#333'
+
+- name: Communauté
+  url: "blog/categories/communaute"
+  color: '#566'
+
+- name: Partenaires
+  url: "blog/categories/partenaires"
+  color: '#566'
+
+- name: Événement
+  url: "blog/categories/evenement"
+  color: '#566'

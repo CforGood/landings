@@ -1,3 +1,25 @@
+.categories-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.medium-container {
+  padding: 60px 0;
+  background-color: #f4f4f4;
+
+  .medium {
+    display: flex;
+
+    .medium-postcard {
+      padding: 0 1%;
+      width: 33.33333%;
+    }
+  }
+}
+
+
+
 .blog-index {
   .article-header:hover {
     &:after {
@@ -5,8 +27,9 @@
     }
   }
 
-  .blog-all {
-    padding: 60px 0;
+  /* SECOND SECTION - 2 posts *************************************************/
+  .blog-posts {
+    padding: 60px 0 0;
 
     .eta {
       display: inline-block;
@@ -72,6 +95,29 @@
 
           svg {
             margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  /* THIRD SECTION - all posts ************************************************/
+  .all-posts {
+    padding: 60px 0;
+
+    ul {
+      a, a:hover, a:focus, a:active {
+        width: 33.33333%;
+      }
+
+      li {
+        padding: 0 2% 4em 2%;
+
+         .frame-thumbnail {
+          height: 260px;
+
+          .article-thumbnail {
+            height: 260px;
           }
         }
       }

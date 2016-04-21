@@ -1,0 +1,25 @@
+---
+pageable: true
+per_page: 10
+---
+
+
+<div class="blog-index">
+  <% blog.articles[0...1].each do |article, i| %>
+    <a href="<%= article.url %>" alt="<%= article.title %>">
+      <header class="article-header" style="background-image: url('<%= image_path article.data.thumbnail %>')">
+        <div class="article-header-info">
+          <i><%= article.data.category %></i>
+          <h1><%= article.title %></h1>
+          <span><%= article.data.synopsis %></span>
+          <abbr><div class="eta"></div> de lecture</abbr>
+        </div>
+        <div class="article-header-author">
+          <% author = find_author(article.data.author) %>
+          <img src="<%= image_path author.photo %>" alt="<%= author.name %>">
+          <i>rédigé par<br><strong><%= author.name %></strong><br>le<time><%= article.date.strftime('%e %b %Y') %></time></i>
+        </div>
+      </header>
+    </a>
+  <% end %>
+</div>

@@ -1221,6 +1221,7 @@
       </div>
     </header>
     <article class="article-content">
+      <div class="eta"></div>
       <h2 id="lorem-ipsum-dolor">Lorem ipsum dolor</h2>
 
 <h3 id="lorem-ipsum-dolor-1">Lorem ipsum dolor</h3>
@@ -1354,3 +1355,7 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   </body>
 </html>
+
+<script>
+  $('article').readingTime();
+</script>
