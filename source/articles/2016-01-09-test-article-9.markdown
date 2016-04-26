@@ -1,7 +1,7 @@
 ---
 title: "My Middleman Blog Post 9"
 date: 2016-01-09 3:43
-tags: evenement
+author: cedric
 category: CforGood
 thumbnail: blog/test.jpg
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
