@@ -8,7 +8,7 @@
     <%= partial "shared/nav" %>
     <header class="article-header" style="background-image: url('<%= image_path current_article.data.thumbnail %>')">
       <div class="article-header-info">
-        <i><%= current_article.data.category %></i>
+        <i><%= current_article.data.tag %></i>
         <h1><%= current_article.title %></h1>
         <span><%= current_article.data.synopsis %></span>
       </div>
@@ -37,6 +37,8 @@
     <%= partial "shared/footer" %>
     <!-- Disqus Comments area -->
     <%= partial "shared/disqus" %>
+    <!-- Sumome -->
+    <%= partial "shared/sumome" %>
   </body>
 </html>
 

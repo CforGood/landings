@@ -1,8 +1,7 @@
 ---
 pageable: true
-per_page: 10
+per_page: 3
 ---
-
 
 <div class="blog-index">
   <% blog.articles[0...1].each do |article, i| %>
@@ -25,11 +24,16 @@ per_page: 10
   <% end %>
 
   <div class="container categories-container">
-    <% data.categories.each do |category| %>
-      <% link_to category.url do %>
-        <%= category.name %>
+
+
+    <% categories = build_categories(blog.articles) %>
+    <ul>
+      <% categories.each do |category| %>
+        <li>
+          <%= link_to category, category_path(category) %>
+        </li>
       <% end %>
-    <% end %>
+    </ul>
   </div>
 
   <div class="container blog-posts">
@@ -67,7 +71,7 @@ per_page: 10
   </div>
 
   <div class="container blog-posts all-posts">
-    <ul >
+    <ul>
       <% blog.articles[3... blog.articles.size].each do |article| %>
         <a href="<%= article.url %>" alt="<%= article.title %>">
           <li data-file="<%= article.url %>" data-target="article">
@@ -82,7 +86,6 @@ per_page: 10
               <%= partial "shared/svg/clock" %>
               <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
             </div>
-
           </li>
         </a>
       <% end %>
@@ -99,6 +102,23 @@ per_page: 10
         remotePath: $(this).attr('data-file'),
         remoteTarget: $(this).attr('data-target')
       });
+    });
+  });
+
+  // On document ready, initialise our code.
+  $(function(){
+    // Initialize buttonFilter code
+    buttonFilter.init();
+    // Instantiate MixItUp
+    $('#mixitup').mixItUp({
+      controls: {
+        enable: true // we won't be needing these
+      },
+      animationOptions: {
+        duration: 750,
+        easing: 'linear',
+        queue: false
+      }
     });
   });
 </script>

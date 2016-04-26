@@ -1,8 +1,8 @@
 ---
-title: "My Middleman Blog Post 5"
-date: 2016-01-05 3:43
+title: "My Middleman Blog Post :cat:"
+date: 2016-01-01 3:43
 author: cedric
-category: Événement
+category: Tendance
 thumbnail: blog/test.jpg
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
 layout: article

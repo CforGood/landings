@@ -1,6 +1,6 @@
 ---
-title: "My Middleman Blog Post 5"
-date: 2016-01-05 3:43
+title: "My Middleman Blog Post 6"
+date: 2016-01-06 3:43
 author: cedric
 category: Événement
 thumbnail: blog/test.jpg

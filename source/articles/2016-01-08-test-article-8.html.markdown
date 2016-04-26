@@ -1,12 +1,11 @@
 ---
-title: "My Middleman Blog Post :cat:"
-date: 2016-01-01 3:43
-category: CforGood
+title: "My Middleman Blog Post 8"
+date: 2016-01-08 3:43
 author: cedric
+category: CforGood
 thumbnail: blog/test.jpg
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
 layout: article
-tags: cforgood
 ---
 
 ## Lorem ipsum dolor

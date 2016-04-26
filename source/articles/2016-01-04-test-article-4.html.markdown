@@ -1,8 +1,8 @@
 ---
 title: "My Middleman Blog Post 4"
 date: 2016-01-04 3:43
-category: partenaires
 author: cedric
+category: Événement
 thumbnail: blog/test.jpg
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
 layout: article

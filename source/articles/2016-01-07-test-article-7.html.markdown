@@ -1,8 +1,8 @@
 ---
-title: "My Middleman Blog Post 5"
-date: 2016-01-05 3:43
+title: "My Middleman Blog Post 7"
+date: 2016-01-07 3:43
 author: cedric
-category: Événement
+category: CforGood
 thumbnail: blog/test.jpg
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
 layout: article

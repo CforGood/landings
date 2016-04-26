@@ -17,7 +17,6 @@ activate :blog do |blog|
   blog.permalink = "blog/{category}/:title"
   blog.sources = "articles/:year-:month-:day-:title.html"
   blog.layout = "layout"
-  # blog.taglink = "tags/{tag}.html"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
@@ -26,20 +25,21 @@ activate :blog do |blog|
   # blog.default_extension = ".markdown"
 
   blog.tag_template = "tag.html"
+  #blog.taglink = "{tag}.html"
+
   blog.calendar_template = "calendar.html"
+
+  blog.custom_collections = {
+    category: {
+      link: '/categories/{category}',
+      template: '/category.html'
+    }
+  }
 
   # Enable pagination
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = "page/{num}"
-
-  # Enable Categories
-  blog.custom_collections = {
-    category: {
-      link: 'blog/categories/{category}',
-      template: '/category.html'
-    }
-  }
 end
 
 page "/feed.xml", layout: false
@@ -100,6 +100,17 @@ helpers do
     sitemap.resources.select do |resource|
     resource.data.author == author.name
     end.sort_by { |resource| resource.data.date }
+  end
+
+  def build_categories(articles)
+    categories = []
+    articles.each do |article|
+      category = article.metadata[:page]['category']
+      unless categories.include? category
+        categories.push(category)
+      end
+    end
+    return categories
   end
 end
 
