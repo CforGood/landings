@@ -1,7 +1,7 @@
 #home-page {
 
   header {
-    padding-top: 70px;
+    padding: 70px 0 30px;
 
     .logo {
       width: 220px;
@@ -9,8 +9,18 @@
     }
 
     .vision {
-      padding-top: 30px;
+      padding-top: 60px;
       text-align: center;
+
+      span#typed {
+        font-family: "Raleway", "Helvetica", "sans-serif";
+        font-size: 2em;
+        margin-top: 22px;
+        margin-bottom: 11px;
+        font-weight: 500;
+        line-height: 1.1;
+        color: inherit;
+      }
     }
 
     svg {
