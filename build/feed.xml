@@ -11,10 +11,10 @@
   </author>
   <entry>
     <title>My Middleman Blog Post 11</title>
-    <link rel="alternate" href="http://blog.url.com/blog/cforgood/test-article-11"/>
-    <id>http://blog.url.com/blog/cforgood/test-article-11</id>
+    <link rel="alternate" href="http://blog.url.com/2016/01/11/test-article-11.html"/>
+    <id>http://blog.url.com/2016/01/11/test-article-11.html</id>
     <published>2016-01-11T04:43:00+01:00</published>
-    <updated>2016-04-25T16:45:41+02:00</updated>
+    <updated>2016-04-26T17:06:44+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -36,7 +36,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue. Vestibulum auctor augue nec erat iaculis tempor. Cras in urna quis purus pharetra vehicula nec nec turpis. Vivamus elit erat, dapibus nec molestie eget, dictum in nibh. Cras sed leo nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec facilisis non nunc ut fringilla. Integer gravida quis justo ut sagittis. Aenean in rutrum sem. Donec volutpat odio eget placerat facilisis. Curabitur vel neque eleifend, gravida quam ac, accumsan ipsum. Sed eget sagittis ex. Donec ac bibendum mi. Maecenas sit amet malesuada arcu, ac tincidunt ante. Duis fringilla ante felis, at ullamcorper enim posuere congue. Donec in ligula a felis luctus auctor.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ceci est un test" src="../../images/blog/test_2.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ceci est un test" src="../../../images/blog/test_2.jpg" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Donec ultricies non nisl sit amet auctor. Praesent vitae massa nisi. Etiam vel cursus mi, id rutrum nunc. Suspendisse sit amet volutpat ligula. Aenean ultrices sit amet nisi malesuada tristique. In placerat ligula est. Curabitur volutpat sem arcu, vitae cursus eros tincidunt mollis. Nulla sollicitudin mi rutrum tincidunt vestibulum.&lt;/p&gt;
 
@@ -48,15 +48,15 @@
 
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat justo vel tortor interdum, quis porta lectus venenatis. Nulla eros justo, tincidunt eget purus at, viverra laoreet orci. Quisque ornare luctus felis. Nunc sed lobortis neque. Nulla augue nunc, aliquet eu mauris eu, maximus efficitur quam. Etiam sodales dui ac arcu pretium, ullamcorper fringilla lacus sagittis. Integer vel porttitor ligula. Phasellus vel diam mauris. Integer ornare sagittis tellus. Mauris nec sem sapien. Aliquam efficitur sem quis enim luctus dictum. Fusce quis suscipit odio. Nulla pellentesque, orci nec fermentum rhoncus, sapien neque interdum sapien, nec pretium nulla massa sed nulla.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ceci est un test" src="../../images/blog/test_3.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ceci est un test" src="../../../images/blog/test_3.gif" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper. Quisque sit amet laoreet ipsum. Duis dapibus erat at volutpat malesuada. Integer vitae orci nec nunc laoreet tincidunt sed sed nunc. Nam finibus turpis ac pellentesque dictum. Morbi pretium elit in nulla iaculis, ac semper ante sollicitudin. Integer fringilla placerat justo, nec tempus turpis venenatis in. Quisque eu ante sem. Donec feugiat mi arcu, ac volutpat turpis consequat nec. Aenean id libero vestibulum, egestas augue eu, iaculis felis. Aliquam at ligula lacus. Aenean egestas, ex egestas accumsan efficitur, magna mauris cursus metus, auctor condimentum justo metus non lorem. Vivamus tempor ligula nibh, vitae suscipit tortor posuere vitae. Morbi malesuada eros at tortor venenatis, vel placerat justo faucibus.&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>My Middleman Blog Post 10</title>
-    <link rel="alternate" href="http://blog.url.com/blog/cforgood/test-article-10"/>
-    <id>http://blog.url.com/blog/cforgood/test-article-10</id>
+    <link rel="alternate" href="http://blog.url.com/2016/01/10/test-article-10.html"/>
+    <id>http://blog.url.com/2016/01/10/test-article-10.html</id>
     <published>2016-01-10T04:43:00+01:00</published>
     <updated>2016-04-25T16:45:34+02:00</updated>
     <author>
@@ -80,7 +80,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue. Vestibulum auctor augue nec erat iaculis tempor. Cras in urna quis purus pharetra vehicula nec nec turpis. Vivamus elit erat, dapibus nec molestie eget, dictum in nibh. Cras sed leo nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec facilisis non nunc ut fringilla. Integer gravida quis justo ut sagittis. Aenean in rutrum sem. Donec volutpat odio eget placerat facilisis. Curabitur vel neque eleifend, gravida quam ac, accumsan ipsum. Sed eget sagittis ex. Donec ac bibendum mi. Maecenas sit amet malesuada arcu, ac tincidunt ante. Duis fringilla ante felis, at ullamcorper enim posuere congue. Donec in ligula a felis luctus auctor.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ceci est un test" src="images/blog/test_2.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ceci est un test" src="../../../images/blog/test_2.jpg" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Donec ultricies non nisl sit amet auctor. Praesent vitae massa nisi. Etiam vel cursus mi, id rutrum nunc. Suspendisse sit amet volutpat ligula. Aenean ultrices sit amet nisi malesuada tristique. In placerat ligula est. Curabitur volutpat sem arcu, vitae cursus eros tincidunt mollis. Nulla sollicitudin mi rutrum tincidunt vestibulum.&lt;/p&gt;
 
@@ -92,15 +92,15 @@
 
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat justo vel tortor interdum, quis porta lectus venenatis. Nulla eros justo, tincidunt eget purus at, viverra laoreet orci. Quisque ornare luctus felis. Nunc sed lobortis neque. Nulla augue nunc, aliquet eu mauris eu, maximus efficitur quam. Etiam sodales dui ac arcu pretium, ullamcorper fringilla lacus sagittis. Integer vel porttitor ligula. Phasellus vel diam mauris. Integer ornare sagittis tellus. Mauris nec sem sapien. Aliquam efficitur sem quis enim luctus dictum. Fusce quis suscipit odio. Nulla pellentesque, orci nec fermentum rhoncus, sapien neque interdum sapien, nec pretium nulla massa sed nulla.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ceci est un test" src="images/blog/test_3.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ceci est un test" src="../../../images/blog/test_3.gif" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper. Quisque sit amet laoreet ipsum. Duis dapibus erat at volutpat malesuada. Integer vitae orci nec nunc laoreet tincidunt sed sed nunc. Nam finibus turpis ac pellentesque dictum. Morbi pretium elit in nulla iaculis, ac semper ante sollicitudin. Integer fringilla placerat justo, nec tempus turpis venenatis in. Quisque eu ante sem. Donec feugiat mi arcu, ac volutpat turpis consequat nec. Aenean id libero vestibulum, egestas augue eu, iaculis felis. Aliquam at ligula lacus. Aenean egestas, ex egestas accumsan efficitur, magna mauris cursus metus, auctor condimentum justo metus non lorem. Vivamus tempor ligula nibh, vitae suscipit tortor posuere vitae. Morbi malesuada eros at tortor venenatis, vel placerat justo faucibus.&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>My Middleman Blog Post 9</title>
-    <link rel="alternate" href="http://blog.url.com/blog/cforgood/test-article-9"/>
-    <id>http://blog.url.com/blog/cforgood/test-article-9</id>
+    <link rel="alternate" href="http://blog.url.com/2016/01/09/test-article-9.html"/>
+    <id>http://blog.url.com/2016/01/09/test-article-9.html</id>
     <published>2016-01-09T04:43:00+01:00</published>
     <updated>2016-04-26T16:52:06+02:00</updated>
     <author>
@@ -124,7 +124,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue. Vestibulum auctor augue nec erat iaculis tempor. Cras in urna quis purus pharetra vehicula nec nec turpis. Vivamus elit erat, dapibus nec molestie eget, dictum in nibh. Cras sed leo nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec facilisis non nunc ut fringilla. Integer gravida quis justo ut sagittis. Aenean in rutrum sem. Donec volutpat odio eget placerat facilisis. Curabitur vel neque eleifend, gravida quam ac, accumsan ipsum. Sed eget sagittis ex. Donec ac bibendum mi. Maecenas sit amet malesuada arcu, ac tincidunt ante. Duis fringilla ante felis, at ullamcorper enim posuere congue. Donec in ligula a felis luctus auctor.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ceci est un test" src="images/blog/test_2.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ceci est un test" src="../../../images/blog/test_2.jpg" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Donec ultricies non nisl sit amet auctor. Praesent vitae massa nisi. Etiam vel cursus mi, id rutrum nunc. Suspendisse sit amet volutpat ligula. Aenean ultrices sit amet nisi malesuada tristique. In placerat ligula est. Curabitur volutpat sem arcu, vitae cursus eros tincidunt mollis. Nulla sollicitudin mi rutrum tincidunt vestibulum.&lt;/p&gt;
 
@@ -136,15 +136,15 @@
 
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat justo vel tortor interdum, quis porta lectus venenatis. Nulla eros justo, tincidunt eget purus at, viverra laoreet orci. Quisque ornare luctus felis. Nunc sed lobortis neque. Nulla augue nunc, aliquet eu mauris eu, maximus efficitur quam. Etiam sodales dui ac arcu pretium, ullamcorper fringilla lacus sagittis. Integer vel porttitor ligula. Phasellus vel diam mauris. Integer ornare sagittis tellus. Mauris nec sem sapien. Aliquam efficitur sem quis enim luctus dictum. Fusce quis suscipit odio. Nulla pellentesque, orci nec fermentum rhoncus, sapien neque interdum sapien, nec pretium nulla massa sed nulla.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ceci est un test" src="images/blog/test_3.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ceci est un test" src="../../../images/blog/test_3.gif" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper. Quisque sit amet laoreet ipsum. Duis dapibus erat at volutpat malesuada. Integer vitae orci nec nunc laoreet tincidunt sed sed nunc. Nam finibus turpis ac pellentesque dictum. Morbi pretium elit in nulla iaculis, ac semper ante sollicitudin. Integer fringilla placerat justo, nec tempus turpis venenatis in. Quisque eu ante sem. Donec feugiat mi arcu, ac volutpat turpis consequat nec. Aenean id libero vestibulum, egestas augue eu, iaculis felis. Aliquam at ligula lacus. Aenean egestas, ex egestas accumsan efficitur, magna mauris cursus metus, auctor condimentum justo metus non lorem. Vivamus tempor ligula nibh, vitae suscipit tortor posuere vitae. Morbi malesuada eros at tortor venenatis, vel placerat justo faucibus.&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>My Middleman Blog Post 8</title>
-    <link rel="alternate" href="http://blog.url.com/blog/cforgood/test-article-8"/>
-    <id>http://blog.url.com/blog/cforgood/test-article-8</id>
+    <link rel="alternate" href="http://blog.url.com/2016/01/08/test-article-8.html"/>
+    <id>http://blog.url.com/2016/01/08/test-article-8.html</id>
     <published>2016-01-08T04:43:00+01:00</published>
     <updated>2016-04-25T16:45:22+02:00</updated>
     <author>
@@ -168,7 +168,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue. Vestibulum auctor augue nec erat iaculis tempor. Cras in urna quis purus pharetra vehicula nec nec turpis. Vivamus elit erat, dapibus nec molestie eget, dictum in nibh. Cras sed leo nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec facilisis non nunc ut fringilla. Integer gravida quis justo ut sagittis. Aenean in rutrum sem. Donec volutpat odio eget placerat facilisis. Curabitur vel neque eleifend, gravida quam ac, accumsan ipsum. Sed eget sagittis ex. Donec ac bibendum mi. Maecenas sit amet malesuada arcu, ac tincidunt ante. Duis fringilla ante felis, at ullamcorper enim posuere congue. Donec in ligula a felis luctus auctor.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ceci est un test" src="images/blog/test_2.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ceci est un test" src="../../../images/blog/test_2.jpg" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Donec ultricies non nisl sit amet auctor. Praesent vitae massa nisi. Etiam vel cursus mi, id rutrum nunc. Suspendisse sit amet volutpat ligula. Aenean ultrices sit amet nisi malesuada tristique. In placerat ligula est. Curabitur volutpat sem arcu, vitae cursus eros tincidunt mollis. Nulla sollicitudin mi rutrum tincidunt vestibulum.&lt;/p&gt;
 
@@ -180,15 +180,15 @@
 
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat justo vel tortor interdum, quis porta lectus venenatis. Nulla eros justo, tincidunt eget purus at, viverra laoreet orci. Quisque ornare luctus felis. Nunc sed lobortis neque. Nulla augue nunc, aliquet eu mauris eu, maximus efficitur quam. Etiam sodales dui ac arcu pretium, ullamcorper fringilla lacus sagittis. Integer vel porttitor ligula. Phasellus vel diam mauris. Integer ornare sagittis tellus. Mauris nec sem sapien. Aliquam efficitur sem quis enim luctus dictum. Fusce quis suscipit odio. Nulla pellentesque, orci nec fermentum rhoncus, sapien neque interdum sapien, nec pretium nulla massa sed nulla.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ceci est un test" src="images/blog/test_3.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ceci est un test" src="../../../images/blog/test_3.gif" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper. Quisque sit amet laoreet ipsum. Duis dapibus erat at volutpat malesuada. Integer vitae orci nec nunc laoreet tincidunt sed sed nunc. Nam finibus turpis ac pellentesque dictum. Morbi pretium elit in nulla iaculis, ac semper ante sollicitudin. Integer fringilla placerat justo, nec tempus turpis venenatis in. Quisque eu ante sem. Donec feugiat mi arcu, ac volutpat turpis consequat nec. Aenean id libero vestibulum, egestas augue eu, iaculis felis. Aliquam at ligula lacus. Aenean egestas, ex egestas accumsan efficitur, magna mauris cursus metus, auctor condimentum justo metus non lorem. Vivamus tempor ligula nibh, vitae suscipit tortor posuere vitae. Morbi malesuada eros at tortor venenatis, vel placerat justo faucibus.&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>My Middleman Blog Post 7</title>
-    <link rel="alternate" href="http://blog.url.com/blog/cforgood/test-article-7"/>
-    <id>http://blog.url.com/blog/cforgood/test-article-7</id>
+    <link rel="alternate" href="http://blog.url.com/2016/01/07/test-article-7.html"/>
+    <id>http://blog.url.com/2016/01/07/test-article-7.html</id>
     <published>2016-01-07T04:43:00+01:00</published>
     <updated>2016-04-25T16:45:16+02:00</updated>
     <author>
@@ -212,7 +212,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue. Vestibulum auctor augue nec erat iaculis tempor. Cras in urna quis purus pharetra vehicula nec nec turpis. Vivamus elit erat, dapibus nec molestie eget, dictum in nibh. Cras sed leo nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec facilisis non nunc ut fringilla. Integer gravida quis justo ut sagittis. Aenean in rutrum sem. Donec volutpat odio eget placerat facilisis. Curabitur vel neque eleifend, gravida quam ac, accumsan ipsum. Sed eget sagittis ex. Donec ac bibendum mi. Maecenas sit amet malesuada arcu, ac tincidunt ante. Duis fringilla ante felis, at ullamcorper enim posuere congue. Donec in ligula a felis luctus auctor.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ceci est un test" src="images/blog/test_2.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ceci est un test" src="../../../images/blog/test_2.jpg" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Donec ultricies non nisl sit amet auctor. Praesent vitae massa nisi. Etiam vel cursus mi, id rutrum nunc. Suspendisse sit amet volutpat ligula. Aenean ultrices sit amet nisi malesuada tristique. In placerat ligula est. Curabitur volutpat sem arcu, vitae cursus eros tincidunt mollis. Nulla sollicitudin mi rutrum tincidunt vestibulum.&lt;/p&gt;
 
@@ -224,15 +224,15 @@
 
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat justo vel tortor interdum, quis porta lectus venenatis. Nulla eros justo, tincidunt eget purus at, viverra laoreet orci. Quisque ornare luctus felis. Nunc sed lobortis neque. Nulla augue nunc, aliquet eu mauris eu, maximus efficitur quam. Etiam sodales dui ac arcu pretium, ullamcorper fringilla lacus sagittis. Integer vel porttitor ligula. Phasellus vel diam mauris. Integer ornare sagittis tellus. Mauris nec sem sapien. Aliquam efficitur sem quis enim luctus dictum. Fusce quis suscipit odio. Nulla pellentesque, orci nec fermentum rhoncus, sapien neque interdum sapien, nec pretium nulla massa sed nulla.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ceci est un test" src="images/blog/test_3.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ceci est un test" src="../../../images/blog/test_3.gif" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper. Quisque sit amet laoreet ipsum. Duis dapibus erat at volutpat malesuada. Integer vitae orci nec nunc laoreet tincidunt sed sed nunc. Nam finibus turpis ac pellentesque dictum. Morbi pretium elit in nulla iaculis, ac semper ante sollicitudin. Integer fringilla placerat justo, nec tempus turpis venenatis in. Quisque eu ante sem. Donec feugiat mi arcu, ac volutpat turpis consequat nec. Aenean id libero vestibulum, egestas augue eu, iaculis felis. Aliquam at ligula lacus. Aenean egestas, ex egestas accumsan efficitur, magna mauris cursus metus, auctor condimentum justo metus non lorem. Vivamus tempor ligula nibh, vitae suscipit tortor posuere vitae. Morbi malesuada eros at tortor venenatis, vel placerat justo faucibus.&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>My Middleman Blog Post 6</title>
-    <link rel="alternate" href="http://blog.url.com/blog/evenement/test-article-6"/>
-    <id>http://blog.url.com/blog/evenement/test-article-6</id>
+    <link rel="alternate" href="http://blog.url.com/2016/01/06/test-article-6.html"/>
+    <id>http://blog.url.com/2016/01/06/test-article-6.html</id>
     <published>2016-01-06T04:43:00+01:00</published>
     <updated>2016-04-25T16:45:04+02:00</updated>
     <author>
@@ -256,7 +256,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue. Vestibulum auctor augue nec erat iaculis tempor. Cras in urna quis purus pharetra vehicula nec nec turpis. Vivamus elit erat, dapibus nec molestie eget, dictum in nibh. Cras sed leo nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec facilisis non nunc ut fringilla. Integer gravida quis justo ut sagittis. Aenean in rutrum sem. Donec volutpat odio eget placerat facilisis. Curabitur vel neque eleifend, gravida quam ac, accumsan ipsum. Sed eget sagittis ex. Donec ac bibendum mi. Maecenas sit amet malesuada arcu, ac tincidunt ante. Duis fringilla ante felis, at ullamcorper enim posuere congue. Donec in ligula a felis luctus auctor.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ceci est un test" src="images/blog/test_2.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ceci est un test" src="../../../images/blog/test_2.jpg" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Donec ultricies non nisl sit amet auctor. Praesent vitae massa nisi. Etiam vel cursus mi, id rutrum nunc. Suspendisse sit amet volutpat ligula. Aenean ultrices sit amet nisi malesuada tristique. In placerat ligula est. Curabitur volutpat sem arcu, vitae cursus eros tincidunt mollis. Nulla sollicitudin mi rutrum tincidunt vestibulum.&lt;/p&gt;
 
@@ -268,7 +268,7 @@
 
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat justo vel tortor interdum, quis porta lectus venenatis. Nulla eros justo, tincidunt eget purus at, viverra laoreet orci. Quisque ornare luctus felis. Nunc sed lobortis neque. Nulla augue nunc, aliquet eu mauris eu, maximus efficitur quam. Etiam sodales dui ac arcu pretium, ullamcorper fringilla lacus sagittis. Integer vel porttitor ligula. Phasellus vel diam mauris. Integer ornare sagittis tellus. Mauris nec sem sapien. Aliquam efficitur sem quis enim luctus dictum. Fusce quis suscipit odio. Nulla pellentesque, orci nec fermentum rhoncus, sapien neque interdum sapien, nec pretium nulla massa sed nulla.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ceci est un test" src="images/blog/test_3.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ceci est un test" src="../../../images/blog/test_3.gif" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper. Quisque sit amet laoreet ipsum. Duis dapibus erat at volutpat malesuada. Integer vitae orci nec nunc laoreet tincidunt sed sed nunc. Nam finibus turpis ac pellentesque dictum. Morbi pretium elit in nulla iaculis, ac semper ante sollicitudin. Integer fringilla placerat justo, nec tempus turpis venenatis in. Quisque eu ante sem. Donec feugiat mi arcu, ac volutpat turpis consequat nec. Aenean id libero vestibulum, egestas augue eu, iaculis felis. Aliquam at ligula lacus. Aenean egestas, ex egestas accumsan efficitur, magna mauris cursus metus, auctor condimentum justo metus non lorem. Vivamus tempor ligula nibh, vitae suscipit tortor posuere vitae. Morbi malesuada eros at tortor venenatis, vel placerat justo faucibus.&lt;/p&gt;
 </content>

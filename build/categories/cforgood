@@ -1210,8 +1210,8 @@
 })(jQuery, window, document);
 </script>
     <ul>
-      <a href="/blog/cforgood/test-article-11" alt="My Middleman Blog Post 11">
-        <li data-file="/blog/cforgood/test-article-11" data-target="article">
+      <a href="/2016/01/11/test-article-11.html" alt="My Middleman Blog Post 11">
+        <li data-file="/2016/01/11/test-article-11.html" data-target="article">
           <div class="frame-thumbnail">
             <i></i>
             <div class="article-thumbnail" style="background-image: url('../images/blog/test.jpg')">
@@ -1238,8 +1238,8 @@
           </div>
         </li>
       </a>
-      <a href="/blog/cforgood/test-article-10" alt="My Middleman Blog Post 10">
-        <li data-file="/blog/cforgood/test-article-10" data-target="article">
+      <a href="/2016/01/10/test-article-10.html" alt="My Middleman Blog Post 10">
+        <li data-file="/2016/01/10/test-article-10.html" data-target="article">
           <div class="frame-thumbnail">
             <i></i>
             <div class="article-thumbnail" style="background-image: url('../images/blog/test.jpg')">
@@ -1266,8 +1266,8 @@
           </div>
         </li>
       </a>
-      <a href="/blog/cforgood/test-article-9" alt="My Middleman Blog Post 9">
-        <li data-file="/blog/cforgood/test-article-9" data-target="article">
+      <a href="/2016/01/09/test-article-9.html" alt="My Middleman Blog Post 9">
+        <li data-file="/2016/01/09/test-article-9.html" data-target="article">
           <div class="frame-thumbnail">
             <i></i>
             <div class="article-thumbnail" style="background-image: url('../images/blog/test.jpg')">
@@ -1294,8 +1294,8 @@
           </div>
         </li>
       </a>
-      <a href="/blog/cforgood/test-article-8" alt="My Middleman Blog Post 8">
-        <li data-file="/blog/cforgood/test-article-8" data-target="article">
+      <a href="/2016/01/08/test-article-8.html" alt="My Middleman Blog Post 8">
+        <li data-file="/2016/01/08/test-article-8.html" data-target="article">
           <div class="frame-thumbnail">
             <i></i>
             <div class="article-thumbnail" style="background-image: url('../images/blog/test.jpg')">
@@ -1322,8 +1322,8 @@
           </div>
         </li>
       </a>
-      <a href="/blog/cforgood/test-article-7" alt="My Middleman Blog Post 7">
-        <li data-file="/blog/cforgood/test-article-7" data-target="article">
+      <a href="/2016/01/07/test-article-7.html" alt="My Middleman Blog Post 7">
+        <li data-file="/2016/01/07/test-article-7.html" data-target="article">
           <div class="frame-thumbnail">
             <i></i>
             <div class="article-thumbnail" style="background-image: url('../images/blog/test.jpg')">

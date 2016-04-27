@@ -14,7 +14,7 @@ activate :blog do |blog|
   # blog.prefix = "blog"
 
   # Matcher for blog source files
-  blog.permalink = "blog/{category}/:title"
+  blog.permalink = "/blog/{category}/:title.html"
   blog.sources = "articles/:year-:month-:day-:title.html"
   blog.layout = "layout"
   # blog.summary_separator = /(READMORE)/
@@ -25,7 +25,7 @@ activate :blog do |blog|
   blog.default_extension = ".markdown"
 
   blog.tag_template = "tag.html"
-  #blog.taglink = "{tag}.html"
+  blog.taglink = "blog/categories/{tag}.html"
 
   blog.calendar_template = "calendar.html"
 
