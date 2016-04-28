@@ -1223,8 +1223,15 @@
           <i>rédigé par<br><strong>Cédric Menteau</strong><br>le<time>11 Jan 2016</time></i>
         </div>
       </header>
+      <script>
+        $(function() {
+          $('a').readingTime({
+              remotePath: '/blog/cforgood/test-article-11.html',
+              remoteTarget: 'article'
+          });
+        });
+      </script>
     </a>
-
 
   <div class="container categories-container">
     <ul>
@@ -1425,6 +1432,7 @@
   </div>
 
   <div class="container-fluid medium-container">
+    <img class="medium-logo" src="../images/logos/medium.png" alt="Logo Medium">
     <div class="container medium">
         <div class="medium-postcard">
           <a data-width="100%" height="260" href="https://medium.com/cforgood/cforgood-l-évidence-d-aller-dans-le-bon-sens-6e0411d9b9f0#.x4okpy4s4" class="m-story"></a>
@@ -1448,8 +1456,7 @@
   // Trigger
   ias.extension(new IASTriggerExtension({text: "Plus d'articles", offset: 1}));
   // Add a text when there are no more pages left to load
-  ias.extension(new IASNoneLeftExtension({text: "Pour plus d'articles, rendez-vous sur Medium !"}));
-
+  ias.extension(new IASNoneLeftExtension({text: "Continuez votre lecture sur <a href='https://medium.com/@CforGood'>Medium</a>"}));
 
   $(function() {
     $('li').each(function() {

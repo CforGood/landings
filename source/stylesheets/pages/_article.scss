@@ -1,13 +1,22 @@
 .categories-container {
+  border-top: 1px solid;
+  color: #f4f4f4;
+
   ul {
     display: flex;
     justify-content: space-around;
-    padding-top: 60px;
+    padding: 5px 0;
+    max-width: 960px;
+    margin: 0 auto;
 
     li {
       padding: 5px 15px;
-      border: 1px solid #333;
       border-radius: 3px;
+
+      a {
+        color: #000;
+        font-family: "Raleway", "Helvetica", "sans-serif";
+      }
     }
   }
 }
@@ -81,6 +90,8 @@
 }
 
 .blog-index {
+  padding-top: 70px;
+
   .article-header:hover {
     &:after {
       opacity: 0.75;

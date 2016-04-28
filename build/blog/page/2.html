@@ -1238,6 +1238,17 @@
 </svg>
                 <i><div class="eta"></div> de lecture - Partagé le<time> 4 Jan 2016</time> par <strong>cedric</strong></i>
               </div>
+              <script>
+                $(function() {
+                  $('li').each(function() {
+                    $(this).readingTime({
+                      readingTimeTarget: $(this).find('.eta'),
+                      remotePath: $(this).attr('data-file'),
+                      remoteTarget: $(this).attr('data-target')
+                    });
+                  });
+                });
+              </script>
             </li>
           </a>
           <a class="post" href="/blog/communaute/test-article-3.html" alt="My Middleman Blog Post 3">
@@ -1266,6 +1277,17 @@
 </svg>
                 <i><div class="eta"></div> de lecture - Partagé le<time> 3 Jan 2016</time> par <strong>cedric</strong></i>
               </div>
+              <script>
+                $(function() {
+                  $('li').each(function() {
+                    $(this).readingTime({
+                      readingTimeTarget: $(this).find('.eta'),
+                      remotePath: $(this).attr('data-file'),
+                      remoteTarget: $(this).attr('data-target')
+                    });
+                  });
+                });
+              </script>
             </li>
           </a>
           <a class="post" href="/blog/communaute/test-article-2.html" alt="My Middleman Blog Post 2">
@@ -1294,6 +1316,17 @@
 </svg>
                 <i><div class="eta"></div> de lecture - Partagé le<time> 2 Jan 2016</time> par <strong>cedric</strong></i>
               </div>
+              <script>
+                $(function() {
+                  $('li').each(function() {
+                    $(this).readingTime({
+                      readingTimeTarget: $(this).find('.eta'),
+                      remotePath: $(this).attr('data-file'),
+                      remoteTarget: $(this).attr('data-target')
+                    });
+                  });
+                });
+              </script>
             </li>
           </a>
           <a class="post" href="/blog/tendance/test-article-1.html" alt="My Middleman Blog Post :cat:">
@@ -1322,6 +1355,17 @@
 </svg>
                 <i><div class="eta"></div> de lecture - Partagé le<time> 1 Jan 2016</time> par <strong>cedric</strong></i>
               </div>
+              <script>
+                $(function() {
+                  $('li').each(function() {
+                    $(this).readingTime({
+                      readingTimeTarget: $(this).find('.eta'),
+                      remotePath: $(this).attr('data-file'),
+                      remoteTarget: $(this).attr('data-target')
+                    });
+                  });
+                });
+              </script>
             </li>
           </a>
 
@@ -1348,8 +1392,7 @@
   // Trigger
   ias.extension(new IASTriggerExtension({text: "Plus d'articles", offset: 1}));
   // Add a text when there are no more pages left to load
-  ias.extension(new IASNoneLeftExtension({text: "Pour plus d'articles, rendez-vous sur Medium !"}));
-
+  ias.extension(new IASNoneLeftExtension({text: "Continuez votre lecture sur <a href='https://medium.com/@CforGood'>Medium</a>"}));
 
   $(function() {
     $('li').each(function() {
