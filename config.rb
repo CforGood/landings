@@ -4,7 +4,6 @@
 
 # Time.zone = "UTC"
 
-
 # Remove .html extension from pages
 activate :directory_indexes
 

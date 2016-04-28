@@ -20,8 +20,15 @@ per_page: 7
           <i>rédigé par<br><strong><%= author.name %></strong><br>le<time><%= article.date.strftime('%e %b %Y') %></time></i>
         </div>
       </header>
+      <script>
+        $(function() {
+          $('a').readingTime({
+              remotePath: '<%= article.url %>',
+              remoteTarget: 'article'
+          });
+        });
+      </script>
     </a>
-
   <% end %>
 
   <div class="container categories-container">
@@ -72,6 +79,17 @@ per_page: 7
                 <%= partial "shared/svg/clock" %>
                 <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
               </div>
+              <script>
+                $(function() {
+                  $('li').each(function() {
+                    $(this).readingTime({
+                      readingTimeTarget: $(this).find('.eta'),
+                      remotePath: $(this).attr('data-file'),
+                      remoteTarget: $(this).attr('data-target')
+                    });
+                  });
+                });
+              </script>
             </li>
           </a>
         <% end %>
@@ -97,6 +115,7 @@ per_page: 7
 
   <% if current_page.path == 'blog.html' %>
   <div class="container-fluid medium-container">
+    <img class="medium-logo" src="<%= image_path 'logos/medium.png' %>" alt="Logo Medium">
     <div class="container medium">
       <% data.posts.each do |post| %>
         <div class="medium-postcard">
@@ -117,8 +136,10 @@ per_page: 7
     next:       '.next'
   });
 
-  ias.extension(new IASTriggerExtension({offset: 1}));
-
+  // Trigger
+  ias.extension(new IASTriggerExtension({text: "Plus d'articles", offset: 1}));
+  // Add a text when there are no more pages left to load
+  ias.extension(new IASNoneLeftExtension({text: "Continuez votre lecture sur <a href='https://medium.com/@CforGood'>Medium</a>"}));
 
   $(function() {
     $('li').each(function() {
@@ -127,23 +148,6 @@ per_page: 7
         remotePath: $(this).attr('data-file'),
         remoteTarget: $(this).attr('data-target')
       });
-    });
-  });
-
-  // On document ready, initialise our code.
-  $(function(){
-    // Initialize buttonFilter code
-    buttonFilter.init();
-    // Instantiate MixItUp
-    $('#mixitup').mixItUp({
-      controls: {
-        enable: true // we won't be needing these
-      },
-      animationOptions: {
-        duration: 750,
-        easing: 'linear',
-        queue: false
-      }
     });
   });
 </script>
