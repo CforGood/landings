@@ -1175,6 +1175,22 @@
       </div>
     </div>
   </div>
+  <div class="categories-container">
+    <ul>
+        <li>
+          <a href="categorie/cforgood.html">CforGood</a>
+        </li>
+        <li>
+          <a href="categorie/evenement.html">Événement</a>
+        </li>
+        <li>
+          <a href="categorie/communaute.html">Communauté</a>
+        </li>
+        <li>
+          <a href="categorie/tendance.html">Tendance</a>
+        </li>
+    </ul>
+  </div>
 </nav>
 
 
@@ -1209,47 +1225,29 @@
 
 })(jQuery, window, document);
 </script>
-    <div class="blog-index">
-    <a href="/blog/cforgood/test-article-11.html" alt="My Middleman Blog Post 11">
-      <header class="article-header" style="background-image: url('../images/blog/test.jpg')">
-        <div class="article-header-info">
-          <i>CforGood</i>
-          <h1>My Middleman Blog Post 11</h1>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.</span>
-          <abbr><div class="eta"></div> de lecture</abbr>
-        </div>
-        <div class="article-header-author">
-          <img src="../images/authors/cedric_menteau.jpg" alt="Cédric Menteau">
-          <i>rédigé par<br><strong>Cédric Menteau</strong><br>le<time>11 Jan 2016</time></i>
-        </div>
-      </header>
-      <script>
-        $(function() {
-          $('a').readingTime({
-              remotePath: '/blog/cforgood/test-article-11.html',
-              remoteTarget: 'article'
+      <div class="blog-index">
+      <a href="/blog/cforgood/test-article-11.html" alt="My Middleman Blog Post 11">
+        <header class="article-header" style="background-image: url('../images/blog/test.jpg')">
+          <div class="article-header-info">
+            <i>CforGood</i>
+            <h1>My Middleman Blog Post 11</h1>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.</span>
+            <abbr><div class="eta"></div> de lecture</abbr>
+          </div>
+          <div class="article-header-author">
+            <img src="../images/authors/cedric_menteau.jpg" alt="Cédric Menteau">
+            <i>rédigé par<br><strong>Cédric Menteau</strong><br>le<time>11 Jan 2016</time></i>
+          </div>
+        </header>
+        <script>
+          $(function() {
+            $('a').readingTime({
+                remotePath: '/blog/cforgood/test-article-11.html',
+                remoteTarget: 'article'
+            });
           });
-        });
-      </script>
-    </a>
-
-  <div class="container categories-container">
-    <ul>
-        <li>
-          <a href="categorie/cforgood.html">CforGood</a>
-        </li>
-        <li>
-          <a href="categorie/evenement.html">Événement</a>
-        </li>
-        <li>
-          <a href="categorie/communaute.html">Communauté</a>
-        </li>
-        <li>
-          <a href="categorie/tendance.html">Tendance</a>
-        </li>
-    </ul>
-  </div>
-
+        </script>
+      </a>
 
   <div class="container blog-posts all-posts">
     <ul>
