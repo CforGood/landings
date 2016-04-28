@@ -1,7 +1,15 @@
 .categories-container {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 60px;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+
+    li {
+      padding: 5px 15px;
+      border: 1px solid #333;
+      border-radius: 3px;
+    }
+  }
 }
 
 .medium-container {

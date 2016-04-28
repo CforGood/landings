@@ -1,0 +1,43 @@
+---
+pageable: true
+per_page: 3
+---
+
+<div class="blog-index">
+  <div class="container blog-posts all-posts">
+    <% articles = articles.slice(6, articles.size) %>
+    <ul>
+      <% articles.each do |article| %>
+        <a href="<%= article.url %>" alt="<%= article.title %>">
+          <li data-file="<%= article.url %>" data-target="article">
+            <div class="frame-thumbnail">
+              <i><%= article.data.category %></i>
+              <div class="article-thumbnail" style="background-image: url('<%= image_path article.data.thumbnail %>')">
+              </div>
+            </div>
+            <h3><%= article.title %></h3>
+            <p><%= article.data.synopsis %></p>
+            <div class="article-info">
+              <%= partial "shared/svg/clock" %>
+              <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
+            </div>
+          </li>
+        </a>
+      <% end %>
+      </ul>
+
+      <% if paginate && num_pages > 1 %>
+        <p>Page <%= page_number %> of <%= num_pages %></p>
+
+        <% if prev_page %>
+          <p><%= link_to 'Previous page', prev_page %></p>
+        <% end %>
+      <% end %>
+
+      <% if paginate %>
+        <% if next_page %>
+          <p><%= link_to 'Next page', next_page %></p>
+        <% end %>
+      <% end %>
+  </div>
+</div>

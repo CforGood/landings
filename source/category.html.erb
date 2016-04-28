@@ -1,52 +1,42 @@
 ---
-pageable: true
-per_page: 10
+paginate: true
+per_page: 3
 ---
 
-<ul>
-  <% blog.articles[0... blog.articles.size].each do |article| %>
-   <% if current_page.url.include? 'cforgood' %>
-    <% if article.data.category == 'CforGood' %>
-      <a href="<%= article.url %>" alt="<%= article.title %>">
-        <li data-file="<%= article.url %>" data-target="article">
-          <div class="frame-thumbnail">
-            <i><%= article.data.tag %></i>
-            <div class="article-thumbnail" style="background-image: url('<%= image_path article.data.thumbnail %>')">
-            </div>
-          </div>
-          <h3><%= article.title %></h3>
-          <p><%= article.data.synopsis %></p>
-          <div class="article-info">
-            <%= partial "shared/svg/clock" %>
-            <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
-          </div>
-        </li>
-      </a>
-      <% end %>
-    <% end %>
-  <% end %>
-</ul>
+<header >
+  <h1><%= category %></h1>
+</header>
 
 <ul>
-  <% blog.articles[0... blog.articles.size].each do |article| %>
-   <% if current_page.url.include? 'evenement' %>
-    <% if article.data.category == 'Événement' %>
-      <a href="<%= article.url %>" alt="<%= article.title %>">
-        <li data-file="<%= article.url %>" data-target="article">
-          <div class="frame-thumbnail">
-            <i><%= article.data.tag %></i>
-            <div class="article-thumbnail" style="background-image: url('<%= image_path article.data.thumbnail %>')">
-            </div>
-          </div>
-          <h3><%= article.title %></h3>
-          <p><%= article.data.synopsis %></p>
-          <div class="article-info">
-            <%= partial "shared/svg/clock" %>
-            <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
-          </div>
-        </li>
-      </a>
-      <% end %>
-    <% end %>
+<% page_articles.each do |article| %>
+  <a href="<%= article.url %>" alt="<%= article.title %>">
+    <li data-file="<%= article.url %>" data-target="article">
+      <div class="frame-thumbnail">
+        <i><%= article.data.tag %></i>
+        <div class="article-thumbnail" style="background-image: url('<%= image_path article.data.thumbnail %>')">
+        </div>
+      </div>
+      <h3><%= article.title %></h3>
+      <p><%= article.data.synopsis %></p>
+      <div class="article-info">
+        <%= partial "shared/svg/clock" %>
+        <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
+      </div>
+    </li>
+  </a>
+<% end %>
+
+<% if paginate && num_pages > 1 %>
+  <p>Page <%= page_number %> of <%= num_pages %></p>
+
+  <% if prev_page %>
+    <p><%= link_to 'Previous page', prev_page %></p>
   <% end %>
+<% end %>
+
+<% if paginate %>
+  <% if next_page %>
+    <p><%= link_to 'Next page', next_page %></p>
+  <% end %>
+<% end %>
 </ul>
