@@ -1,0 +1,34 @@
+- name : Chris
+  business: Label Terre
+  picture: partners/portrait-chris.jpg
+  content: "Depuis que j’ai rejoins CforGood, les demandes se multiplient pour mon activité traiteur : séminaires, buffets, etc. CforGood est aussi un réseau d’opportunité !"
+
+- name : Carole
+  business: Koken
+  picture: partners/portrait-carole.jpg
+  content: "A l’ouverture de ma boutique, CforGood m’a permis de me faire connaître auprès d’une communauté sensible à mes produits éthiques."
+
+- name : Charles
+  business: WAN
+  picture: partners/portrait-charles.jpg
+  content: "Avec CforGood, mes engagements du quotidien tapis dans l’ombre sont maintenant valorisés."
+
+- name : Antoine
+  business: Burger Fermier
+  picture: partners/portrait-antoine.jpg
+  content: "Grâce aux bons plans flash de CforGood, je réduis le gaspillage alimentaire de mon restaurant, tout en optimisant mes marges !"
+
+- name : Elodie
+  business: Naturôme
+  picture: partners/portrait-elodie.jpg
+  content: "CforGood me permet d’agir et d’avoir un impact au delà de mon commerce."
+
+- name : Benjamin
+  business: Potager City
+  picture: partners/portrait-benjamin.jpg
+  content: "En intégrant le réseau CforGood, j’ai très simplement ajouté une touche solidaire à mon activité !"
+
+- name : Alice
+  business: Beauty Bike
+  picture: partners/portrait-alice.jpg
+  content: "En tant qu’indépendante, CforGood m’a permis d’intégrer un réseau ou chaque acteur se tend la main."
