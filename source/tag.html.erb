@@ -1,8 +1,7 @@
 ---
 pageable: true
-per_page: 12
+per_page: 9
 ---
-<h1>Articles tagged '<%= tagname %>'</h1>
 
 <% if paginate && num_pages > 1 %>
   <p>Page <%= page_number %> of <%= num_pages %></p>
@@ -12,11 +11,29 @@ per_page: 12
   <% end %>
 <% end %>
 
-<ul>
-  <% page_articles.each_with_index do |article, i| %>
-    <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-  <% end %>
-</ul>
+<div class="container-fluid blog-posts all-posts">
+  <div class="container">
+    <ul>
+      <% page_articles.each_with_index do |article, i| %>
+        <a class="post" href="<%= article.url %>" alt="<%= article.title %>">
+          <li data-file="<%= article.url %>" data-target="article">
+            <div class="frame-thumbnail">
+              <i><%= article.data.category %></i>
+              <div class="article-thumbnail" style="background-image: url('<%= image_path article.data.thumbnail %>')">
+              </div>
+            </div>
+            <h3><%= article.title %></h3>
+            <p><%= article.data.synopsis %></p>
+            <div class="article-info">
+              <%= partial "shared/svg/clock" %>
+              <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
+            </div>
+          </li>
+        </a>
+      <% end %>
+    </ul>
+  </div>
+</div>
 
 <% if paginate %>
   <% if next_page %>

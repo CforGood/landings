@@ -30,7 +30,7 @@ activate :blog do |blog|
 
   blog.custom_collections = {
     category: {
-      link: '/blog/categorie/{category}.html',
+      link: '/blog/categories/{category}.html',
       template: '/category.html'
     }
   }
@@ -112,6 +112,7 @@ helpers do
     return categories
   end
 end
+
 
 set :css_dir, 'stylesheets'
 

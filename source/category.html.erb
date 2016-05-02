@@ -1,42 +1,85 @@
----
-paginate: true
-per_page: 3
----
+<% if current_page.path.include?('cforgood') %>
+  <header class="category" style="background-image: url('../../images/categories/cforgood.jpg')">
+    <h1><%= category %></h1>
+  </header>
+<% elsif current_page.path.include?('evenement') %>
+  <header class="category" style="background-image: url('../../images/categories/evenement.jpg')">
+    <h1><%= category %></h1>
+  </header>
+<% elsif current_page.path.include?('tendance') %>
+  <header class="category" style="background-image: url('../../images/categories/tendance.jpg')">
+    <h1><%= category %></h1>
+  </header>
+<% elsif current_page.path.include?('communaute') %>
+  <header class="category" style="background-image: url('../../images/categories/communaute.jpg')">
+    <h1><%= category %></h1>
+  </header>
+<% else %>
+  <header class="category">
+    <h1><%= category %></h1>
+  </header>
+<% end %>
 
-<header >
-  <h1><%= category %></h1>
-</header>
 
-<ul>
-<% page_articles.each do |article| %>
-  <a href="<%= article.url %>" alt="<%= article.title %>">
-    <li data-file="<%= article.url %>" data-target="article">
-      <div class="frame-thumbnail">
-        <i><%= article.data.tag %></i>
-        <div class="article-thumbnail" style="background-image: url('<%= image_path article.data.thumbnail %>')">
-        </div>
+<div class="container-fluid blog-posts all-posts category-posts">
+  <div class="container">
+    <ul>
+      <% page_articles.each do |article| %>
+        <a class="post" href="<%= article.url %>" alt="<%= article.title %>">
+          <li data-file="<%= article.url %>" data-target="article">
+            <div class="frame-thumbnail">
+              <div class="article-thumbnail" style="background-image: url('<%= image_path article.data.thumbnail %>')">
+              </div>
+            </div>
+            <h3><%= article.title %></h3>
+            <p><%= article.data.synopsis %></p>
+            <div class="article-info">
+              <%= partial "shared/svg/clock" %>
+              <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
+            </div>
+          </li>
+        </a>
+      <% end %>
+
+      <div id="pagination">
+        <% if paginate && num_pages > 1 %>
+          <p>Page <%= page_number %> of <%= num_pages %></p>
+
+          <% if prev_page %>
+            <p><%= link_to 'Previous page', prev_page %></p>
+          <% end %>
+        <% end %>
+
+        <% if paginate %>
+          <% if next_page %>
+            <p><%= link_to 'Next page', next_page, class: "next" %></p>
+          <% end %>
+        <% end %>
       </div>
-      <h3><%= article.title %></h3>
-      <p><%= article.data.synopsis %></p>
-      <div class="article-info">
-        <%= partial "shared/svg/clock" %>
-        <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
-      </div>
-    </li>
-  </a>
-<% end %>
+    </ul>
+  </div>
+</div>
 
-<% if paginate && num_pages > 1 %>
-  <p>Page <%= page_number %> of <%= num_pages %></p>
+<script>
+  var ias = jQuery.ias({
+    container:  '.all-posts',
+    item:       '.post',
+    pagination: '#pagination',
+    next:       '.next'
+  });
 
-  <% if prev_page %>
-    <p><%= link_to 'Previous page', prev_page %></p>
-  <% end %>
-<% end %>
+  // Trigger
+  ias.extension(new IASTriggerExtension({text: "Plus d'articles", offset: 1}));
+  // Add a text when there are no more pages left to load
+  ias.extension(new IASNoneLeftExtension({text: "Continuez votre lecture sur <a href='https://medium.com/@CforGood'>Medium</a>"}));
 
-<% if paginate %>
-  <% if next_page %>
-    <p><%= link_to 'Next page', next_page %></p>
-  <% end %>
-<% end %>
-</ul>
+  $(function() {
+    $('li').each(function() {
+      $(this).readingTime({
+        readingTimeTarget: $(this).find('.eta'),
+        remotePath: $(this).attr('data-file'),
+        remoteTarget: $(this).attr('data-target')
+      });
+    });
+  });
+</script>

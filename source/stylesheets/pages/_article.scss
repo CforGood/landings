@@ -52,6 +52,7 @@
   position: fixed;
   width: 100%;
   top: 70px;
+  z-index: 5;
 }
 
 .medium-container {
@@ -128,100 +129,6 @@
   .article-header:hover {
     &:after {
       opacity: 0.75;
-    }
-  }
-
-  /* SECOND SECTION - 2 posts *************************************************/
-  .blog-posts {
-
-    .eta {
-      display: inline-block;
-    }
-
-    img {
-      width: 100%;
-    }
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-
-      a, a:hover, a:focus, a:active {
-        width: 50%;
-        color: inherit;
-
-        &:hover {
-
-          .article-thumbnail {
-            transform: scale(1.1);
-          }
-        }
-      }
-
-      li {
-        padding: 0 1% 4em 1%;
-        width: 100%;
-
-        .frame-thumbnail {
-          position: relative;
-          margin-bottom: 20px;
-          width: 100%;
-          height: 300px;
-          overflow: hidden;
-
-          i {
-            z-index: 1;
-            position: absolute;
-            padding: 5px 15px;
-            top: 15px;
-            background-color: $turquoise;
-            color: #fff;
-          }
-
-          .article-thumbnail {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 300px;
-            background-size: cover;
-            transition: all 0.3s ease-in-out;
-          }
-        }
-
-        .article-info {
-          display: flex;
-          align-items: center;
-          font-size: 1.3rem;
-
-          svg {
-            margin-right: 5px;
-          }
-        }
-      }
-    }
-  }
-
-  /* THIRD SECTION - all posts ************************************************/
-  .all-posts {
-    ul {
-      a, a:hover, a:focus, a:active {
-        width: 33.33333%;
-      }
-
-      li {
-        padding: 0 2% 4em 2%;
-
-         .frame-thumbnail {
-          height: 260px;
-
-          .article-thumbnail {
-            height: 260px;
-          }
-        }
-      }
     }
   }
 }

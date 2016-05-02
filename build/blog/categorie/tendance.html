@@ -1175,22 +1175,7 @@
       </div>
     </div>
   </div>
-  <div class="categories-container">
-    <ul>
-        <li>
-          <a href="cforgood.html">CforGood</a>
-        </li>
-        <li>
-          <a href="evenement.html">Événement</a>
-        </li>
-        <li>
-          <a href="communaute.html">Communauté</a>
-        </li>
-        <li>
-          <a href="tendance.html">Tendance</a>
-        </li>
-    </ul>
-  </div>
+
 </nav>
 
 
@@ -1225,22 +1210,24 @@
 
 })(jQuery, window, document);
 </script>
-    <header >
-  <h1>Tendance</h1>
-</header>
+      <header class="category" style="background-image: url('../../images/categories/tendance.jpg')">
+    <h1>Tendance</h1>
+  </header>
 
-<ul>
-  <a href="/blog/tendance/test-article-1.html" alt="My Middleman Blog Post :cat:">
-    <li data-file="/blog/tendance/test-article-1.html" data-target="article">
-      <div class="frame-thumbnail">
-        <i></i>
-        <div class="article-thumbnail" style="background-image: url('../../images/blog/test.jpg')">
-        </div>
-      </div>
-      <h3>My Middleman Blog Post :cat:</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.</p>
-      <div class="article-info">
-        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<div class="container-fluid blog-posts all-posts category-posts">
+  <div class="container">
+    <ul>
+        <a class="post" href="/blog/tendance/test-article-1.html" alt="My Middleman Blog Post :cat:">
+          <li data-file="/blog/tendance/test-article-1.html" data-target="article">
+            <div class="frame-thumbnail">
+              <div class="article-thumbnail" style="background-image: url('../../images/blog/test.jpg')">
+              </div>
+            </div>
+            <h3>My Middleman Blog Post :cat:</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.</p>
+            <div class="article-info">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="15px" height="15px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
     <title>clock</title>
@@ -1254,13 +1241,41 @@
         </g>
     </g>
 </svg>
-        <i><div class="eta"></div> de lecture - Partagé le<time> 1 Jan 2016</time> par <strong>cedric</strong></i>
+              <i><div class="eta"></div> de lecture - Partagé le<time> 1 Jan 2016</time> par <strong>cedric</strong></i>
+            </div>
+          </li>
+        </a>
+
+      <div id="pagination">
+
       </div>
-    </li>
-  </a>
+    </ul>
+  </div>
+</div>
 
+<script>
+  var ias = jQuery.ias({
+    container:  '.all-posts',
+    item:       '.post',
+    pagination: '#pagination',
+    next:       '.next'
+  });
 
-</ul>
+  // Trigger
+  ias.extension(new IASTriggerExtension({text: "Plus d'articles", offset: 1}));
+  // Add a text when there are no more pages left to load
+  ias.extension(new IASNoneLeftExtension({text: "Continuez votre lecture sur <a href='https://medium.com/@CforGood'>Medium</a>"}));
+
+  $(function() {
+    $('li').each(function() {
+      $(this).readingTime({
+        readingTimeTarget: $(this).find('.eta'),
+        remotePath: $(this).attr('data-file'),
+        remoteTarget: $(this).attr('data-target')
+      });
+    });
+  });
+</script>
     <footer>
   <div class="newsletter-form">
     <h3>Inscrivez-vous pour recevoir notre actualité</h3>
