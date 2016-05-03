@@ -45,89 +45,91 @@ per_page: 7
   </div>
   <% end %>
 
-  <div class="container-fluid blog-posts all-posts">
-    <div class="container">
-      <ul>
-        <% if current_page.path == 'blog.html' %>
-          <% page_articles.drop(1).each do |article| %>
-            <a class="post" href="<%= article.url %>" alt="<%= article.title %>">
-              <li data-file="<%= article.url %>" data-target="article">
-                <div class="frame-thumbnail">
-                  <i><%= article.data.category %></i>
-                  <div class="article-thumbnail" style="background-image: url('<%= image_path article.data.thumbnail %>')">
+  <div class="blog-content">
+    <div class="container-fluid blog-posts all-posts">
+      <div class="container">
+        <ul>
+          <% if current_page.path == 'blog.html' %>
+            <% page_articles.drop(1).each do |article| %>
+              <a class="post" href="<%= article.url %>" alt="<%= article.title %>">
+                <li data-file="<%= article.url %>" data-target="article">
+                  <div class="frame-thumbnail">
+                    <i><%= article.data.category %></i>
+                    <div class="article-thumbnail" style="background-image: url('<%= image_path article.data.thumbnail %>')">
+                    </div>
                   </div>
-                </div>
-                <h3><%= article.title %></h3>
-                <p><%= article.data.synopsis %></p>
-                <div class="article-info">
-                  <%= partial "shared/svg/clock" %>
-                  <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
-                </div>
-              </li>
-            </a>
-          <% end %>
-        <% else %>
-          <% page_articles.each do |article| %>
-            <a class="post" href="<%= article.url %>" alt="<%= article.title %>">
-              <li data-file="<%= article.url %>" data-target="article">
-                <div class="frame-thumbnail">
-                  <i><%= article.data.category %></i>
-                  <div class="article-thumbnail" style="background-image: url('<%= image_path article.data.thumbnail %>')">
+                  <h3><%= article.title %></h3>
+                  <p><%= article.data.synopsis %></p>
+                  <div class="article-info">
+                    <%= partial "shared/svg/clock" %>
+                    <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
                   </div>
-                </div>
-                <h3><%= article.title %></h3>
-                <p><%= article.data.synopsis %></p>
-                <div class="article-info">
-                  <%= partial "shared/svg/clock" %>
-                  <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
-                </div>
-                <script>
-                  $(function() {
-                    $('li').each(function() {
-                      $(this).readingTime({
-                        readingTimeTarget: $(this).find('.eta'),
-                        remotePath: $(this).attr('data-file'),
-                        remoteTarget: $(this).attr('data-target')
+                </li>
+              </a>
+            <% end %>
+          <% else %>
+            <% page_articles.each do |article| %>
+              <a class="post" href="<%= article.url %>" alt="<%= article.title %>">
+                <li data-file="<%= article.url %>" data-target="article">
+                  <div class="frame-thumbnail">
+                    <i><%= article.data.category %></i>
+                    <div class="article-thumbnail" style="background-image: url('<%= image_path article.data.thumbnail %>')">
+                    </div>
+                  </div>
+                  <h3><%= article.title %></h3>
+                  <p><%= article.data.synopsis %></p>
+                  <div class="article-info">
+                    <%= partial "shared/svg/clock" %>
+                    <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
+                  </div>
+                  <script>
+                    $(function() {
+                      $('li').each(function() {
+                        $(this).readingTime({
+                          readingTimeTarget: $(this).find('.eta'),
+                          remotePath: $(this).attr('data-file'),
+                          remoteTarget: $(this).attr('data-target')
+                        });
                       });
                     });
-                  });
-                </script>
-              </li>
-            </a>
+                  </script>
+                </li>
+              </a>
+            <% end %>
           <% end %>
+
+          <div id="pagination">
+            <% if paginate && num_pages > 1 %>
+              <p>Page <%= page_number %> of <%= num_pages %></p>
+
+              <% if prev_page %>
+                <p><%= link_to 'Previous page', prev_page %></p>
+              <% end %>
+            <% end %>
+
+            <% if paginate %>
+              <% if next_page %>
+                <p><%= link_to 'Next page', next_page, class: "next" %></p>
+              <% end %>
+            <% end %>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <% if current_page.path == 'blog.html' %>
+    <div class="container-fluid medium-container">
+      <img class="medium-logo" src="<%= image_path 'logos/medium.png' %>" alt="Logo Medium">
+      <div class="container medium">
+        <% data.posts.each do |post| %>
+          <div class="medium-postcard">
+            <a data-width="100%" height="260" href="https://medium.com/cforgood/<%= post.url %>" class="m-story"></a>
+          </div>
         <% end %>
-
-        <div id="pagination">
-          <% if paginate && num_pages > 1 %>
-            <p>Page <%= page_number %> of <%= num_pages %></p>
-
-            <% if prev_page %>
-              <p><%= link_to 'Previous page', prev_page %></p>
-            <% end %>
-          <% end %>
-
-          <% if paginate %>
-            <% if next_page %>
-              <p><%= link_to 'Next page', next_page, class: "next" %></p>
-            <% end %>
-          <% end %>
-        </div>
-      </ul>
+      </div>
     </div>
+    <% end %>
   </div>
-
-  <% if current_page.path == 'blog.html' %>
-  <div class="container-fluid medium-container">
-    <img class="medium-logo" src="<%= image_path 'logos/medium.png' %>" alt="Logo Medium">
-    <div class="container medium">
-      <% data.posts.each do |post| %>
-        <div class="medium-postcard">
-          <a data-width="100%" height="260" href="https://medium.com/cforgood/<%= post.url %>" class="m-story"></a>
-        </div>
-      <% end %>
-    </div>
-  </div>
-  <% end %>
 </div>
 
 <!-- READING TIME SCRIPT -->

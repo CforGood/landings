@@ -11,7 +11,10 @@
       </div>
       <span id="typed"></span>
     </div>
-    <%= partial "shared/svg/main_illustration" %>
+    <div class="partners-illustration">
+      <img src="../images/partners.gif">
+      <%= partial "shared/svg/header_partners" %>
+    </div>
   </header>
 
   <section id="video">
@@ -33,13 +36,13 @@
     <div class="section-description">
       <h3>Je valorise mon activité et j’attire une nouvelle clientèle</h3>
       <p>Je met en lumière mes engagements actuels sur ma page « commerçant » et me rend visible auprès d’une communauté sensible à la consommation responsable.</p>
-      <span>91% des français déclarent être prêt à changer de commerçant pour un plus engagé.</span>
+      <span><i>91%</i> des français déclarent être prêt à changer de commerçant pour un plus engagé.</span>
     </div>
   </section>
 
   <section id="consumption">
     <div class="section-icon">
-      <%= partial "shared/svg/markers" %>
+      <%= partial "shared/svg/perks" %>
     </div>
     <div class="section-description">
       <h3>Je crée des bons plans solidaires</h3>
@@ -49,11 +52,12 @@
 
   <section id="solidarity-network">
     <div class="section-icon">
-      <%= partial "shared/svg/waterdrop" %>
+      <%= partial "shared/svg/solidarity" %>
     </div>
     <div class="section-description">
       <h3>Je participe à un véritable réseau de solidarité</h3>
       <p>Mes bons plans sont exclusivement accessibles aux membres qui soutiennent une association à travers leurs abonnements. Enfin une manière simple et innovante de développer mon activité tout en inspirant la solidarité !</p>
+      <span class="hint--top" data-hint="Le pourcentage exact est déterminé en fonction du montant de votre participation mensuelle."><i>90%</i> de l'abonnement des utilisateur est reversé à une association *</span>
     </div>
   </section>
 
@@ -64,6 +68,7 @@
     <div class="section-description">
       <h3>Je change le monde à mon échelle</h3>
       <p>En rejoignant CforGood, je deviens le véritable moteur d’un mouvement favorisant l’émergence d’une société plus responsable et solidaire. Ensemble, nous sommes une Révolution Positive.</p>
+      <span><i>650+</i>utilisateurs inscrits !</span>
     </div>
   </section>
 

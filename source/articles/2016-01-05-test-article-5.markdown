@@ -1,9 +1,9 @@
 ---
-title: "My Middleman Blog Post 5"
+title: "Surfrider Foundation Europe : protège et met en valeur le littoral et les océans"
 date: 2016-01-05 3:43
 author: cedric
-category: Événement
-thumbnail: blog/test.jpg
+category: Communauté
+thumbnail: blog/article-surfrider.jpg
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
 layout: article
 ---

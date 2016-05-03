@@ -1,9 +1,9 @@
 ---
-title: "My Middleman Blog Post 7"
+title: "J’ai redécouvert Bordeaux grâce à CforGood"
 date: 2016-01-07 3:43
 author: cedric
-category: CforGood
-thumbnail: blog/test.jpg
+category: Communauté
+thumbnail: blog/article-bordeaux.png
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
 layout: article
 ---

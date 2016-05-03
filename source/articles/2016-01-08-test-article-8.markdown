@@ -1,9 +1,9 @@
 ---
-title: "My Middleman Blog Post 8"
+title: "Consommation : comment réduire sa facture en passant par les circuits courts."
 date: 2016-01-08 3:43
 author: cedric
-category: CforGood
-thumbnail: blog/test.jpg
+category: Tendance
+thumbnail: blog/article-consommation.jpg
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
 layout: article
 ---

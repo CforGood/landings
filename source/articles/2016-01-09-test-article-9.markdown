@@ -1,9 +1,9 @@
 ---
-title: "My Middleman Blog Post 9"
+title: "Fruits et Légumes extra frais en bas de chez sois avec Potager City"
 date: 2016-01-09 3:43
 author: cedric
-category: CforGood
-thumbnail: blog/test.jpg
+category: Communauté
+thumbnail: blog/article-potagercity.jpg
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
 layout: article
 ---

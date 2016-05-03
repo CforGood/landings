@@ -1,0 +1,11 @@
+.partners-illustration {
+  position: relative;
+
+  img {
+    position: absolute;
+    height: 271px;
+    top: 121px;
+    left: calc(50% - 2px);
+    transform: translateX(-50%);
+  }
+}

@@ -1,9 +1,9 @@
 ---
-title: "My Middleman Blog Post 6"
+title: "Comment sensibiliser les jeunes sur leur mode de vie et l'environnement ?"
 date: 2016-01-06 3:43
 author: cedric
-category: Événement
-thumbnail: blog/test.jpg
+category: Tendance
+thumbnail: blog/article-jeune.png
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
 layout: article
 ---

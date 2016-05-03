@@ -2,7 +2,7 @@
 title: "My Middleman Blog Post 3"
 date: 2016-01-03 3:43
 author: cedric
-category: Communauté
+category: Tendance
 thumbnail: blog/test.jpg
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
 layout: article
