@@ -1258,6 +1258,17 @@
 
 <p>Vestibulum eu viverra erat. Nam dui lacus, fermentum ac ipsum at, luctus egestas orci. Quisque scelerisque orci vitae est maximus, et aliquam lectus semper. Quisque sit amet laoreet ipsum. Duis dapibus erat at volutpat malesuada. Integer vitae orci nec nunc laoreet tincidunt sed sed nunc. Nam finibus turpis ac pellentesque dictum. Morbi pretium elit in nulla iaculis, ac semper ante sollicitudin. Integer fringilla placerat justo, nec tempus turpis venenatis in. Quisque eu ante sem. Donec feugiat mi arcu, ac volutpat turpis consequat nec. Aenean id libero vestibulum, egestas augue eu, iaculis felis. Aliquam at ligula lacus. Aenean egestas, ex egestas accumsan efficitur, magna mauris cursus metus, auctor condimentum justo metus non lorem. Vivamus tempor ligula nibh, vitae suscipit tortor posuere vitae. Morbi malesuada eros at tortor venenatis, vel placerat justo faucibus.</p>
 
+
+      <section id="call-to-action" class="article-cta">
+        <div class="cta-container">
+          <button id="switcher" class="cta-home" type="button">
+            <div class="ripple-area js-ripple">
+              <span class="ripple-circle"></span>
+            </div>
+            Je rejoins la révolution positive
+          </button>
+        </div>
+      </section>
     </article>
 
     <div class="article-author">
@@ -1363,4 +1374,32 @@ s.setAttribute('data-timestamp', +new Date());
 
 <script>
   $('article').readingTime();
+
+  // BUTTON RIPPLE EFFECT
+  jQuery(document).ready(function($, window, document, undefined) {
+
+    'use strict';
+
+    var $ripple = $('.js-ripple');
+
+    $ripple.on('click.ui.ripple', function(e) {
+      var $this = $(this);
+      var $offset = $this.parent().offset();
+      var $circle = $this.find('.ripple-circle');
+
+      var x = e.pageX - $offset.left;
+      var y = e.pageY - $offset.top;
+
+      $circle.css({
+        top: y + 'px',
+        left: x + 'px'
+      });
+
+      $this.addClass('is-active');
+    });
+
+    $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(e) {
+      $(this).removeClass('is-active');
+    });
+  });
 </script>

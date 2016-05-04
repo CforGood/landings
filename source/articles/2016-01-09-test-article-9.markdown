@@ -1,5 +1,5 @@
 ---
-title: "Fruits et Légumes extra frais en bas de chez sois avec Potager City"
+title: "Fruits et Légumes extra frais en bas de chez soi avec Potager City"
 date: 2016-01-09 3:43
 author: cedric
 category: Communauté

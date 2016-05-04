@@ -9,3 +9,47 @@
     transform: translateX(-50%);
   }
 }
+
+.partners-my-business {
+  #House-5 {
+    opacity: 0.4;
+  }
+}
+
+.section-description {
+
+  ul {
+    margin-top: 20px;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .fa {
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
+        border: 1px solid #7E89A3;
+        border-radius: 50%;
+        line-height: 33px;
+        text-align: center;
+        font-size: 15px;
+        left: 20px;
+        top: 15px;
+        color: #7E89A3;
+      }
+
+      span {
+        display: flex;
+        flex-direction: column;
+
+        i {
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

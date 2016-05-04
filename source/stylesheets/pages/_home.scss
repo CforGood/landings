@@ -57,8 +57,25 @@
     .section-icon {
       display: flex;
       justify-content: center;
+      flex-direction: column;
+      align-items: center;
       padding: 0 6%;
       width: 50%;
+
+      .see-more {
+        position: relative;
+        padding: 10px 43px;
+        top: -18px;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        text-decoration: underline;
+        background-color: #f4f4f4;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+        }
+      }
     }
 
     .section-description {
@@ -68,7 +85,7 @@
       padding: 0 6%;
       width: 50%;
 
-      span {
+      span.number {
         position: relative;
         max-width: 45%;
         padding-top: 30px;
@@ -90,12 +107,25 @@
   }
 
   section#consumption {
+    position: relative;
+
     .section-icon {
       order: 2;
     }
 
     .section-description {
       order: 1;
+    }
+
+    .modal-perks {
+      position: absolute;
+      background-color: rgba(255,255,255,0.6);
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
     }
   }
 
@@ -171,12 +201,14 @@
       justify-content: flex-end;
 
       .switch-device {
+        display: flex;
         position: absolute;
         margin: 0 10% 0 0;
         top: 2px;
         right: 0;
 
-        #switcher {
+        #switcher-mobile,
+        #switcher-desktop {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -186,12 +218,12 @@
           border-radius: 50%;
         }
 
-        .icon-desktop-is-hidden {
-          display: none;
+        #switcher-mobile {
+          margin-right: 5px;
         }
 
-        .icon-mobile-is-hidden {
-          display: none;
+        .icon-is-hidden {
+          opacity: 0.6;
         }
       }
 

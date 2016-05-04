@@ -2,7 +2,7 @@
   <header class="container">
     <div class="vision">
       <!-- <#= partial "shared/svg/logo" %> -->
-      <p>Enfin un moyen simple de…</p>
+      <p>Enfin un moyen simple et gratuit de…</p>
       <div id="typed-strings">
         <p>Valoriser vos engagements.</p>
         <p>Toucher une clientèle ciblée.</p>
@@ -36,17 +36,35 @@
     <div class="section-description">
       <h3>Je valorise mon activité et j’attire une nouvelle clientèle</h3>
       <p>Je met en lumière mes engagements actuels sur ma page « commerçant » et me rend visible auprès d’une communauté sensible à la consommation responsable.</p>
-      <span><i>91%</i> des français déclarent être prêt à changer de commerçant pour un plus engagé.</span>
+      <span class="number"><i>91%</i> des français déclarent être prêt à changer de commerçant pour un plus engagé.</span>
     </div>
   </section>
 
   <section id="consumption">
     <div class="section-icon">
       <%= partial "shared/svg/perks" %>
+      <i id="see-more" class="see-more">Voir des exemples de bons plans</i>
+      <div id="modal-perks">
+        <div id="perk-close" class="modal-close">
+          <%= partial "shared/svg/close" %>
+        </div>
+        <div class="modal-perks-content">
+          <ul>
+            <li><img src="<%= image_path 'perks/perk-1.jpg' %>" alt=""></li>
+            <li><img src="<%= image_path 'perks/perk-2.jpg' %>" alt=""></li>
+            <li><img src="<%= image_path 'perks/perk-3.jpg' %>" alt=""></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="section-description">
       <h3>Je crée des bons plans solidaires</h3>
       <p>CforGood met gratuitement à ma disposition un outil innovant pour gérer mon activité à travers la création de 3 types de bons plans spécialement étudiés pour répondre à mes objectifs.</p>
+      <ul>
+        <li><i class="fa fa-gift" aria-hidden="true"></i><span><i>Bienvenue</i>Grandir et se faire connaître sur le territoire</span></li>
+        <li><i class="fa fa-repeat" aria-hidden="true"></i><span><i>Durable</i>Fidéliser une nouvelle clientèle</li>
+        <li><i class="fa fa-flash" aria-hidden="true"></i><span><i>Flash</i>Réduire le gaspillage alimentaire</li>
+      </ul>
     </div>
   </section>
 
@@ -56,8 +74,8 @@
     </div>
     <div class="section-description">
       <h3>Je participe à un véritable réseau de solidarité</h3>
-      <p>Mes bons plans sont exclusivement accessibles aux membres qui soutiennent une association à travers leurs abonnements. Enfin une manière simple et innovante de développer mon activité tout en inspirant la solidarité !</p>
-      <span class="hint--top" data-hint="Le pourcentage exact est déterminé en fonction du montant de votre participation mensuelle."><i>90%</i> de l'abonnement des utilisateur est reversé à une association *</span>
+      <p>Mes bons plans sont exclusivement accessibles aux membres qui soutiennent une association à travers leurs abonnements. Enfin une manière simple et innovante de développer mon activité.</p><p>Tout en inspirant la solidarité !</p>
+      <span class="number hint--top" data-hint="Le pourcentage exact est déterminé en fonction du montant de votre participation mensuelle."><i>85%</i> de l'abonnement des utilisateur est reversé à une association *</span>
     </div>
   </section>
 
@@ -68,26 +86,33 @@
     <div class="section-description">
       <h3>Je change le monde à mon échelle</h3>
       <p>En rejoignant CforGood, je deviens le véritable moteur d’un mouvement favorisant l’émergence d’une société plus responsable et solidaire. Ensemble, nous sommes une Révolution Positive.</p>
-      <span><i>650+</i>utilisateurs inscrits !</span>
+      <span class="number"><i>650+</i>utilisateurs inscrits !</span>
     </div>
   </section>
 
   <section id="how-to">
     <div class="how-to-specifics">
       <h2>Comment ça marche ?</h2>
+
       <div class="switch-device">
-        <button id="switcher" class="device-switcher hint--top" data-hint="Changez de support !" type="button">
+        <button id="switcher-mobile" class="device-switcher hint--top" data-hint="Sur votre mobile" type="button">
+          <div class="ripple-area js-ripple">
+            <span class="ripple-circle"></span>
+          </div>
+          <div id="icon-mobile">
+            <%= partial "shared/svg/icon_mobile" %>
+          </div>
+        </button>
+        <button id="switcher-desktop" class="device-switcher hint--top icon-is-hidden" data-hint="Sur votre ordinateur" type="button">
           <div class="ripple-area js-ripple">
             <span class="ripple-circle"></span>
           </div>
           <div id="icon-desktop">
             <%= partial "shared/svg/icon_desktop" %>
           </div>
-          <div id="icon-mobile" class="icon-mobile-is-hidden">
-            <%= partial "shared/svg/icon_mobile" %>
-          </div>
         </button>
       </div>
+
       <ul id="specifics-list" class="specifics">
         <li id="specific-1" class="active">
           <h3>Rejoignez-nous</h3>
@@ -268,12 +293,32 @@
     }
   });
 
+  $('#see-more').click(function(e) {
+    $('#modal-perks').toggleClass('is-visible');
+    $('body').toggleClass('modal-open');
+  });
+
+  $('#perk-close').click(function(e) {
+    $('#modal-perks').toggleClass('is-visible');
+    $('body').toggleClass('modal-open');
+  });
+
+
   // SWITCH DEVICE ON CLICK
-  $('#switcher').click(function(e) {
+  $('#switcher-desktop').click(function(e) {
     $('.how-to-browser').toggleClass('browser-is-hidden');
     $('.how-to-mobile').toggleClass('mobile-is-visible');
-    $('#icon-mobile').toggleClass('icon-mobile-is-hidden');
-    $('#icon-desktop').toggleClass('icon-desktop-is-hidden');
+    $('#switcher-desktop').toggleClass('icon-is-hidden');
+    $('#switcher-mobile').toggleClass('icon-is-hidden');
+    e.preventDefault() /*ignores actual link*/
+  });
+
+  // SWITCH DEVICE ON CLICK
+  $('#switcher-mobile').click(function(e) {
+    $('.how-to-browser').toggleClass('browser-is-hidden');
+    $('.how-to-mobile').toggleClass('mobile-is-visible');
+    $('#switcher-desktop').toggleClass('icon-is-hidden');
+    $('#switcher-mobile').toggleClass('icon-is-hidden');
     e.preventDefault() /*ignores actual link*/
   });
 

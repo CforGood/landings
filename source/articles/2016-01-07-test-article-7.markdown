@@ -3,7 +3,7 @@ title: "J’ai redécouvert Bordeaux grâce à CforGood"
 date: 2016-01-07 3:43
 author: cedric
 category: Communauté
-thumbnail: blog/article-bordeaux.png
+thumbnail: blog/article-bordeaux.jpg
 synopsis: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, felis id lobortis dignissim, elit nunc vulputate odio, eget facilisis ligula eros ut augue.
 layout: article
 ---
