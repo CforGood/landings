@@ -9,10 +9,23 @@
         <% end %>
         <!-- MENU LIST -->
         <ul>
-          <li><%= link_to 'Membres', '/', class: "is-active" %></li>
+          <% if current_page.path == "index.html" %>
+            <li><%= link_to 'Membres', '/', class: "is-active" %></li>
+          <% else %>
+            <li><%= link_to 'Membres', '/' %></li>
+          <% end %>
           <!-- <li><#= link_to 'Associations', '/' #></li> -->
-          <li><%= link_to 'Partenaires', '/partenaires' %></li>
-          <li><%= link_to 'Blog', '/blog.html' %>
+          <% if current_page.path == "partenaires.html" %>
+            <li><%= link_to 'Partenaires', '/partenaires', class: "is-active" %></li>
+          <% else %>
+            <li><%= link_to 'Partenaires', '/partenaires' %></li>
+          <% end %>
+          <!-- Blog -->
+          <% if current_page.path == "blog.html" || current_page.url.include?('blog') %>
+            <li><%= link_to 'Blog', '/blog.html', class: "is-active" %>
+          <% else %>
+            <li><%= link_to 'Blog', '/blog.html' %>
+          <% end %>
         </ul>
       </div>
       <!-- SIGNUP/SIGNIN BUTTONS -->

@@ -1,0 +1,113 @@
+#touch_effect,
+#add_button,
+#touch_effect_2,
+#icon_cforgood {
+  visibility: hidden;
+  @include transition(all 0.2s ease);
+}
+
+#touch_effect {
+  position: absolute;
+  animation-duration: 8s;
+  animation-name: touched;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#touch_effect_2 {
+  position: absolute;
+  animation-duration: 8s;
+  animation-name: touched;
+  animation-delay: 5.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes touched {
+  0% {
+    visibility: hidden;
+    opacity: 1;
+  }
+
+  5% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#add_button {
+  position: absolute;
+  animation-duration: 8s;
+  animation-delay: 3.5s;
+  animation-name: poped;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes poped {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  60% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  70% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+#icon_cforgood {
+  position: absolute;
+  animation-duration: 8s;
+  animation-delay: 6s;
+  animation-name: pophome;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pophome {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  45% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  50% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
