@@ -3,12 +3,7 @@
     <div class="vision">
       <!-- <#= partial "shared/svg/logo" %> -->
       <p>Enfin un moyen simple et gratuit de…</p>
-      <div id="typed-strings">
-        <p>Valoriser vos engagements.</p>
-        <p>Toucher une clientèle ciblée.</p>
-        <p>Gérer votre activité.</p>
-        <p>Tout en inspirant la solidarité !</p>
-      </div>
+      <!-- Script - Typed.js -->
       <span id="typed"></span>
     </div>
     <div class="partners-illustration">
@@ -50,9 +45,18 @@
         </div>
         <div class="modal-perks-content">
           <ul>
-            <li><img src="<%= image_path 'perks/perk-1.jpg' %>" alt=""></li>
-            <li><img src="<%= image_path 'perks/perk-2.jpg' %>" alt=""></li>
-            <li><img src="<%= image_path 'perks/perk-3.jpg' %>" alt=""></li>
+            <li>
+              <img src="<%= image_path 'perks/perk-1.jpg' %>" alt="">
+              <i class="fa fa-gift" aria-hidden="true"></i><span><i>Bienvenue</i>Grandir et se faire connaître sur le territoire</span>
+            </li>
+            <li>
+              <img src="<%= image_path 'perks/perk-3.jpg' %>" alt="">
+              <i class="fa fa-repeat" aria-hidden="true"></i><span><i>Durable</i>Fidéliser une nouvelle clientèle</span>
+            </li>
+            <li>
+              <img src="<%= image_path 'perks/perk-3.jpg' %>" alt="">
+              <i class="fa fa-flash" aria-hidden="true"></i><span><i>Flash</i>Réduire le gaspillage alimentaire</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -62,8 +66,8 @@
       <p>CforGood met gratuitement à ma disposition un outil innovant pour gérer mon activité à travers la création de 3 types de bons plans spécialement étudiés pour répondre à mes objectifs.</p>
       <ul>
         <li><i class="fa fa-gift" aria-hidden="true"></i><span><i>Bienvenue</i>Grandir et se faire connaître sur le territoire</span></li>
-        <li><i class="fa fa-repeat" aria-hidden="true"></i><span><i>Durable</i>Fidéliser une nouvelle clientèle</li>
-        <li><i class="fa fa-flash" aria-hidden="true"></i><span><i>Flash</i>Réduire le gaspillage alimentaire</li>
+        <li><i class="fa fa-repeat" aria-hidden="true"></i><span><i>Durable</i>Fidéliser une nouvelle clientèle</span></li>
+        <li><i class="fa fa-flash" aria-hidden="true"></i><span><i>Flash</i>Réduire le gaspillage alimentaire</span></li>
       </ul>
     </div>
   </section>
@@ -236,11 +240,12 @@
   // TYPED SCRIPT ACTIVATION
   jQuery(document).ready(function() {
     $("#typed").typed({
-      stringsElement: $('#typed-strings'),
+      strings: ["Valoriser vos engagements.", "Toucher une clientèle ciblée.", "Gérer votre activité.", "Tout en inspirant la solidarité !"],
       loop: true,
       typeSpeed: 10,
       backDelay: 1000,
       backSpeed: 0,
+      showCursor: false
     });
   });
 

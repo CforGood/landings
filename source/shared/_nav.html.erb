@@ -4,21 +4,28 @@
       <!-- NAVIGATION LINKS -->
       <div class="nav-left">
         <!-- LOGO -->
-        <% link_to '/' do %>
+        <% link_to '/index.html' do %>
           <%= partial "shared/svg/logo" %>
         <% end %>
         <!-- MENU LIST -->
         <ul>
+          <!-- Menbres -->
           <% if current_page.path == "index.html" %>
-            <li><%= link_to 'Membres', '/', class: "is-active" %></li>
+            <li><%= link_to 'Membres', '/index.html', class: "is-active" %></li>
           <% else %>
-            <li><%= link_to 'Membres', '/' %></li>
+            <li><%= link_to 'Membres', '/index.html' %></li>
           <% end %>
-          <!-- <li><#= link_to 'Associations', '/' #></li> -->
+          <!-- Partenaires -->
           <% if current_page.path == "partenaires.html" %>
-            <li><%= link_to 'Partenaires', '/partenaires', class: "is-active" %></li>
+            <li><%= link_to 'Partenaires', '/partenaires.html', class: "is-active" %></li>
           <% else %>
-            <li><%= link_to 'Partenaires', '/partenaires' %></li>
+            <li><%= link_to 'Partenaires', '/partenaires.html' %></li>
+          <% end %>
+          <!-- Associations -->
+          <% if current_page.path == "associations.html" %>
+            <li><%= link_to 'Associations', '/associations.html', class: "is-active" %></li>
+          <% else %>
+            <li><%= link_to 'Associations', '/associations.html' %></li>
           <% end %>
           <!-- Blog -->
           <% if current_page.path == "blog.html" || current_page.url.include?('blog') %>

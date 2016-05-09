@@ -3,15 +3,12 @@
     <div class="vision">
       <!-- <#= partial "shared/svg/logo" %> -->
       <p>Enfin un moyen simple de…</p>
-      <div id="typed-strings">
-        <p>Redécouvrir votre ville autrement.</p>
-        <p>Consommer de manière responsable.</p>
-        <p>Soutenir des projets qui vous tiennent à coeur.</p>
-        <p>Changer le monde à votre échelle !</p>
-      </div>
+      <!-- Script - Typed.js -->
       <span id="typed"></span>
     </div>
-    <%= partial "shared/svg/main_illustration" %>
+    <div class="frame-illustration">
+      <%= partial "shared/svg/main_illustration" %>
+    </div>
   </header>
 
   <section id="video">
@@ -216,11 +213,13 @@
   // TYPED SCRIPT ACTIVATION
   jQuery(document).ready(function() {
     $("#typed").typed({
-      stringsElement: $('#typed-strings'),
+      //stringsElement: $('#typed-strings'),
+      strings: ["Redécouvrir votre ville autrement.", "Consommer de manière responsable.", "Soutenir des projets qui vous tiennent à coeur.", "Changer le monde à votre échelle !"],
       loop: true,
       typeSpeed: 10,
       backDelay: 1000,
       backSpeed: 0,
+      showCursor: false
     });
   });
 

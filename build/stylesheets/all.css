@@ -10524,6 +10524,156 @@ nav {
     display: -ms-flexbox;
     display: flex; }
 
+/* line 1, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_animation_nodownload.scss */
+#touch_effect,
+#add_button,
+#touch_effect_2,
+#icon_cforgood {
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+/* line 9, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_animation_nodownload.scss */
+#touch_effect {
+  position: absolute;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-name: touched;
+          animation-name: touched;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+/* line 18, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_animation_nodownload.scss */
+#touch_effect_2 {
+  position: absolute;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-name: touched;
+          animation-name: touched;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes touched {
+  0% {
+    visibility: hidden;
+    opacity: 1; }
+  5% {
+    visibility: visible;
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes touched {
+  0% {
+    visibility: hidden;
+    opacity: 1; }
+  5% {
+    visibility: visible;
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+/* line 43, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_animation_nodownload.scss */
+#add_button {
+  position: absolute;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  -webkit-animation-name: poped;
+          animation-name: poped;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes poped {
+  0% {
+    visibility: hidden;
+    opacity: 0; }
+  20% {
+    visibility: visible;
+    opacity: 1; }
+  60% {
+    visibility: visible;
+    opacity: 1; }
+  70% {
+    visibility: hidden;
+    opacity: 0; }
+  100% {
+    visibility: hidden;
+    opacity: 0; } }
+
+@keyframes poped {
+  0% {
+    visibility: hidden;
+    opacity: 0; }
+  20% {
+    visibility: visible;
+    opacity: 1; }
+  60% {
+    visibility: visible;
+    opacity: 1; }
+  70% {
+    visibility: hidden;
+    opacity: 0; }
+  100% {
+    visibility: hidden;
+    opacity: 0; } }
+/* line 79, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/components/_animation_nodownload.scss */
+#icon_cforgood {
+  position: absolute;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-name: pophome;
+          animation-name: pophome;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes pophome {
+  0% {
+    visibility: hidden;
+    opacity: 0; }
+  20% {
+    visibility: visible;
+    opacity: 1; }
+  45% {
+    visibility: visible;
+    opacity: 1; }
+  50% {
+    visibility: hidden;
+    opacity: 0; }
+  100% {
+    visibility: hidden;
+    opacity: 0; } }
+
+@keyframes pophome {
+  0% {
+    visibility: hidden;
+    opacity: 0; }
+  20% {
+    visibility: visible;
+    opacity: 1; }
+  45% {
+    visibility: visible;
+    opacity: 1; }
+  50% {
+    visibility: hidden;
+    opacity: 0; }
+  100% {
+    visibility: hidden;
+    opacity: 0; } }
 /**
  * Component: Button
  * --------------------------------------------------
@@ -11691,150 +11841,10 @@ header.category {
 /* line 309, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
 #home-page section#no-download .section-icon {
   padding: 0 0 0 6%; }
-  /* line 312, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
-  #home-page section#no-download .section-icon #touch_effect,
-  #home-page section#no-download .section-icon #add_button,
-  #home-page section#no-download .section-icon #touch_effect_2,
-  #home-page section#no-download .section-icon #icon_cforgood {
-    visibility: hidden;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
-  /* line 320, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
-  #home-page section#no-download .section-icon #touch_effect {
-    position: absolute;
-    -webkit-animation-duration: 8s;
-            animation-duration: 8s;
-    -webkit-animation-name: touched;
-            animation-name: touched;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
-  /* line 328, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
-  #home-page section#no-download .section-icon #touch_effect_2 {
-    position: absolute;
-    -webkit-animation-duration: 8s;
-            animation-duration: 8s;
-    -webkit-animation-name: touched;
-            animation-name: touched;
-    -webkit-animation-delay: 2.5s;
-            animation-delay: 2.5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
-@-webkit-keyframes touched {
-  0% {
-    visibility: hidden;
-    opacity: 1; }
-  5% {
-    visibility: visible;
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-@keyframes touched {
-  0% {
-    visibility: hidden;
-    opacity: 1; }
-  5% {
-    visibility: visible;
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-  /* line 353, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
-  #home-page section#no-download .section-icon #add_button {
-    position: absolute;
-    -webkit-animation-duration: 8s;
-            animation-duration: 8s;
-    -webkit-animation-delay: 0.5s;
-            animation-delay: 0.5s;
-    -webkit-animation-name: poped;
-            animation-name: poped;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
-@-webkit-keyframes poped {
-  0% {
-    visibility: hidden;
-    opacity: 0; }
-  20% {
-    visibility: visible;
-    opacity: 1; }
-  60% {
-    visibility: visible;
-    opacity: 1; }
-  70% {
-    visibility: hidden;
-    opacity: 0; }
-  100% {
-    visibility: hidden;
-    opacity: 0; } }
-@keyframes poped {
-  0% {
-    visibility: hidden;
-    opacity: 0; }
-  20% {
-    visibility: visible;
-    opacity: 1; }
-  60% {
-    visibility: visible;
-    opacity: 1; }
-  70% {
-    visibility: hidden;
-    opacity: 0; }
-  100% {
-    visibility: hidden;
-    opacity: 0; } }
-  /* line 389, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
-  #home-page section#no-download .section-icon #icon_cforgood {
-    position: absolute;
-    -webkit-animation-duration: 8s;
-            animation-duration: 8s;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
-    -webkit-animation-name: pophome;
-            animation-name: pophome;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
-@-webkit-keyframes pophome {
-  0% {
-    visibility: hidden;
-    opacity: 0; }
-  20% {
-    visibility: visible;
-    opacity: 1; }
-  45% {
-    visibility: visible;
-    opacity: 1; }
-  50% {
-    visibility: hidden;
-    opacity: 0; }
-  100% {
-    visibility: hidden;
-    opacity: 0; } }
-@keyframes pophome {
-  0% {
-    visibility: hidden;
-    opacity: 0; }
-  20% {
-    visibility: visible;
-    opacity: 1; }
-  45% {
-    visibility: visible;
-    opacity: 1; }
-  50% {
-    visibility: hidden;
-    opacity: 0; }
-  100% {
-    visibility: hidden;
-    opacity: 0; } }
-/* line 426, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+/* line 313, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
 #home-page section#no-download ul {
   margin-top: 20px; }
-  /* line 429, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 316, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#no-download ul li {
     display: -webkit-box;
     display: -webkit-flex;
@@ -11845,10 +11855,10 @@ header.category {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 20px; }
-    /* line 434, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 321, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#no-download ul li svg {
       margin-right: 10px; }
-/* line 443, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+/* line 330, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
 #home-page section#call-to-action .cta-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11869,12 +11879,12 @@ header.category {
           align-items: center;
   margin: 0 auto;
   width: 40%; }
-  /* line 451, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 338, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#call-to-action .cta-container a {
     padding-top: 10px;
     font-size: 1.3rem;
     text-decoration: underline; }
-/* line 459, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+/* line 346, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
 #home-page section#partnerships {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11896,11 +11906,11 @@ header.category {
   margin: 0 auto;
   max-width: 1280px;
   background-color: #7E89A3; }
-  /* line 468, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 355, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#partnerships h2 {
     color: #fff;
     margin-bottom: 4rem; }
-  /* line 473, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 360, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#partnerships ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -11919,13 +11929,13 @@ header.category {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
-    /* line 482, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 369, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#partnerships ul li img {
       height: 50px; }
-  /* line 488, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 375, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#partnerships ul.partners-gold {
     width: 55%; }
-  /* line 492, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 379, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#partnerships ul.partners-silver,
   #home-page section#partnerships ul.partners-bronze {
     width: 65%; }

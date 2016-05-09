@@ -1,5 +1,71 @@
 /* MARKERS ********************************************************************/
 
+#Forground {
+  position: absolute;
+  animation-duration: 140s;
+  animation-name: panoramix;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes panoramix {
+  0% {
+    transform: translateX(0) translateY(58%);
+  }
+
+  50% {
+    transform: translateX(38%) translateY(58%);
+  }
+
+  100% {
+    transform: translateX(0) translateY(58%);
+  }
+}
+
+#Background-Level-1 {
+  position: absolute;
+  animation-duration: 140s;
+  animation-name: panoramix2;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes panoramix2 {
+  0% {
+    transform: translateX(54%) translateY(41%);
+  }
+
+  50% {
+    transform: translateX(40%) translateY(41%);
+  }
+
+  100% {
+    transform: translateX(54%) translateY(41%);
+  }
+}
+
+#Background-Level-2 {
+  position: absolute;
+  animation-duration: 140s;
+  animation-name: panoramix3;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes panoramix3 {
+  0% {
+    transform: translateX(26%) translateY(30%);
+  }
+
+  50% {
+    transform: translateX(40%) translateY(41%);
+  }
+
+  100% {
+    transform: translateX(26%) translateY(30%);
+  }
+}
+
 #marker-epicerie,
 #marker-forme,
 #marker-loisir,
