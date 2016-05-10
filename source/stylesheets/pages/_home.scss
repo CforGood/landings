@@ -2,6 +2,7 @@
 
   header {
     padding-top: 70px;
+    overflow: hidden;
 
     .logo {
       width: 220px;
@@ -51,6 +52,41 @@
         background: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
         background: -o-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
         background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+      }
+
+      @media (min-width: 1025px) {
+        #Frame-iPad {
+          display: none;
+        }
+
+        #Frame-iphone {
+          display: none;
+        }
+      }
+
+      @media (min-width: 376px) and (max-width: 1024px) {
+        transform: scale(1.4);
+
+        #Frame-desktop {
+          display: none;
+        }
+
+        #Frame-iphone {
+          display: none;
+        }
+      }
+
+      @media (max-width: 375px) {
+        transform: scale(2.2);
+
+        #Frame-desktop {
+          display: none;
+        }
+
+        #Frame-iPad {
+          display: none;
+        }
+
       }
 
       svg {
