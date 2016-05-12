@@ -46,6 +46,15 @@ button.sign-in {
     background-color: $grey;
   }
 }
+@media (max-width: 375px) {
+  button.sign-in,
+  button.sign-up {
+    min-width: 100px;
+    font-size: 0.6em;
+    padding: 9px 10px;
+  }
+}
+
 
 button.video-launcher {
   display: flex;
