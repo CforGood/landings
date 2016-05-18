@@ -1,9 +1,16 @@
 <div id="home-page">
   <header class="container">
     <div class="vision">
-      <p>Enfin un moyen simple de…</p>
-      <!-- Script - Typed.js -->
-      <span id="typed"></span>
+      <h1>Le nouveau réseau de solidarité</h1>
+      <div class="vision-pros">
+        <p>Enfin un moyen simple de </p>
+        <div class="vision-slick">
+          <i>Redécouvrir votre ville</i>
+          <i>Consommer responsable</i>
+          <i>Parrainer les projets de votre choix</i>
+          <i>Changer le monde à votre échelle</i>
+        </div>
+      </div>
     </div>
     <div class="frame-illustration">
       <%= partial "shared/svg/main_illustration" %>
@@ -209,20 +216,6 @@
 </div>
 
 <script>
-
-  // TYPED SCRIPT ACTIVATION
-  jQuery(document).ready(function() {
-    $("#typed").typed({
-      //stringsElement: $('#typed-strings'),
-      strings: ["Redécouvrir votre ville autrement.", "Consommer de manière responsable.", "Soutenir des projets qui vous tiennent à coeur.", "Changer le monde à votre échelle !"],
-      loop: true,
-      typeSpeed: 10,
-      backDelay: 1000,
-      backSpeed: 0,
-      showCursor: false
-    });
-  });
-
   // LAUNCH MODAL
   $('#video-launcher').click(function(e) {
     $('#modal-video').toggleClass('is-visible');
@@ -230,6 +223,19 @@
 
   // SLICK
   jQuery(document).ready(function(){
+    $('.vision-slick').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 600,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 4000,
+      slidesToScroll: 1,
+      slidesToShow: 1
+    });
+
     $('.articles-carousel').slick({
       dots: false,
       arrows: false,
@@ -243,7 +249,27 @@
       arrows: false,
       infinite: true,
       speed: 300,
-      slidesToShow: 4
+      slidesToShow: 4,
+      responsive: [
+        {
+          breakpoint: 964,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        }
+      ]
     });
   });
 

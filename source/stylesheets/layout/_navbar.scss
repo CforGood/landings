@@ -1,6 +1,7 @@
 nav {
   display: flex;
   position: fixed;
+  max-width: 100vw;
   margin-top: 0;
   top: 0;
   left: 0;
@@ -29,7 +30,6 @@ nav {
     height: 70px;
 
     @media (max-width: 375px) {
-      justify-content: initial;
       height: 50px;
     }
 
@@ -39,6 +39,18 @@ nav {
 
       svg {
         height: 25px;
+      }
+
+      .logo-mobile {
+        @media (min-width: 757px) {
+          display: none;
+        }
+      }
+
+      .logo-desktop {
+        @media (max-width: 756px) {
+          display: none;
+        }
       }
 
       ul {
@@ -56,5 +68,6 @@ nav {
 
   .nav-right {
     display: flex;
+    margin-right: 15px;
   }
 }

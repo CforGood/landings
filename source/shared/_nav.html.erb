@@ -5,7 +5,12 @@
       <div class="nav-left">
         <!-- LOGO -->
         <% link_to '/index.html' do %>
-          <!-- <#= partial "shared/svg/logo_thumb" #> -->
+          <div class="logo-mobile">
+            <%= partial "shared/svg/logo_thumb" %>
+          </div>
+          <div class="logo-desktop">
+            <%= partial "shared/svg/logo" %>
+          </div>
         <% end %>
         <!-- MENU LIST -->
         <ul>

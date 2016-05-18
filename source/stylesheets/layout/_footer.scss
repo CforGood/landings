@@ -6,6 +6,10 @@ footer {
   color: #fff;
   background-color: #3E4149;
 
+  @media (max-width: 650px ) {
+    padding: 50px 0 0;
+  }
+
   a, a:active, a:focus {
     display: flex;
     align-items: center;
@@ -23,6 +27,17 @@ footer {
     margin: 0 auto;
     max-width: 960px;
 
+    @media (max-width: 650px ) {
+      flex-wrap: wrap;
+      padding: 50px 6%;
+
+      ul {
+        padding: 0px 1%;
+        margin-bottom: 20px;
+        width: 50%;
+      }
+    }
+
     ul {
       li {
         margin-bottom: 5px;
@@ -30,6 +45,12 @@ footer {
         svg {
           margin-right: 7px;
         }
+      }
+    }
+
+    @media (max-width: 650px ) {
+      ul.social-list {
+        padding: 32px 0 0 20px;
       }
     }
   }
@@ -43,6 +64,10 @@ footer {
     p {
       padding: 0;
       margin: 0;
+
+      @media (max-width: 420px ) {
+        font-size: 0.7em;
+      }
     }
 
     svg {
