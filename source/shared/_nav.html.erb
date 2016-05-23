@@ -26,12 +26,12 @@
           <% else %>
             <li><%= link_to 'Partenaires', '/partenaires.html' %></li>
           <% end %>
-          <!-- Associations -->
-          <% if current_page.path == "associations.html" %>
-            <li><%= link_to 'Associations', '/associations.html', class: "is-active" %></li>
-          <% else %>
-            <li><%= link_to 'Associations', '/associations.html' %></li>
-          <% end %>
+          <!-- Associations
+          <# if current_page.path == "associations.html" #>
+            <li><#= link_to 'Associations', '/associations.html', class: "is-active" #></li>
+          <# else #>
+            <li><#= link_to 'Associations', '/associations.html' #></li>
+          <# end #> -->
           <!-- Blog -->
           <% if current_page.path == "blog.html" || current_page.url.include?('blog') %>
             <li><%= link_to 'Blog', '/blog.html', class: "is-active" %>

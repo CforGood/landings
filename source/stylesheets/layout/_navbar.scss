@@ -29,7 +29,7 @@ nav {
     align-items: center;
     height: 70px;
 
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       height: 50px;
     }
 
@@ -42,13 +42,13 @@ nav {
       }
 
       .logo-mobile {
-        @media (min-width: 757px) {
+        @media (min-width: 766px) {
           display: none;
         }
       }
 
       .logo-desktop {
-        @media (max-width: 756px) {
+        @media (max-width: 767px) {
           display: none;
         }
       }
@@ -56,7 +56,7 @@ nav {
       ul {
         display: flex;
         margin-left: 30px;
-        @media (max-width: 375px) {
+        @media (max-width: 768px) {
           display: none;
         }
         li {
