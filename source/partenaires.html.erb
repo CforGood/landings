@@ -1,10 +1,16 @@
 <div id="home-page">
   <header class="container">
     <div class="vision">
-      <!-- <#= partial "shared/svg/logo" %> -->
-      <p>Enfin un moyen simple et gratuit de…</p>
-      <!-- Script - Typed.js -->
-      <span id="typed"></span>
+      <h1>Le nouveau réseau de solidarité</h1>
+      <div class="vision-pros">
+        <p>Enfin un moyen simple de </p>
+        <div class="vision-slick">
+          <i>Valoriser vos engagements</i>
+          <i>Toucher une clientèle ciblée</i>
+          <i>Gérer votre activité</i>
+          <i>Tout en inspirant la solidarité !</i>
+        </div>
+      </div>
     </div>
     <div class="partners-illustration">
       <img src="../images/partners.gif">
@@ -24,7 +30,7 @@
     <%= partial "shared/modal_video" %>
   </section>
 
-  <section id="own-scale">
+  <section id="own-scale" class="main-block">
     <div class="section-icon">
       <%= partial "shared/svg/business_area" %>
     </div>
@@ -35,7 +41,7 @@
     </div>
   </section>
 
-  <section id="consumption">
+  <section id="consumption" class="main-block">
     <div class="section-icon">
       <%= partial "shared/svg/perks" %>
       <i id="see-more" class="see-more">Voir des exemples de bons plans</i>
@@ -72,7 +78,7 @@
     </div>
   </section>
 
-  <section id="solidarity-network">
+  <section id="solidarity-network" class="main-block">
     <div class="section-icon">
       <%= partial "shared/svg/solidarity" %>
     </div>
@@ -83,7 +89,7 @@
     </div>
   </section>
 
-  <section id="consumption">
+  <section id="consumption" class="main-block">
     <div class="section-icon">
       <%= partial "shared/svg/waterdrop" %>
     </div>
@@ -158,7 +164,7 @@
     </div>
   </section>
 
-  <section id="no-download">
+  <section id="no-download" class="main-block">
     <div class="section-icon">
       <%= partial "shared/svg/signet_iphone" %>
     </div>
@@ -192,13 +198,15 @@
 
   <section id="call-to-action">
     <div class="cta-container">
-      <button id="switcher" class="cta-home" type="button">
-        <div class="ripple-area js-ripple">
-          <span class="ripple-circle"></span>
-        </div>
-        Je rejoins la révolution positive
-      </button>
-      <a href="#" alt="">Découvrez nos tarifs</a>
+      <a href="https://cforgood-staging.herokuapp.com/signup">
+        <button id="switcher" class="cta-home" type="button">
+          <div class="ripple-area js-ripple">
+            <span class="ripple-circle"></span>
+          </div>
+          Je rejoins la révolution positive
+        </button>
+      </a>
+      <!-- <a href="#" alt="">Découvrez nos tarifs</a> -->
     </div>
   </section>
 
@@ -237,17 +245,6 @@
 </div>
 
 <script>
-  // TYPED SCRIPT ACTIVATION
-  jQuery(document).ready(function() {
-    $("#typed").typed({
-      strings: ["Valoriser vos engagements.", "Toucher une clientèle ciblée.", "Gérer votre activité.", "Tout en inspirant la solidarité !"],
-      loop: true,
-      typeSpeed: 10,
-      backDelay: 1000,
-      backSpeed: 0,
-      showCursor: false
-    });
-  });
 
   // LAUNCH MODAL
   $('#video-launcher').click(function(e) {
@@ -256,6 +253,19 @@
 
   // SLICK
   jQuery(document).ready(function(){
+    $('.vision-slick').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 600,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 4000,
+      slidesToScroll: 1,
+      slidesToShow: 1
+    });
+
     $('.articles-carousel').slick({
       dots: false,
       arrows: false,

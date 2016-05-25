@@ -55,7 +55,10 @@ nav {
 
       ul {
         display: flex;
+        position: relative;
+        top: 6px;
         margin-left: 30px;
+
         @media (max-width: 768px) {
           display: none;
         }
@@ -69,5 +72,12 @@ nav {
   .nav-right {
     display: flex;
     margin-right: 15px;
+
+    a {
+            font-weight: 600;
+            font-size: inherit;
+            letter-spacing: none;
+            opacity: 1;
+          }
   }
 }

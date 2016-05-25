@@ -271,6 +271,16 @@
       }
     }
 
+    @media (min-width: 650px) {
+      .section-icon {
+        order: 1;
+      }
+
+      .section-description {
+        order: 2;
+      }
+    }
+
     .modal-perks {
       position: absolute;
       background-color: rgba(255,255,255,0.6);
@@ -280,6 +290,27 @@
       left: 0;
       height: 100%;
       width: 100%;
+    }
+  }
+
+  section#own-scale {
+    position: relative;
+
+    @media (max-width: 649px) {
+      .section-icon{
+        margin-top: 20px;
+        align-items: flex-end;
+      }
+    }
+
+    @media (min-width: 650px) {
+      .section-icon {
+        order: 2;
+      }
+
+      .section-description {
+        order: 1;
+      }
     }
   }
 
@@ -318,6 +349,10 @@
     img {
       height: 50px;
       border-radius: 50%;
+    }
+
+    .slick-dots {
+      position: relative;
     }
 
     .witness {
@@ -503,6 +538,7 @@
   }
 
   section#call-to-action {
+    padding-top: 0;
 
     .cta-container {
       display: flex;
@@ -512,11 +548,11 @@
       margin: 0 auto;
       width: 40%;
 
-      a {
-        padding-top: 10px;
-        font-size: 1.3rem;
-        text-decoration: underline;
-      }
+      // a {
+      //   padding-top: 10px;
+      //   font-size: 1.3rem;
+      //   text-decoration: underline;
+      // }
     }
   }
 
