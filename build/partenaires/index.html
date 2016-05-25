@@ -2217,18 +2217,22 @@
       </div>
       <!-- SIGNUP/SIGNIN BUTTONS -->
       <div class="nav-right">
-        <button class="sign-up" type="button">
-          <div class="ripple-area js-ripple">
-            <span class="ripple-circle"></span>
-          </div>
-          Je m'inscris
-        </button>
-        <button class="sign-in" type="button">
-          <div class="ripple-area js-ripple">
-            <span class="ripple-circle"></span>
-          </div>
-          Se connecter
-        </button>
+        <a href="https://cforgood-staging.herokuapp.com/signup">
+          <button class="sign-up" type="button">
+            <div class="ripple-area js-ripple">
+              <span class="ripple-circle"></span>
+            </div>
+            Je m'inscris
+          </button>
+        </a>
+        <a href="https://cforgood-staging.herokuapp.com/signin">
+          <button class="sign-in" type="button">
+            <div class="ripple-area js-ripple">
+              <span class="ripple-circle"></span>
+            </div>
+            Se connecter
+          </button>
+        </a>
       </div>
     </div>
   </div>
@@ -2271,10 +2275,16 @@
     <div id="home-page">
   <header class="container">
     <div class="vision">
-      <!-- <#= partial "shared/svg/logo" %> -->
-      <p>Enfin un moyen simple et gratuit de…</p>
-      <!-- Script - Typed.js -->
-      <span id="typed"></span>
+      <h1>Le nouveau réseau de solidarité</h1>
+      <div class="vision-pros">
+        <p>Enfin un moyen simple de </p>
+        <div class="vision-slick">
+          <i>Valoriser vos engagements</i>
+          <i>Toucher une clientèle ciblée</i>
+          <i>Gérer votre activité</i>
+          <i>Tout en inspirant la solidarité !</i>
+        </div>
+      </div>
     </div>
     <div class="partners-illustration">
       <img src="../images/partners.gif">
@@ -2371,7 +2381,7 @@
 </div>
   </section>
 
-  <section id="own-scale">
+  <section id="own-scale" class="main-block">
     <div class="section-icon">
       <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg class="partners-my-business" width="416px" height="243px" viewBox="0 0 416 243" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -3418,7 +3428,7 @@
     </div>
   </section>
 
-  <section id="consumption">
+  <section id="consumption" class="main-block">
     <div class="section-icon">
       <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="260px" height="190px" viewBox="0 0 260 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -3616,7 +3626,7 @@
     </div>
   </section>
 
-  <section id="solidarity-network">
+  <section id="solidarity-network" class="main-block">
     <div class="section-icon">
       <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="256px" height="250px" viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -3799,7 +3809,7 @@
     </div>
   </section>
 
-  <section id="consumption">
+  <section id="consumption" class="main-block">
     <div class="section-icon">
       <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="240px" height="147px" viewBox="0 0 240 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -3987,7 +3997,7 @@
     </div>
   </section>
 
-  <section id="no-download">
+  <section id="no-download" class="main-block">
     <div class="section-icon">
       <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="100%" height="290px" viewBox="0 0 830 475" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -5228,13 +5238,15 @@
 
   <section id="call-to-action">
     <div class="cta-container">
-      <button id="switcher" class="cta-home" type="button">
-        <div class="ripple-area js-ripple">
-          <span class="ripple-circle"></span>
-        </div>
-        Je rejoins la révolution positive
-      </button>
-      <a href="#" alt="">Découvrez nos tarifs</a>
+      <a href="https://cforgood-staging.herokuapp.com/signup">
+        <button id="switcher" class="cta-home" type="button">
+          <div class="ripple-area js-ripple">
+            <span class="ripple-circle"></span>
+          </div>
+          Je rejoins la révolution positive
+        </button>
+      </a>
+      <!-- <a href="#" alt="">Découvrez nos tarifs</a> -->
     </div>
   </section>
 
@@ -5289,17 +5301,6 @@
 </div>
 
 <script>
-  // TYPED SCRIPT ACTIVATION
-  jQuery(document).ready(function() {
-    $("#typed").typed({
-      strings: ["Valoriser vos engagements.", "Toucher une clientèle ciblée.", "Gérer votre activité.", "Tout en inspirant la solidarité !"],
-      loop: true,
-      typeSpeed: 10,
-      backDelay: 1000,
-      backSpeed: 0,
-      showCursor: false
-    });
-  });
 
   // LAUNCH MODAL
   $('#video-launcher').click(function(e) {
@@ -5308,6 +5309,19 @@
 
   // SLICK
   jQuery(document).ready(function(){
+    $('.vision-slick').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 600,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 4000,
+      slidesToScroll: 1,
+      slidesToShow: 1
+    });
+
     $('.articles-carousel').slick({
       dots: false,
       arrows: false,
