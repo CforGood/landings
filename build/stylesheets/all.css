@@ -11689,21 +11689,25 @@ header.category {
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
       text-align: center; }
-      /* line 27, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      @media (max-width: 767px) {
+        /* line 20, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        #home-page header .vision {
+          padding: 60px 25px 0; } }
+      /* line 31, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page header .vision .vision-pros {
         padding-top: 20px; }
-        /* line 30, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 34, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page header .vision .vision-pros p {
           margin-bottom: 0;
           font-size: 1em; }
-        /* line 35, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 39, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page header .vision .vision-pros i {
           font-size: 1.3em;
           font-style: inherit; }
-    /* line 42, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 46, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page header .frame-illustration {
       position: relative; }
-      /* line 45, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 49, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page header .frame-illustration:before {
         content: "";
         position: absolute;
@@ -11713,7 +11717,7 @@ header.category {
         width: 20%;
         background: -webkit-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
         background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); }
-      /* line 57, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 61, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page header .frame-illustration:after {
         content: "";
         position: absolute;
@@ -11724,43 +11728,43 @@ header.category {
         background: -webkit-linear-gradient(right, white 0%, rgba(255, 255, 255, 0) 100%);
         background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%); }
       @media (min-width: 1025px) {
-        /* line 70, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 74, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page header .frame-illustration #Frame-iPad {
           display: none; }
-        /* line 74, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 78, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page header .frame-illustration #Frame-iphone {
           display: none; } }
       @media (min-width: 376px) and (max-width: 1024px) {
-        /* line 42, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 46, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page header .frame-illustration {
           -webkit-transform: scale(1.4);
                   transform: scale(1.4); }
-          /* line 82, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+          /* line 86, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
           #home-page header .frame-illustration #Frame-desktop {
             display: none; }
-          /* line 86, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+          /* line 90, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
           #home-page header .frame-illustration #Frame-iphone {
             display: none; } }
       @media (max-width: 375px) {
-        /* line 42, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 46, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page header .frame-illustration {
           -webkit-transform: scale(2.2);
                   transform: scale(2.2); }
-          /* line 94, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+          /* line 98, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
           #home-page header .frame-illustration #Frame-desktop {
             display: none; }
-          /* line 98, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+          /* line 102, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
           #home-page header .frame-illustration #Frame-iPad {
             display: none; } }
-      /* line 104, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 108, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page header .frame-illustration svg {
         width: 100%;
         height: 370px; }
         @media (max-width: 657px) {
-          /* line 104, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+          /* line 108, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
           #home-page header .frame-illustration svg {
             height: 360px; } }
-  /* line 115, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 119, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#video {
     display: -webkit-box;
     display: -webkit-flex;
@@ -11780,20 +11784,24 @@ header.category {
         -ms-flex-pack: center;
             justify-content: center; }
     @media (max-width: 768px) {
-      /* line 115, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 119, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#video {
         padding: 0 6% 30px; }
-        /* line 124, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 128, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section#video h2 {
           text-align: center; } }
-    /* line 129, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 133, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#video p {
       max-width: 570px;
       text-align: center; }
-  /* line 135, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 139, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#articles {
     padding: 0; }
-  /* line 139, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    @media (max-width: 767px) {
+      /* line 142, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      #home-page section#articles .slick-dots {
+        display: none !important; } }
+  /* line 149, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section.main-block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -11804,14 +11812,14 @@ header.category {
     max-width: 1400px;
     border-top: 1px solid #E5E5E5; }
     @media (max-width: 650px) {
-      /* line 139, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 149, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section.main-block {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
                 flex-direction: column; } }
-    /* line 150, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 160, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section.main-block .section-icon {
       display: -webkit-box;
       display: -webkit-flex;
@@ -11832,24 +11840,24 @@ header.category {
               align-items: center;
       padding: 0 6%;
       width: 100%; }
-      /* line 158, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 168, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section.main-block .section-icon svg {
         max-width: 300px;
         height: 100%; }
-      @media (max-width: 649px) {
-        /* line 150, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      @media (max-width: 767px) {
+        /* line 160, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section.main-block .section-icon {
-          padding: 0 6% 6%; }
-          /* line 166, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+          padding: 0 6% 30px; }
+          /* line 176, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
           #home-page section.main-block .section-icon svg {
             max-width: 220px;
             height: 100%; } }
       @media (min-width: 650px) {
-        /* line 150, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 160, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section.main-block .section-icon {
           padding: 0;
           width: 50%; } }
-      /* line 177, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 187, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section.main-block .section-icon .see-more {
         position: relative;
         padding: 10px 43px;
@@ -11858,11 +11866,11 @@ header.category {
         margin-top: 20px;
         text-decoration: underline;
         background-color: #f4f4f4; }
-        /* line 186, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 196, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section.main-block .section-icon .see-more:hover {
           cursor: pointer;
           opacity: 0.8; }
-    /* line 193, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 203, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section.main-block .section-description {
       display: -webkit-box;
       display: -webkit-flex;
@@ -11880,10 +11888,10 @@ header.category {
       padding: 0 6%;
       width: 100%; }
       @media (min-width: 650px) {
-        /* line 193, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 203, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section.main-block .section-description {
           width: 50%; } }
-      /* line 204, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 214, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section.main-block .section-description span.number {
         position: relative;
         max-width: 45%;
@@ -11894,23 +11902,23 @@ header.category {
         font-size: 1.4rem;
         color: rgba(0, 0, 0, 0.4); }
         @media (max-width: 650px) {
-          /* line 204, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+          /* line 214, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
           #home-page section.main-block .section-description span.number {
             position: absolute;
             top: 0;
             max-width: 50%; } }
-        /* line 220, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 230, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section.main-block .section-description span.number i {
           position: absolute;
           top: -10px;
           font-size: 3rem;
           font-style: initial;
           color: #000; }
-  /* line 231, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 241, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#city-discovery {
     position: relative; }
     @media (max-width: 649px) {
-      /* line 235, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 245, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#city-discovery .section-icon {
         margin-top: 20px;
         -webkit-box-align: end;
@@ -11919,19 +11927,19 @@ header.category {
                     -ms-grid-row-align: flex-end;
                 align-items: flex-end; } }
     @media (min-width: 650px) {
-      /* line 243, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 253, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#city-discovery .section-icon {
         -webkit-box-ordinal-group: 3;
         -webkit-order: 2;
             -ms-flex-order: 2;
                 order: 2; }
-      /* line 247, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 257, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#city-discovery .section-description {
         -webkit-box-ordinal-group: 2;
         -webkit-order: 1;
             -ms-flex-order: 1;
                 order: 1; } }
-    /* line 252, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 262, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#city-discovery .modal-perks {
       position: absolute;
       background-color: rgba(255, 255, 255, 0.6);
@@ -11941,32 +11949,35 @@ header.category {
       left: 0;
       height: 100%;
       width: 100%; }
-  /* line 264, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 274, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#city-perks {
     position: relative; }
     @media (max-width: 649px) {
-      /* line 268, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 278, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#city-perks .section-icon {
         margin-top: 20px;
         -webkit-box-align: end;
         -webkit-align-items: flex-end;
             -ms-flex-align: end;
                     -ms-grid-row-align: flex-end;
-                align-items: flex-end; } }
+                align-items: flex-end; }
+        /* line 282, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        #home-page section#city-perks .section-icon svg {
+          max-width: 195px; } }
     @media (min-width: 650px) {
-      /* line 275, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 289, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#city-perks .section-icon {
         -webkit-box-ordinal-group: 2;
         -webkit-order: 1;
             -ms-flex-order: 1;
                 order: 1; }
-      /* line 279, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 293, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#city-perks .section-description {
         -webkit-box-ordinal-group: 3;
         -webkit-order: 2;
             -ms-flex-order: 2;
                 order: 2; } }
-    /* line 284, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 298, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#city-perks .modal-perks {
       position: absolute;
       background-color: rgba(255, 255, 255, 0.6);
@@ -11976,39 +11987,61 @@ header.category {
       left: 0;
       height: 100%;
       width: 100%; }
-  /* line 296, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 310, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#own-scale {
     position: relative; }
     @media (max-width: 649px) {
-      /* line 300, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 314, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#own-scale .section-icon {
         margin-top: 20px;
         -webkit-box-align: end;
         -webkit-align-items: flex-end;
             -ms-flex-align: end;
                     -ms-grid-row-align: flex-end;
-                align-items: flex-end; } }
+                align-items: flex-end; }
+        /* line 318, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        #home-page section#own-scale .section-icon svg {
+          max-width: 195px; } }
     @media (min-width: 650px) {
-      /* line 307, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 325, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#own-scale .section-icon {
         -webkit-box-ordinal-group: 3;
         -webkit-order: 2;
             -ms-flex-order: 2;
                 order: 2; }
-      /* line 311, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 329, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#own-scale .section-description {
         -webkit-box-ordinal-group: 2;
         -webkit-order: 1;
             -ms-flex-order: 1;
                 order: 1; } }
-  /* line 318, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 336, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page #slinkie_1,
   #home-page #slinkie_2 {
     opacity: 0.2; }
-  /* line 323, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 341, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  #home-page section#consumption {
+    position: relative; }
+    @media (max-width: 649px) {
+      /* line 345, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      #home-page section#consumption .section-icon {
+        margin-top: 20px;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                    -ms-grid-row-align: flex-end;
+                align-items: flex-end; }
+        /* line 349, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        #home-page section#consumption .section-icon svg {
+          max-width: 195px; } }
+  /* line 356, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#testimonials {
     padding: 0 0 80px; }
-    /* line 326, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    @media (max-width: 767px) {
+      /* line 356, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      #home-page section#testimonials {
+        padding: 0; } }
+    /* line 363, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#testimonials p {
       position: relative;
       padding: 20px;
@@ -12016,7 +12049,7 @@ header.category {
       background-color: #7E89A3;
       color: #fff;
       border-radius: 10px; }
-      /* line 334, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 371, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#testimonials p:after {
         content: " ";
         position: absolute;
@@ -12029,21 +12062,25 @@ header.category {
         border-top-color: #7E89A3;
         border-width: 10px;
         margin-left: -10px; }
-    /* line 349, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 386, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#testimonials img {
       height: 50px;
       border-radius: 50%; }
-    /* line 354, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    @media (max-width: 375px) {
+      /* line 392, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      #home-page section#testimonials .slick-slider {
+        max-height: 275px; } }
+    /* line 397, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#testimonials .slick-dots {
       position: relative; }
-    /* line 358, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 401, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#testimonials .witness {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       padding: 0 10px; }
-      /* line 362, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 405, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#testimonials .witness .witness-details {
         display: -webkit-box;
         display: -webkit-flex;
@@ -12055,15 +12092,15 @@ header.category {
             -ms-flex-direction: column;
                 flex-direction: column;
         padding: 5px 10px; }
-        /* line 367, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 410, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section#testimonials .witness .witness-details span {
           font-family: "Raleway", "Helvetica", "sans-serif";
           font-size: 1.4rem;
           font-weight: 600; }
-        /* line 373, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 416, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section#testimonials .witness .witness-details i {
           font-size: 1rem; }
-  /* line 380, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 423, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#how-to {
     display: -webkit-box;
     display: -webkit-flex;
@@ -12074,10 +12111,14 @@ header.category {
     max-width: 1400px;
     border-top: 1px solid #E5E5E5;
     overflow: hidden; }
-    /* line 388, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    @media (max-width: 1023px) {
+      /* line 423, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      #home-page section#how-to {
+        display: none; } }
+    /* line 435, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#how-to h2 {
       padding-left: 20px; }
-    /* line 392, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 439, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#how-to .how-to-specifics {
       position: relative;
       padding: 0 5%;
@@ -12086,7 +12127,7 @@ header.category {
       -webkit-justify-content: flex-end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
-      /* line 398, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 445, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#how-to .how-to-specifics .switch-device {
         display: -webkit-box;
         display: -webkit-flex;
@@ -12096,7 +12137,7 @@ header.category {
         margin: 0 10% 0 0;
         top: 2px;
         right: 0; }
-        /* line 405, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 452, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section#how-to .how-to-specifics .switch-device #switcher-mobile,
         #home-page section#how-to .how-to-specifics .switch-device #switcher-desktop {
           display: -webkit-box;
@@ -12115,21 +12156,21 @@ header.category {
           max-width: 40px;
           height: 40px;
           border-radius: 50%; }
-        /* line 416, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 463, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section#how-to .how-to-specifics .switch-device #switcher-mobile {
           margin-right: 5px; }
-        /* line 420, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 467, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section#how-to .how-to-specifics .switch-device .icon-is-hidden {
           opacity: 0.6; }
-      /* line 426, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 473, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#how-to .how-to-specifics ul.specifics li {
         padding: 20px;
         cursor: pointer; }
-      /* line 431, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 478, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#how-to .how-to-specifics ul.specifics li.active {
         background: rgba(132, 146, 165, 0.1);
         border-radius: 10px; }
-    /* line 438, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 485, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#how-to .how-to-images {
       position: relative;
       width: 50%;
@@ -12137,21 +12178,21 @@ header.category {
       -webkit-justify-content: flex-start;
           -ms-flex-pack: start;
               justify-content: flex-start; }
-      /* line 443, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 490, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#how-to .how-to-images svg {
         max-height: 540px; }
-      /* line 447, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 494, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#how-to .how-to-images .how-to-mobile {
         position: absolute;
         z-index: 0; }
-        /* line 451, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 498, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section#how-to .how-to-images .how-to-mobile .mockup-mobile {
           -webkit-transform: scale(0.7);
                   transform: scale(0.7);
           opacity: 0.25;
           -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out; }
-        /* line 457, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 504, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section#how-to .how-to-images .how-to-mobile img {
           position: absolute;
           top: 106px;
@@ -12163,40 +12204,40 @@ header.category {
           opacity: 0.25;
           -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out; }
-      /* line 470, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 517, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#how-to .how-to-images .mobile-is-visible .mockup-mobile,
       #home-page section#how-to .how-to-images .mobile-is-visible img {
         -webkit-transform: scale(1);
                 transform: scale(1);
         opacity: 1; }
-      /* line 477, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 524, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#how-to .how-to-images .how-to-browser {
         position: absolute;
         z-index: 1;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
-        /* line 482, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 529, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section#how-to .how-to-images .how-to-browser img {
           position: absolute;
           top: 40px;
           left: 1px;
           height: 499px;
           z-index: 0; }
-      /* line 491, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 538, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#how-to .how-to-images .browser-is-hidden {
         -webkit-transform: translateX(320px);
                 transform: translateX(320px);
         opacity: 0.25; }
-      /* line 496, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 543, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#how-to .how-to-images img.showing {
         z-index: 1; }
-  /* line 502, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 549, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#mobile-go-to {
     display: none;
     position: relative;
     border-top: 1px solid #E5E5E5;
     background-color: #36D3DA; }
-    /* line 509, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 556, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#mobile-go-to:after {
       position: absolute;
       content: "";
@@ -12207,13 +12248,21 @@ header.category {
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
-  /* line 523, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  @media (max-width: 767px) {
+    /* line 568, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    #home-page section#no-download {
+      padding: 40px 0; } }
+  /* line 573, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#no-download .section-icon {
     padding: 0 0 0 6%; }
-  /* line 527, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    @media (max-width: 767px) {
+      /* line 573, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      #home-page section#no-download .section-icon {
+        padding: 0 0 30px; } }
+  /* line 581, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#no-download ul {
     margin-top: 20px; }
-    /* line 530, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 584, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#no-download ul li {
       display: -webkit-box;
       display: -webkit-flex;
@@ -12224,13 +12273,13 @@ header.category {
           -ms-flex-align: center;
               align-items: center;
       margin-bottom: 20px; }
-      /* line 535, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 589, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#no-download ul li svg {
         margin-right: 10px; }
-  /* line 542, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+  /* line 596, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#call-to-action {
     padding-top: 0; }
-    /* line 545, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 599, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#call-to-action .cta-container {
       display: -webkit-box;
       display: -webkit-flex;
@@ -12251,7 +12300,11 @@ header.category {
               align-items: center;
       margin: 0 auto;
       width: 40%; }
-  /* line 561, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      @media (max-width: 767px) {
+        /* line 599, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        #home-page section#call-to-action .cta-container {
+          width: 90%; } }
+  /* line 619, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
   #home-page section#partnerships {
     display: -webkit-box;
     display: -webkit-flex;
@@ -12273,11 +12326,11 @@ header.category {
     margin: 0 auto;
     max-width: 1280px;
     background-color: #7E89A3; }
-    /* line 570, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 628, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#partnerships h2 {
       color: #fff;
       margin-bottom: 4rem; }
-    /* line 575, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 633, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#partnerships ul {
       display: -webkit-box;
       display: -webkit-flex;
@@ -12296,23 +12349,23 @@ header.category {
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
               justify-content: space-around; }
-      /* line 584, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+      /* line 642, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section#partnerships ul li img {
         height: 50px; }
-    /* line 590, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 648, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#partnerships ul.partners-gold {
       width: 55%; }
       @media (max-width: 450px) {
-        /* line 595, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 653, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section#partnerships ul.partners-gold li img {
           margin: 0 5px;
           height: 20px; } }
-    /* line 603, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+    /* line 661, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
     #home-page section#partnerships ul.partners-silver,
     #home-page section#partnerships ul.partners-bronze {
       width: 65%; }
       @media (max-width: 450px) {
-        /* line 609, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
+        /* line 667, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section#partnerships ul.partners-silver li img,
         #home-page section#partnerships ul.partners-bronze li img {
           margin: 0 5px;

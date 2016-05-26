@@ -7837,7 +7837,7 @@
           </div>
         </div>
         <div class="testimony">
-          <p>Avec CforGood je conjugue consommer intelligemment et soutenir une communauté locale responsable. Je me crée mon réseau de bons plans où le virtuel devient vertueux et l'urbain plus humain.</p>
+          <p>Avec CforGood, je consomme intelligemment tout en soutenant une communauté locale. Je me crée mon réseau de bon plan où le virtuel devient vertueux et l’urbain est plus humain.</p>
           <div class="witness">
             <img src="images/testimonials/portrait-isabelle.jpg" />
             <div class="witness-details">
@@ -7847,7 +7847,7 @@
           </div>
         </div>
         <div class="testimony">
-          <p>Les bons plans de CforGood me permettent de consommer de manière responsable malgré mon budget limité !</p>
+          <p>Les bons plans CforGood me permettent de consommer de manière responsable malgré mon budget limité !</p>
           <div class="witness">
             <img src="images/testimonials/portrait-cecilia.jpg" />
             <div class="witness-details">
@@ -7959,7 +7959,27 @@
       arrows: false,
       infinite: true,
       speed: 300,
-      slidesToShow: 6
+      slidesToShow: 6,
+      responsive: [
+        {
+          breakpoint: 964,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        }
+      ]
     });
 
     $('.testimonials-carousel').slick({
