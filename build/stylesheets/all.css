@@ -11843,7 +11843,7 @@ header.category {
       /* line 168, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
       #home-page section.main-block .section-icon svg {
         max-width: 300px;
-        height: 100%; }
+        min-height: 190px; }
       @media (max-width: 767px) {
         /* line 160, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section.main-block .section-icon {
@@ -11851,7 +11851,7 @@ header.category {
           /* line 176, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
           #home-page section.main-block .section-icon svg {
             max-width: 220px;
-            height: 100%; } }
+            min-height: 125px; } }
       @media (min-width: 650px) {
         /* line 160, /Users/cedricmenteau/code/cforgood/landings/source/stylesheets/pages/_home.scss */
         #home-page section.main-block .section-icon {
