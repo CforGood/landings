@@ -167,7 +167,7 @@
 
       svg {
         max-width: 300px;
-        height: 100%;
+        min-height: 190px
       }
 
       @media (max-width: 767px) {
@@ -175,7 +175,7 @@
 
         svg {
           max-width: 220px;
-          height: 100%;
+          min-height: 125px;
         }
       }
 
