@@ -24,6 +24,10 @@
       transform: translateX(-50%);
       text-align: center;
 
+      @media (max-width: 767px) {
+        padding: 60px 25px 0;
+      }
+
       .vision-pros {
         padding-top: 20px;
 
@@ -134,6 +138,12 @@
 
   section#articles {
    padding: 0;
+
+   .slick-dots {
+      @media (max-width: 767px) {
+        display: none !important;
+      }
+    }
   }
 
   section.main-block {
@@ -160,8 +170,8 @@
         height: 100%;
       }
 
-      @media (max-width: 649px) {
-        padding: 0 6% 6%;
+      @media (max-width: 767px) {
+        padding: 0 6% 30px;
 
         svg {
           max-width: 220px;
@@ -268,6 +278,10 @@
       .section-icon{
         margin-top: 20px;
         align-items: flex-end;
+
+        svg {
+          max-width: 195px;
+        }
       }
     }
 
@@ -300,6 +314,10 @@
       .section-icon{
         margin-top: 20px;
         align-items: flex-end;
+
+        svg {
+          max-width: 195px;
+        }
       }
     }
 
@@ -320,8 +338,27 @@
     opacity: 0.2;
   }
 
+  section#consumption {
+    position: relative;
+
+    @media (max-width: 649px) {
+      .section-icon{
+        margin-top: 20px;
+        align-items: flex-end;
+
+        svg {
+          max-width: 195px;
+        }
+      }
+    }
+  }
+
   section#testimonials {
     padding: 0 0 80px;
+
+    @media (max-width: 767px) {
+      padding: 0;
+    }
 
     p {
       position: relative;
@@ -349,6 +386,12 @@
     img {
       height: 50px;
       border-radius: 50%;
+    }
+
+    @media (max-width: 375px) {
+      .slick-slider {
+        max-height: 275px;
+      }
     }
 
     .slick-dots {
@@ -384,6 +427,10 @@
     max-width: 1400px;
     border-top: 1px solid #E5E5E5;
     overflow: hidden;
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
 
     h2 {
       padding-left: 20px;
@@ -519,9 +566,16 @@
   }
 
   section#no-download {
+    @media (max-width: 767px) {
+      padding: 40px 0;
+    }
 
     .section-icon {
       padding: 0 0 0 6%;
+
+      @media (max-width: 767px) {
+        padding: 0 0 30px;
+      }
     }
 
     ul {
@@ -549,6 +603,10 @@
       align-items: center;
       margin: 0 auto;
       width: 40%;
+
+      @media (max-width: 767px) {
+        width: 90%;
+      }
 
       // a {
       //   padding-top: 10px;
