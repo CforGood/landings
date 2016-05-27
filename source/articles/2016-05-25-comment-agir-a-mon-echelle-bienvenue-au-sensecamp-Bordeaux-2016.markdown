@@ -19,7 +19,7 @@ En 4 ans, MakeSense a mobilisé plus de 20 000 personnes au cours de plus de 112
 
 Cette communauté hyper-active se rassemble chaque année lors d’un SenseCamp et célèbre l’innovation sociale en mettant en lumière les solutions enthousiasmantes créées par des entrepreneurs sociaux à travers le monde.
 
-![SensCamp - post-it](blog/article2/2.1.jpg)
+![SensCamp - post-it](../../blog/article2/2.1.jpg)
 
 C’est armé de post-it que les bénévoles échangent leurs idées
 
@@ -30,7 +30,7 @@ Cette année, le thème : “Comment faire bouger les choses à mon échelle? �
 
 Pas de conférence et d’audience passive au programme, seulement des ateliers, des discussions et des expériences interactives avec l’objectif d’éveiller les consciences sur le pouvoir que l’on a, de façon créative, festive et fun !
 
-![Reunion SenseCamp](blog/article2/2.2.jpg)
+![Reunion SenseCamp](../../blog/article2/2.2.jpg)
 
 ## Un événement soutenu par CforGood
 
@@ -64,7 +64,7 @@ Restauration:
 
 # MAKESENSE ET CFORGOOD : UNE VISION COMMUNE
 
-![CforGood x MakeSense](blog/article2/2.3.jpg)
+![CforGood x MakeSense](../../blog/article2/2.3.jpg)
 
 MakeSense et CforGood, c’est une longue histoire d’amour commencée en finale de la Social Cup 2015. Avec cette même volonté de redonner le pouvoir aux citoyens, un partenariat était inévitable :)
 A travers CforGood, vous pouvez donc dès maintenant soutenir MakeSense à votre manière, et ainsi accéder à tous les avantages de la communauté CforGood, comme de nombreux bons plans chez les commerces responsables autour de vous !

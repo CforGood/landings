@@ -5,7 +5,7 @@ per_page: 3
 
 <div class="blog-index">
   <div class="container blog-posts all-posts">
-    <% articles = articles.slice(6, articles.size) %>
+    <!-- <# articles = articles.slice(6, articles.size) #> -->
     <ul>
       <% articles.each do |article| %>
         <a href="<%= article.url %>" alt="<%= article.title %>">

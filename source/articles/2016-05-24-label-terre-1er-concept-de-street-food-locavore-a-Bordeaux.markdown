@@ -10,7 +10,7 @@ layout: article
 
 À Bordeaux, nombreux sont les lieux ou l’on peut manger sur le pouce sans se ruiner. Mais lorsque l’on veut déjeuner des produits locaux et de saison, la tâche devient tout de suite plus difficile... Et bien détrompez vous ! C’est exactement pour répondre à cette problématique qu’est né le 1er concept de Street Food locavore de Bordeaux : Label Terre.
 
-![Restaurant Lable Terre](blog/article1/1.1.jpg)
+![Restaurant Lable Terre](../../blog/article1/1.1.jpg)
 
 ## La street food qui nous veut du bien
 
@@ -20,7 +20,7 @@ Alors qu’est-ce qu’on mange chez Label Terre ? Ici on déjeune sur le pouce 
 Et oui, tout le concept est là : qui dit Locavore, dit consommation de produits locaux.
 Tout ce qui compose les sandwich, salades, desserts du jour et même les boissons provient d’un rayon de moins de 250 km autour de Bordeaux. De quoi allier réduction des émissions de CO2 et soutien des producteurs locaux !
 
-![Salades Label Terre](blog/article1/1.2.gif)
+![Salades Label Terre](../../blog/article1/1.2.gif)
 
 ## Mais alors, pourquoi locavore ?
 
@@ -35,11 +35,11 @@ Ce qui rend le plus heureux Chris aujourd’hui ? C’est le fait d’être dans
 On aime beaucoup l'esprit naturel du lieu et la liaison astucieuse du street food et du locavorisme ! On peut enfin manger locavore sans se ruiner avec des formules sandwich + boisson + dessert à moins de 10€ (9,5€) ! Les plats ont du goût et évoluent régulièrement, car ils sont uniquement préparés avec des produits de saison, une belle occasion de découvrir de nouvelles compositions chaque semaine !
 Mais au delà de la nourriture de qualité qu’on nous y sert, c’est surtout la gentillesse, l’humour et la sincérité de Chris qui nous a touché. Sa dernière trouvaille ? Installer un tableau indiquant les noms et numéros de téléphone des producteurs avec lesquels il travaille. C’est ça la touche de Label Terre, de la simplicité, de l’humain et de la transparence pour une dynamique qui va dans le bon sens, on ne pouvait qu’adorer chez CforGood !
 
-![Tableau Label Terre](blog/article1/1.3.jpg)
+![Tableau Label Terre](../../blog/article1/1.3.jpg)
 
 ## Label Terre : Restaurant Partenaire CforGood
 
-![Label Terre partenariat](blog/article1/1.4.jpg)
+![Label Terre partenariat](../../blog/article1/1.4.jpg)
 
 Avec tout ça, je vous avoue qu’on est heureux de vous annoncer que Label Terre participe à la Révolution Positive et offre un cookie à tous les membres de CforGood lors de leur venue au restaurant ! De notre côté, on vous conseille le cookie caramel au beurre salé, vous pouvez foncer, il est à tomber :)
 
