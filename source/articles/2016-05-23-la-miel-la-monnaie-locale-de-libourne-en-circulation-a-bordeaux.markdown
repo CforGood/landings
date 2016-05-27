@@ -1,0 +1,60 @@
+---
+title: "La MIEL, la monnaie locale de Libourne en circulation à Bordeaux"
+date: 2016-05-23 3:43
+author: allan
+category: Tendance
+thumbnail: blog/article3/3.0.jpg
+synopsis: Pour la première fois à Bordeaux, une monnaie locale appelée la MIEL, est en libre circulation dans la métropole bordelaise. Le projet à été lancé à Darwin et compte bien s’étendre sur l’ensemble de la ville de Bordeaux !
+layout: article
+---
+
+Pour la première fois à Bordeaux, une monnaie locale appelée la MIEL, est en libre circulation dans la métropole bordelaise. Ce projet lancé à Darwin, l’éco-système de la caserne Niel, à pour vocation de proposer une alternative à l’euro afin de créer des richesses locales humaines et matérielles.
+
+**Une monnaie locale, qu’est ce que c’est ? A quoi ça sert ? Petit rappel**
+
+Une monnaie locale est une “monnaie” qui circule sur un territoire défini. Elle est accepté comme moyen de paiement dans un réseau de commerces locaux agréés, répondant à des critères pour une économie plus responsable.
+Son objectf : Relocaliser l’économie en fléchant les flux de consommation vers un réseau d’acteurs engagés dans le développement de leur territoire.
+
+> “La monnaie est un outil”
+
+Les monnaies locales ont, en général, pour objectifs de redynamiser l’économie locale en relocalisant les échanges, favoriser la consommation responsable, éthique et écologique, recréer du lien social et de la solidarité, par une action citoyenne et démocratique.
+
+> “La monnaie locale est un pense-bête pour me rappeler de faire mes achats chez ceux que je veux voir grandir”.
+
+![schema monnaie locale](blog/article3/3.1.jpg)
+
+# LA MIEL FAIT SON ENTRÉE A BORDEAUX
+
+Elle se faisait attendre depuis quelques temps, c’est dorénavant chose faite, la MIEL ou Monnaie d'Intérêt Economique Locale est installée sur le territoire bordelais.
+Déjà en circulation à Libourne depuis 2013, où elle rencontrait un certain succès auprès des habitants, voilà qu’elle étend son influence avec un vrai nouveau challenge, l’implantation sur une métropole.
+
+![La MIEL et Darwin](blog/article3/3.2.jpg)
+
+Afin de contrôler son développement, la réflexion est aujourd’hui portée sur les aspects techniques, notamment le nombre de coupures disponibles. Dans un premier temps, seulement 20 000 Miel seront mises en circulation, puis seront progressivement libérées de nouvelles coupures pour atteindre jusqu’à 50 000 Miel si le projet fonctionne.
+
+# L’AQUITAINE, BERCEAU DE LA MONNAIE LOCALE
+
+La MIEL n’est pas la première monnaie locale à voir le jour en Aquitaine, la région est d’ailleurs précurseur dans ce domaine puisqu’elle a vu naitre l’Abeille, il y a 6 ans à Villeneuve-sur-lot dans le Lot-et-Garonne.
+Depuis de nombreuses monnaies se sont développées sur le territoire avec parfois un succès retentissant comme l’Euskadi, la monnaie du pays basque qui compte pas moins de 3000 adhérents soit 1% de la population !
+
+**CforGood une monnaie locale nouvelle génération ?**
+
+Relocalisation de l’économie, coopération avec les commerces responsables du territoire, développement des synergies et encouragement des comportements positifs, nous partageons à bien des égards les objectifs des monnaies locales, mais nous faisons chez CforGood, un pari différent : celui du digital pour favoriser les échanges locaux.
+
+Oui, ces dernières années, le numérique a bousculé considérablement la façon dont les individus consomment. Effectuer ses achats sur internet ne rime généralement pas avec consommation locale et les commerces de proximité en sont les premiers touchés.
+Mais tout comme la monnaie, le digital est un outil, et nous faisons chez CforGood, le choix de l’utiliser pour rassembler localement les acteurs, fluidifier les échanges et redonner le pouvoir d’agir dans le bon sens.
+
+![appli CforGood](blog/article3/3.3.jpg)
+
+Pour ceux qui nous découvre, CforGood est un réseau de solidarité nouvelle génération qui connecte localement citoyens, associations et commerces responsables pour favoriser les comportements positifs.
+Grâce à un site web et mobile, chacun peut découvrir sa ville autrement en localisant les commerces responsables autour de lui, mais peut également bénéficier de réductions chez tous ces acteurs simplement en montrant sa carte de membre. Cette carte est accessible grâce à une participation libre directement reversée pour soutenir l’association de son choix.
+Les commerçants responsables, eux, disposent gratuitement d’un outil innovant pour gérer leur activité et inspirer la solidarité grâce à la création de différents types de bons plans comme des offres flash qui permettent de réduire le gaspillage alimentaire en vendant à temps leurs produits.
+
+A travers CforGood se dessine des écosystèmes positifs que l’on implante dans chaque ville, offrant enfin à chacun un moyen simple et valorisant d’agir à son échelle et d’être acteur de l’émergence de territoires plus durables.
+
+Notre objectif derrière ça ? Induire en une génération un mouvement global d’économies locales interconnectées qui dessinent une société au service de l’humain et respectueuse de la nature.
+
+
+**La MIEL, le réseau CforGood, pas de bonne ou mauvaise réponse, mais de nouvelles pièces qui viennent se compléter pour dessiner une autre économie sur nos territoires. Une chose est sûre avec ces solutions, l’économie locale a de beaux jours devant elle.**
+
+**Alors si vous aussi vous voulez être l’acteur d’un quotidien plus responsable et solidaire, rejoignez dès maintenant la Révolution Positive !**
