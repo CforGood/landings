@@ -21,14 +21,14 @@ Les monnaies locales ont, en général, pour objectifs de redynamiser l’écono
 
 > “La monnaie locale est un pense-bête pour me rappeler de faire mes achats chez ceux que je veux voir grandir”.
 
-![schema monnaie locale](blog/article3/3.1.jpg)
+<img src='../../images/blog/article3/3.1.jpg' alt="schema monnaie locale">
 
 # LA MIEL FAIT SON ENTRÉE A BORDEAUX
 
 Elle se faisait attendre depuis quelques temps, c’est dorénavant chose faite, la MIEL ou Monnaie d'Intérêt Economique Locale est installée sur le territoire bordelais.
 Déjà en circulation à Libourne depuis 2013, où elle rencontrait un certain succès auprès des habitants, voilà qu’elle étend son influence avec un vrai nouveau challenge, l’implantation sur une métropole.
 
-![La MIEL et Darwin](blog/article3/3.2.jpg)
+<img src='../../images/blog/article3/3.2.jpg' alt="La MIEL et Darwin">
 
 Afin de contrôler son développement, la réflexion est aujourd’hui portée sur les aspects techniques, notamment le nombre de coupures disponibles. Dans un premier temps, seulement 20 000 Miel seront mises en circulation, puis seront progressivement libérées de nouvelles coupures pour atteindre jusqu’à 50 000 Miel si le projet fonctionne.
 
@@ -44,7 +44,7 @@ Relocalisation de l’économie, coopération avec les commerces responsables du
 Oui, ces dernières années, le numérique a bousculé considérablement la façon dont les individus consomment. Effectuer ses achats sur internet ne rime généralement pas avec consommation locale et les commerces de proximité en sont les premiers touchés.
 Mais tout comme la monnaie, le digital est un outil, et nous faisons chez CforGood, le choix de l’utiliser pour rassembler localement les acteurs, fluidifier les échanges et redonner le pouvoir d’agir dans le bon sens.
 
-![appli CforGood](blog/article3/3.3.jpg)
+<img src='../../images/blog/article3/3.3.jpg' alt="Application CforGood">
 
 Pour ceux qui nous découvre, CforGood est un réseau de solidarité nouvelle génération qui connecte localement citoyens, associations et commerces responsables pour favoriser les comportements positifs.
 Grâce à un site web et mobile, chacun peut découvrir sa ville autrement en localisant les commerces responsables autour de lui, mais peut également bénéficier de réductions chez tous ces acteurs simplement en montrant sa carte de membre. Cette carte est accessible grâce à une participation libre directement reversée pour soutenir l’association de son choix.
