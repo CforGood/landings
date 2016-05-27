@@ -14,7 +14,7 @@ Mais on se rend bien compte que le passage à l'action est compliqué : Par où 
 
 **C’est là que naît le blog CforGood !**
 
-![Gif Applause](../../blog/article0/0.1.gif)
+![Gif Applause](blog/article0/0.1.gif)
 
 Pour te donner des solutions concrètes et éviter de mettre tous les phénomènes écolos sous l'étiquette « bobo » habituelle, on a décidé de sortir nos plumes et de t'éclairer sur cet écosystème en plein mouvement.
 
@@ -45,7 +45,7 @@ Pour découvrir concrètement, à quoi ça ressemble, je te propose de regarder 
 
 Le concept de CforGood a germé dans la tête d'Allan Floury au moment de parcourir le globe à la recherche de solutions alternatives pour favoriser l’engagement citoyen. Après avoir mené plusieurs vies, il est revenu de ce voyage avec la conviction que le monde d’aujourd’hui nous amène trop souvent à adopter des comportements individuellement positifs mais collectivement désastreux... Alors il était temps de créer un nouvel outil qui redonne, enfin aux citoyens, le pouvoir d’agir dans le bon sens.
 
-![Allan Floury Alaska](../../blog/article0/0.2.jpg)
+![Allan Floury Alaska](blog/article0/0.2.jpg)
 
 Mais comment faire de chaque citoyen un acteur du changement ?
 
@@ -53,7 +53,7 @@ En mettant en localement en coopération des associations défendant des causes 
 De cette manière, CforGood offre enfin un moyen simple et valorisant d’agir à son échelle et permet à chacun d’entre nous de participer aisément à l’émergence d’un quotidien plus responsable.
 Derrière cette mission se cache une équipe soudée qui s’est construite autour d’Allan et de cette aventure !
 
-![Team CforGood](../../blog/article0/0.3.jpg)
+![Team CforGood](blog/article0/0.3.jpg)
 
 Tout d'abord, Cédric et Fred l’ont rejoint pour développer la plateforme qui va vous permettre de faire tant de bien.. Ensuite Sarah puis Damien (qui écrit ces lignes) se sont concentrés sur la communauté, pour la faire grandir et vous envoyer régulièrement des messages tout doux. Enfin, Olivier, a rejoint récemment l’équipe pour épauler Cédric et faire de votre expérience en ligne quelque chose d’inoubliable (Oui, rien que ça !).
 
