@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:description" content="<%= current_page.data.description %>">
 <meta property="og:url" content="http://www.cforgood.com<%= current_page.url %>">
-<meta property="og:image" content="http://www.cforgood.com<%= image_path current_page.data.thumbnail %>">
+<meta property="og:image" content="http://www.cforgood.com/<%= image_path current_page.data.thumbnail %>">
 <meta property="og:site_name" content="CforGood">
 
 <!-- Twitter card data -->
@@ -22,12 +22,12 @@
 <meta name="twitter:title" content="<%= current_page.data.title %>">
 <meta name="twitter:description" content="<%= current_page.data.description %>">
 <meta name="twitter:creator" content="@CforGood">
-<meta name="twitter:image:src" content="http://www.cforgood.com<%= image_path current_page.data.thumbnail %>">
+<meta name="twitter:image:src" content="http://www.cforgood.com/<%= image_path current_page.data.thumbnail %>">
 
 <!-- Schema.org markup for Google+ -->
 <meta itemprop="name" content="<%= current_page.data.title %>">
 <meta itemprop="description" content="<%= current_page.data.description %>">
-<meta itemprop="image" content="http://www.cforgood.com<%= image_path current_page.data.thumbnail %>">
+<meta itemprop="image" content="http://www.cforgood.com/<%= image_path current_page.data.thumbnail %>">
 
 <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
 
