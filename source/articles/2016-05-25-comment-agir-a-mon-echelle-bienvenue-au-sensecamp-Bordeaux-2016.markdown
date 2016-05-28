@@ -4,7 +4,7 @@ date: 2016-05-25 3:43
 author: allan
 category: Événement
 thumbnail: blog/article2/2.0.jpg
-synopsis: Bordeaux va vibrer autour de l’innovation sociale les 4 et 5 juin prochains avec l’organisation du 7ème SenseCamp de l’association MakeSense. Un très beau programme en perspective !
+description: Bordeaux va vibrer autour de l’innovation sociale les 4 et 5 juin prochains avec l’organisation du 7ème SenseCamp de l’association MakeSense. Un très beau programme en perspective !
 layout: article
 ---
 

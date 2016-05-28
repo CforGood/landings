@@ -4,7 +4,7 @@ date: 2016-05-24 3:43
 author: allan
 category: Communauté
 thumbnail: blog/article1/1.0.jpg
-synopsis: Déjeuner local à Bordeaux sans se ruiner ? Mission impossible ? Détrompez vous ! Label Terre vous est là pour vous régaler avec ses repas locavores à prendre sur le pouce.
+description: Déjeuner local à Bordeaux sans se ruiner ? Mission impossible ? Détrompez vous ! Label Terre vous est là pour vous régaler avec ses repas locavores à prendre sur le pouce.
 layout: article
 ---
 

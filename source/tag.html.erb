@@ -1,6 +1,9 @@
 ---
 pageable: true
 per_page: 9
+title: "Le Blog de CforGood"
+description: "La team CforGood sort sa plume afin de t'éclairer sur l'économie responsable et solidaire de manière simple et concrète."
+thumbnail: "page/default-meta-image.jpg"
 ---
 
 <% if paginate && num_pages > 1 %>
@@ -23,7 +26,7 @@ per_page: 9
               </div>
             </div>
             <h3><%= article.title %></h3>
-            <p><%= article.data.synopsis %></p>
+            <p><%= article.data.description %></p>
             <div class="article-info">
               <%= partial "shared/svg/clock" %>
               <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>

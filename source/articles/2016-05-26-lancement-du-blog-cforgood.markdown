@@ -4,7 +4,7 @@ date: 2016-05-26 2:00
 author: allan
 category: CforGood
 thumbnail: blog/article0/0.0.jpg
-synopsis: Consommation responsable, économie circulaire, slow food, do it yourself… On a vite tendance à s'y perdre avec tous ces termes ! C'est là que naît le blog de CforGood !
+description: Consommation responsable, économie circulaire, slow food, do it yourself… On a vite tendance à s'y perdre avec tous ces termes ! C'est là que naît le blog de CforGood !
 layout: article
 ---
 

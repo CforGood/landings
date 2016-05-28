@@ -16,7 +16,7 @@ per_page: 3
               </div>
             </div>
             <h3><%= article.title %></h3>
-            <p><%= article.data.synopsis %></p>
+            <p><%= article.data.description %></p>
             <div class="article-info">
               <%= partial "shared/svg/clock" %>
               <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>

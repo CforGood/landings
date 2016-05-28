@@ -4,7 +4,7 @@ date: 2016-05-23 3:43
 author: allan
 category: Tendance
 thumbnail: blog/article3/3.0.jpg
-synopsis: Pour la première fois à Bordeaux, une monnaie locale appelée la MIEL, est en libre circulation dans la métropole bordelaise. Le projet à été lancé à Darwin et compte bien s’étendre sur l’ensemble de la ville de Bordeaux !
+description: Pour la première fois à Bordeaux, une monnaie locale appelée la MIEL, est en libre circulation dans la métropole bordelaise. Le projet à été lancé à Darwin et compte bien s’étendre sur l’ensemble de la ville de Bordeaux !
 layout: article
 ---
 
