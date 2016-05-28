@@ -17,6 +17,15 @@
         width: 33.33333%;
         color: inherit;
 
+        @media (max-width: 767px) {
+          padding: 0 20px;
+          width: 100%;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+          width: 50%;
+        }
+
         &:hover {
 
           .article-thumbnail {

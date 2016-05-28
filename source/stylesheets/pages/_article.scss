@@ -48,8 +48,18 @@
   background-color: #fff;
 }
 
+.categories-container {
+  @media (max-width: 767px) {
+   display: none;
+  }
+}
+
 .all-posts {
   padding: 112px 0 90px;
+
+  @media (max-width: 767px) {
+    padding: 45px 0 30px;
+  }
 }
 
 .nav-categories-scrolled {
@@ -79,9 +89,22 @@
   .medium {
     display: flex;
 
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+
     .medium-postcard {
       padding: 0 1%;
       width: 33.33333%;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        padding: 10px 20px;
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 50%;
+      }
     }
   }
 }
@@ -95,6 +118,10 @@
   font-size: 0.8em;
   font-weight: 600;
   text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    display: none !important;
+  }
 }
 
 .ias-trigger-next {
@@ -173,6 +200,16 @@
       color: #fff;
       text-transform: uppercase;
       text-align: center;
+
+      @media (max-width: 767px) {
+        max-width: 90%;
+        font-size: 1.5em;
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 70%;
+        font-size: 1.5em;
+      }
     }
 
     i {
@@ -193,6 +230,18 @@
       letter-spacing: -.003em;
       color: #fff;
       text-align: center;
+
+      @media (max-width: 767px) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        max-width: 90%;
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        max-width: 60%;
+      }
     }
 
     abbr {
@@ -235,6 +284,10 @@
   padding: 60px 0;
   max-width: 740px;
   margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    padding: 30px 20px 60px;
+  }
 
   h2 {
     margin: 1.8em 0 0 0;
@@ -324,6 +377,10 @@
   margin: 0 auto;
   max-width: 740px;
 
+  @media (max-width: 1024px) {
+    padding: 0 20px;
+  }
+
   h4 {
     position: relative;
     text-transform: uppercase;
@@ -338,6 +395,10 @@
       position: absolute;
       margin-left: 14px;
       top: 7px;
+
+      @media (max-width: 767px) {
+        width: 70%;
+      }
     }
   }
 
@@ -361,4 +422,8 @@
   padding-bottom: 60px;
   max-width: 740px;
   margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
 }
