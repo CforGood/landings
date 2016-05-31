@@ -63,7 +63,35 @@ Il est donc fortement conseillé de nous laisser un petit mot, non seulement par
 
 Tu es maintenant totalement convaincu(e) et tu as peur de rater nos prochains articles ?  Pas de problème, inscris toi à notre newsletter juste en dessous, promis, on ne t'enverra que l'essentiel :)
 
-Maintenant que tu sais tout sur nous  et nos intentions concernant la création de CforGood et de ce blog, il t'apparaît maintenant évident que tu es une goutte d’eau, une indispensable goutte d’eau qui nous permettra, ensemble, de faire des vagues et éclabousser ta ville d’un regard nouveau. (Et oui chez CforGood, on est léger mais on aime aussi se laisser aller à quelque prose !).
+<div class="newsletter-form article">
+  <h3>Inscrivez-vous pour recevoir notre actualité</h3>
+  <div id="mc_embed_signup">
+    <form action="//cforgood.us9.list-manage.com/subscribe/post?u=a43e05af521d3632c30f4c0c8&amp;id=3cef42ed6e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+        <div class="mc-field-group">
+          <input type="email" placeholder="Email*" name="EMAIL" class="required email asterisk br5 w-90cent pl-2cent" id="mce-EMAIL">
+        </div>
+
+        <div id="mce-responses">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;">
+          <input type="text" name="b_a43e05af521d3632c30f4c0c8_3cef42ed6e" tabindex="-1" value="">
+        </div>
+        <button class="nl-submit" type="submit" name="subscribe" id="mc-embedded-subscribe">
+          <div class="ripple-area js-ripple">
+            <span class="ripple-circle"></span>
+          </div>
+          S'inscrire
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+Maintenant que tu sais tout sur nous et nos intentions concernant la création de CforGood et de ce blog, il t'apparaît maintenant évident que tu es une goutte d’eau, une indispensable goutte d’eau qui nous permettra, ensemble, de faire des vagues et éclabousser ta ville d’un regard nouveau. (Et oui chez CforGood, on est léger mais on aime aussi se laisser aller à quelque prose !).
 
 Si tu es arrivé(e) jusqu’ici, tu peux maintenant rejoindre la Révolution Positive !
 Parce qu’on a tous une vraie raison d’agir dans le bon sens… Quelle est la tienne ?
