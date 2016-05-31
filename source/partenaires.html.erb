@@ -50,32 +50,11 @@ thumbnail: "page/default-meta-image.jpg"
   <section id="consumption" class="main-block">
     <div class="section-icon">
       <%= partial "shared/svg/perks" %>
-      <i id="see-more" class="see-more">Voir des exemples de bons plans</i>
-      <div id="modal-perks">
-        <div id="perk-close" class="modal-close">
-          <%= partial "shared/svg/close" %>
-        </div>
-        <div class="modal-perks-content">
-          <ul>
-            <li>
-              <img src="<%= image_path 'perks/perk-1.jpg' %>" alt="">
-              <i class="fa fa-gift" aria-hidden="true"></i><span><i>Bienvenue</i>Grandir et se faire connaître sur le territoire</span>
-            </li>
-            <li>
-              <img src="<%= image_path 'perks/perk-3.jpg' %>" alt="">
-              <i class="fa fa-repeat" aria-hidden="true"></i><span><i>Durable</i>Fidéliser une nouvelle clientèle</span>
-            </li>
-            <li>
-              <img src="<%= image_path 'perks/perk-2.jpg' %>" alt="">
-              <i class="fa fa-flash" aria-hidden="true"></i><span><i>Flash</i>Réduire le gaspillage alimentaire</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <%= partial "shared/see_more_perks" %>
     </div>
     <div class="section-description">
       <h3>Je crée des bons plans solidaires</h3>
-      <p>CforGood met gratuitement à ma disposition un outil innovant pour gérer mon activité à travers la création de 3 types de bons plans spécialement étudiés pour répondre à mes objectifs.</p>
+      <p>J'accède gratuitement à un outil innovant pour gérer mon activité à travers la création de 3 types de bons plans spécialement étudiés pour répondre à mes objectifs.</p>
       <ul>
         <li><i class="fa fa-gift" aria-hidden="true"></i><span><i>Bienvenue</i>Grandir et se faire connaître sur le territoire</span></li>
         <li><i class="fa fa-repeat" aria-hidden="true"></i><span><i>Durable</i>Fidéliser une nouvelle clientèle</span></li>
@@ -101,7 +80,7 @@ thumbnail: "page/default-meta-image.jpg"
     </div>
     <div class="section-description">
       <h3>Je change le monde à mon échelle</h3>
-      <p>En rejoignant CforGood, je deviens le véritable moteur d’un mouvement favorisant l’émergence d’une société plus responsable et solidaire. Ensemble, nous sommes une Révolution Positive.</p>
+      <p>En rejoignant CforGood, je deviens le véritable moteur d'une société plus responsable et solidaire.<br><br> <i>Ensemble, nous sommes une Révolution Positive.</i></p>
       <span class="number"><i>650+</i>utilisateurs inscrits !</span>
     </div>
   </section>
@@ -313,17 +292,6 @@ thumbnail: "page/default-meta-image.jpg"
       });
     }
   });
-
-  $('#see-more').click(function(e) {
-    $('#modal-perks').toggleClass('is-visible');
-    $('body').toggleClass('modal-open');
-  });
-
-  $('#perk-close').click(function(e) {
-    $('#modal-perks').toggleClass('is-visible');
-    $('body').toggleClass('modal-open');
-  });
-
 
   // SWITCH DEVICE ON CLICK
   $('#switcher-desktop').click(function(e) {
