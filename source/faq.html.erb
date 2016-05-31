@@ -1,0 +1,82 @@
+<div class="legales">
+
+		<header>
+			<div id="imageHeader">
+				<div class="banniere-charte banniere">
+					<div class="blocTitre">
+						<h1>FAQ</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+
+	<div id="container">
+
+		<aside>
+			<ul id="affix-subnav" class="dropdown">
+				<li class="title-list">A PROPOS</li>
+				<li class="list-link"><a href="manifeste">Manifeste</a></li>
+				<li class="list-link"><a href="charte">Notre charte</a></li>
+				<li class="list-link"><a href="faq" class="active">Faq</a></li>
+			</ul>
+
+ 			 <div id="content">
+ 			 	<div class="center">
+ 			 		<div id="menuDropdown"></div>
+				    <div class="dropdown">
+				      <div class="title dropdown-text">FAQ</div>
+				      <ul class="menu-open">
+						<li><a href="manifeste">MANIFESTE</a></li>
+						<li><a href="charte">NOTRE CHARTE</a></li>
+				      </ul>
+				    </div>
+			    </div>
+			 </div>
+		</aside>
+
+		<section class="section-contenu">
+            
+            <h3>FAQ</h3>
+     
+		</section>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		
+
+			$(window).scroll(function() {
+			    if( $(this).scrollTop() > 500 ) {
+			      $("#affix-subnav").addClass('affix-subnav-scrolled');
+			      $("#dropdown").addClass('affix-dropdown-scrolled');
+			    
+			    } else {
+			      $("#affix-subnav").removeClass('affix-subnav-scrolled');
+			      $("#dropdown").removeClass('affix-dropdown-scrolled');
+	
+			    }
+			  });
+
+			$(window).scroll(function() {
+				 if( $(this).scrollTop() > 460 ) {
+			      $("#content").addClass('affix-content-scrolled');
+			    } else {
+			      $("#content").removeClass('affix-content-scrolled');
+			    }
+			  });
+	</script>
+
+	  <script type="text/javascript">
+			  	$(".title").click(function () {
+			  $('.menu-open').toggleClass("open");
+			});
+
+			  	$("li").click(function () {
+			  $('.menu-open').toggleClass("open");
+			});
+
+			$(".dropdown li").click(function () {
+			  $(this).parent().parent().find(".title").text($(this).text());
+			});
+  </script>
+</body>
