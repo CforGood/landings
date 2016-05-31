@@ -20,7 +20,7 @@ thumbnail: "page/default-meta-image.jpg"
           <div class="article-header-author">
             <% author = find_author(article.data.author) %>
             <img src="<%= image_path author.photo %>" alt="<%= author.name %>">
-            <i>rédigé par<br><strong><%= author.name %></strong><br>le<time><%= article.date.strftime('%e %b %Y') %></time></i>
+            <i>rédigé par<br><strong><%= author.name %></strong><br>le <time><%= article.date.strftime('%e %b %Y') %></time></i>
           </div>
         </header>
         <script>
