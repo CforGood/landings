@@ -62,7 +62,7 @@ Restauration:
 * DiscoSoupe : un repas collaboratif à la base de nourriture récupérée
 * Dégustation de vin et de bières locales et bios
 
-# MAKESENSE ET CFORGOOD : UNE VISION COMMUNE
+## MakeSense et CforGood : une vision commune
 
 <img src='../../images/blog/article2/2.3.jpg' alt="CforGood x MakeSense">
 
