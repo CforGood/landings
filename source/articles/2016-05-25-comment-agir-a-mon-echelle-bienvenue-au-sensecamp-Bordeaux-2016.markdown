@@ -21,7 +21,7 @@ Cette communauté hyper-active se rassemble chaque année lors d’un SenseCamp 
 
 <img src='../../images/blog/article2/2.1.jpg' alt="SensCamp - post-it">
 
-C’est armé de post-it que les bénévoles échangent leurs idées
+> C’est armé de post-it que les bénévoles échangent leurs idées
 
 ## Le SenseCamp Bordeaux 2016
 
@@ -42,25 +42,17 @@ Allez sans vous faire plus attendre, on vous dévoile le programme !
 
 ## Le programme du week-end
 
-Samedi 4 juin :
-* Intervention de Christian Vanizette : Fondateur de MakeSense
-* Icebreaker géant : séance d’échauffement collaboratif
-* Interventions de spécialistes autour de l’engagement citoyen de demain & des nouvelles économies
-* BarCamp ( chaque participant a l’opportunité d’animer un atelier ou une discussion )
-* Ateliers collaboratifs menés par des spécialistes dans les domaines de la consomm’action, la monnaie locale, la réduction de déchets entre autres...
-* Une « Nonsense Party » !
+- Icebreaker géant : séance d'échauffement collaboratif
 
-Dimanche 5 juin :
-* Matinée bien-être : pleine conscience, yoga
-* Brunch musical
-* Démos et ateliers interactifs (pour mettre la main à la pâte!)
-* Convergence des solutions
-* Projection de film en plein air
+- Intervention de Christian Vanizette (Fondateur de MakeSense) et de spécialistes autour de l'engagement citoyen & des nouvelles formes d'économies.
 
-Restauration:
-* FoodTruck de produits locaux et bios
-* DiscoSoupe : un repas collaboratif à la base de nourriture récupérée
-* Dégustation de vin et de bières locales et bios
+- BarCamp ( chaque participant a l'opportunité d'animer un atelier ou une discussion )
+
+- Démos et ateliers interactifs (pour mettre la main à la pâte!) menés par des spécialistes dans les domaines de la consomm'action, la monnaie locale, la réduction de déchets entre autres...
+
+- Une « Nonsense Party » le samedi soir !
+
+
 
 ## MakeSense et CforGood : une vision commune
 
