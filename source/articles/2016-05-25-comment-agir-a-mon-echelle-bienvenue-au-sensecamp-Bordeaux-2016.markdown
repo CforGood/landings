@@ -52,6 +52,13 @@ Allez sans vous faire plus attendre, on vous dévoile le programme !
 
 - Une « Nonsense Party » le samedi soir !
 
+<div class="cta-container article">
+  <a href="https://www.helloasso.com/associations/make-sense/evenements/sensecamp-bordeaux" alt="" target="_blank">
+    <button id="switcher" class="cta-home" type="button">
+      Participer au SenseCamp
+    </button>
+  </a>
+</div>
 
 
 ## MakeSense et CforGood : une vision commune

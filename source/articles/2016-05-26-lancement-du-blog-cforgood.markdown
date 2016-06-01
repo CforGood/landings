@@ -64,7 +64,7 @@ Il est donc fortement conseillé de nous laisser un petit mot, non seulement par
 Tu es maintenant totalement convaincu(e) et tu as peur de rater nos prochains articles ?  Pas de problème, inscris toi à notre newsletter juste en dessous, promis, on ne t'enverra que l'essentiel :)
 
 <div class="newsletter-form article">
-  <h3>Inscrivez-vous pour recevoir notre actualité</h3>
+  <h3><!--Inscrivez-vous pour recevoir notre actualité--></h3>
   <div id="mc_embed_signup">
     <form action="//cforgood.us9.list-manage.com/subscribe/post?u=a43e05af521d3632c30f4c0c8&amp;id=3cef42ed6e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
