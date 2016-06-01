@@ -36,9 +36,12 @@ Pas de conférence et d’audience passive au programme, seulement des ateliers,
 
 Chez CforGood on soutient à 100% cette initiative, c’est pourquoi on a, dès ses prémisses, pris part activement à sa mise en place. Aujourd’hui, on peut vous dire qu’on est fier que cet événement voit le jour !
 
-L’esprit de CforGood sera totalement présent lors de cet évènement entièrement éco-responsable. Alors évidemment on n’était pas seul dans cette histoire, l’équipe de bénévoles sur-motivés de MakeSense et des soutiens comme La Région, La Ruche Bordeaux, La Fabrik à Déclik, Jean Bouteille et j’en passe, on fait de ce week end, l’événement à ne pas rater.
 
-Allez sans vous faire plus attendre, on vous dévoile le programme !
+L'esprit de CforGood sera totalement présent lors de cet évènement entièrement éco-responsable, mais évidemment on n'était pas seul dans cette histoire, l'équipe de bénévoles sur-motivés de MakeSense et des soutiens comme <a href="
+http://www.aquitaine.fr/" alt="" target="_blank">La Région</a>, <a href="http://la-ruche.net/ruche/bordeaux/" alt="" target="_blank">La Ruche Bordeaux</a>, <a href="http://fabrikadeclik.fr/" alt="" target="_blank">La Fabrik à Déclik</a> ou encore <a href="http://www.jeanbouteille.fr/" alt="" target="_blank">Jean Bouteille</a>, on fait de ce week end, l'événement à ne pas rater.
+
+
+Allez, sans vous faire plus attendre, on vous dévoile le programme !
 
 ## Le programme du week-end
 
@@ -59,7 +62,6 @@ Allez sans vous faire plus attendre, on vous dévoile le programme !
     </button>
   </a>
 </div>
-
 
 ## MakeSense et CforGood : une vision commune
 
