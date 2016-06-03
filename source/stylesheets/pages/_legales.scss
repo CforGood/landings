@@ -46,13 +46,13 @@
 	}
 
 	.banniere-about{
-		background: url("../images/placeit-1.jpg") no-repeat;
+		background: url("../images/legales/coverTest.jpg") no-repeat;
 		height: 450px;
 		background-size: cover;
 	}
 
 	.banniere-charte{
-		background: url("../images/charte.jpg") no-repeat;
+		background: url("../images/legales/coverTest.jpg") no-repeat;
 		height: 450px;
 		background-size: cover;
 	}
@@ -123,7 +123,7 @@
 	.section-contenu{
 		width: 85%;
 		margin: 10px auto;
-		padding: 80px 40px;
+		padding: 70px 40px;
 	}
 
 
@@ -132,13 +132,16 @@
 		font-size: 2em;
 		font-weight: 100;
 		margin-bottom: 50px;
+		margin-bottom: 50px;
+  		padding-bottom: 10px;
+    	border-bottom: 1px rgba(50,50,50,0.2) solid;
 	}
 
 	section h4{
 		font-size: 20px;
-		font-weight: 100;
-		text-align: left;
-		margin-bottom: 50px;
+    	font-weight: 600;
+    	text-align: left;
+    	margin: 50px 0 20px;
 	}
 
 	.section-title::after {
@@ -151,9 +154,9 @@
 
 	section p{
 		
-		margin: 10px auto 100px;
+		margin: 10px auto 0;
 		font-family: 'bariol_boldbold', sans-serif;
-		font-size: 16px;
+		font-size: 14px;
 		text-align: left;
 		font-weight: 100;
 		line-height: 24px;
@@ -266,6 +269,68 @@
 		border-radius: 0 0 5px 5px;
 	}
 
+	#container-2{
+	    width: 90%;
+	    margin: 0 auto;
+	    background-color: white;
+	    position: relative;
+	    z-index: 0;
+	    margin-top: 70px;
+	}
+
+	#container-constat{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.bloc-constat-2{
+		width: 20%;
+		text-align: center;
+	}
+
+	.image-constat-2{
+		width: 30px;
+		height: 30px;
+	    margin: 20px 0;
+	}
+
+	#container-constat1{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#container-constat2{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.fleche{
+		height: 30px;
+	    position: relative;
+	    top: 20px;
+	}
+
+	.quote{
+		text-align: center;
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 50px;
+	}
+
+	#section-manifeste{
+		padding: 0;
+	}
+
+	#section-contenu-manifeste, #section-contenu-enjeux{
+		width: 90%;
+   		margin: 0 auto;
+	}
+
+
+
 	/*PAGE CHARTE*/
 
 
@@ -279,6 +344,10 @@
 	.section-contenu p{
 		padding-bottom: 20px;
 		margin: 0;
+	}
+
+	#legales p{
+		font-size: 14px;
 	}
 
 	/*MEDIA QUERIES*/
@@ -321,7 +390,7 @@
 		    margin-bottom: -310px;
 		    position: fixed;
 		    width: 100%;
-		    padding: 30px 0 20px;
+		    padding: 50px 0 20px;
 		    background-color: white;
 		    z-index: 2;  
 		    box-shadow: 0px 0px 2px;
