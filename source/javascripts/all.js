@@ -4,5 +4,6 @@
 
 //= require typed
 //= require slick
+//= require changethewords
 //= require readingTime
 //= require ias

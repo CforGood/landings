@@ -31,14 +31,44 @@
       .vision-pros {
         padding-top: 20px;
 
+        #changethewords {
+          margin-top: 10px;
+          height: 80px;
+          line-height: 2em;
+          vertical-align: middle;
+          font-weight: 100;
+          font-size: 2rem;
+          text-align: center;
+        }
+
         p {
           margin-bottom: 0;
           font-size: 1em;
         }
 
         i {
+          position: relative;
           font-size: 1.3em;
           font-style: inherit;
+
+          &:before,
+          &:after {
+            content: "[";
+            position: absolute;
+            top: 0;
+            color: $turquoise;
+            font-weight: 600;
+          }
+
+          &:before {
+            content: "[";
+            left: -20px;
+          }
+
+          &:after {
+            content: "]";
+            right: -20px;
+          }
         }
       }
     }

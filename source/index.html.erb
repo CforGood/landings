@@ -9,12 +9,13 @@ thumbnail: "page/default-meta-image.jpg"
     <div class="vision">
       <h1>Le nouveau réseau de solidarité</h1>
       <div class="vision-pros">
-        <p>Enfin un moyen simple de </p>
-        <div class="vision-slick">
-          <i>Redécouvrir votre ville</i>
-          <i>Consommer responsable</i>
-          <i>Parrainer les projets de votre choix</i>
-          <i>Changer le monde à votre échelle</i>
+        <p>Enfin un moyen simple de :</p>
+        <!-- <div class="vision-slick"> -->
+        <div id="changethewords">
+          <i data-id="1">Redécouvrir votre ville</i>
+          <i data-id="2">Consommer responsable</i>
+          <i data-id="3">Parrainer les projets de votre choix</i>
+          <i data-id="4">Changer le monde à votre échelle</i>
         </div>
       </div>
     </div>
@@ -162,7 +163,7 @@ thumbnail: "page/default-meta-image.jpg"
       <ul>
         <li><%= partial "shared/svg/check" %> Rien à télécharger/mettre à jour</li>
         <li><%= partial "shared/svg/check" %> Compatible avec tous les navigateurs (Chrome, Safari...)</li>
-        <li><%= partial "shared/svg/check" %> Ajoutez un raccoucis sur votre écran d'acceuil !</li>
+        <li><%= partial "shared/svg/check" %> Ajoutez un raccourcis sur votre écran d'accueil !</li>
       </ul>
     </div>
   </section>
@@ -221,6 +222,14 @@ thumbnail: "page/default-meta-image.jpg"
 
   // SLICK
   jQuery(document).ready(function(){
+    $(function() {
+      $("#changethewords").changeWords({
+        time: 3500,
+        animate: "fadeInUp",
+        selector: "i"
+      });
+    });
+
     $('.vision-slick').slick({
       dots: false,
       arrows: false,
