@@ -82,8 +82,8 @@ thumbnail: "page/default-meta-image.jpg"
   </section>
 
   <section id="how-to">
+    <h2>Comment ça marche ?</h2>
     <div class="how-to-specifics">
-      <h2>Comment ça marche ?</h2>
 
       <div class="switch-device">
         <button id="switcher-mobile" class="device-switcher hint--top" data-hint="Sur votre mobile" type="button">
@@ -107,7 +107,7 @@ thumbnail: "page/default-meta-image.jpg"
       <ul id="specifics-list" class="specifics">
         <li id="specific-1" class="active">
           <h3>Rejoignez-nous</h3>
-          <p>Soutenez l'association de votre choix en leur reversant la moitié de votre abonnement</p>
+          <p>Soutenez l'association de votre choix en leur reversant le montant de votre abonnement</p>
         </li>
         <li id="specific-2">
           <h3>Localisez</h3>
@@ -124,23 +124,38 @@ thumbnail: "page/default-meta-image.jpg"
       </ul>
     </div>
     <div class="how-to-images">
-      <div class="how-to-mobile mobile-is-visible">
-        <%= partial "shared/svg/mobile_2" %>
-        <ul id="specifics-images-list">
-          <li id="specific-image-1"><img src="<%= image_path 'cforgood-login-mobile.jpg' %>" class="showing" alt=""></li>
-          <li id="specific-image-2"><img src="<%= image_path 'cforgood-map-mobile.jpg' %>" alt=""></li>
-          <li id="specific-image-3"><img src="<%= image_path 'cforgood-bonplan-mobile.jpg' %>" alt=""></li>
-          <li id="specific-image-4"><img src="<%= image_path 'cforgood-use-mobile.jpg' %>" alt=""></li>
-        </ul>
+      <div class="desktop-images">
+        <div class="how-to-mobile mobile-is-visible">
+          <%= partial "shared/svg/mobile_2" %>
+          <ul id="specifics-images-list">
+            <li id="specific-image-1"><img src="<%= image_path 'cforgood-login-mobile.jpg' %>" class="showing" alt=""></li>
+            <li id="specific-image-2"><img src="<%= image_path 'cforgood-map-mobile.jpg' %>" alt=""></li>
+            <li id="specific-image-3"><img src="<%= image_path 'cforgood-bonplan-mobile.jpg' %>" alt=""></li>
+            <li id="specific-image-4"><img src="<%= image_path 'cforgood-use-mobile.jpg' %>" alt=""></li>
+          </ul>
+        </div>
+        <div class="how-to-browser browser-is-hidden">
+          <%= partial "shared/svg/browser" %>
+          <ul id="specifics-images-list">
+            <li id="specific-image-1"><img src="<%= image_path 'cforgood-login.jpg' %>" class="showing" alt=""></li>
+            <li id="specific-image-2"><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
+            <li id="specific-image-3"><img src="<%= image_path 'cforgood-bonplan.jpg' %>" alt=""></li>
+            <li id="specific-image-4"><img src="<%= image_path 'cforgood-use.jpg' %>" alt=""></li>
+          </ul>
+        </div>
       </div>
-      <div class="how-to-browser browser-is-hidden">
-        <%= partial "shared/svg/browser" %>
-        <ul id="specifics-images-list">
-          <li id="specific-image-1"><img src="<%= image_path 'cforgood-login.jpg' %>" class="showing" alt=""></li>
-          <li id="specific-image-2"><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
-          <li id="specific-image-3"><img src="<%= image_path 'cforgood-bonplan.jpg' %>" alt=""></li>
-          <li id="specific-image-4"><img src="<%= image_path 'cforgood-use.jpg' %>" alt=""></li>
-        </ul>
+      <div class="medium-screen">
+        <div class="how-to-mobile mobile-is-visible">
+          <%= partial "shared/svg/ipad" %>
+          <ul id="specifics-images-list">
+            <li id="specific-image-1"><img src="<%= image_path 'howto/ipad-signin.jpg' %>" class="showing" alt=""></li>
+            <li id="specific-image-2"><img src="<%= image_path 'howto/ipad-map.jpg' %>" alt=""></li>
+            <li id="specific-image-3"><img src="<%= image_path 'howto/ipad-perk.jpg' %>" alt=""></li>
+            <li id="specific-image-4"><img src="<%= image_path 'howto/ipad-member.jpg' %>" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <div class="small-screen">
       </div>
     </div>
   </section>
@@ -213,197 +228,3 @@ thumbnail: "page/default-meta-image.jpg"
     <%= partial "shared/support_us" %>
   </section>
 </div>
-
-<script>
-  // LAUNCH MODAL
-  $('#video-launcher').click(function(e) {
-    $('#modal-video').toggleClass('is-visible');
-  });
-
-  // SLICK
-  jQuery(document).ready(function(){
-    $(function() {
-      $("#changethewords").changeWords({
-        time: 3500,
-        animate: "fadeInUp",
-        selector: "i"
-      });
-    });
-
-    $('.vision-slick').slick({
-      dots: false,
-      arrows: false,
-      infinite: true,
-      speed: 600,
-      fade: true,
-      cssEase: 'linear',
-      autoplay: true,
-      autoplaySpeed: 4000,
-      slidesToScroll: 1,
-      slidesToShow: 1
-    });
-
-    $('.articles-carousel').slick({
-      dots: false,
-      arrows: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 6,
-      responsive: [
-        {
-          breakpoint: 964,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        }
-      ]
-    });
-
-    $('.testimonials-carousel').slick({
-      dots: true,
-      arrows: false,
-      infinite: true,
-      autoplay: true,
-      speed: 600,
-      slidesToShow: 4,
-      responsive: [
-        {
-          breakpoint: 964,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        }
-      ]
-    });
-  });
-
-  // TOGGLE AUTOPLAY YOUTUBE VIDEO ON MODAL OPENING/CLOSING
-  jQuery(document).ready(function(){
-    //LAUNCH FUCTION AUTOPLAY
-    autoPlayYouTubeModal();
-    //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
-    function autoPlayYouTubeModal() {
-      var trigger = $("#video").find('[data-toggle="video-modal"]');
-      trigger.click(function () {
-          var theModal = $(this).data("target"),
-              videoSRC = $(this).attr("data-theVideo"),
-              videoSRCauto = videoSRC + "?autoplay=1";
-          $(theModal + ' iframe').attr('src', videoSRCauto);
-           $('.modal-close').click(function(e) {
-              $('#modal-video').removeClass('is-visible');
-              //$('.modal-backdrop').remove();
-              //$('body').removeClass('modal-open');
-              $(theModal + ' iframe').attr('src', videoSRC);
-            });
-          $('#modal-video').click(function () {
-              $(theModal + ' iframe').attr('src', videoSRC);
-          });
-      });
-    }
-  });
-
-  // SWITCH DEVICE ON CLICK
-  $('#switcher-desktop').click(function(e) {
-    $('.how-to-browser').toggleClass('browser-is-hidden');
-    $('.how-to-mobile').toggleClass('mobile-is-visible');
-    $('#switcher-desktop').toggleClass('icon-is-hidden');
-    $('#switcher-mobile').toggleClass('icon-is-hidden');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SWITCH DEVICE ON CLICK
-  $('#switcher-mobile').click(function(e) {
-    $('.how-to-browser').toggleClass('browser-is-hidden');
-    $('.how-to-mobile').toggleClass('mobile-is-visible');
-    $('#switcher-desktop').toggleClass('icon-is-hidden');
-    $('#switcher-mobile').toggleClass('icon-is-hidden');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // TOGGLE HIGHLIGHT SPECIFIC
-  $('#specifics-list li').click(function(e) {
-    $(this).siblings('li').removeClass('active');
-    $(this).closest('li').addClass('active');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 1
-  $('#specific-1').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-1 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 2
-  $('#specific-2').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-2 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 3
-  $('#specific-3').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-3 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 4
-  $('#specific-4').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-4 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // BUTTON RIPPLE EFFECT
-  jQuery(document).ready(function($, window, document, undefined) {
-
-    'use strict';
-
-    var $ripple = $('.js-ripple');
-
-    $ripple.on('click.ui.ripple', function(e) {
-      var $this = $(this);
-      var $offset = $this.parent().offset();
-      var $circle = $this.find('.ripple-circle');
-
-      var x = e.pageX - $offset.left;
-      var y = e.pageY - $offset.top;
-
-      $circle.css({
-        top: y + 'px',
-        left: x + 'px'
-      });
-
-      $this.addClass('is-active');
-    });
-
-    $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(e) {
-      $(this).removeClass('is-active');
-    });
-  });
-</script>
