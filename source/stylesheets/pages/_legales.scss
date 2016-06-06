@@ -134,7 +134,7 @@
 		margin-bottom: 50px;
 		margin-bottom: 50px;
   		padding-bottom: 10px;
-    	border-bottom: 1px rgba(50,50,50,0.2) solid;
+    	border-bottom: 1px #36D3DA solid;
 	}
 
 	section h4{
@@ -144,22 +144,14 @@
     	margin: 50px 0 20px;
 	}
 
-	.section-title::after {
-	    content: '';
-	    display: block;
-	    padding-top: 30px;
-	    width: 150px;
-	    border-bottom: 3px solid #36d3da;
-	}
-
 	section p{
-		
 		margin: 10px auto 0;
 		font-family: 'bariol_boldbold', sans-serif;
 		font-size: 14px;
 		text-align: left;
 		font-weight: 100;
 		line-height: 24px;
+
 	}
 
 	#video-about{
@@ -188,10 +180,6 @@
 		width: 20%;
 		margin: auto;
 		padding: 15px;
-	}
-
-	.texte-constat{
-		width: 70%;
 	}
 
 	#manifeste{
@@ -270,7 +258,7 @@
 	}
 
 	#container-2{
-	    width: 90%;
+	    width: 100%;
 	    margin: 0 auto;
 	    background-color: white;
 	    position: relative;
@@ -307,7 +295,7 @@
 		justify-content: space-around;
 	}
 
-	.fleche{
+	.fleche-droite{
 		height: 30px;
 	    position: relative;
 	    top: 20px;
@@ -322,14 +310,40 @@
 
 	#section-manifeste{
 		padding: 0;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	#section-contenu-manifeste, #section-contenu-enjeux{
-		width: 90%;
+		width: 100%;
    		margin: 0 auto;
 	}
 
+	.bloc-enjeux{
+		border-bottom: 1px solid rgba(50,50,50,0.2);
+		border-top: 1px solid rgba(50,50,50,0.2);
+		padding: 50px 0; 
+	}
 
+	.first-bloc{
+		padding-bottom: 50px;
+	}
+
+	.bloc-enjeux h4{
+		margin-top: 0;
+	}
+
+	#section-constat, #section-enjeux{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.bloc-enjeux img{
+		float: left;
+		height: 30px;
+		margin-right: 20px;
+	}
+	
 
 	/*PAGE CHARTE*/
 
@@ -349,6 +363,52 @@
 	#legales p{
 		font-size: 14px;
 	}
+
+	// PAGE TEAM
+
+	.list-team{
+		display: flex;
+		justify-content: center;
+	}
+
+	.photo-team{
+		border:solid 1px;
+	}
+
+	#section-team{
+		position: relative;
+	}
+
+
+
+ .photo-team::after{
+	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    background-color: rgba(0,0,0,.5);
+}
+
+.photo-normale{
+	opacity: 1;
+}
+
+.photo-dessous{
+	transition: opacity 0.35s;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+
 
 	/*MEDIA QUERIES*/
 
@@ -412,6 +472,28 @@
 	 	.section-contenu {
 		    width: 90%;
 		}
+
+		#container-constat{
+			display: block;
+			
+		}
+
+		.bloc-constat-2{
+			width: 90%;
+    		margin: 50px auto;
+		}
+
+		.bloc-fleche{
+			text-align: center;
+		}
+
+		.fleche-droite{
+			-ms-transform: rotate(90deg); /* IE 9 */
+		    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+		    transform: rotate(90deg);
+		}
+
+
 	}
 
 	@media (max-width: 425px){
