@@ -27,6 +27,15 @@
 
 
   // HOME ////////////////////////////////////////////////////////////////////////
+  $(document).on('ready', function() {
+    $(function() {
+      $("#changethewords").changeWords({
+        time: 3500,
+        animate: "fadeInUp",
+        selector: "i"
+      });
+    });
+  });
 
   jQuery(document).ready(function(){
 
@@ -234,4 +243,25 @@
       mn.removeClass(mns);
     }
   });
+
+  // RESPONIVE ////////////////////////////////////////////////////////////////////////
+
+  // media query event handler
+  if (matchMedia) {
+    var mq = window.matchMedia("(min-width: 767px)");
+    mq.addListener(WidthChange);
+    WidthChange(mq);
+  }
+
+  // media query change
+  function WidthChange(mq) {
+    if (mq.matches) {
+      //
+    } else {
+      $('#how-to').remove();
+    }
+  }
+
+
+
 </script>
