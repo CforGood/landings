@@ -7,3 +7,4 @@
 //= require changethewords
 //= require readingTime
 //= require ias
+//= require ssm.min
