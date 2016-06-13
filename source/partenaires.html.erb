@@ -86,8 +86,8 @@ thumbnail: "page/default-meta-image.jpg"
   </section>
 
   <section id="how-to">
+    <h2>Comment ça marche ?</h2>
     <div class="how-to-specifics">
-      <h2>Comment ça marche ?</h2>
 
       <div class="switch-device">
         <button id="switcher-mobile" class="device-switcher hint--top" data-hint="Sur votre mobile" type="button">
@@ -128,23 +128,25 @@ thumbnail: "page/default-meta-image.jpg"
       </ul>
     </div>
     <div class="how-to-images">
-      <div class="how-to-mobile mobile-is-visible">
-        <%= partial "shared/svg/mobile_2" %>
-        <ul id="specifics-images-list">
-          <li id="specific-image-1"><img src="<%= image_path 'cforgood-login-mobile.jpg' %>" class="showing" alt=""></li>
-          <li id="specific-image-2"><img src="<%= image_path 'cforgood-create-mobile.jpg' %>" alt=""></li>
-          <li id="specific-image-3"><img src="<%= image_path 'cforgood-map-mobile.jpg' %>" alt=""></li>
-          <li id="specific-image-4"><img src="<%= image_path 'cforgood-analytics-mobile.jpg' %>" alt=""></li>
-        </ul>
-      </div>
-      <div class="how-to-browser browser-is-hidden">
-        <%= partial "shared/svg/browser" %>
-        <ul id="specifics-images-list">
-          <li id="specific-image-1"><img src="<%= image_path 'cforgood-login.jpg' %>" class="showing" alt=""></li>
-          <li id="specific-image-2"><img src="<%= image_path 'cforgood-create-perk.jpg' %>" alt=""></li>
-          <li id="specific-image-3"><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
-          <li id="specific-image-4"><img src="<%= image_path 'cforgood-analytics.jpg' %>" alt=""></li>
-        </ul>
+      <div class="desktop-images">
+        <div class="how-to-mobile mobile-is-visible">
+          <%= partial "shared/svg/mobile_2" %>
+          <ul id="specifics-images-list">
+            <li id="specific-image-1"><img src="<%= image_path 'cforgood-login-mobile.jpg' %>" class="showing" alt=""></li>
+            <li id="specific-image-2"><img src="<%= image_path 'cforgood-create-mobile.jpg' %>" alt=""></li>
+            <li id="specific-image-3"><img src="<%= image_path 'cforgood-map-mobile.jpg' %>" alt=""></li>
+            <li id="specific-image-4"><img src="<%= image_path 'cforgood-analytics-mobile.jpg' %>" alt=""></li>
+          </ul>
+        </div>
+        <div class="how-to-browser browser-is-hidden">
+          <%= partial "shared/svg/browser" %>
+          <ul id="specifics-images-list">
+            <li id="specific-image-1"><img src="<%= image_path 'cforgood-login.jpg' %>" class="showing" alt=""></li>
+            <li id="specific-image-2"><img src="<%= image_path 'cforgood-create-perk.jpg' %>" alt=""></li>
+            <li id="specific-image-3"><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
+            <li id="specific-image-4"><img src="<%= image_path 'cforgood-analytics.jpg' %>" alt=""></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>

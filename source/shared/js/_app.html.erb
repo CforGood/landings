@@ -127,58 +127,59 @@
     });
   });
 
+  jQuery(document).ready(function(){
+    // SWITCH DEVICE ON CLICK
+    $('#switcher-desktop').click(function(e) {
+      $('.how-to-browser').toggleClass('browser-is-hidden');
+      $('.how-to-mobile').toggleClass('mobile-is-visible');
+      $('#switcher-desktop').toggleClass('icon-is-hidden');
+      $('#switcher-mobile').toggleClass('icon-is-hidden');
+      e.preventDefault() /*ignores actual link*/
+    });
 
-  // SWITCH DEVICE ON CLICK
-  $('#switcher-desktop').click(function(e) {
-    $('.how-to-browser').toggleClass('browser-is-hidden');
-    $('.how-to-mobile').toggleClass('mobile-is-visible');
-    $('#switcher-desktop').toggleClass('icon-is-hidden');
-    $('#switcher-mobile').toggleClass('icon-is-hidden');
-    e.preventDefault() /*ignores actual link*/
-  });
+    // SWITCH DEVICE ON CLICK
+    $('#switcher-mobile').click(function(e) {
+      $('.how-to-browser').toggleClass('browser-is-hidden');
+      $('.how-to-mobile').toggleClass('mobile-is-visible');
+      $('#switcher-desktop').toggleClass('icon-is-hidden');
+      $('#switcher-mobile').toggleClass('icon-is-hidden');
+      e.preventDefault() /*ignores actual link*/
+    });
 
-  // SWITCH DEVICE ON CLICK
-  $('#switcher-mobile').click(function(e) {
-    $('.how-to-browser').toggleClass('browser-is-hidden');
-    $('.how-to-mobile').toggleClass('mobile-is-visible');
-    $('#switcher-desktop').toggleClass('icon-is-hidden');
-    $('#switcher-mobile').toggleClass('icon-is-hidden');
-    e.preventDefault() /*ignores actual link*/
-  });
+    // TOGGLE HIGHLIGHT SPECIFIC
+    $('#specifics-list li').click(function(e) {
+      $(this).siblings('li').removeClass('active');
+      $(this).closest('li').addClass('active');
+      e.preventDefault() /*ignores actual link*/
+    });
 
-  // TOGGLE HIGHLIGHT SPECIFIC
-  $('#specifics-list li').click(function(e) {
-    $(this).siblings('li').removeClass('active');
-    $(this).closest('li').addClass('active');
-    e.preventDefault() /*ignores actual link*/
-  });
+    // SHOW IMAGE FOR SPECIFC 1
+    $('#specific-1').click(function(e) {
+      $('#specifics-images-list li img').removeClass('showing');
+      $('#specific-image-1 img').addClass('showing');
+      e.preventDefault() /*ignores actual link*/
+    });
 
-  // SHOW IMAGE FOR SPECIFC 1
-  $('#specific-1').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-1 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
+    // SHOW IMAGE FOR SPECIFC 2
+    $('#specific-2').click(function(e) {
+      $('#specifics-images-list li img').removeClass('showing');
+      $('#specific-image-2 img').addClass('showing');
+      e.preventDefault() /*ignores actual link*/
+    });
 
-  // SHOW IMAGE FOR SPECIFC 2
-  $('#specific-2').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-2 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
+    // SHOW IMAGE FOR SPECIFC 3
+    $('#specific-3').click(function(e) {
+      $('#specifics-images-list li img').removeClass('showing');
+      $('#specific-image-3 img').addClass('showing');
+      e.preventDefault() /*ignores actual link*/
+    });
 
-  // SHOW IMAGE FOR SPECIFC 3
-  $('#specific-3').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-3 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 4
-  $('#specific-4').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-4 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
+    // SHOW IMAGE FOR SPECIFC 4
+    $('#specific-4').click(function(e) {
+      $('#specifics-images-list li img').removeClass('showing');
+      $('#specific-image-4 img').addClass('showing');
+      e.preventDefault() /*ignores actual link*/
+    });
   });
 
   // BUTTON RIPPLE EFFECT
