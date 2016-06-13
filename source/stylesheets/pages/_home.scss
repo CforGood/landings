@@ -223,6 +223,13 @@
         text-decoration: underline;
         background-color: #f4f4f4;
 
+        @media (max-width: 767px) {
+          padding: 10px 8px;
+          width: 195px;
+          top: -42px;
+          font-size: 12px;
+        }
+
         &:hover {
           cursor: pointer;
           opacity: 0.8;
@@ -514,6 +521,18 @@
         li {
           padding: 20px;
           cursor: pointer;
+
+          .cta-home {
+            font-size: 1.3rem;
+          }
+
+          @media (max-width: 768px) {
+            padding: 5px 10px;
+
+            .cta-home {
+              font-size: 1rem;
+            }
+          }
         }
 
         li.active {

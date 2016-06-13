@@ -9,12 +9,12 @@ thumbnail: "page/default-meta-image.jpg"
     <div class="vision">
       <h1>Le nouveau réseau de solidarité</h1>
       <div class="vision-pros">
-        <p>Enfin un moyen simple de </p>
-        <div class="vision-slick">
-          <i>Valoriser vos engagements</i>
-          <i>Toucher une clientèle ciblée</i>
-          <i>Gérer votre activité</i>
-          <i>Tout en inspirant la solidarité !</i>
+        <p>Enfin un moyen simple de :</p>
+        <div id="changethewords">
+          <i data-id="1">Valoriser vos engagements</i>
+          <i data-id="2" style="display: none;">Toucher une clientèle ciblée</i>
+          <i data-id="3" style="display: none;">Gérer votre activité</i>
+          <i data-id="4" style="display: none;">Tout en inspirant la solidarité !</i>
         </div>
       </div>
     </div>
@@ -125,6 +125,16 @@ thumbnail: "page/default-meta-image.jpg"
           <h3>Profitez</h3>
           <p>Les clients affluent et développent votre activité, tout en inspirant la solidarité !</p>
         </li>
+        <li>
+          <a href="https://cforgood-staging.herokuapp.com/signup">
+            <button id="switcher" class="cta-home" type="button">
+              <div class="ripple-area js-ripple">
+                <span class="ripple-circle"></span>
+              </div>
+              Je rejoins la révolution positive
+            </button>
+          </a>
+        </li>
       </ul>
     </div>
     <div class="how-to-images">
@@ -224,149 +234,3 @@ thumbnail: "page/default-meta-image.jpg"
     <%= partial "shared/support_us" %>
   </section>
 </div>
-
-<script>
-
-  // LAUNCH MODAL
-  $('#video-launcher').click(function(e) {
-    $('#modal-video').toggleClass('is-visible');
-  });
-
-  // SLICK
-  jQuery(document).ready(function(){
-    $('.vision-slick').slick({
-      dots: false,
-      arrows: false,
-      infinite: true,
-      speed: 600,
-      fade: true,
-      cssEase: 'linear',
-      autoplay: true,
-      autoplaySpeed: 4000,
-      slidesToScroll: 1,
-      slidesToShow: 1
-    });
-
-    $('.articles-carousel').slick({
-      dots: false,
-      arrows: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 6
-    });
-
-    $('.testimonials-carousel').slick({
-      dots: true,
-      arrows: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 4
-    });
-  });
-
-  // TOGGLE AUTOPLAY YOUTUBE VIDEO ON MODAL OPENING/CLOSING
-  jQuery(document).ready(function(){
-    //LAUNCH FUCTION AUTOPLAY
-    autoPlayYouTubeModal();
-    //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
-    function autoPlayYouTubeModal() {
-      var trigger = $("#video").find('[data-toggle="video-modal"]');
-      trigger.click(function () {
-          var theModal = $(this).data("target"),
-              videoSRC = $(this).attr("data-theVideo"),
-              videoSRCauto = videoSRC + "?autoplay=1";
-          $(theModal + ' iframe').attr('src', videoSRCauto);
-           $('.modal-close').click(function(e) {
-              $('#modal-video').removeClass('is-visible');
-              //$('.modal-backdrop').remove();
-              //$('body').removeClass('modal-open');
-              $(theModal + ' iframe').attr('src', videoSRC);
-            });
-          $('#modal-video').click(function () {
-              $(theModal + ' iframe').attr('src', videoSRC);
-          });
-      });
-    }
-  });
-
-  // SWITCH DEVICE ON CLICK
-  $('#switcher-desktop').click(function(e) {
-    $('.how-to-browser').toggleClass('browser-is-hidden');
-    $('.how-to-mobile').toggleClass('mobile-is-visible');
-    $('#switcher-desktop').toggleClass('icon-is-hidden');
-    $('#switcher-mobile').toggleClass('icon-is-hidden');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SWITCH DEVICE ON CLICK
-  $('#switcher-mobile').click(function(e) {
-    $('.how-to-browser').toggleClass('browser-is-hidden');
-    $('.how-to-mobile').toggleClass('mobile-is-visible');
-    $('#switcher-desktop').toggleClass('icon-is-hidden');
-    $('#switcher-mobile').toggleClass('icon-is-hidden');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // TOGGLE HIGHLIGHT SPECIFIC
-  $('#specifics-list li').click(function(e) {
-    $(this).siblings('li').removeClass('active');
-    $(this).closest('li').addClass('active');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 1
-  $('#specific-1').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-1 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 2
-  $('#specific-2').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-2 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 3
-  $('#specific-3').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-3 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 4
-  $('#specific-4').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-4 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // BUTTON RIPPLE EFFECT
-  jQuery(document).ready(function($, window, document, undefined) {
-
-    'use strict';
-
-    var $ripple = $('.js-ripple');
-
-    $ripple.on('click.ui.ripple', function(e) {
-      var $this = $(this);
-      var $offset = $this.parent().offset();
-      var $circle = $this.find('.ripple-circle');
-
-      var x = e.pageX - $offset.left;
-      var y = e.pageY - $offset.top;
-
-      $circle.css({
-        top: y + 'px',
-        left: x + 'px'
-      });
-
-      $this.addClass('is-active');
-    });
-
-    $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(e) {
-      $(this).removeClass('is-active');
-    });
-  });
-</script>
