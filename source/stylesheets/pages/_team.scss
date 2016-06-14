@@ -1,0 +1,136 @@
+
+/*proto*/
+
+body{
+    font-family: 'raleway', sans-serif;
+    margin: 0;
+}
+
+#cover-team{
+    height: 450px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.row{
+    display: flex;
+    overflow: hidden;
+}
+
+.bloc-photo-team-allan, .bloc-photo-team-cedric, .bloc-photo-team-fred, .bloc-photo-team-sarah, .bloc-photo-team-damien, .bloc-photo-team-olivier{
+    width: 100%;
+    position: relative;
+}
+
+.photo-perso{
+    border: 1px solid black;
+    transition: 0.5s ease-in-out;
+    opacity:1
+}
+
+.photo-perso img{
+    width: 100%;
+    height: auto;
+}
+
+.bloc-photo-team-allan::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    opacity: 0;
+    background: url('../images/team/allangif.gif');
+    background-size: cover;
+}
+
+.bloc-photo-team-cedric::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    opacity: 0;
+    background: url('../images/team/cedricgif.gif');
+    background-size: cover;
+}
+
+.bloc-photo-team-fred::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    opacity: 0;
+    background: url('../images/team/fredgif.gif');
+    background-size: cover;
+}
+
+.bloc-photo-team:hover::before,
+.bloc-photo-team:focus::before,
+.bloc-photo-team-allan:hover::before,
+.bloc-photo-team-allan:focus::before,
+.bloc-photo-team-cedric:hover::before,
+.bloc-photo-team-cedric:focus::before{
+    opacity: 1;
+}
+
+.caption{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    transition: 0.5s ease-in-out;
+    transform: translateY(100%);
+}
+
+.bloc-photo-team:hover .caption,
+.bloc-photo-team-allan:hover .caption,
+.bloc-photo-team-cedric:hover .caption{
+    background-color: rgba(30,30,30,0.8);
+    transform: translateY(0);
+}
+
+.bloc-photo-team:hover .photo-perso,
+.bloc-photo-team-allan:hover .photo-perso,
+.bloc-photo-team-cedric:hover .photo-perso{
+    opacity:0;
+}
+
+
+
+.caption img{
+    width: 50%;
+}
+
+.caption h3{
+    font-style: italic;
+    font-weight: 100;
+    line-height: 0;
+}
+
+.social{
+    display: flex;
+    align-self: center;
+}
+
+.name-team{
+    padding: 0 0 10px 30px;
+}
+
+
+/*proto*/
+
+
+
+
+
+
