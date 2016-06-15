@@ -9,12 +9,12 @@ thumbnail: "page/default-meta-image.jpg"
     <div class="vision">
       <h1>Le nouveau réseau de solidarité</h1>
       <div class="vision-pros">
-        <p>Enfin un moyen simple de </p>
-        <div class="vision-slick">
-          <i>Redécouvrir votre ville</i>
-          <i>Consommer responsable</i>
-          <i>Parrainer les projets de votre choix</i>
-          <i>Changer le monde à votre échelle</i>
+        <p>Enfin un moyen simple de :</p>
+        <div id="changethewords">
+          <i data-id="1">Redécouvrir votre ville</i>
+          <i data-id="2" style="display: none;">Consommer responsable</i>
+          <i data-id="3" style="display: none;">Parrainer les projets de votre choix</i>
+          <i data-id="4" style="display: none;">Changer le monde à votre échelle</i>
         </div>
       </div>
     </div>
@@ -41,14 +41,15 @@ thumbnail: "page/default-meta-image.jpg"
     </div>
     <div class="section-description">
       <h3>Je découvre ma ville autrement</h3>
-      <p>Je porte un tout autre regard sur ma ville en découvrant des événements enthousiasmant, des associations engagées et des commerçants qui réinventent de nouvelles manières de faire et de consommer.</p>
-      <span class="number"><i>62+</i>partenaires à découvrir et rencontrer !</span>
+      <p>Je porte un autre regard sur ma ville en découvrant des événements enthousiasmant, des associations engagées et des commerçants responsables du territoire.</p>
+      <span class="number"><i>80+</i>partenaires à découvrir et rencontrer !</span>
     </div>
   </section>
 
   <section id="city-perks" class="main-block">
     <div class="section-icon">
       <%= partial "shared/svg/perks" %>
+      <%= partial "shared/see_more_perks" %>
     </div>
     <div class="section-description">
       <h3>J'accède à des bons plans solidaires</h3>
@@ -63,7 +64,7 @@ thumbnail: "page/default-meta-image.jpg"
     </div>
     <div class="section-description">
       <h3>Je rejoins un véritable réseau de solidarité</h3>
-      <p>Je soutiens l’association de mon choix à travers une participation libre pour devenir membre et je rejoins une communauté d’acteurs positifs qui agis au quotidien pour inventer une société qui avance dans le bon sens.</p>
+      <p>Je deviens membre à travers une participation libre qui est reversée pour soutenir l'association de mon choix.</p>
       <span class="number hint--right" data-hint="Le pourcentage exact est déterminé en fonction du montant de votre participation mensuelle."><i>85%</i> de mon abonnement reversé à une association*</span>
     </div>
   </section>
@@ -74,14 +75,14 @@ thumbnail: "page/default-meta-image.jpg"
     </div>
     <div class="section-description">
       <h3>Je change le monde à mon échelle</h3>
-      <p>En devenant membre, je deviens le véritable moteur d’un mouvement favorisant l’émergence d’une société plus responsable et solidaire.<br>Ensemble, nous sommes une Révolution Positive.</p>
-      <span class="number"><i>650+</i>utilisateurs inscrits !</span>
+      <p>En devenant membre, je deviens le véritable moteur d'une société plus responsable et solidaire. <br><br><i>Ensemble, nous sommes une Révolution Positive.</i></p>
+      <span class="number"><i>800+</i>utilisateurs inscrits !</span>
     </div>
   </section>
 
   <section id="how-to">
+    <h2>Comment ça marche ?</h2>
     <div class="how-to-specifics">
-      <h2>Comment ça marche ?</h2>
 
       <div class="switch-device">
         <button id="switcher-mobile" class="device-switcher hint--top" data-hint="Sur votre mobile" type="button">
@@ -105,7 +106,7 @@ thumbnail: "page/default-meta-image.jpg"
       <ul id="specifics-list" class="specifics">
         <li id="specific-1" class="active">
           <h3>Rejoignez-nous</h3>
-          <p>Soutenez l'association de votre choix en leur reversant la moitié de votre abonnement</p>
+          <p>Soutenez l'association de votre choix en leur reversant le montant de votre abonnement</p>
         </li>
         <li id="specific-2">
           <h3>Localisez</h3>
@@ -119,26 +120,51 @@ thumbnail: "page/default-meta-image.jpg"
           <h3>Profitez</h3>
           <p>Profitez en simplement en montrant votre carte de membre !</p>
         </li>
+        <li>
+          <a href="https://cforgood-staging.herokuapp.com/signup">
+            <button id="switcher" class="cta-home" type="button">
+              <div class="ripple-area js-ripple">
+                <span class="ripple-circle"></span>
+              </div>
+              Je rejoins la révolution positive
+            </button>
+          </a>
+        </li>
       </ul>
     </div>
     <div class="how-to-images">
-      <div class="how-to-mobile mobile-is-visible">
-        <%= partial "shared/svg/mobile_2" %>
-        <ul id="specifics-images-list">
-          <li id="specific-image-1"><img src="<%= image_path 'cforgood-login-mobile.jpg' %>" class="showing" alt=""></li>
-          <li id="specific-image-2"><img src="<%= image_path 'cforgood-map-mobile.jpg' %>" alt=""></li>
-          <li id="specific-image-3"><img src="<%= image_path 'cforgood-bonplan-mobile.jpg' %>" alt=""></li>
-          <li id="specific-image-4"><img src="<%= image_path 'cforgood-use-mobile.jpg' %>" alt=""></li>
-        </ul>
+      <div class="desktop-images">
+        <div class="how-to-mobile mobile-is-visible">
+          <%= partial "shared/svg/mobile_2" %>
+          <ul id="specifics-images-list">
+            <li id="specific-image-1"><img src="<%= image_path 'cforgood-login-mobile.jpg' %>" class="showing" alt=""></li>
+            <li id="specific-image-2"><img src="<%= image_path 'cforgood-map-mobile.jpg' %>" alt=""></li>
+            <li id="specific-image-3"><img src="<%= image_path 'cforgood-bonplan-mobile.jpg' %>" alt=""></li>
+            <li id="specific-image-4"><img src="<%= image_path 'cforgood-use-mobile.jpg' %>" alt=""></li>
+          </ul>
+        </div>
+        <div class="how-to-browser browser-is-hidden">
+          <%= partial "shared/svg/browser" %>
+          <ul id="specifics-images-list">
+            <li id="specific-image-1"><img src="<%= image_path 'cforgood-login.jpg' %>" class="showing" alt=""></li>
+            <li id="specific-image-2"><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
+            <li id="specific-image-3"><img src="<%= image_path 'cforgood-bonplan.jpg' %>" alt=""></li>
+            <li id="specific-image-4"><img src="<%= image_path 'cforgood-use.jpg' %>" alt=""></li>
+          </ul>
+        </div>
       </div>
-      <div class="how-to-browser browser-is-hidden">
-        <%= partial "shared/svg/browser" %>
-        <ul id="specifics-images-list">
-          <li id="specific-image-1"><img src="<%= image_path 'cforgood-login.jpg' %>" class="showing" alt=""></li>
-          <li id="specific-image-2"><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
-          <li id="specific-image-3"><img src="<%= image_path 'cforgood-bonplan.jpg' %>" alt=""></li>
-          <li id="specific-image-4"><img src="<%= image_path 'cforgood-use.jpg' %>" alt=""></li>
-        </ul>
+      <div class="medium-screen">
+        <div class="how-to-mobile mobile-is-visible">
+          <%= partial "shared/svg/ipad" %>
+          <ul id="specifics-images-list">
+            <li id="specific-image-1"><img src="<%= image_path 'howto/ipad-signin.jpg' %>" class="showing" alt=""></li>
+            <li id="specific-image-2"><img src="<%= image_path 'howto/ipad-map.jpg' %>" alt=""></li>
+            <li id="specific-image-3"><img src="<%= image_path 'howto/ipad-perk.jpg' %>" alt=""></li>
+            <li id="specific-image-4"><img src="<%= image_path 'howto/ipad-member.jpg' %>" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <div class="small-screen">
       </div>
     </div>
   </section>
@@ -161,7 +187,7 @@ thumbnail: "page/default-meta-image.jpg"
       <ul>
         <li><%= partial "shared/svg/check" %> Rien à télécharger/mettre à jour</li>
         <li><%= partial "shared/svg/check" %> Compatible avec tous les navigateurs (Chrome, Safari...)</li>
-        <li><%= partial "shared/svg/check" %> Ajoutez un raccoucis sur votre écran d'acceuil !</li>
+        <li><%= partial "shared/svg/check" %> Ajoutez un raccourcis sur votre écran d'accueil !</li>
       </ul>
     </div>
   </section>
@@ -208,210 +234,6 @@ thumbnail: "page/default-meta-image.jpg"
   </section>
 
   <section id="partnerships">
-    <h2>Ils nous soutiennent</h2>
-    <ul class="partners-silver">
-      <li><a href="https://www.labanquepostale.fr/" alt=""><img src="<%= image_path 'logos/banquepostale.png' %>" alt=""></a></li>
-      <li><a href="https://www.makesense.org/" alt=""><img src="<%= image_path 'logos/makesense.png' %>" alt=""></a></li>
-      <li><a href="http://www.bordeaux-metropole.fr/" alt=""><img src="<%= image_path 'logos/metropole.png' %>" alt=""></a></li>
-      <li><a href="http://www.darwin-ecosysteme.fr/" alt=""><img src="<%= image_path 'logos/darwin.png' %>" alt=""></a></li>
-      <li><a href="http://www.ticketforchange.org/" alt=""><img src="<%= image_path 'logos/ticket-for-change.png' %>" alt=""></a></li>
-    </ul>
-    <ul class="partners-gold">
-      <li><a href="http://www.kisskissbankbank.com/" alt=""><img src="<%= image_path 'logos/kisskissbankbank.png' %>" alt=""></a></li>
-      <li><a href="https://www.mazars.fr/" alt=""><img src="<%= image_path 'logos/mazars.png' %>" alt=""></a></li>
-      <li><a href="http://www.bordeaux.fr/" alt=""><img src="<%= image_path 'logos/bordeaux.png' %>" alt=""></a></li>
-    </ul>
-    <ul class="partners-bronze">
-      <li><a href="http://www.lafrenchtech.com/" alt=""><img src="<%= image_path 'logos/french-tech.png' %>" alt=""></a></li>
-      <li><a href="http://www.aecom.org/" alt=""><img src="<%= image_path 'logos/aec.png' %>" alt=""></a></li>
-      <li><a href="http://www.ecoloinfo.com/" alt=""><img src="<%= image_path 'logos/ecolo-info.png' %>" alt=""></a></li>
-      <li><a href="http://www.bpifrance.fr/" alt=""><img src="<%= image_path 'logos/bpi.png' %>" alt=""></a></li>
-      <li><a href="http://keep-a-breast.org/" alt=""><img src="<%= image_path 'logos/keep-a-breast.png' %>" alt=""></a></li>
-    </ul>
+    <%= partial "shared/support_us" %>
   </section>
 </div>
-
-<script>
-  // LAUNCH MODAL
-  $('#video-launcher').click(function(e) {
-    $('#modal-video').toggleClass('is-visible');
-  });
-
-  // SLICK
-  jQuery(document).ready(function(){
-    $('.vision-slick').slick({
-      dots: false,
-      arrows: false,
-      infinite: true,
-      speed: 600,
-      fade: true,
-      cssEase: 'linear',
-      autoplay: true,
-      autoplaySpeed: 4000,
-      slidesToScroll: 1,
-      slidesToShow: 1
-    });
-
-    $('.articles-carousel').slick({
-      dots: false,
-      arrows: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 6,
-      responsive: [
-        {
-          breakpoint: 964,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        }
-      ]
-    });
-
-    $('.testimonials-carousel').slick({
-      dots: true,
-      arrows: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 4,
-      responsive: [
-        {
-          breakpoint: 964,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        }
-      ]
-    });
-  });
-
-  // TOGGLE AUTOPLAY YOUTUBE VIDEO ON MODAL OPENING/CLOSING
-  jQuery(document).ready(function(){
-    //LAUNCH FUCTION AUTOPLAY
-    autoPlayYouTubeModal();
-    //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
-    function autoPlayYouTubeModal() {
-      var trigger = $("#video").find('[data-toggle="video-modal"]');
-      trigger.click(function () {
-          var theModal = $(this).data("target"),
-              videoSRC = $(this).attr("data-theVideo"),
-              videoSRCauto = videoSRC + "?autoplay=1";
-          $(theModal + ' iframe').attr('src', videoSRCauto);
-           $('.modal-close').click(function(e) {
-              $('#modal-video').removeClass('is-visible');
-              //$('.modal-backdrop').remove();
-              //$('body').removeClass('modal-open');
-              $(theModal + ' iframe').attr('src', videoSRC);
-            });
-          $('#modal-video').click(function () {
-              $(theModal + ' iframe').attr('src', videoSRC);
-          });
-      });
-    }
-  });
-
-  // SWITCH DEVICE ON CLICK
-  $('#switcher-desktop').click(function(e) {
-    $('.how-to-browser').toggleClass('browser-is-hidden');
-    $('.how-to-mobile').toggleClass('mobile-is-visible');
-    $('#switcher-desktop').toggleClass('icon-is-hidden');
-    $('#switcher-mobile').toggleClass('icon-is-hidden');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SWITCH DEVICE ON CLICK
-  $('#switcher-mobile').click(function(e) {
-    $('.how-to-browser').toggleClass('browser-is-hidden');
-    $('.how-to-mobile').toggleClass('mobile-is-visible');
-    $('#switcher-desktop').toggleClass('icon-is-hidden');
-    $('#switcher-mobile').toggleClass('icon-is-hidden');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // TOGGLE HIGHLIGHT SPECIFIC
-  $('#specifics-list li').click(function(e) {
-    $(this).siblings('li').removeClass('active');
-    $(this).closest('li').addClass('active');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 1
-  $('#specific-1').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-1 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 2
-  $('#specific-2').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-2 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 3
-  $('#specific-3').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-3 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 4
-  $('#specific-4').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-4 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // BUTTON RIPPLE EFFECT
-  jQuery(document).ready(function($, window, document, undefined) {
-
-    'use strict';
-
-    var $ripple = $('.js-ripple');
-
-    $ripple.on('click.ui.ripple', function(e) {
-      var $this = $(this);
-      var $offset = $this.parent().offset();
-      var $circle = $this.find('.ripple-circle');
-
-      var x = e.pageX - $offset.left;
-      var y = e.pageY - $offset.top;
-
-      $circle.css({
-        top: y + 'px',
-        left: x + 'px'
-      });
-
-      $this.addClass('is-active');
-    });
-
-    $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(e) {
-      $(this).removeClass('is-active');
-    });
-  });
-</script>

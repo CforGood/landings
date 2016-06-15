@@ -9,12 +9,12 @@ thumbnail: "page/default-meta-image.jpg"
     <div class="vision">
       <h1>Le nouveau réseau de solidarité</h1>
       <div class="vision-pros">
-        <p>Enfin un moyen simple de </p>
-        <div class="vision-slick">
-          <i>Valoriser vos engagements</i>
-          <i>Toucher une clientèle ciblée</i>
-          <i>Gérer votre activité</i>
-          <i>Tout en inspirant la solidarité !</i>
+        <p>Enfin un moyen simple de :</p>
+        <div id="changethewords">
+          <i data-id="1">Valoriser vos engagements</i>
+          <i data-id="2" style="display: none;">Toucher une clientèle ciblée</i>
+          <i data-id="3" style="display: none;">Gérer votre activité</i>
+          <i data-id="4" style="display: none;">Tout en inspirant la solidarité !</i>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@ thumbnail: "page/default-meta-image.jpg"
     </div>
     <div class="section-description">
       <h3>Je valorise mon activité et j’attire une nouvelle clientèle</h3>
-      <p>Je met en lumière mes engagements actuels sur ma page « commerçant » et me rend visible auprès d’une communauté sensible à la consommation responsable.</p>
+      <p>Je mets en lumière mes engagements actuels sur ma page « commerçant » et me rends visible auprès d’une communauté sensible à la consommation responsable.</p>
       <span class="number"><i>91%</i> des français déclarent être prêt à changer de commerçant pour un plus engagé.</span>
     </div>
   </section>
@@ -50,32 +50,11 @@ thumbnail: "page/default-meta-image.jpg"
   <section id="consumption" class="main-block">
     <div class="section-icon">
       <%= partial "shared/svg/perks" %>
-      <i id="see-more" class="see-more">Voir des exemples de bons plans</i>
-      <div id="modal-perks">
-        <div id="perk-close" class="modal-close">
-          <%= partial "shared/svg/close" %>
-        </div>
-        <div class="modal-perks-content">
-          <ul>
-            <li>
-              <img src="<%= image_path 'perks/perk-1.jpg' %>" alt="">
-              <i class="fa fa-gift" aria-hidden="true"></i><span><i>Bienvenue</i>Grandir et se faire connaître sur le territoire</span>
-            </li>
-            <li>
-              <img src="<%= image_path 'perks/perk-3.jpg' %>" alt="">
-              <i class="fa fa-repeat" aria-hidden="true"></i><span><i>Durable</i>Fidéliser une nouvelle clientèle</span>
-            </li>
-            <li>
-              <img src="<%= image_path 'perks/perk-2.jpg' %>" alt="">
-              <i class="fa fa-flash" aria-hidden="true"></i><span><i>Flash</i>Réduire le gaspillage alimentaire</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <%= partial "shared/see_more_perks" %>
     </div>
     <div class="section-description">
       <h3>Je crée des bons plans solidaires</h3>
-      <p>CforGood met gratuitement à ma disposition un outil innovant pour gérer mon activité à travers la création de 3 types de bons plans spécialement étudiés pour répondre à mes objectifs.</p>
+      <p>J'accède gratuitement à un outil innovant pour gérer mon activité à travers la création de 3 types de bons plans spécialement étudiés pour répondre à mes objectifs.</p>
       <ul>
         <li><i class="fa fa-gift" aria-hidden="true"></i><span><i>Bienvenue</i>Grandir et se faire connaître sur le territoire</span></li>
         <li><i class="fa fa-repeat" aria-hidden="true"></i><span><i>Durable</i>Fidéliser une nouvelle clientèle</span></li>
@@ -101,14 +80,14 @@ thumbnail: "page/default-meta-image.jpg"
     </div>
     <div class="section-description">
       <h3>Je change le monde à mon échelle</h3>
-      <p>En rejoignant CforGood, je deviens le véritable moteur d’un mouvement favorisant l’émergence d’une société plus responsable et solidaire. Ensemble, nous sommes une Révolution Positive.</p>
-      <span class="number"><i>650+</i>utilisateurs inscrits !</span>
+      <p>En rejoignant CforGood, je deviens le véritable moteur d'une société plus responsable et solidaire.<br><br> <i>Ensemble, nous sommes une Révolution Positive.</i></p>
+      <span class="number"><i>800+</i>utilisateurs inscrits !</span>
     </div>
   </section>
 
   <section id="how-to">
+    <h2>Comment ça marche ?</h2>
     <div class="how-to-specifics">
-      <h2>Comment ça marche ?</h2>
 
       <div class="switch-device">
         <button id="switcher-mobile" class="device-switcher hint--top" data-hint="Sur votre mobile" type="button">
@@ -146,26 +125,51 @@ thumbnail: "page/default-meta-image.jpg"
           <h3>Profitez</h3>
           <p>Les clients affluent et développent votre activité, tout en inspirant la solidarité !</p>
         </li>
+        <li>
+          <a href="https://cforgood-staging.herokuapp.com/signup">
+            <button id="switcher" class="cta-home" type="button">
+              <div class="ripple-area js-ripple">
+                <span class="ripple-circle"></span>
+              </div>
+              Je rejoins la révolution positive
+            </button>
+          </a>
+        </li>
       </ul>
     </div>
     <div class="how-to-images">
-      <div class="how-to-mobile mobile-is-visible">
-        <%= partial "shared/svg/mobile_2" %>
-        <ul id="specifics-images-list">
-          <li id="specific-image-1"><img src="<%= image_path 'cforgood-login-mobile.jpg' %>" class="showing" alt=""></li>
-          <li id="specific-image-2"><img src="<%= image_path 'cforgood-create-mobile.jpg' %>" alt=""></li>
-          <li id="specific-image-3"><img src="<%= image_path 'cforgood-map-mobile.jpg' %>" alt=""></li>
-          <li id="specific-image-4"><img src="<%= image_path 'cforgood-analytics-mobile.jpg' %>" alt=""></li>
-        </ul>
+      <div class="desktop-images">
+        <div class="how-to-mobile mobile-is-visible">
+          <%= partial "shared/svg/mobile_2" %>
+          <ul id="specifics-images-list">
+            <li id="specific-image-1"><img src="<%= image_path 'cforgood-login-mobile.jpg' %>" class="showing" alt=""></li>
+            <li id="specific-image-2"><img src="<%= image_path 'cforgood-create-mobile.jpg' %>" alt=""></li>
+            <li id="specific-image-3"><img src="<%= image_path 'cforgood-map-mobile.jpg' %>" alt=""></li>
+            <li id="specific-image-4"><img src="<%= image_path 'cforgood-analytics-mobile.jpg' %>" alt=""></li>
+          </ul>
+        </div>
+        <div class="how-to-browser browser-is-hidden">
+          <%= partial "shared/svg/browser" %>
+          <ul id="specifics-images-list">
+            <li id="specific-image-1"><img src="<%= image_path 'cforgood-login.jpg' %>" class="showing" alt=""></li>
+            <li id="specific-image-2"><img src="<%= image_path 'cforgood-create-perk.jpg' %>" alt=""></li>
+            <li id="specific-image-3"><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
+            <li id="specific-image-4"><img src="<%= image_path 'cforgood-analytics.jpg' %>" alt=""></li>
+          </ul>
+        </div>
       </div>
-      <div class="how-to-browser browser-is-hidden">
-        <%= partial "shared/svg/browser" %>
-        <ul id="specifics-images-list">
-          <li id="specific-image-1"><img src="<%= image_path 'cforgood-login.jpg' %>" class="showing" alt=""></li>
-          <li id="specific-image-2"><img src="<%= image_path 'cforgood-create-perk.jpg' %>" alt=""></li>
-          <li id="specific-image-3"><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
-          <li id="specific-image-4"><img src="<%= image_path 'cforgood-analytics.jpg' %>" alt=""></li>
-        </ul>
+      <div class="medium-screen">
+        <div class="how-to-mobile mobile-is-visible">
+          <%= partial "shared/svg/ipad" %>
+          <ul id="specifics-images-list">
+            <li id="specific-image-1"><img src="<%= image_path 'howto/ipad-signin.jpg' %>" class="showing" alt=""></li>
+            <li id="specific-image-2"><img src="<%= image_path 'howto/ipad-createperks.jpg' %>" alt=""></li>
+            <li id="specific-image-3"><img src="<%= image_path 'howto/ipad-map.jpg' %>" alt=""></li>
+            <li id="specific-image-4"><img src="<%= image_path 'howto/ipad-analytics.jpg' %>" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <div class="small-screen">
       </div>
     </div>
   </section>
@@ -227,182 +231,6 @@ thumbnail: "page/default-meta-image.jpg"
   </section>
 
   <section id="partnerships">
-    <h2>Ils nous soutiennent</h2>
-    <ul class="partners-silver">
-      <li><a href="https://www.labanquepostale.fr/" alt=""><img src="<%= image_path 'logos/banquepostale.png' %>" alt=""></a></li>
-      <li><a href="https://www.makesense.org/" alt=""><img src="<%= image_path 'logos/makesense.png' %>" alt=""></a></li>
-      <li><a href="http://www.bordeaux-metropole.fr/" alt=""><img src="<%= image_path 'logos/metropole.png' %>" alt=""></a></li>
-      <li><a href="http://www.darwin-ecosysteme.fr/" alt=""><img src="<%= image_path 'logos/darwin.png' %>" alt=""></a></li>
-      <li><a href="http://www.ticketforchange.org/" alt=""><img src="<%= image_path 'logos/ticket-for-change.png' %>" alt=""></a></li>
-    </ul>
-    <ul class="partners-gold">
-      <li><a href="http://www.kisskissbankbank.com/" alt=""><img src="<%= image_path 'logos/kisskissbankbank.png' %>" alt=""></a></li>
-      <li><a href="https://www.mazars.fr/" alt=""><img src="<%= image_path 'logos/mazars.png' %>" alt=""></a></li>
-      <li><a href="http://www.bordeaux.fr/" alt=""><img src="<%= image_path 'logos/bordeaux.png' %>" alt=""></a></li>
-    </ul>
-    <ul class="partners-bronze">
-      <li><a href="http://www.lafrenchtech.com/" alt=""><img src="<%= image_path 'logos/french-tech.png' %>" alt=""></a></li>
-      <li><a href="http://www.aecom.org/" alt=""><img src="<%= image_path 'logos/aec.png' %>" alt=""></a></li>
-      <li><a href="http://www.ecoloinfo.com/" alt=""><img src="<%= image_path 'logos/ecolo-info.png' %>" alt=""></a></li>
-      <li><a href="http://www.bpifrance.fr/" alt=""><img src="<%= image_path 'logos/bpi.png' %>" alt=""></a></li>
-      <li><a href="http://keep-a-breast.org/" alt=""><img src="<%= image_path 'logos/keep-a-breast.png' %>" alt=""></a></li>
-    </ul>
+    <%= partial "shared/support_us" %>
   </section>
 </div>
-
-<script>
-
-  // LAUNCH MODAL
-  $('#video-launcher').click(function(e) {
-    $('#modal-video').toggleClass('is-visible');
-  });
-
-  // SLICK
-  jQuery(document).ready(function(){
-    $('.vision-slick').slick({
-      dots: false,
-      arrows: false,
-      infinite: true,
-      speed: 600,
-      fade: true,
-      cssEase: 'linear',
-      autoplay: true,
-      autoplaySpeed: 4000,
-      slidesToScroll: 1,
-      slidesToShow: 1
-    });
-
-    $('.articles-carousel').slick({
-      dots: false,
-      arrows: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 6
-    });
-
-    $('.testimonials-carousel').slick({
-      dots: true,
-      arrows: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 4
-    });
-  });
-
-  // TOGGLE AUTOPLAY YOUTUBE VIDEO ON MODAL OPENING/CLOSING
-  jQuery(document).ready(function(){
-    //LAUNCH FUCTION AUTOPLAY
-    autoPlayYouTubeModal();
-    //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
-    function autoPlayYouTubeModal() {
-      var trigger = $("#video").find('[data-toggle="video-modal"]');
-      trigger.click(function () {
-          var theModal = $(this).data("target"),
-              videoSRC = $(this).attr("data-theVideo"),
-              videoSRCauto = videoSRC + "?autoplay=1";
-          $(theModal + ' iframe').attr('src', videoSRCauto);
-           $('.modal-close').click(function(e) {
-              $('#modal-video').removeClass('is-visible');
-              //$('.modal-backdrop').remove();
-              //$('body').removeClass('modal-open');
-              $(theModal + ' iframe').attr('src', videoSRC);
-            });
-          $('#modal-video').click(function () {
-              $(theModal + ' iframe').attr('src', videoSRC);
-          });
-      });
-    }
-  });
-
-  $('#see-more').click(function(e) {
-    $('#modal-perks').toggleClass('is-visible');
-    $('body').toggleClass('modal-open');
-  });
-
-  $('#perk-close').click(function(e) {
-    $('#modal-perks').toggleClass('is-visible');
-    $('body').toggleClass('modal-open');
-  });
-
-
-  // SWITCH DEVICE ON CLICK
-  $('#switcher-desktop').click(function(e) {
-    $('.how-to-browser').toggleClass('browser-is-hidden');
-    $('.how-to-mobile').toggleClass('mobile-is-visible');
-    $('#switcher-desktop').toggleClass('icon-is-hidden');
-    $('#switcher-mobile').toggleClass('icon-is-hidden');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SWITCH DEVICE ON CLICK
-  $('#switcher-mobile').click(function(e) {
-    $('.how-to-browser').toggleClass('browser-is-hidden');
-    $('.how-to-mobile').toggleClass('mobile-is-visible');
-    $('#switcher-desktop').toggleClass('icon-is-hidden');
-    $('#switcher-mobile').toggleClass('icon-is-hidden');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // TOGGLE HIGHLIGHT SPECIFIC
-  $('#specifics-list li').click(function(e) {
-    $(this).siblings('li').removeClass('active');
-    $(this).closest('li').addClass('active');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 1
-  $('#specific-1').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-1 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 2
-  $('#specific-2').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-2 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 3
-  $('#specific-3').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-3 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // SHOW IMAGE FOR SPECIFC 4
-  $('#specific-4').click(function(e) {
-    $('#specifics-images-list li img').removeClass('showing');
-    $('#specific-image-4 img').addClass('showing');
-    e.preventDefault() /*ignores actual link*/
-  });
-
-  // BUTTON RIPPLE EFFECT
-  jQuery(document).ready(function($, window, document, undefined) {
-
-    'use strict';
-
-    var $ripple = $('.js-ripple');
-
-    $ripple.on('click.ui.ripple', function(e) {
-      var $this = $(this);
-      var $offset = $this.parent().offset();
-      var $circle = $this.find('.ripple-circle');
-
-      var x = e.pageX - $offset.left;
-      var y = e.pageY - $offset.top;
-
-      $circle.css({
-        top: y + 'px',
-        left: x + 'px'
-      });
-
-      $this.addClass('is-active');
-    });
-
-    $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(e) {
-      $(this).removeClass('is-active');
-    });
-  });
-</script>

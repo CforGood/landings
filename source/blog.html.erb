@@ -20,7 +20,7 @@ thumbnail: "page/default-meta-image.jpg"
           <div class="article-header-author">
             <% author = find_author(article.data.author) %>
             <img src="<%= image_path author.photo %>" alt="<%= author.name %>">
-            <i>rédigé par<br><strong><%= author.name %></strong><br>le<time><%= article.date.strftime('%e %b %Y') %></time></i>
+            <i>rédigé par<br><strong><%= author.name %></strong><br>le <time><%= article.date.strftime('%e %b %Y') %></time></i>
           </div>
         </header>
         <script>
@@ -65,7 +65,7 @@ thumbnail: "page/default-meta-image.jpg"
                   <p><%= article.data.description %></p>
                   <div class="article-info">
                     <%= partial "shared/svg/clock" %>
-                    <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
+                    <i><div class="eta"></div> de lecture - Partagé le <time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
                   </div>
                 </li>
               </a>
@@ -83,7 +83,7 @@ thumbnail: "page/default-meta-image.jpg"
                   <p><%= article.data.description %></p>
                   <div class="article-info">
                     <%= partial "shared/svg/clock" %>
-                    <i><div class="eta"></div> de lecture - Partagé le<time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
+                    <i><div class="eta"></div> de lecture - Partagé le <time><%= article.date.strftime('%e %b %Y') %></time> par <strong><%= article.data.author %></strong></i>
                   </div>
                   <script>
                     $(function() {
@@ -134,39 +134,3 @@ thumbnail: "page/default-meta-image.jpg"
     <% end %>
   </div>
 </div>
-
-<!-- READING TIME SCRIPT -->
-<script>
-  var ias = jQuery.ias({
-    container:  '.all-posts',
-    item:       '.post',
-    pagination: '#pagination',
-    next:       '.next'
-  });
-
-  // Trigger
-  ias.extension(new IASTriggerExtension({text: "Plus d'articles", offset: 1}));
-  // Add a text when there are no more pages left to load
-  ias.extension(new IASNoneLeftExtension({text: "Continuez votre lecture sur <a href='https://medium.com/@CforGood'>Medium</a>"}));
-
-  $(function() {
-    $('li').each(function() {
-      $(this).readingTime({
-        readingTimeTarget: $(this).find('.eta'),
-        remotePath: $(this).attr('data-file'),
-        remoteTarget: $(this).attr('data-target')
-      });
-    });
-  });
-
-  var mn = $('#nav-categories');
-      mns = "nav-categories-scrolled";
-
-  $(window).scroll(function() {
-    if( $(this).scrollTop() > 530 ) {
-      mn.addClass(mns);
-    } else {
-      mn.removeClass(mns);
-    }
-  });
-</script>

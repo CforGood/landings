@@ -1,7 +1,7 @@
 ---
 title: "Label Terre : 1er concept de street food locavore à Bordeaux"
 date: 2016-05-24 3:43
-author: allan
+author: damien
 category: Communauté
 thumbnail: blog/article1/1.0.jpg
 description: Déjeuner local à Bordeaux sans se ruiner ? Mission impossible ? Détrompez vous ! Label Terre vous est là pour vous régaler avec ses repas locavores à prendre sur le pouce.
@@ -42,7 +42,3 @@ Mais au delà de la nourriture de qualité qu’on nous y sert, c’est surtout 
 <img src='../../images/blog/article1/1.4.jpg' alt="Label Terre partenariat">
 
 Avec tout ça, je vous avoue qu’on est heureux de vous annoncer que Label Terre participe à la Révolution Positive et offre un cookie à tous les membres de CforGood lors de leur venue au restaurant ! De notre côté, on vous conseille le cookie caramel au beurre salé, vous pouvez foncer, il est à tomber :)
-
-
-
-*CforGood est un réseau de solidarité nouvelle génération, qui rassemble localement, citoyens, commerçants responsables et associations pour favoriser les comportements positifs* En savoir plus

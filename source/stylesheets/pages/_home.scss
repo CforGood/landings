@@ -31,14 +31,44 @@
       .vision-pros {
         padding-top: 20px;
 
+        #changethewords {
+          margin-top: 10px;
+          height: 80px;
+          line-height: 2em;
+          vertical-align: middle;
+          font-weight: 100;
+          font-size: 2rem;
+          text-align: center;
+        }
+
         p {
           margin-bottom: 0;
           font-size: 1em;
         }
 
         i {
+          position: relative;
           font-size: 1.3em;
           font-style: inherit;
+
+          &:before,
+          &:after {
+            content: "[";
+            position: absolute;
+            top: 0;
+            color: $turquoise;
+            font-weight: 600;
+          }
+
+          &:before {
+            content: "[";
+            left: -20px;
+          }
+
+          &:after {
+            content: "]";
+            right: -20px;
+          }
         }
       }
     }
@@ -192,6 +222,13 @@
         margin-top: 20px;
         text-decoration: underline;
         background-color: #f4f4f4;
+
+        @media (max-width: 767px) {
+          padding: 10px 8px;
+          width: 195px;
+          top: -42px;
+          font-size: 12px;
+        }
 
         &:hover {
           cursor: pointer;
@@ -358,6 +395,7 @@
 
     @media (max-width: 767px) {
       padding: 0;
+      min-height: 320px;
     }
 
     p {
@@ -422,18 +460,24 @@
 
   section#how-to {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     margin: 0 auto;
     max-width: 1400px;
     border-top: 1px solid #E5E5E5;
     overflow: hidden;
 
-    @media (max-width: 1023px) {
+    @media (min-width: 1025px) {
+      padding: 80px 0 130px;
+    }
+
+    @media (max-width: 767px) {
       display: none;
     }
 
     h2 {
-      padding-left: 20px;
+      padding: 0 5%;
+      width: 100%;
     }
 
     .how-to-specifics {
@@ -446,8 +490,12 @@
         display: flex;
         position: absolute;
         margin: 0 10% 0 0;
-        top: 2px;
+        top: -65px;
         right: 0;
+
+        @media (max-width: 1024px) {
+          display: none;
+        }
 
         #switcher-mobile,
         #switcher-desktop {
@@ -473,6 +521,18 @@
         li {
           padding: 20px;
           cursor: pointer;
+
+          .cta-home {
+            font-size: 1.3rem;
+          }
+
+          @media (max-width: 768px) {
+            padding: 5px 10px;
+
+            .cta-home {
+              font-size: 1rem;
+            }
+          }
         }
 
         li.active {
@@ -544,6 +604,31 @@
         z-index: 1;
       }
     }
+
+    .desktop-images {
+      @media (max-width: 1025px) {
+        display: none;
+      }
+    }
+
+    .medium-screen {
+      @media (max-width: 767px) {
+        display: none;
+      }
+
+      @media (min-width: 1025px) {
+        display: none;
+      }
+
+      .how-to-mobile {
+        img {
+          width: 305px;
+          height: 410px;
+          top: 46px;
+          left: 24px;
+        }
+      }
+    }
   }
 
   section#mobile-go-to {
@@ -573,6 +658,12 @@
     .section-icon {
       padding: 0 0 0 6%;
 
+      svg {
+        max-width: none;
+        min-height: 125px;
+        padding: 0 5%;
+      }
+
       @media (max-width: 767px) {
         padding: 0 0 30px;
       }
@@ -587,6 +678,7 @@
         margin-bottom: 20px;
 
         svg {
+          min-width: 20px;
           margin-right: 10px;
         }
       }
