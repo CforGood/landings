@@ -1,41 +1,14 @@
 <div class="legales">
-		<header>
-				
-				<div id="imageHeader">
-					<div class="banniere-charte banniere">
-						<div class="blocTitre">
-							<h1>CONDITIONS GENERALES D'UTILISATION</h1>
-						</div>
-					</div>
-				</div>
-
+		<header class="cgu">
+      <h1>Conditions générales d'utilistation</h1>
 		</header>
 
-		<div id="container">
-			<aside>
-				<ul id="affix-subnav" class="dropdown">
-						<li class="title-list">LEGAL</li>
-						<li class="list-link"><a href="cgu" class="active">Conditions générales</a></li>
-						<li class="list-link"><a href="confidential">Charte de confidentialité</a></li>
-						<li class="list-link"><a href="mentions">Mentions légales</a></li>
-				</ul>
+		<div class="legales-container">
 
-	 			<div id="content">
-	 			 	<div class="center">
-	 			 		<div id="menuDropdown"></div>
-					    <div class="dropdown">
-					       <div class="title dropdown-text">CONDITIONS GENERALES D'UTILISATION</div>
-					       <ul class="menu-open">
-							 <li><a href="confidential">CHARTE DE CONFIDENTIALITE</a></li>
-							 <li><a href="mentions">MENTIONS LEGALES</a></li>
-					       </ul>
-					   	</div>
-				    </div>
-				</div>
-			</aside>
+      <%= partial "shared/aside" %>
 
-			<section class="section-contenu">
-				            
+			<section>
+
 				<h3  class="section-title text-center">1.  Objet</h3>
 
 					<p>Les présentes conditions générales ont pour objet de définir les modalités et conditions d’utilisation des services proposés sur le site (ci-après : les « Services »), ainsi que de définir les droits et obligations des parties dans ce cadre.</p>
@@ -209,7 +182,7 @@
 						- l’aide ou l’incitation, sous quelque forme et de quelque manière que ce soit, à un ou plusieurs des actes et activités décrits ci-dessus,<br>
 						- et plus généralement toute pratique détournant les Services à des fins autres que celles pour lesquelles ils ont été conçus.</p>
 
-					<h4>11.2  Sont également strictement interdits :</h4> 
+					<h4>11.2  Sont également strictement interdits :</h4>
 						<p>-(i) tous comportements de nature à interrompre, suspendre, ralentir ou empêcher la continuité des Services.</br>
 						-(ii) toutes intrusions ou tentatives d’intrusions dans les systèmes de CFORGOOD SAS</br>
 						-(iii) tous détournements des ressources système du site</br>
@@ -315,46 +288,7 @@
 				   	<p>Status API Training Shop Blog About </p>
 
 				    <p>© 2016 GitHub, Inc. Terms Privacy Security Contact Help </p>
-	     
+
 			</section>
 		</div>
 </div>
-
-
-	<script type="text/javascript">
-		
-
-			$(window).scroll(function() {
-			    if( $(this).scrollTop() > 380 ) {
-			      $("#affix-subnav").addClass('affix-subnav-scrolled');
-			      $("#dropdown").addClass('affix-dropdown-scrolled');
-			    
-			    } else {
-			      $("#affix-subnav").removeClass('affix-subnav-scrolled');
-			      $("#dropdown").removeClass('affix-dropdown-scrolled');
-	
-			    }
-			  });
-
-			$(window).scroll(function() {
-				 if( $(this).scrollTop() > 400 ) {
-			      $("#content").addClass('affix-content-scrolled');
-			    } else {
-			      $("#content").removeClass('affix-content-scrolled');
-			    }
-			  });
-	</script>
-
-	  <script type="text/javascript">
-			  	$(".title").click(function () {
-			  $('.menu-open').toggleClass("open");
-			});
-
-			  	$("li").click(function () {
-			  $('.menu-open').toggleClass("open");
-			});
-
-			$(".dropdown li").click(function () {
-			  $(this).parent().parent().find(".title").text($(this).text());
-			});
-  </script>

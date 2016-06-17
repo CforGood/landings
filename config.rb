@@ -111,6 +111,10 @@ helpers do
     end
     return categories
   end
+
+  def nav_active(path)
+    current_page.path == path ? 'active' : nil
+  end
 end
 
 
