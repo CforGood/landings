@@ -82,13 +82,13 @@
 		justify-content: space-around;
 		position: relative;
 		z-index: 0;
-		margin-top: 70px;
+		// margin-top: 70px;
 	}
 
 	aside{
 		width: 25%;
-		height: 230px;
-		margin: 80px 0px;
+		height: 50px;
+		margin: 40px 0px;
   		padding-left: 4%;
 	}
 
@@ -122,8 +122,7 @@
 
 	.section-contenu{
 		width: 85%;
-		margin: 10px auto;
-		padding: 70px 40px;
+		padding: 40px 40px;
 	}
 
 
@@ -138,7 +137,7 @@
 	}
 
 	section h4{
-		font-size: 20px;
+		font-size: 16px;
     	font-weight: 600;
     	text-align: left;
     	margin: 50px 0 20px;
@@ -225,7 +224,8 @@
 
 	.title{
 	    border: #36d3da 1px solid;
-	    padding: 20px;
+	    font-size: 15px;
+	  	padding: 10px;
 	    color: #36d3da;
 	    background-color: white;
 	    border-radius: 5px 5px 0 0;
@@ -427,12 +427,12 @@
 			width: 100%;
 			display: flex;
 			justify-content: space-around;
-			padding: 30px 0 20px;
+			padding-bottom: 20px;
 			margin: 0;
 		}
 
 		aside li{
-			padding: 20px;
+			// padding: 20px;
 		}
 
 		aside a{
@@ -453,7 +453,7 @@
 		    padding: 50px 0 20px;
 		    background-color: white;
 		    z-index: 2;  
-		    box-shadow: 0px 0px 2px;
+		    box-shadow: 0px 50px 60px white;
 		}
 
 		section{
@@ -518,7 +518,7 @@
 
 		#menuDropdown{
 			background-color: white;
-			height: 50px;
+			height: 15px;
 		}
 
 		#content{
@@ -526,7 +526,6 @@
 			text-align: center;
 			width: 80%;
 			margin: 0 auto;
-	    	box-shadow: 0px 50px 60px white;
 		}
 
 
@@ -551,6 +550,7 @@
 	  	.menu-open li{
 	  		margin:0;
 	  		border-bottom: 1px solid white;
+			padding: 10px;
 	  	}
 
 	  	.menu-open a{
@@ -563,6 +563,10 @@
 
 	  	section iframe{
 	  		width: 100%;
+	  	}
+
+	  	.banniere h1{
+	  		width: 90%;
 	  	}
 
 	}

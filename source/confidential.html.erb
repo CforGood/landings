@@ -135,41 +135,40 @@
 	</div>
 </div>
 
-	<script type="text/javascript">
-		
+<script type="text/javascript">
+        
 
-			$(window).scroll(function() {
-			    if( $(this).scrollTop() > 480 ) {
-			      $("#affix-subnav").addClass('affix-subnav-scrolled');
-			      $("#dropdown").addClass('affix-dropdown-scrolled');
-			    
-			    } else {
-			      $("#affix-subnav").removeClass('affix-subnav-scrolled');
-			      $("#dropdown").removeClass('affix-dropdown-scrolled');
-	
-			    }
-			  });
+            $(window).scroll(function() {
+                if( $(this).scrollTop() > 380 ) {
+                  $("#affix-subnav").addClass('affix-subnav-scrolled');
+                  $("#dropdown").addClass('affix-dropdown-scrolled');
+                
+                } else {
+                  $("#affix-subnav").removeClass('affix-subnav-scrolled');
+                  $("#dropdown").removeClass('affix-dropdown-scrolled');
+    
+                }
+              });
 
-			$(window).scroll(function() {
-				 if( $(this).scrollTop() > 400 ) {
-			      $("#content").addClass('affix-content-scrolled');
-			    } else {
-			      $("#content").removeClass('affix-content-scrolled');
-			    }
-			  });
-	</script>
+            $(window).scroll(function() {
+                 if( $(this).scrollTop() > 400 ) {
+                  $("#content").addClass('affix-content-scrolled');
+                } else {
+                  $("#content").removeClass('affix-content-scrolled');
+                }
+              });
+    </script>
 
-	  <script type="text/javascript">
-			  	$(".title").click(function () {
-			  $('.menu-open').toggleClass("open");
-			});
+      <script type="text/javascript">
+                $(".title").click(function () {
+              $('.menu-open').toggleClass("open");
+            });
 
-			  	$("li").click(function () {
-			  $('.menu-open').toggleClass("open");
-			});
+                $("li").click(function () {
+              $('.menu-open').toggleClass("open");
+            });
 
-			$(".dropdown li").click(function () {
-			  $(this).parent().parent().find(".title").text($(this).text());
-			});
+            $(".dropdown li").click(function () {
+              $(this).parent().parent().find(".title").text($(this).text());
+            });
   </script>
-</body>
