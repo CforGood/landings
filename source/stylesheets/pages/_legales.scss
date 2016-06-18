@@ -52,7 +52,7 @@
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
       }
 
-      @media (max-width: 425px){
+      @media (max-width: 620px){
         display: none;
       }
 
@@ -105,7 +105,7 @@
       display: none;
     }
 
-    @media (max-width: 425px){
+    @media (max-width: 620px){
 
       .dropdown {
         display: block;
@@ -154,8 +154,9 @@
         }
       }
 
-      .dropdown.affix-content-scrolled{
+      .dropdown-scrolled {
         position: fixed;
+        width: 100%;
         top: 50px;
       }
     }
