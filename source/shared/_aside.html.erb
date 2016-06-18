@@ -1,13 +1,13 @@
 <aside>
   <ul id="affix-subnav">
     <li class="list-link <%= nav_active('cgu.html') %>">
-      <a href="cgu"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Conditions Gérérales</a>
+      <%= link_to 'Conditions Générales', '/cgu.html' %>
     </li>
     <li class="list-link <%= nav_active('confidential.html') %>">
-      <a href="confidential"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Charte de confidentialité</a>
+      <li><%= link_to 'Charte de confidentialité', '/confidential.html' %></li>
     </li>
     <li class="list-link <%= nav_active('mentions.html') %>">
-      <a href="mentions"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Mentions légales</a>
+      <li><%= link_to 'Mentions légales', '/mentions.html' %></li>
     </li>
   </ul>
 

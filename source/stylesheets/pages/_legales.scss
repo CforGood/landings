@@ -23,7 +23,7 @@
   header.cgu,
   header.confidential,
   header.mentions {
-    background: url("../images/legales/coverTest.jpg") no-repeat;
+    background: url("../images/legales/cover-legales.jpg") no-repeat;
     background-size: cover;
   }
 
@@ -80,14 +80,6 @@
           &:hover {
             color:#A3A5A8;
             opacity: 1;
-          }
-
-          .fa {
-            margin-right: 10px;
-
-            @media (max-width: 768px) {
-              display: none;
-            }
           }
         }
       }
