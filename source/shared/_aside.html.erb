@@ -1,5 +1,5 @@
 <aside>
-  <ul id="affix-subnav" class="dropdown">
+  <ul id="affix-subnav">
     <li class="list-link <%= nav_active('cgu.html') %>">
       <a href="cgu"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Conditions Gérérales</a>
     </li>
@@ -7,20 +7,16 @@
       <a href="confidential"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Charte de confidentialité</a>
     </li>
     <li class="list-link <%= nav_active('mentions.html') %>">
-      <a href="mentions"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Mentions</a>
+      <a href="mentions"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Mentions légales</a>
     </li>
   </ul>
 
-  <div id="content">
-    <div class="center">
-      <div id="menuDropdown"></div>
-      <div class="dropdown">
-        <div class="title dropdown-text">CHARTE DE CONFIDENTIALITE</div>
-        <ul class="menu-open">
-          <li><a href="cgu">CONDITIONS GENERALES</a></li>
-          <li><a href="mentions">MENTIONS LEGALES</a></li>
-        </ul>
-      </div>
-    </div>
+  <div class="dropdown">
+    <div class="default-list-item"><%= current_page.data.title %><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+    <ul>
+      <li class="<%= hide_item('cgu.html') %>"><a href="cgu">Conditions gérérales</a></li>
+      <li class="<%= hide_item('confidential.html') %>"><a href="confidential">Charte de confidentialité</a></li>
+      <li class="<%= hide_item('mentions.html') %>"><a href="mentions">Mentions légales</a></li>
+    </ul>
   </div>
 </aside>

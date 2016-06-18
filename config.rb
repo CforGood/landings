@@ -115,6 +115,10 @@ helpers do
   def nav_active(path)
     current_page.path == path ? 'active' : nil
   end
+
+  def hide_item(path)
+    current_page.path == path ? 'hidden' : nil
+  end
 end
 
 
