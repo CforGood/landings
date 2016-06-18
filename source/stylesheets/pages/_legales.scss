@@ -76,6 +76,13 @@
     }
   }
 
+  .affix-subnav-scrolled{
+    top: 65px;
+    margin-bottom: -310px;
+    position: fixed;
+    width: 27%;
+  }
+
 
   /* COMMON *******************************************************************/
 
@@ -99,7 +106,7 @@
       h3 {
         text-align: left;
         font-size: 1.4em;
-        font-weight: 100;
+        font-weight: 300;
         margin: 15px 0 20px;
         padding-bottom: 10px;
         border-bottom: 1px #36D3DA solid;
@@ -107,12 +114,11 @@
 
       h4 {
         font-size: 16px;
-        font-weight: 600;
         text-align: left;
-        margin: 50px 0 20px;
+        line-height: 2.2rem;
       }
 
-      p {
+      p,li {
         margin: 0 0 15px;
         font-family: 'bariol_boldbold', sans-serif;
         font-size: 14px;
@@ -159,7 +165,7 @@
 	}
 
 	.affix-subnav-scrolled{
-		top: 104px;
+		top: 65px;
 		margin-bottom: -310px;
 		position: fixed;
 		width: 27%;
