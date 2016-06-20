@@ -9,6 +9,7 @@ body{
 #cover-team{
     height: 450px;
     text-align: center;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +17,7 @@ body{
 
 
 .row{
+    display: -webkit-flex;
     display: flex;
     overflow: hidden;
 }
@@ -27,7 +29,7 @@ body{
 
 .photo-perso{
     border: 1px solid black;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     opacity:1
 }
 
@@ -72,36 +74,90 @@ body{
     background-size: cover;
 }
 
+.bloc-photo-team-sarah::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    opacity: 0;
+    background: url('../images/team/sarahgif.gif');
+    background-size: cover;
+}
+
+.bloc-photo-team-damien::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    opacity: 0;
+    background: url('../images/team/damiengif.gif');
+    background-size: cover;
+}
+
+.bloc-photo-team-olivier::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    opacity: 0;
+    background: url('../images/team/oliviergif.gif');
+    background-size: cover;
+}
+
 .bloc-photo-team:hover::before,
 .bloc-photo-team:focus::before,
 .bloc-photo-team-allan:hover::before,
 .bloc-photo-team-allan:focus::before,
 .bloc-photo-team-cedric:hover::before,
-.bloc-photo-team-cedric:focus::before{
+.bloc-photo-team-cedric:focus::before,
+.bloc-photo-team-fred:hover::before,
+.bloc-photo-team-fred:focus::before,
+.bloc-photo-team-sarah:hover::before,
+.bloc-photo-team-sarah:focus::before,
+.bloc-photo-team-damien:hover::before,
+.bloc-photo-team-damien:focus::before,
+.bloc-photo-team-olivier:hover::before,
+.bloc-photo-team-olivier:focus::before{
     opacity: 1;
 }
 
 .caption{
     width: 100%;
     position: absolute;
+    padding: 10px;
     bottom: 0;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     color: white;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     transform: translateY(100%);
 }
 
 .bloc-photo-team:hover .caption,
 .bloc-photo-team-allan:hover .caption,
-.bloc-photo-team-cedric:hover .caption{
+.bloc-photo-team-cedric:hover .caption,
+.bloc-photo-team-fred:hover .caption,
+.bloc-photo-team-sarah:hover .caption,
+.bloc-photo-team-damien:hover .caption,
+.bloc-photo-team-olivier:hover .caption{
     background-color: rgba(30,30,30,0.8);
     transform: translateY(0);
 }
 
 .bloc-photo-team:hover .photo-perso,
 .bloc-photo-team-allan:hover .photo-perso,
-.bloc-photo-team-cedric:hover .photo-perso{
+.bloc-photo-team-cedric:hover .photo-perso,
+.bloc-photo-team-fred:hover .photo-perso,
+.bloc-photo-team-sarah:hover .photo-perso,
+.bloc-photo-team-damien:hover .photo-perso,
+.bloc-photo-team-olivier:hover .photo-perso{
     opacity:0;
 }
 
@@ -119,20 +175,43 @@ body{
 
 .social{
     display: flex;
+    display: -webkit-flex;
     align-self: center;
 }
 
-.name-team{
-    padding: 0 0 10px 30px;
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px){
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .final-row{
+        margin-bottom: 50px;
+    }
+
 }
 
+@media (max-width: 425px){
 
-/*proto*/
+    .row{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
 
+    .final-row{
+        margin-bottom: 50px;
+    }
 
-
-a{
-    
 }
-
 
