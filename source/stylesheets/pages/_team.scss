@@ -177,7 +177,16 @@ body{
     width: 45%;
     display: flex;
     display: -webkit-flex;
-    align-self: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social a{
+    width: 20%;
+}
+
+.social img{
+    width: 100%;
 }
 
 .name-team{
