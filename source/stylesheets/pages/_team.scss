@@ -174,9 +174,14 @@ body{
 }
 
 .social{
+    width: 45%;
     display: flex;
     display: -webkit-flex;
     align-self: center;
+}
+
+.name-team{
+    width: 50%;
 }
 
 
