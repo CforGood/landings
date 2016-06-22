@@ -19,26 +19,29 @@ body{
 .row{
     display: -webkit-flex;
     display: flex;
-    overflow: hidden;
+    width: 87%;
+    margin: 0 auto;
 }
 
-.bloc-photo-team-allan, .bloc-photo-team-cedric, .bloc-photo-team-fred, .bloc-photo-team-sarah, .bloc-photo-team-damien, .bloc-photo-team-olivier{
+.bloc-photo-team{
     width: 100%;
     position: relative;
 }
 
-.photo-perso{
+.photo-perso-allan, .photo-perso-cedric, .photo-perso-fred, .photo-perso-sarah, .photo-perso-damien, .photo-perso-olivier{
     border: 1px solid black;
     transition: 0.2s ease-in-out;
-    opacity:1
+    opacity:1;
+    position: relative;
+    width: 95%;
 }
 
-.photo-perso img{
+.photo-perso-allan img, .photo-perso-cedric img, .photo-perso-fred img, .photo-perso-sarah img, .photo-perso-damien img, .photo-perso-olivier img{
     width: 100%;
     height: auto;
 }
 
-.bloc-photo-team-allan::before{
+.photo-perso-allan::before{
     content: "";
     position: absolute;
     top: 0;
@@ -50,7 +53,7 @@ body{
     background-size: cover;
 }
 
-.bloc-photo-team-cedric::before{
+.photo-perso-cedric::before{
     content: "";
     position: absolute;
     top: 0;
@@ -62,7 +65,7 @@ body{
     background-size: cover;
 }
 
-.bloc-photo-team-fred::before{
+.photo-perso-fred::before{
     content: "";
     position: absolute;
     top: 0;
@@ -74,7 +77,7 @@ body{
     background-size: cover;
 }
 
-.bloc-photo-team-sarah::before{
+.photo-perso-sarah::before{
     content: "";
     position: absolute;
     top: 0;
@@ -86,7 +89,7 @@ body{
     background-size: cover;
 }
 
-.bloc-photo-team-damien::before{
+.photo-perso-damien::before{
     content: "";
     position: absolute;
     top: 0;
@@ -98,7 +101,7 @@ body{
     background-size: cover;
 }
 
-.bloc-photo-team-olivier::before{
+.photo-perso-olivier::before{
     content: "";
     position: absolute;
     top: 0;
@@ -110,54 +113,37 @@ body{
     background-size: cover;
 }
 
-.bloc-photo-team:hover::before,
-.bloc-photo-team:focus::before,
-.bloc-photo-team-allan:hover::before,
-.bloc-photo-team-allan:focus::before,
-.bloc-photo-team-cedric:hover::before,
-.bloc-photo-team-cedric:focus::before,
-.bloc-photo-team-fred:hover::before,
-.bloc-photo-team-fred:focus::before,
-.bloc-photo-team-sarah:hover::before,
-.bloc-photo-team-sarah:focus::before,
-.bloc-photo-team-damien:hover::before,
-.bloc-photo-team-damien:focus::before,
-.bloc-photo-team-olivier:hover::before,
-.bloc-photo-team-olivier:focus::before{
+.photo-perso-allan:hover::before,
+.photo-perso-allan:focus::before,
+.photo-perso-cedric:hover::before,
+.photo-perso-cedric:focus::before,
+.photo-perso-fred:hover::before,
+.photo-perso-fred:focus::before,
+.photo-perso-sarah:hover::before,
+.photo-perso-sarah:focus::before,
+.photo-perso-damien:hover::before,
+.photo-perso-damien:focus::before,
+.photo-perso-olivier:hover::before,
+.photo-perso-olivier:focus::before
+{
     opacity: 1;
 }
 
 .caption{
-    width: 100%;
-    position: absolute;
-    padding: 10px;
-    bottom: 0;
+    width: 95%;
+    padding: 20px 0 20px 5px;
     display: -webkit-flex;
     display: flex;
     justify-content: space-between;
-    color: white;
-    transition: 0.2s ease-in-out;
-    transform: translateY(100%);
 }
 
-.bloc-photo-team:hover .caption,
-.bloc-photo-team-allan:hover .caption,
-.bloc-photo-team-cedric:hover .caption,
-.bloc-photo-team-fred:hover .caption,
-.bloc-photo-team-sarah:hover .caption,
-.bloc-photo-team-damien:hover .caption,
-.bloc-photo-team-olivier:hover .caption{
-    background-color: rgba(30,30,30,0.8);
-    transform: translateY(0);
-}
 
-.bloc-photo-team:hover .photo-perso,
-.bloc-photo-team-allan:hover .photo-perso,
-.bloc-photo-team-cedric:hover .photo-perso,
-.bloc-photo-team-fred:hover .photo-perso,
-.bloc-photo-team-sarah:hover .photo-perso,
-.bloc-photo-team-damien:hover .photo-perso,
-.bloc-photo-team-olivier:hover .photo-perso{
+.photo-perso-allan:hover .photo-perso-allan img,
+.photo-perso-cedric:hover .photo-perso-cedric img,
+.photo-perso-fred:hover .photo-perso-fred img,
+.photo-perso-sarah:hover .photo-perso-sarah img,
+.photo-perso-damien:hover .photo-perso-damien img,
+.photo-perso-olivier:hover .photo-perso-olivier img,{
     opacity:0;
 }
 
@@ -179,6 +165,7 @@ body{
     display: -webkit-flex;
     align-items: center;
     justify-content: space-around;
+    background: black;
 }
 
 .social a{
@@ -191,6 +178,13 @@ body{
 
 .name-team{
     width: 50%;
+}
+.name-team h2{
+    font-size: 1.3em;
+}
+
+.name-team h3{
+    font-size: 1em;
 }
 
 
