@@ -20,28 +20,47 @@ body{
     display: -webkit-flex;
     display: flex;
     width: 87%;
-    margin: 0 auto;
+    margin: 0 auto 40px;
 }
 
 .bloc-photo-team{
-    width: 100%;
+    width: 25%;
+    margin: 0 auto;
     position: relative;
+    box-shadow: 4px 4px 20px #eaeaea;
+    border-radius: 3px;
 }
 
 .photo-perso-allan, .photo-perso-cedric, .photo-perso-fred, .photo-perso-sarah, .photo-perso-damien, .photo-perso-olivier{
-    border: 1px solid black;
-    transition: 0.2s ease-in-out;
+    // border: 1px solid black;
     opacity:1;
     position: relative;
-    width: 95%;
 }
 
 .photo-perso-allan img, .photo-perso-cedric img, .photo-perso-fred img, .photo-perso-sarah img, .photo-perso-damien img, .photo-perso-olivier img{
     width: 100%;
     height: auto;
+    border-radius: 3px;
 }
 
-.photo-perso-allan::before{
+// .photo-perso-allan:after,
+// .photo-perso-cedric:after,
+// .photo-perso-fred:after,
+// .photo-perso-sarah:after,
+// .photo-perso-damien:after,
+// .photo-perso-olivier:after{
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom:0;
+//     right: 0;
+//     opacity: 1;
+//     box-shadow: 0px -14px 14px white inset;
+//     transition: opacity .3s ease-in-out;
+// }
+
+.photo-perso-allan::before,{
     content: "";
     position: absolute;
     top: 0;
@@ -50,7 +69,9 @@ body{
     right: 0;
     opacity: 0;
     background: url('../images/team/allangif.gif');
+    transition: opacity .3s ease-in-out;
     background-size: cover;
+    border-radius: 3px;
 }
 
 .photo-perso-cedric::before{
@@ -62,7 +83,9 @@ body{
     right: 0;
     opacity: 0;
     background: url('../images/team/cedricgif.gif');
+    transition: opacity .3s ease-in-out;
     background-size: cover;
+    border-radius: 3px;
 }
 
 .photo-perso-fred::before{
@@ -74,7 +97,9 @@ body{
     right: 0;
     opacity: 0;
     background: url('../images/team/fredgif.gif');
+    transition: opacity .3s ease-in-out;
     background-size: cover;
+    border-radius: 3px;
 }
 
 .photo-perso-sarah::before{
@@ -86,7 +111,9 @@ body{
     right: 0;
     opacity: 0;
     background: url('../images/team/sarahgif.gif');
+    transition: opacity .3s ease-in-out;
     background-size: cover;
+    border-radius: 3px;
 }
 
 .photo-perso-damien::before{
@@ -98,7 +125,9 @@ body{
     right: 0;
     opacity: 0;
     background: url('../images/team/damiengif.gif');
+    transition: opacity .3s ease-in-out;
     background-size: cover;
+    border-radius: 3px;
 }
 
 .photo-perso-olivier::before{
@@ -110,7 +139,9 @@ body{
     right: 0;
     opacity: 0;
     background: url('../images/team/oliviergif.gif');
+    transition: opacity .3s ease-in-out;
     background-size: cover;
+    border-radius: 3px;
 }
 
 .photo-perso-allan:hover::before,
@@ -129,9 +160,16 @@ body{
     opacity: 1;
 }
 
+// .bloc-photo-team:hover .photo-perso-olivier:after,
+// .bloc-photo-team:hover .photo-perso-sarah:after,
+// .bloc-photo-team:hover .photo-perso-damien:after,
+// .bloc-photo-team:hover .photo-perso-fred:after,
+// .bloc-photo-team:hover .photo-perso-cedric:after,
+// .bloc-photo-team:hover .photo-perso-allan:after{
+//     opacity: 0;
+// }
+
 .caption{
-    width: 95%;
-    padding: 20px 0 20px 5px;
     display: -webkit-flex;
     display: flex;
     justify-content: space-between;
@@ -143,7 +181,7 @@ body{
 .photo-perso-fred:hover .photo-perso-fred img,
 .photo-perso-sarah:hover .photo-perso-sarah img,
 .photo-perso-damien:hover .photo-perso-damien img,
-.photo-perso-olivier:hover .photo-perso-olivier img,{
+.photo-perso-olivier:hover .photo-perso-olivier img{
     opacity:0;
 }
 
@@ -165,7 +203,7 @@ body{
     display: -webkit-flex;
     align-items: center;
     justify-content: space-around;
-    background: black;
+    // background: black;
 }
 
 .social a{
@@ -178,13 +216,20 @@ body{
 
 .name-team{
     width: 50%;
+    padding: 20px 0 20px 10px;
 }
+
 .name-team h2{
-    font-size: 1.3em;
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .name-team h3{
-    font-size: 1em;
+    font-size: 0.8em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
@@ -205,6 +250,13 @@ body{
         margin-bottom: 50px;
     }
 
+    .bloc-photo-team {
+    width: 100%;
+    position: relative;
+    }
+
+
+
 }
 
 @media (max-width: 425px){
@@ -219,6 +271,11 @@ body{
 
     .final-row{
         margin-bottom: 50px;
+    }
+
+     .bloc-photo-team {
+    width: 100%;
+    position: relative;
     }
 
 }
