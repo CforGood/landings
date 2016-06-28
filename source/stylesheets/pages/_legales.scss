@@ -1,4 +1,4 @@
-.legales {
+.secondary-page {
 
   /* HEADER *******************************************************************/
 
@@ -22,7 +22,8 @@
 
   header.cgu,
   header.confidential,
-  header.mentions {
+  header.mentions,
+  header.faq {
     background: url("../images/legales/cover-legales.jpg") no-repeat;
     background-size: cover;
   }
@@ -176,7 +177,7 @@
 
   /* COMMON *******************************************************************/
 
-  .legales-container{
+  .secondary-page-container {
     width: 100%;
     background-color: white;
     display: flex;
