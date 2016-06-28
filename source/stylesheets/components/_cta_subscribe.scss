@@ -1,0 +1,13 @@
+.article-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 !important;
+  margin-top: 30px;
+  background-color: #FBFBFB;
+  border-radius: 3px;
+
+  button.cta-home {
+    font-size: 1.3rem;
+  }
+}

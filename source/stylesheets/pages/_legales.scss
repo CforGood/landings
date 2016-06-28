@@ -23,7 +23,8 @@
   header.cgu,
   header.confidential,
   header.mentions,
-  header.faq {
+  header.faq,
+  header.charte {
     background: url("../images/legales/cover-legales.jpg") no-repeat;
     background-size: cover;
   }
@@ -191,7 +192,7 @@
 
     section {
       box-sizing: border-box;
-      padding: 30px 5% 60px;
+      padding: 60px 5% 60px;
       margin: 0;
 
       @media (max-width: 768px) {
@@ -202,21 +203,26 @@
         text-align: left;
         font-size: 1.4em;
         font-weight: 300;
-        margin: 15px 0 20px;
+        margin: 0 0 20px;
         padding-bottom: 10px;
         border-bottom: 1px #36D3DA solid;
+      }
+
+      h3:not(:first-child) {
+        margin: 40px 0 20px !important;
       }
 
       h4 {
         font-size: 16px;
         text-align: left;
         line-height: 2.2rem;
+        font-weight: 600;
       }
 
       p,li {
         margin: 0 0 15px;
         font-family: 'bariol_boldbold', sans-serif;
-        font-size: 14px;
+        font-size: 1v4px;
         text-align: left;
         font-weight: 100;
         line-height: 24px;
@@ -277,20 +283,20 @@
 
 	.cta{
 		height: 50px;
-   		width: 200px;
-   		background: #36D3DA;
+   	width: 200px;
+   	background: #36D3DA;
 		display: flex;
 		margin: 0 auto;
 	}
 
-	.cta a{
+	.cta a {
 		color: white;
-	    margin: 0 auto;
-	    font-weight: 600;
-	    width: 100%;
-	    text-align: center;
-	    height: 100%;
-	    padding-top: 7%;
+    margin: 0 auto;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    padding-top: 7%;
 	}
 
 	.cta .cta:hover{
@@ -300,98 +306,36 @@
 
 
 
-  /* PAGE CONSTAT*/
+  /* PAGE MANIFESTE ***********************************************************/
 
-	#container-2{
+  .main-bloc {
+    margin-top: 60px;
+  }
+
+  .bloc{
+    margin-bottom: 50px;
+  }
+
+  .container-constat{
     width: 100%;
-    margin: 0 auto;
-    background-color: white;
-    position: relative;
-    z-index: 0;
-    margin-top: 70px;
-	}
+    display: flex;
+    flex-wrap: wrap;
 
-	#container-constat{
-		width: 100%;
-		display: flex;
-		justify-content: space-around;
-	}
+    .bloc-constat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 2%;
+      width: 46%;
 
-	.bloc-constat-2{
-		width: 20%;
-		text-align: center;
-	}
+      @media (max-width: 767px) {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
 
-	.image-constat-2{
-		width: 30px;
-		height: 30px;
-	    margin: 20px 0;
-	}
-
-	#container-constat1{
-		width: 100%;
-		display: flex;
-		justify-content: space-around;
-	}
-
-	#container-constat2{
-		width: 100%;
-		display: flex;
-		justify-content: space-around;
-	}
-
-	.fleche-droite{
-		height: 30px;
-	    position: relative;
-	    top: 20px;
-	}
-
-	.quote{
-		text-align: center;
-		font-size: 16px;
-		font-weight: 600;
-		margin-top: 50px;
-	}
-
-	#section-manifeste{
-		padding: 0;
-		width: 90%;
-		margin: 0 auto;
-	}
-
-	#section-contenu-manifeste, #section-contenu-enjeux{
-		width: 100%;
-   		margin: 0 auto;
-	}
-
-	.bloc-enjeux{
-		border-bottom: 1px solid rgba(50,50,50,0.2);
-		border-top: 1px solid rgba(50,50,50,0.2);
-		padding: 50px 0;
-	}
-
-	.first-bloc{
-		padding-bottom: 50px;
-	}
-
-	.bloc-enjeux h4{
-		margin-top: 0;
-	}
-
-	#section-constat, #section-enjeux{
-		width: 90%;
-		margin: 0 auto;
-	}
-
-	.bloc-enjeux img{
-		float: left;
-		height: 30px;
-		margin-right: 20px;
-	}
-
-
-	/*PAGE CHARTE*/
-
+	/* PAGE CHARTE **************************************************************/
 
 	.section-contenu h4{
 		text-align: left;
@@ -400,16 +344,23 @@
 		padding-bottom: 20px;
 	}
 
-	.section-contenu p{
-		padding-bottom: 20px;
-		margin: 0;
-	}
-
 	#legales p{
 		font-size: 14px;
 	}
 
-	// PAGE TEAM
+  /* FAQ **********************************************************************/
+
+  .faq-content {
+    h3:not(:first-child) {
+      margin-top: 40px !important;
+    }
+
+    h4 {
+      font-weight: 600;
+    }
+  }
+
+	/* PAGE TEAM ****************************************************************/
 
 	.list-team{
 		display: flex;
@@ -424,10 +375,8 @@
 		position: relative;
 	}
 
-
-
- .photo-team::after{
-	content: "";
+  .photo-team::after{
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -436,89 +385,19 @@
     opacity: 0;
     transition: opacity .3s ease-in-out;
     background-color: rgba(0,0,0,.5);
-}
+  }
 
-.photo-normale{
-	opacity: 1;
-}
+  .photo-normale{
+  	opacity: 1;
+  }
 
-.photo-dessous{
-	transition: opacity 0.35s;
+  .photo-dessous{
+    transition: opacity 0.35s;
     opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-}
-
-
-
-
-	/*MEDIA QUERIES*/
-
-	@media (max-width: 768px){
-
-		.title-list{
-			display: none;
-		}
-
-
-	 	.section-contenu {
-		    width: 90%;
-		}
-
-		#container-constat{
-			display: block;
-
-		}
-
-		.bloc-constat-2{
-			width: 90%;
-    		margin: 50px auto;
-		}
-
-		.bloc-fleche{
-			text-align: center;
-		}
-
-		.fleche-droite{
-			-ms-transform: rotate(90deg); /* IE 9 */
-		  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-		  transform: rotate(90deg);
-		}
-	}
-
-	@media (max-width: 425px){
-
-
-		.title-list{
-			display: none;
-		}
-
-		aside ul{
-		 display: none;
-		}
-
-		.banniere h1{
-			width: 100%;
-			font-size: 2em;
-		}
-
-		.banniere .blocTitre{
-			padding: 15% 0;
-		}
-
-  	.section-contenu{
-  		width: 95%;
-  	}
-
-  	section iframe{
-  		width: 100%;
-  	}
-
-  	.banniere h1{
-  		width: 90%;
-  	}
-	}
+  }
 }

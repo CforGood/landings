@@ -22,19 +22,8 @@
 
     <article class="article-content">
       <%= yield %>
-
-      <section id="call-to-action" class="article-cta">
-        <div class="cta-container">
-          <a href="https://app.cforgood.com/signup">
-            <button id="switcher" class="cta-home" type="button">
-              <div class="ripple-area js-ripple">
-                <span class="ripple-circle"></span>
-              </div>
-              Je rejoins la révolution positive
-            </button>
-          </a>
-        </div>
-      </section>
+      <!-- SUBSCRIBE HERE -->
+      <%= partial "shared/cta_subscribe" %>
     </article>
 
     <div class="article-author">
