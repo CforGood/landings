@@ -60,6 +60,7 @@
       }
 
       li {
+        margin-top: 20px;
 
         @media (max-width: 768px) {
           display: flex;
@@ -235,87 +236,7 @@
     }
   }
 
-	.list-link{
-		margin-top: 20px;
-	}
-
-
-	footer{
-		z-index: 2;
-	}
-
-	a{
-		list-style: none;
-		text-decoration: none;
-		color: black;
-	}
-
-	#page{
-		display: flex;
-		justify-content: space-around;
-		align-items: flex-start;
-		width: 50%;
-	}
-
-	#connexion li{
-		margin-right: 50px;
-	}
-
-	#video-about{
-		text-align: center;
-		margin-bottom: 50px;
-	}
-
-	.bloc-constat{
-		display: flex;
-		width: 100%;
-		padding-bottom: 30px;
-	}
-
-	.image-constat{
-		width: 20%;
-		margin: auto;
-		padding: 15px;
-	}
-
-	#manifeste{
-		margin-top: 50px;
-	}
-
-	.cta{
-		height: 50px;
-   	width: 200px;
-   	background: #36D3DA;
-		display: flex;
-		margin: 0 auto;
-	}
-
-	.cta a {
-		color: white;
-    margin: 0 auto;
-    font-weight: 600;
-    width: 100%;
-    text-align: center;
-    height: 100%;
-    padding-top: 7%;
-	}
-
-	.cta .cta:hover{
-		background-color: #19A2C2;
-	}
-
-
-
-
   /* PAGE MANIFESTE ***********************************************************/
-
-  .main-bloc {
-    margin-top: 60px;
-  }
-
-  .bloc{
-    margin-bottom: 50px;
-  }
 
   .container-constat{
     width: 100%;
@@ -326,6 +247,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-bottom: 30px;
       margin: 0 2%;
       width: 46%;
 
@@ -336,18 +258,13 @@
     }
   }
 
-	/* PAGE CHARTE **************************************************************/
+  .block-container {
+    margin-top: 60px;
 
-	.section-contenu h4{
-		text-align: left;
-		margin: 0;
-		font-weight: 500;
-		padding-bottom: 20px;
-	}
-
-	#legales p{
-		font-size: 14px;
-	}
+    .simple-block{
+      margin-bottom: 50px;
+    }
+  }
 
   /* FAQ **********************************************************************/
 
