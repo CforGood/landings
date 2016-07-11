@@ -682,9 +682,9 @@
   }
 
   section#mobile-go-to {
-    display: none;
-
+    display: flex;
     position: relative;
+    padding: 0;
     border-top: 1px solid #E5E5E5;
     background-color: $turquoise;
 
@@ -697,6 +697,93 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    .go-to-item {
+      display: flex;
+      align-items: center;
+      padding: 40px 2%;
+      width: 50%;
+      line-height: 0;
+      cursor: pointer;
+
+      @media (max-width: 600px) {
+        line-height: 20px;
+      }
+
+      &:nth-child(1) {
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background: image_url('go-to-blog.png') no-repeat center;
+          background-size: cover;
+          opacity: 0.3;
+          @include transition(all 0.3s ease-in-out);
+        }
+
+        &:hover {
+          &:after {
+            opacity: 0.1;
+          }
+        }
+
+        i {
+          margin-right: 15px;
+        }
+      }
+
+      &:nth-child(2) {
+        justify-content: flex-end;
+        text-align: right;
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background: image_url('go-to-partners.png') no-repeat center;
+          background-size: cover;
+          opacity: 0.3;
+          @include transition(all 0.3s ease-in-out);
+        }
+
+        &:hover {
+          &:after {
+            opacity: 0.1;
+          }
+        }
+
+        .fa { order: 2; }
+        .go-to-info { order: 1;}
+
+        i {
+          margin-left: 15px;
+        }
+      }
+
+      i {
+        position: relative;
+        top: -2px;
+        font-size: 50px;
+        color: #fff;
+
+        @media (max-width: 600px) {
+          font-size: 35px;
+        }
+      }
+
+      h3, p {
+        color: #fff;
+      }
     }
   }
 
@@ -736,7 +823,21 @@
   }
 
   section#call-to-action {
-    padding-top: 0;
+    position: relative;
+    background-color: #f4f4f4;
+    @include transition(all 0.3s ease-in-out);
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #fff;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
     .cta-container {
       display: flex;
@@ -749,12 +850,6 @@
       @media (max-width: 767px) {
         width: 90%;
       }
-
-      // a {
-      //   padding-top: 10px;
-      //   font-size: 1.3rem;
-      //   text-decoration: underline;
-      // }
     }
   }
 
