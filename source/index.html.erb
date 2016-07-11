@@ -18,9 +18,8 @@ thumbnail: "page/default-meta-image.jpg"
         </div>
       </div>
     </div>
-    <div class="frame-illustration">
-      <%= partial "shared/svg/main_illustration" %>
-    </div>
+    <!-- ILLUSTRATION-->
+    <%= partial 'shared/main_illustration' %>
   </header>
 
   <section id="video">
@@ -49,13 +48,41 @@ thumbnail: "page/default-meta-image.jpg"
   <section id="city-perks" class="main-block">
     <div class="section-icon">
       <%= partial "shared/svg/perks" %>
-      <%= partial "shared/see_more_perks" %>
     </div>
     <div class="section-description">
       <h3>J'accède à des bons plans solidaires</h3>
       <p>En tant que membre CforGood, je bénéficie de bons plans exclusifs chez les commerces responsables autour de moi.</p>
       <span class="number"><i>80+</i>bons plans responsables disponibles !</span>
     </div>
+  </section>
+
+  <section id="perks-examples">
+    <ul class="perks-row">
+      <li>
+        <% link_to 'https://app.cforgood.com/businesses/4?address_id=0&perk_id=14' do %>
+          <%= image_tag 'perks/perk-1.jpg'%>
+          <div class="perk-description">
+            <i class="fa fa-gift" aria-hidden="true"></i><span><i>Bienvenue</i>Grandir et se faire connaître sur le territoire</span>
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <% link_to 'https://app.cforgood.com/businesses/4?address_id=0&perk_id=14' do %>
+          <%= image_tag 'perks/perk-1.jpg'%>
+          <div class="perk-description">
+            <i class="fa fa-repeat" aria-hidden="true"></i><span><i>Durable</i>Fidéliser une nouvelle clientèle</span>
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <% link_to 'https://app.cforgood.com/businesses/4?address_id=0&perk_id=14' do %>
+          <%= image_tag 'perks/perk-2.jpg'%>
+          <div class="perk-description">
+            <i class="fa fa-flash" aria-hidden="true"></i><span><i>Flash</i>Réduire le gaspillage alimentaire</span>
+          </div>
+        <% end %>
+      </li>
+    </ul>
   </section>
 
   <section id="own-scale" class="main-block">
@@ -67,6 +94,35 @@ thumbnail: "page/default-meta-image.jpg"
       <p>Je deviens membre à travers une participation libre qui est reversée pour soutenir l'association de mon choix.</p>
       <span class="number hint--right" data-hint="Le pourcentage exact est déterminé en fonction du montant de votre participation mensuelle."><i>85%</i> de mon abonnement reversé à une association*</span>
     </div>
+  </section>
+
+  <section id="causes-examples">
+    <ul class="causes-row">
+      <li>
+        <% link_to 'https://app.cforgood.com/asso/causes/1' do %>
+          <%= image_tag 'causes/cause-surfrider.jpg' %>
+          <div class="perk-description">
+            <i class="fa environnement" aria-hidden="true"><%= image_tag 'causes/environment.png' %></i><span><i>Environnement</i>Protection et mise en valeur du littoral et des océans</span>
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <% link_to 'https://app.cforgood.com/asso/causes/7' do %>
+          <%= image_tag 'causes/cause-makesense.jpg'%>
+          <div class="perk-description">
+            <i class="fa social" aria-hidden="true"><%= image_tag 'causes/social.png' %></i><span><i>Entrepreneuriat Social</i>Aider les entrepreneurs sociaux à déveloper leur projet et résoudre leur défi</span>
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <% link_to 'https://app.cforgood.com/asso/causes/5' do %>
+          <%= image_tag 'causes/cause-surfrider.jpg'%>
+          <div class="perk-description">
+            <i class="fa sante" aria-hidden="true"><%= image_tag 'causes/sante.png' %></i><span><i>Santé</i>Sensibiliser les jeunes sur leur mode de vie et leur environnement</span>
+          </div>
+        <% end %>
+      </li>
+    </ul>
   </section>
 
   <section id="consumption" class="main-block">
@@ -164,11 +220,32 @@ thumbnail: "page/default-meta-image.jpg"
           </ul>
         </div>
       </div>
-      <div class="small-screen">
-      </div>
     </div>
   </section>
 
+  <section id="how-to-mobile">
+    <h2>Comment ça marche ?</h2>
+    <div class="how-to-mobile-item">
+      <%= image_tag 'howto/how-to-mobile-1.jpg' %>
+      <h3>Rejoignez-nous</h3>
+      <p>Soutenez l'association de votre choix en leur reversant le montant de votre abonnement</p>
+    </div>
+    <div class="how-to-mobile-item">
+      <%= image_tag 'howto/how-to-mobile-2.jpg' %>
+      <h3>Localisez</h3>
+      <p>Redécouvrez votre ville en localisant les commerces responsables autour de vous.</p>
+    </div>
+    <div class="how-to-mobile-item">
+      <%= image_tag 'howto/how-to-mobile-3.jpg' %>
+      <h3>Découvrez</h3>
+      <p>Consultez les bons plans exclusifs proposés par chacun d'eux.</p>
+    </div>
+    <div class="how-to-mobile-item">
+      <%= image_tag 'howto/how-to-mobile-4.jpg' %>
+      <h3>Profitez</h3>
+      <p>Profitez en simplement en montrant votre carte de membre !</p>
+    </div>
+  </section>
 
   <section id="mobile-go-to">
     <div class="go-to-blog">

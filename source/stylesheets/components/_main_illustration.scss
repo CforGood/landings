@@ -1,0 +1,61 @@
+.frame-illustration {
+  position: relative;
+  height: 400px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    z-index: 1000
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    background: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    z-index: 1000
+  }
+  /****************************************************************************/
+  /* LAYERS */
+  /****************************************************************************/
+
+  .illustration {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .desktop {
+    z-index: 10;
+  }
+
+  .markers {
+    bottom: -20px;
+    z-index: 6;
+  }
+
+  .forground {
+    bottom: 47px;
+    z-index: 5;
+  }
+
+  .background_2 {
+    bottom: 47px;
+  }
+
+  .background_1 {
+    bottom: 49px
+  }
+}

@@ -1,93 +1,75 @@
 /* MARKERS ********************************************************************/
 
-#Forground {
+#forground {
   position: absolute;
   animation-duration: 140s;
-  animation-name: panoramix;
+  animation-name: forground;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@keyframes panoramix {
+@keyframes forground {
   0% {
-    transform: translateX(0) translateY(58%);
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(5%)
   }
 
   50% {
-    transform: translateX(38%) translateY(58%);
+    transform: translateX(0%);
+  }
+
+  75% {
+    transform: translateX(-5%);
   }
 
   100% {
-    transform: translateX(0) translateY(58%);
+    transform: translateX(0);
   }
 }
 
-#Background-Level-1 {
+#background-level1 {
   position: absolute;
   animation-duration: 140s;
-  animation-name: panoramix2;
+  animation-name: bkg_lvl1;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@keyframes panoramix2 {
+@keyframes bkg_lvl1 {
   0% {
-    transform: translateX(54%) translateY(41%);
+    transform: translateX(0);
   }
 
   50% {
-    transform: translateX(40%) translateY(41%);
+    transform: translateX(-5%);
   }
 
   100% {
-    transform: translateX(54%) translateY(41%);
+    transform: translateX(0%);
   }
 }
 
-#Background-Level-2 {
-  position: absolute;
+#background-level2 {
   animation-duration: 140s;
-  animation-name: panoramix3;
+  animation-name: bkg_lvl2;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@keyframes panoramix3 {
+@keyframes bkg_lvl2 {
   0% {
-    transform: translateX(26%) translateY(30%);
+    transform: translateX(0);
   }
 
   50% {
-    transform: translateX(40%) translateY(41%);
+    transform: translateX(5%);
   }
 
   100% {
-    transform: translateX(26%) translateY(30%);
-  }
-}
-
-#marker-epicerie,
-#marker-forme,
-#marker-loisir,
-#marker-restaurant {
-  position: absolute;
-  animation-duration: 2s;
-  animation-name: marker;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes marker {
-  0% {
-    transform: translateY(-2px) translateX(150%);
-  }
-
-  50% {
-    transform: translateY(2px) translateX(150%);
-  }
-
-  100% {
-    transform: translateY(-2px) translateX(150%);
+    transform: translateX(0);
   }
 }
 
