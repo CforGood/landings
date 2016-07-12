@@ -1,0 +1,16 @@
+<section id="testimonials">
+  <div class="testimonials-carousel">
+    <% data.testimonials.each do |testimony| %>
+      <div class="testimony">
+        <p><%= testimony.content %></p>
+        <div class="witness">
+          <%= image_tag testimony.picture %>
+          <div class="witness-details">
+            <span><%= testimony.name %></span>
+            <i>Le <%= testimony.date %></i>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>

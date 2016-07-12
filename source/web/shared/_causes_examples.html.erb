@@ -1,0 +1,14 @@
+<section id="causes-examples">
+  <ul class="causes-row">
+    <% data.causes.each do |cause| %>
+      <li>
+        <% link_to cause.cause_url do %>
+          <%= image_tag cause.cause_image %>
+          <div class="perk-description">
+            <i class="fa <%= cause.cause_color %>" aria-hidden="true"><%= image_tag cause.cause_icon %></i><span><i><%= cause.cause_type %></i><%= cause.cause_description %></span>
+          </div>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</section>

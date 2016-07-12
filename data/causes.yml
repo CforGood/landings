@@ -1,0 +1,20 @@
+- cause_icon: "causes/environment.png"
+  cause_color: "environnement"
+  cause_type: "Environnement"
+  cause_description: "Protection et mise en valeur du littoral et des océans"
+  cause_url: "https://app.cforgood.com/asso/causes/1"
+  cause_image: causes/cause-surfrider.jpg
+
+- cause_icon: "causes/social.png"
+  cause_color: "social"
+  cause_type: "Entrepreneuriat Social"
+  cause_description: "Aider les entrepreneurs sociaux à déveloper leur projet et résoudre leur défi"
+  cause_url: "https://app.cforgood.com/asso/causes/7"
+  cause_image: causes/cause-makesense.jpg
+
+- cause_icon: "causes/sante.png"
+  cause_color: "sante"
+  cause_type: "Santé"
+  cause_description: "Sensibiliser les jeunes sur leur mode de vie et leur environnement"
+  cause_url: "https://app.cforgood.com/asso/causes/5"
+  cause_image: causes/cause-keepabreast.jpg

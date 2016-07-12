@@ -1,0 +1,12 @@
+<div class="article-author">
+  <h4>Auteur</h4>
+  <div class="author-details">
+    <% author = find_author(current_article.data.author) %>
+    <img src="<%= image_path author.photo %>" alt="<%= author.name %>">
+    <div class="author-info">
+      <h5><%= author.name %></h5>
+      <p><%= author.introduction %></h4></p>
+      <a href="http://twitter.com/<%= author.twitter%>"><%= partial "shared/svg/icon_twitter" %></a>
+    </div>
+  </div>
+</div>

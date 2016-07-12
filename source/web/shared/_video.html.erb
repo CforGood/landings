@@ -1,0 +1,13 @@
+<section id="video">
+  <h2>Rejoignez la Révolution Positive</h2>
+  <p>Intégrez un réseau de solidarité nouvelle génération, qui rassemble localement, citoyens, commerçants responsables et associations pour favoriser les comportements positifs.</p>
+  <% data.videos.each do |video| %>
+    <button id="video-launcher" class="video-launcher" type="button" data-toggle="video-modal" data-target="#modal-video" data-theVideo="<%= video.video_url %>">
+      <div class="ripple-area js-ripple">
+        <span class="ripple-circle"></span>
+      </div>
+      Voir la vidéo <%= partial "shared/svg/play" %>
+    </button>
+  <% end %>
+  <%= partial "web/modals/modal_video" %>
+</section>

@@ -1,0 +1,34 @@
+section#map-examples {
+  position: relative;
+  height: 466px;
+  background-color: #fff;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: image_url('web/shared/map-example.jpg') no-repeat center;
+    background-size: cover;
+    opacity: 0.6;
+
+    @media (max-width: 600px) {
+      background-position: right;
+    }
+  }
+}

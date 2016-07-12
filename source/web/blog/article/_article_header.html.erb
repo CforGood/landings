@@ -1,0 +1,14 @@
+<header class="article-header" style="background-image: url('<%= image_path current_article.data.thumbnail %>')">
+  <% author = find_author(current_article.data.author) %>
+  <div class="article-header-info">
+    <i><%= current_article.data.category %></i>
+    <h1><%= current_article.title %></h1>
+    <span><%= current_article.data.description %></span>
+    <abbr><div class="eta"></div> de lecture</abbr>
+  </div>
+  <div class="article-header-author">
+    <% author = find_author(current_article.data.author) %>
+    <img src="<%= image_path author.photo %>" alt="<%= author.name %>">
+    <i>rédigé par<br><strong><%= author.name %></strong><br>le <time><%= current_article.date.strftime('%e %b %Y') %></time></i>
+  </div>
+</header>

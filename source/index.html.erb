@@ -5,322 +5,52 @@ thumbnail: "page/default-meta-image.jpg"
 ---
 
 <div id="home-page">
-  <header class="container">
-    <div class="vision">
-      <h1>Le nouveau réseau de solidarité</h1>
-      <div class="vision-pros">
-        <p>Enfin un moyen simple de :</p>
-        <div id="changethewords">
-          <i data-id="1">Redécouvrir votre ville</i>
-          <i data-id="2" style="display: none;">Consommer responsable</i>
-          <i data-id="3" style="display: none;">Parrainer les projets de votre choix</i>
-          <i data-id="4" style="display: none;">Changer le monde à votre échelle</i>
-        </div>
-      </div>
-    </div>
-    <!-- ILLUSTRATION-->
-    <%= partial 'shared/main_illustration' %>
-  </header>
 
-  <section id="video">
-    <h2>Rejoignez la Révolution Positive</h2>
-    <p>Intégrez un réseau de solidarité nouvelle génération, qui rassemble localement, citoyens, commerçants responsables et associations pour favoriser les comportements positifs.</p>
-    <button id="video-launcher" class="video-launcher" type="button" data-toggle="video-modal" data-target="#modal-video" data-theVideo="http://www.youtube.com/embed/Vlny5SVkfVw">
-      <div class="ripple-area js-ripple">
-        <span class="ripple-circle"></span>
-      </div>
-      Voir la vidéo <%= partial "shared/svg/play" %>
-    </button>
-    <%= partial "shared/modal_video" %>
-  </section>
+  <!-- HEADER - MEMBER -->
+  <%= partial 'web/home/member_header' %>
 
-  <section id="city-discovery" class="main-block">
-    <div class="section-icon">
-      <%= partial "shared/svg/discover" %>
-    </div>
-    <div class="section-description">
-      <h3>Je découvre ma ville autrement</h3>
-      <p>Je porte un autre regard sur ma ville en découvrant des événements enthousiasmant, des associations engagées et des commerçants responsables du territoire.</p>
-      <span class="number"><i>80+</i>partenaires à découvrir et rencontrer !</span>
-    </div>
-  </section>
+  <!-- SECTION - VIDEO -->
+  <%= partial 'web/shared/video' %>
 
-  <section id="city-perks" class="main-block">
-    <div class="section-icon">
-      <%= partial "shared/svg/perks" %>
-    </div>
-    <div class="section-description">
-      <h3>J'accède à des bons plans solidaires</h3>
-      <p>En tant que membre CforGood, je bénéficie de bons plans exclusifs chez les commerces responsables autour de moi.</p>
-      <span class="number"><i>80+</i>bons plans responsables disponibles !</span>
-    </div>
-  </section>
+  <!-- SECTION - BLOCK 1 - MEMBER DISCOVERY -->
+  <%= partial 'web/home/member_discovery' %>
 
-  <section id="perks-examples">
-    <ul class="perks-row">
-      <li>
-        <% link_to 'https://app.cforgood.com/businesses/4?address_id=0&perk_id=14' do %>
-          <%= image_tag 'perks/perk-1.jpg'%>
-          <div class="perk-description">
-            <i class="fa fa-gift" aria-hidden="true"></i><span><i>Bienvenue</i>Grandir et se faire connaître sur le territoire</span>
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <% link_to 'https://app.cforgood.com/businesses/4?address_id=0&perk_id=14' do %>
-          <%= image_tag 'perks/perk-1.jpg'%>
-          <div class="perk-description">
-            <i class="fa fa-repeat" aria-hidden="true"></i><span><i>Durable</i>Fidéliser une nouvelle clientèle</span>
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <% link_to 'https://app.cforgood.com/businesses/4?address_id=0&perk_id=14' do %>
-          <%= image_tag 'perks/perk-2.jpg'%>
-          <div class="perk-description">
-            <i class="fa fa-flash" aria-hidden="true"></i><span><i>Flash</i>Réduire le gaspillage alimentaire</span>
-          </div>
-        <% end %>
-      </li>
-    </ul>
-  </section>
+  <!-- SECTION - SHOW MAP CFORGOOD -->
+  <%= partial 'web/shared/map_cforgood' %>
 
-  <section id="own-scale" class="main-block">
-    <div class="section-icon">
-      <%= partial "shared/svg/solidarity" %>
-    </div>
-    <div class="section-description">
-      <h3>Je rejoins un véritable réseau de solidarité</h3>
-      <p>Je deviens membre à travers une participation libre qui est reversée pour soutenir l'association de mon choix.</p>
-      <span class="number hint--right" data-hint="Le pourcentage exact est déterminé en fonction du montant de votre participation mensuelle."><i>85%</i> de mon abonnement reversé à une association*</span>
-    </div>
-  </section>
+  <!-- SECTION - BLOCK 2 - MEMBER PERKS -->
+  <%= partial 'web/home/member_perks' %>
 
-  <section id="causes-examples">
-    <ul class="causes-row">
-      <li>
-        <% link_to 'https://app.cforgood.com/asso/causes/1' do %>
-          <%= image_tag 'causes/cause-surfrider.jpg' %>
-          <div class="perk-description">
-            <i class="fa environnement" aria-hidden="true"><%= image_tag 'causes/environment.png' %></i><span><i>Environnement</i>Protection et mise en valeur du littoral et des océans</span>
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <% link_to 'https://app.cforgood.com/asso/causes/7' do %>
-          <%= image_tag 'causes/cause-makesense.jpg'%>
-          <div class="perk-description">
-            <i class="fa social" aria-hidden="true"><%= image_tag 'causes/social.png' %></i><span><i>Entrepreneuriat Social</i>Aider les entrepreneurs sociaux à déveloper leur projet et résoudre leur défi</span>
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <% link_to 'https://app.cforgood.com/asso/causes/5' do %>
-          <%= image_tag 'causes/cause-surfrider.jpg'%>
-          <div class="perk-description">
-            <i class="fa sante" aria-hidden="true"><%= image_tag 'causes/sante.png' %></i><span><i>Santé</i>Sensibiliser les jeunes sur leur mode de vie et leur environnement</span>
-          </div>
-        <% end %>
-      </li>
-    </ul>
-  </section>
+  <!-- SECTION - SHOW PERKS EXAMPLES -->
+  <%= partial 'web/shared/perks_examples' %>
 
-  <section id="consumption" class="main-block">
-    <div class="section-icon">
-      <%= partial "shared/svg/waterdrop" %>
-    </div>
-    <div class="section-description">
-      <h3>Je change le monde à mon échelle</h3>
-      <p>En devenant membre, je deviens le véritable moteur d'une société plus responsable et solidaire. <br><br><i>Ensemble, nous sommes une Révolution Positive.</i></p>
-      <span class="number"><i>800+</i>utilisateurs inscrits !</span>
-    </div>
-  </section>
+  <!-- SECTION - BLOCK 3 - MEMBER SOLIDARITY NETWORK -->
+  <%= partial 'web/home/member_solidarity' %>
 
-  <section id="how-to">
-    <h2>Comment ça marche ?</h2>
-    <div class="how-to-specifics">
+  <!-- SECTION - SHOW CAUSES EXAMPLES -->
+  <%= partial 'web/shared/causes_examples' %>
 
-      <div class="switch-device">
-        <button id="switcher-mobile" class="device-switcher hint--top" data-hint="Sur votre mobile" type="button">
-          <div class="ripple-area js-ripple">
-            <span class="ripple-circle"></span>
-          </div>
-          <div id="icon-mobile">
-            <%= partial "shared/svg/icon_mobile" %>
-          </div>
-        </button>
-        <button id="switcher-desktop" class="device-switcher hint--top icon-is-hidden" data-hint="Sur votre ordinateur" type="button">
-          <div class="ripple-area js-ripple">
-            <span class="ripple-circle"></span>
-          </div>
-          <div id="icon-desktop">
-            <%= partial "shared/svg/icon_desktop" %>
-          </div>
-        </button>
-      </div>
+  <!-- SECTION - HOW TO TABLET / DESKTOP -->
+  <%= partial 'web/home/member_how_to' %>
 
-      <ul id="specifics-list" class="specifics">
-        <li id="specific-1" class="active">
-          <h3>Rejoignez-nous</h3>
-          <p>Soutenez l'association de votre choix en leur reversant le montant de votre abonnement</p>
-        </li>
-        <li id="specific-2">
-          <h3>Localisez</h3>
-          <p>Redécouvrez votre ville en localisant les commerces responsables autour de vous.</p>
-        </li>
-        <li id="specific-3">
-          <h3>Découvrez</h3>
-          <p>Consultez les bons plans exclusifs proposés par chacun d'eux.</p>
-        </li>
-        <li id="specific-4">
-          <h3>Profitez</h3>
-          <p>Profitez en simplement en montrant votre carte de membre !</p>
-        </li>
-        <li>
-          <a href="https://cforgood-staging.herokuapp.com/signup">
-            <button id="switcher" class="cta-home" type="button">
-              <div class="ripple-area js-ripple">
-                <span class="ripple-circle"></span>
-              </div>
-              Je rejoins la révolution positive
-            </button>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="how-to-images">
-      <div class="desktop-images">
-        <div class="how-to-mobile mobile-is-visible">
-          <%= partial "shared/svg/mobile_2" %>
-          <ul id="specifics-images-list">
-            <li id="specific-image-1"><img src="<%= image_path 'cforgood-login-mobile.jpg' %>" class="showing" alt=""></li>
-            <li id="specific-image-2"><img src="<%= image_path 'cforgood-map-mobile.jpg' %>" alt=""></li>
-            <li id="specific-image-3"><img src="<%= image_path 'cforgood-bonplan-mobile.jpg' %>" alt=""></li>
-            <li id="specific-image-4"><img src="<%= image_path 'cforgood-use-mobile.jpg' %>" alt=""></li>
-          </ul>
-        </div>
-        <div class="how-to-browser browser-is-hidden">
-          <%= partial "shared/svg/browser" %>
-          <ul id="specifics-images-list">
-            <li id="specific-image-1"><img src="<%= image_path 'cforgood-login.jpg' %>" class="showing" alt=""></li>
-            <li id="specific-image-2"><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
-            <li id="specific-image-3"><img src="<%= image_path 'cforgood-bonplan.jpg' %>" alt=""></li>
-            <li id="specific-image-4"><img src="<%= image_path 'cforgood-use.jpg' %>" alt=""></li>
-          </ul>
-        </div>
-      </div>
-      <div class="medium-screen">
-        <div class="how-to-mobile mobile-is-visible">
-          <%= partial "shared/svg/ipad" %>
-          <ul id="specifics-images-list">
-            <li id="specific-image-1"><img src="<%= image_path 'howto/ipad-signin.jpg' %>" class="showing" alt=""></li>
-            <li id="specific-image-2"><img src="<%= image_path 'howto/ipad-map.jpg' %>" alt=""></li>
-            <li id="specific-image-3"><img src="<%= image_path 'howto/ipad-perk.jpg' %>" alt=""></li>
-            <li id="specific-image-4"><img src="<%= image_path 'howto/ipad-member.jpg' %>" alt=""></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- SECTION - HOW TO MOBILE -->
+  <%= partial 'web/home/member_how_to_mobile' %>
 
-  <section id="how-to-mobile">
-    <h2>Comment ça marche ?</h2>
-    <div class="how-to-mobile-item">
-      <%= image_tag 'howto/how-to-mobile-1.jpg' %>
-      <h3>Rejoignez-nous</h3>
-      <p>Soutenez l'association de votre choix en leur reversant le montant de votre abonnement</p>
-    </div>
-    <div class="how-to-mobile-item">
-      <%= image_tag 'howto/how-to-mobile-2.jpg' %>
-      <h3>Localisez</h3>
-      <p>Redécouvrez votre ville en localisant les commerces responsables autour de vous.</p>
-    </div>
-    <div class="how-to-mobile-item">
-      <%= image_tag 'howto/how-to-mobile-3.jpg' %>
-      <h3>Découvrez</h3>
-      <p>Consultez les bons plans exclusifs proposés par chacun d'eux.</p>
-    </div>
-    <div class="how-to-mobile-item">
-      <%= image_tag 'howto/how-to-mobile-4.jpg' %>
-      <h3>Profitez</h3>
-      <p>Profitez en simplement en montrant votre carte de membre !</p>
-    </div>
-  </section>
+  <!-- SECTION - GO TO NEXT PAGES -->
+  <%= partial 'web/home/member_go_to' %>
 
-  <section id="mobile-go-to">
-    <% link_to '/blog.html', class: 'go-to-item' do %>
-      <i class="fa fa-angle-left" aria-hidden="true"></i>
-      <div class="go-to-info">
-        <h3>Blog</h3>
-        <p>Découvrez nos derniers articles</p>
-      </div>
-    <% end %>
-    <% link_to '/partenaires.html', class: 'go-to-item go-to-partners' do %>
-      <i class="fa fa-angle-right" aria-hidden="true"></i>
-      <div class="go-to-info">
-        <h3>Partenaires</h3>
-        <p>Découvrez nos derniers articles</p>
-      </div>
-    <% end %>
-  </section>
+  <!-- SECTION - NO DOWNLOAD -->
+  <%= partial 'web/shared/no_download' %>
 
-  <section id="no-download" class="main-block">
-    <div class="section-icon">
-      <%= partial "shared/svg/signet_iphone" %>
-    </div>
-    <div class="section-description">
-      <h2>Accessible partout, tout le temps.</h2>
-      <p>CforGood est directement accessible depuis le navigateur internet de votre ordinateur et/ou smartphone favoris !</p>
-      <ul>
-        <li><%= partial "shared/svg/check" %> Rien à télécharger/mettre à jour</li>
-        <li><%= partial "shared/svg/check" %> Compatible avec tous les navigateurs (Chrome, Safari...)</li>
-        <li><%= partial "shared/svg/check" %> Ajoutez un raccourcis sur votre écran d'accueil !</li>
-      </ul>
-    </div>
-  </section>
+  <!-- SECTION - TESTIMONIALS -->
+  <%= partial 'web/shared/testimonials' %>
 
-  <section id="testimonials">
-    <div class="testimonials-carousel">
-      <% data.testimonials.each do |testimony| %>
-        <div class="testimony">
-          <p><%= testimony.content %></p>
-          <div class="witness">
-            <%= image_tag testimony.picture %>
-            <div class="witness-details">
-              <span><%= testimony.name %></span>
-              <i>Le <%= testimony.date %></i>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </section>
+  <!-- SECTION - CALL TO ACTION -->
+  <%= partial 'web/shared/call_to_action' %>
 
-  <section id="call-to-action">
-    <div class="cta-container">
-      <a href="https://app.cforgood.com/signup">
-        <button id="switcher" class="cta-home" type="button">
-          <div class="ripple-area js-ripple">
-            <span class="ripple-circle"></span>
-          </div>
-          Je rejoins la révolution positive
-        </button>
-      </a>
-      <!-- <a href="#" alt="">Découvrez nos tarifs</a> -->
-    </div>
-  </section>
+  <!-- SECTION - PRESS ARTICLES -->
+  <%= partial 'web/shared/press_articles' %>
 
-  <section id="articles">
-    <div class="articles-carousel">
-      <% data.articles.each do |article| %>
-        <a href="<%= article.url %>" alt="<%= article.title %>" %>
-          <%= image_tag article.logo %>
-        </a>
-      <% end %>
-    </div>
-  </section>
-
-  <section id="partnerships">
-    <%= partial "shared/support_us" %>
-  </section>
+  <!-- SECTION - SUPPORTERS -->
+  <%= partial 'web/shared/supporters' %>
 </div>

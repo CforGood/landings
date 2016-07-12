@@ -1,0 +1,14 @@
+<section id="perks-examples">
+  <ul class="perks-row">
+    <% data.perks.each do |perk| %>
+      <li>
+        <% link_to perk.perk_url do %>
+          <%= image_tag perk.perk_image %>
+          <div class="perk-description">
+            <i class="fa <%= perk.perk_icon %>" aria-hidden="true"></i><span><i><%= perk.perk_type %></i><%= perk.perk_description %></span>
+          </div>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</section>

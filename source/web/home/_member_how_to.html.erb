@@ -1,0 +1,86 @@
+<section id="how-to">
+  <h2>Comment ça marche ?</h2>
+  <div class="how-to-specifics">
+
+    <div class="switch-device">
+      <button id="switcher-mobile" class="device-switcher hint--top" data-hint="Sur votre mobile" type="button">
+        <div class="ripple-area js-ripple">
+          <span class="ripple-circle"></span>
+        </div>
+        <div id="icon-mobile">
+          <%= partial "shared/svg/icon_mobile" %>
+        </div>
+      </button>
+      <button id="switcher-desktop" class="device-switcher hint--top icon-is-hidden" data-hint="Sur votre ordinateur" type="button">
+        <div class="ripple-area js-ripple">
+          <span class="ripple-circle"></span>
+        </div>
+        <div id="icon-desktop">
+          <%= partial "shared/svg/icon_desktop" %>
+        </div>
+      </button>
+    </div>
+
+    <ul id="specifics-list" class="specifics">
+      <li id="specific-1" class="active">
+        <h3>Rejoignez-nous</h3>
+        <p>Soutenez l'association de votre choix en leur reversant le montant de votre abonnement</p>
+      </li>
+      <li id="specific-2">
+        <h3>Localisez</h3>
+        <p>Redécouvrez votre ville en localisant les commerces responsables autour de vous.</p>
+      </li>
+      <li id="specific-3">
+        <h3>Découvrez</h3>
+        <p>Consultez les bons plans exclusifs proposés par chacun d'eux.</p>
+      </li>
+      <li id="specific-4">
+        <h3>Profitez</h3>
+        <p>Profitez en simplement en montrant votre carte de membre !</p>
+      </li>
+      <li>
+        <a href="https://cforgood-staging.herokuapp.com/signup">
+          <button id="switcher" class="cta-home" type="button">
+            <div class="ripple-area js-ripple">
+              <span class="ripple-circle"></span>
+            </div>
+            Je rejoins la révolution positive
+          </button>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="how-to-images">
+    <div class="desktop-images">
+      <div class="how-to-mobile mobile-is-visible">
+        <%= partial "shared/svg/mobile_2" %>
+        <ul id="specifics-images-list">
+          <li id="specific-image-1"><img src="<%= image_path 'cforgood-login-mobile.jpg' %>" class="showing" alt=""></li>
+          <li id="specific-image-2"><img src="<%= image_path 'cforgood-map-mobile.jpg' %>" alt=""></li>
+          <li id="specific-image-3"><img src="<%= image_path 'cforgood-bonplan-mobile.jpg' %>" alt=""></li>
+          <li id="specific-image-4"><img src="<%= image_path 'cforgood-use-mobile.jpg' %>" alt=""></li>
+        </ul>
+      </div>
+      <div class="how-to-browser browser-is-hidden">
+        <%= partial "shared/svg/browser" %>
+        <ul id="specifics-images-list">
+          <li id="specific-image-1"><img src="<%= image_path 'cforgood-login.jpg' %>" class="showing" alt=""></li>
+          <li id="specific-image-2"><img src="<%= image_path 'cforgood-map.jpg' %>" alt=""></li>
+          <li id="specific-image-3"><img src="<%= image_path 'cforgood-bonplan.jpg' %>" alt=""></li>
+          <li id="specific-image-4"><img src="<%= image_path 'cforgood-use.jpg' %>" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    <div class="medium-screen">
+      <div class="how-to-mobile mobile-is-visible">
+        <%= partial "shared/svg/ipad" %>
+        <ul id="specifics-images-list">
+          <li id="specific-image-1"><img src="<%= image_path 'howto/ipad-signin.jpg' %>" class="showing" alt=""></li>
+          <li id="specific-image-2"><img src="<%= image_path 'howto/ipad-map.jpg' %>" alt=""></li>
+          <li id="specific-image-3"><img src="<%= image_path 'howto/ipad-perk.jpg' %>" alt=""></li>
+          <li id="specific-image-4"><img src="<%= image_path 'howto/ipad-member.jpg' %>" alt=""></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

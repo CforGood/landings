@@ -1,16 +1,24 @@
 <!doctype html>
 <html>
   <head>
-    <%= partial "shared/head" %>
+    <!-- SHARED - HEAD -->
+    <%= partial "web/layout/head" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "shared/nav" %>
+    <!-- SHARED - NAV -->
+    <%= partial "web/layout/nav" %>
+
+    <!-- BLOG INDEX - CONTENT -->
     <%= yield %>
-    <%= partial "shared/footer" %>
+
+    <!-- SHARED - FOOTER -->
+    <%= partial "web/layout/footer" %>
   </body>
 
+  <!-- LOAD BLOG JS -->
   <%= partial "shared/js/app" %>
+
   <!-- API Medium -->
   <script async src="https://static.medium.com/embed.js"></script>
 </html>

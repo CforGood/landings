@@ -1,48 +1,36 @@
 <!doctype html>
 <html>
   <head>
-    <%= partial "shared/head" %>
+    <!-- SHARED - HEAD -->
+    <%= partial "web/layout/head" %>
   </head>
 
   <body class="article">
-    <%= partial "shared/nav" %>
-    <header class="article-header" style="background-image: url('<%= image_path current_article.data.thumbnail %>')">
-      <div class="article-header-info">
-        <i><%= current_article.data.category %></i>
-        <h1><%= current_article.title %></h1>
-        <span><%= current_article.data.description %></span>
-        <abbr><div class="eta"></div> de lecture</abbr>
-      </div>
-      <div class="article-header-author">
-        <% author = find_author(current_article.data.author) %>
-        <img src="<%= image_path author.photo %>" alt="<%= author.name %>">
-        <i>rédigé par<br><strong><%= author.name %></strong><br>le <time><%= current_article.date.strftime('%e %b %Y') %></time></i>
-      </div>
-    </header>
+
+    <!-- SHARED - NAV -->
+    <%= partial "web/layout/nav" %>
+
+    <!-- ARTICLE - HEADER -->
+    <%= partial "web/blog/article/article_header" %>
 
     <article class="article-content">
+      <!-- ARTICLE - CONTENT -->
       <%= yield %>
-      <!-- SUBSCRIBE HERE -->
-      <%= partial "shared/cta_subscribe" %>
+
+      <!-- ARTICLE - CALL TO ACTION -->
+      <%= partial "web/blog/article/article_call_to_action" %>
     </article>
 
-    <div class="article-author">
-      <h4>Auteur</h4>
-      <div class="author-details">
-        <img src="<%= image_path author.photo %>" alt="<%= author.name %>">
-        <div class="author-info">
-          <h5><%= author.name %></h5>
-          <p><%= author.introduction %></h4></p>
-          <a href="http://twitter.com/<%= author.twitter%>"><%= partial "shared/svg/icon_twitter" %></a>
-        </div>
-      </div>
-    </div>
+    <%= partial "web/blog/article/article_author" %>
+
+    <!-- DISQUS - COMMENTS -->
     <div id="disqus_thread"></div>
-    <%= partial "shared/footer" %>
-    <!-- Disqus Comments area -->
-    <%= partial "shared/disqus" %>
-    <!-- Sumome -->
-    <!-- <#= partial "shared/sumome" #> -->
+
+    <!-- SHARED - FOOTER -->
+    <%= partial "web/layout/footer" %>
+
+    <!-- DISQUS - JS -->
+    <%= partial "web/vendor/disqus" %>
   </body>
 </html>
 

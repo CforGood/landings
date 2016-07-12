@@ -1,0 +1,9 @@
+<section id="articles">
+  <div class="articles-carousel">
+    <% data.articles.each do |article| %>
+      <a href="<%= article.url %>" alt="<%= article.title %>" %>
+        <%= image_tag article.logo %>
+      </a>
+    <% end %>
+  </div>
+</section>
