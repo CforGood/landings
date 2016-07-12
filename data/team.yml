@@ -1,0 +1,43 @@
+- first_name: "Allan"
+  last_name: "Floury"
+  job_position: "CEO"
+  pic: team/allan.jpg
+  color: "first-bloc"
+  facebook: "allan.floury"
+  instagram: ""
+  github: ""
+  linkedin: "allan-floury-6754153b?trk=hp-identity-name"
+  twitter: "AllanFloury"
+
+- first_name: "Cédric"
+  last_name: "Menteau"
+  job_position: "Front-End Developer"
+  pic: team/cedric.jpg
+  color: "second-bloc"
+  facebook: "cedricmenteau"
+  instagram: "cedricmenteau"
+  github: "cedricmenteau"
+  linkedin: "cedricmenteau"
+  twitter: "cedricmenteau"
+
+- first_name: "Frédérique"
+  last_name: "Petris"
+  job_position: "Back-End Developer"
+  pic:
+  color: "third-bloc"
+  facebook: "profile.php?id=100006871473238"
+  instagram:
+  github:
+  linkedin: "fr%C3%A9d%C3%A9rique-p%C3%A9tris-73089291"
+  twitter: "FredPetris"
+
+- first_name: "Damien"
+  last_name: "Bernay"
+  job_position: "Intern"
+  pic:
+  color: "fourth-bloc"
+  facebook: "damien.bernay"
+  instagram:
+  github:
+  linkedin: "damienbernay"
+  twitter:

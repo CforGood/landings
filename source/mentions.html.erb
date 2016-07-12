@@ -2,26 +2,23 @@
 title: Mentions légales
 ---
 
-<div class="secondary-page">
+<header>
+  <h1><%= data.page.title %></h1>
+</header>
 
-  <header class="confidential">
-    <h1><%= data.page.title %></h1>
-  </header>
-
-	<div class="secondary-page-container">
-    <!-- Affix menu -->
-    <%= partial "web/shared/aside_legal_pages" %>
-    <!-- Page content -->
-		<section>
-      <h3>Infomation</h3>
-      <ul>
-        <li>Forme sociale : S.A.S.</li>
-        <li>Capital social : 50 €</li>
-        <li>RCS : BORDEAUX 814 251 906</li>
-        <li>Directeurs de la publication : Allan FLOURY</li>
-        <li>Hébergeur : OVH, 2 rue Kellermann 59100 Roubaix.</li>
-      </ul>
-      <p>CFORGOOD S.A.S détient l'intégralité des droits de propriété intellectuelle relatifs aux éléments et au contenu du site cforgood.com. Pour cette raison, toute utilisation de quelque nature que ce soit et/ou toute reproduction de tout ou partie d'un élément du site cforgood.com constitueraient une contrefaçon.</p>
-		</section>
-  </div>
+<div class="page-container">
+  <!-- Affix menu -->
+  <%= partial "web/shared/aside_legal_pages" %>
+  <!-- Page content -->
+	<section>
+    <h3>Infomation</h3>
+    <ul>
+      <li>Forme sociale : S.A.S.</li>
+      <li>Capital social : 50 €</li>
+      <li>RCS : BORDEAUX 814 251 906</li>
+      <li>Directeurs de la publication : Allan FLOURY</li>
+      <li>Hébergeur : OVH, 2 rue Kellermann 59100 Roubaix.</li>
+    </ul>
+    <p>CFORGOOD S.A.S détient l'intégralité des droits de propriété intellectuelle relatifs aux éléments et au contenu du site cforgood.com. Pour cette raison, toute utilisation de quelque nature que ce soit et/ou toute reproduction de tout ou partie d'un élément du site cforgood.com constitueraient une contrefaçon.</p>
+	</section>
 </div>

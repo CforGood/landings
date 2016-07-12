@@ -7,6 +7,9 @@
 # Remove .html extension from pages
 activate :directory_indexes
 
+# Activate translation
+activate :i18n, :mount_at_root => :fr
+
 # Blog Activation
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths

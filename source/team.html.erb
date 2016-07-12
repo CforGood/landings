@@ -2,136 +2,37 @@
 title: L'équipe CforGood
 ---
 
-<h1><%= data.page.title %></h1>
+<header>
+  <h1><%= data.page.title %></h1>
+</header>
 
-<div class="photo">
-  <img src="test.jpg" alt="">
+<div class="page-container">
+  <ul>
+    <% data.team.each do |member| %>
+      <li>
+        <div class="member-pic">
+          <%= image_tag member.pic %>
+        </div>
+        <div class="member-info <%= member.color %>">
+          <h2><%= member.first_name %> <%= member.last_name %></h2>
+          <span><%= member.job_position %></span>
+          <% if member.facebook.present? %>
+            <a href="http://facebook.com/<%= member.facebook %>" alt="Le comtpe Facebook de <%= member.first_name %>">Facebook</a>
+          <% end %>
+          <% if member.twitter.present? %>
+            <a href="http://twitter.com/<%= member.twitter %>" alt="Le comtpe Twitter de <%= member.first_name %>">Twitter</a>
+          <% end %>
+          <% if member.instagram.present? %>
+            <a href="http://instagram.com/in/<%= member.instagram %>" alt="Le comtpe Instagram de <%= member.first_name %>">Instagram</a>
+          <% end %>
+          <% if member.github.present? %>
+            <a href="http://github.com/<%= member.github %>" alt="Le comtpe Github de <%= member.first_name %>">Github</a>
+          <% end %>
+          <% if member.linkedin.present? %>
+            <a href="http://linkedin.com/<%= member.linkedin %>" alt="Le comtpe Linkedin de <%= member.first_name %>">Linkedin</a>
+          <% end %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
 </div>
-
-
-<!-- prototype -->
-<div id="cover-team">
-  <div id="text-cover">
-    <h1>L'EQUIPE CFORGOOD</h1>
-    <h2>Lorem ipsum lorem ipsum</h2>
-  </div>
-</div>
-
-<div class="row">
-  <div class="bloc-photo-team-allan">
-    <div class="photo-perso">
-      <img src="images/team/allan.jpg">
-    </div>
-
-    <div class="caption">
-        <div class="name-team">
-          <h2 class="caption-title">Allan FLoury</h2>
-          <h3>El jefe</h3>
-        </div>
-        <div class="social">
-          <a href="#"><img src="images/team/icon-Facebook.png"></a>
-          <a href="#"><img src="images/team/icon-Instagram.png"></a>
-          <a href="#"><img src="images/team/icon-linkedin.png"></a>
-        </div>
-    </div>
-  </div>
-
-    <div class="bloc-photo-team-cedric">
-    <div class="photo-perso">
-      <img src="images/team/cedric.jpg">
-    </div>
-
-    <div class="caption">
-        <div class="name-team">
-          <h2 class="caption-title">Cédric Menteau</h2>
-          <h3>maitre jedi</h3>
-        </div>
-        <div class="social">
-          <a href="#"><img src="images/team/icon-git.png"></a>
-          <a href="#"><img src="images/team/icon-Instagram.png"></a>
-          <a href="#"><img src="images/team/icon-linkedin.png"></a>
-        </div>
-    </div>
-  </div>
-
-    <div class="bloc-photo-team-fred">
-    <div class="photo-perso">
-      <img src="images/team/fred.jpg">
-    </div>
-
-    <div class="caption">
-        <div class="name-team">
-          <h2 class="caption-title">Fred Pétris</h2>
-          <h3>master Ruby</h3>
-        </div>
-        <div class="social">
-          <a href="#"><img src="images/team/icon-git.png"></a>
-          <a href="#"><img src="images/team/icon-linkedin.png"></a>
-        </div>
-    </div>
-  </div>
-</div>
-<div class="row final-row">
-
-  <div class="bloc-photo-team-damien">
-    <div class="photo-perso">
-      <img src="images/team/damien.jpg">
-    </div>
-
-    <div class="caption">
-        <div class="name-team">
-          <h2 class="caption-title">Damien Bernay</h2>
-          <h3>Super stagiaire</h3>
-        </div>
-        <div class="social">
-          <a href="#"><img src="images/team/icon-linkedin.png"></a>
-          <a href="#"><img src="images/team/icon-Instagram.png"></a>
-          <a href="#"><img src="images/team/icon-Facebook.png"></a>
-        </div>
-    </div>
-  </div>
-
-  <div class="bloc-photo-team-sarah">
-    <div class="photo-perso">
-      <img src="images/team/sarah.jpg">
-    </div>
-
-    <div class="caption">
-        <div class="name-team">
-          <h2 class="caption-title">Sarah Harmach</h2>
-          <h3>Super stagiaire</h3>
-        </div>
-        <div class="social">
-          <a href="#"><img src="images/team/icon-linkedin.png"></a>
-          <a href="#"><img src="images/team/icon-Instagram.png"></a>
-          <a href="#"><img src="images/team/icon-Facebook.png"></a>
-        </div>
-    </div>
-  </div>
-
-  <div class="bloc-photo-team-olivier">
-    <div class="photo-perso">
-      <img src="images/team/olivier.jpg">
-    </div>
-
-    <div class="caption">
-        <div class="name-team">
-          <h2 class="caption-title">Olivier Boucheau</h2>
-          <h3 class="caption-h3">Super stagiaire</h3>
-        </div>
-        <div class="social">
-          <a href="#"><img src="images/team/icon-linkedin.png"></a>
-          <a href="#"><img src="images/team/icon-Instagram.png"></a>
-          <a href="#"><img src="images/team/icon-git.png"></a>
-        </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- prototype -->
-
-
-
-</body>
-</html>

@@ -1,6 +1,15 @@
-.secondary-page {
+.cgu,
+.confidential,
+.mentions,
+.faq,
+.charte,
+.manifeste,
+.team,
+.press {
 
-  /* HEADER *******************************************************************/
+  /****************************************************************************/
+  /* HEADER */
+  /****************************************************************************/
 
   header {
     display: flex;
@@ -9,6 +18,8 @@
     padding-top: 60px;
     width: 100%;
     height: 320px;
+    background: url("../images/legales/cover-legales.jpg") no-repeat;
+    background-size: cover;
 
     h1 {
       max-width: 90%;
@@ -20,17 +31,9 @@
     }
   }
 
-  header.cgu,
-  header.confidential,
-  header.mentions,
-  header.faq,
-  header.charte,
-  header.manifeste {
-    background: url("../images/legales/cover-legales.jpg") no-repeat;
-    background-size: cover;
-  }
-
-  /* SIDE MENU ****************************************************************/
+  /****************************************************************************/
+  /* ASIDE */
+  /****************************************************************************/
 
   aside {
     width: 25%;
@@ -95,7 +98,9 @@
       }
     }
 
-    /* DROPDOWN MENU MOBILE */
+    /**************************************************************************/
+    /* ASIDE - MOBILE */
+    /**************************************************************************/
 
     .dropdown {
       display: none;
@@ -158,7 +163,10 @@
     }
   }
 
-  /* ACTIVE ON SCROLL */
+  /****************************************************************************/
+  /* ASIDE - ACTIVE ON SCROLL */
+  /****************************************************************************/
+
   .affix-subnav-scrolled{
     top: 65px;
     margin-bottom: -310px;
@@ -177,10 +185,11 @@
     }
   }
 
+  /****************************************************************************/
+  /* COMMON */
+  /****************************************************************************/
 
-  /* COMMON *******************************************************************/
-
-  .secondary-page-container {
+  .page-container {
     width: 100%;
     background-color: white;
     display: flex;
