@@ -6,18 +6,25 @@
       <div id="changethewords">
         <i data-id="1">Redécouvrir votre ville</i>
         <i data-id="2" style="display: none;">Consommer responsable</i>
-        <i data-id="3" style="display: none;">Parrainer les projets de votre choix</i>
-        <i data-id="4" style="display: none;">Changer le monde à votre échelle</i>
+        <i data-id="3" style="display: none;">Parrainer les projets</br> de votre choix</i>
+        <i data-id="4" style="display: none;">Changer le monde</br> à votre échelle</i>
       </div>
     </div>
   </div>
 
   <!-- ILLUSTRATION-->
   <div class="frame-illustration">
-    <%= image_tag 'illustrations/desktop.svg', class: "illustration desktop" %>
-    <%= partial 'shared/svg/markers' %>
-    <%= image_tag 'illustrations/forground2.png', class: "illustration forground", id: "forground" %>
-    <%= image_tag 'illustrations/background_level2.png', class: "illustration background_2", id: "background-level2" %>
-    <%= image_tag 'illustrations/background_level1.png', class: "illustration background_1", id: "background-level1" %>
+    <div class="desktop-illustration">
+      <%= image_tag 'illustrations/desktop.svg', class: "illustration desktop" %>
+      <%= image_tag 'illustrations/forground.png', class: "illustration forground", id: "forground" %>
+      <%= image_tag 'illustrations/background_level2.png', class: "illustration background_2", id: "background-level2" %>
+      <%= image_tag 'illustrations/background_level1.png', class: "illustration background_1", id: "background-level1" %>
+    </div>
+    <div class="tablet-illustration">
+      <%= image_tag 'illustrations/ipad.png' %>
+    </div>
+     <div class="phone-illustration">
+      <%= image_tag 'illustrations/mobile.png', class: "illustration" %>
+    </div>
   </div>
 </header>

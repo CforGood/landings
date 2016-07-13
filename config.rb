@@ -8,7 +8,8 @@
 activate :directory_indexes
 
 # Activate translation
-activate :i18n, :mount_at_root => :fr
+set :partials_dir, 'web'
+activate :i18n, :mount_at_root => :fr, :templates_dir => 'web'
 
 # Blog Activation
 activate :blog do |blog|

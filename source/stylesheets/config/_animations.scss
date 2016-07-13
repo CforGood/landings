@@ -1,75 +1,78 @@
 /* MARKERS ********************************************************************/
 
-#forground {
-  position: absolute;
-  animation-duration: 140s;
-  animation-name: forground;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes forground {
-  0% {
-    transform: translateX(0);
+@media (min-width: 1025px) {
+  #forground {
+    position: absolute;
+    animation-duration: 140s;
+    animation-name: forground;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
-  25% {
-    transform: translateX(5%)
+  @keyframes forground {
+    0% {
+      transform: translateX(0);
+    }
+
+    25% {
+      transform: translateX(5%)
+    }
+
+    50% {
+      transform: translateX(0%);
+    }
+
+    75% {
+      transform: translateX(-5%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
 
-  50% {
-    transform: translateX(0%);
+
+  #background-level1 {
+    position: absolute;
+    animation-duration: 140s;
+    animation-name: bkg_lvl1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
-  75% {
-    transform: translateX(-5%);
+  @keyframes bkg_lvl1 {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(-5%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
   }
 
-  100% {
-    transform: translateX(0);
-  }
-}
-
-#background-level1 {
-  position: absolute;
-  animation-duration: 140s;
-  animation-name: bkg_lvl1;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes bkg_lvl1 {
-  0% {
-    transform: translateX(0);
+  #background-level2 {
+    animation-duration: 140s;
+    animation-name: bkg_lvl2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
-  50% {
-    transform: translateX(-5%);
-  }
+  @keyframes bkg_lvl2 {
+    0% {
+      transform: translateX(0);
+    }
 
-  100% {
-    transform: translateX(0%);
-  }
-}
+    50% {
+      transform: translateX(5%);
+    }
 
-#background-level2 {
-  animation-duration: 140s;
-  animation-name: bkg_lvl2;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes bkg_lvl2 {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(5%);
-  }
-
-  100% {
-    transform: translateX(0);
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 
