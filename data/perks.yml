@@ -6,7 +6,7 @@
 
 - perk_icon: "fa-repeat"
   perk_type: "Durable"
-  perk_description: "idéliser une nouvelle clientèle"
+  perk_description: "Fidéliser une nouvelle clientèle"
   perk_url: "https://app.cforgood.com/businesses/4?address_id=0&perk_id=14"
   perk_image: perks/perk-durable.jpg
 
