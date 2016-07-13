@@ -10,6 +10,10 @@
     height: 350px;
   }
 
+  @media (min-width: 1200px) {
+    top: -50px;
+  }
+
   &:before {
     content: "";
     position: absolute;
