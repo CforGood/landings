@@ -1,7 +1,17 @@
+- title: "Lancement de CforGood !"
+  media: "Sud Ouest"
+  logo: press/logo-sudouest.png
+  url: "http://www.sudouest.fr/2016/06/04/lancement-de-cforgood-publi-info-2416723-7507.php"
+
 - title: "GforGood vous fait mieux consommer"
   media: "Direct Matin"
   logo: press/logo-directmatin.png
   url: "https://twitter.com/CforGood/status/717292811557724162"
+
+- title: "Les dix startups bordelaises qui bâtissent la ville de demain"
+  media: "La Tribune"
+  logo: press/logo-latribune.png
+  url: "http://www.latribune.fr/regions/aquitaine/les-dix-startups-bordelaises-qui-batissent-la-ville-de-demain-573013.html"
 
 - title: "Agir et consommer autrement avec CforGood"
   media: "Mouv"
@@ -12,6 +22,16 @@
   media: "Prends-en de la graine"
   logo: press/logo-prendsendelagraine.png
   url: "http://www.prendsendelagraine.org/article.php?id=137"
+
+- title: "Economie solidaire / CforGood rassemble"
+  media: "La Vie Économique"
+  logo: press/logo-lavieeconomique.png
+  url: "hhttp://www.vie-economique.com/departement/lot-et-garonne/2016/05/04/economie-solidaire-cforgood-rassemble/"
+
+- title: "Une plateforme éco-responsable vous aide à consommer mieux"
+  media: "La Part du Colibri"
+  logo: press/logo-lapartducolibri.png
+  url: "http://lapartducolibri.fr/?p=990"
 
 - title: "3 initiatives zéro waste à suivre de près !"
   media: "A NOUS Paris"

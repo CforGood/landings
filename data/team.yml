@@ -1,7 +1,7 @@
 - first_name: "Allan"
   last_name: "Floury"
   job_position: "CEO"
-  pic: team/allan.jpg
+  pic: web/pages/team/allan.jpg
   color: "first-bloc"
   facebook: "allan.floury"
   instagram: ""
@@ -11,7 +11,7 @@
 - first_name: "Cédric"
   last_name: "Menteau"
   job_position: "Front-End Developer"
-  pic: team/cedric.jpg
+  pic: web/pages/team/cedric.jpg
   color: "second-bloc"
   facebook: "cedricmenteau"
   instagram: "cedricmenteau"
@@ -21,7 +21,7 @@
 - first_name: "Frédérique"
   last_name: "Petris"
   job_position: "Back-End Developer"
-  pic: team/fred.jpg
+  pic: web/pages/team/fred.jpg
   color: "third-bloc"
   facebook: "profile.php?id=100006871473238"
   instagram:
@@ -31,7 +31,7 @@
 - first_name: "Damien"
   last_name: "Bernay"
   job_position: "Intern"
-  pic: team/damien.jpg
+  pic: web/pages/team/damien.jpg
   color: "fourth-bloc"
   facebook: "damien.bernay"
   instagram:
