@@ -1,10 +1,36 @@
 .team {
+  header {
+    background: url("../images/team/cover-team.jpg") no-repeat;
+    background-size: cover;
+  }
+
   .page-container {
-    margin: 60px 0 120px;
+    margin: 80px 0 120px;
+    flex-direction: row;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      padding: 0 5%;
+    }
+
+    .team-intro{
+      width: 33.33333%;
+      padding-right: 6%;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
 
     ul {
       display: flex;
       flex-wrap: wrap;
+      width: 66.66666%;
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
 
       @media (min-width: 992px) {
         li:nth-child(3),
@@ -44,6 +70,7 @@
 
         .member-info {
           position: relative;
+          min-height: 125px;
           padding: 20px;
           width: 50%;
 
@@ -51,6 +78,10 @@
             font-size: 2rem;
             font-weight: 600;
             margin: 0 0 5px;
+          }
+
+          span {
+            font-size: 1.5rem;
           }
 
           .member-social {
@@ -72,7 +103,7 @@
     }
 
     .first-bloc {
-      background-color: #f5f5f5;
+      background-color: #dedcee;
     }
 
     .second-bloc {
