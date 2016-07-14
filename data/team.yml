@@ -5,7 +5,6 @@
   color: "first-bloc"
   facebook: "allan.floury"
   instagram: ""
-  github: ""
   linkedin: "allan-floury-6754153b?trk=hp-identity-name"
   twitter: "AllanFloury"
 
@@ -16,28 +15,25 @@
   color: "second-bloc"
   facebook: "cedricmenteau"
   instagram: "cedricmenteau"
-  github: "cedricmenteau"
   linkedin: "cedricmenteau"
   twitter: "cedricmenteau"
 
 - first_name: "Frédérique"
   last_name: "Petris"
   job_position: "Back-End Developer"
-  pic:
+  pic: team/fred.jpg
   color: "third-bloc"
   facebook: "profile.php?id=100006871473238"
   instagram:
-  github:
   linkedin: "fr%C3%A9d%C3%A9rique-p%C3%A9tris-73089291"
   twitter: "FredPetris"
 
 - first_name: "Damien"
   last_name: "Bernay"
   job_position: "Intern"
-  pic:
+  pic: team/damien.jpg
   color: "fourth-bloc"
   facebook: "damien.bernay"
   instagram:
-  github:
   linkedin: "damienbernay"
   twitter:
