@@ -1,0 +1,18 @@
+<% featured = blog.articles.select{|item| item.metadata[:page]["featured"] rescue false} %>
+<% featured.delete_if{|item| item == current_article} %>
+
+<div class="suggested-content">
+  <h4>Continuer votre lecture</h4>
+  <div class="suggested-article-container">
+    <% feature = featured.sample() %>
+    <% link_to feature.url do %>
+      <%= image_tag feature.data.thumbnail, alt: 'feature.title', width: "420px" %>
+      <div class="suggested-article-info">
+        <h3><%= feature.title %></h3>
+        <p><%= feature.data.description %></p>
+        <span>Lire l'article</span>
+      </div>
+    <% end %>
+  </div>
+</div>
+
