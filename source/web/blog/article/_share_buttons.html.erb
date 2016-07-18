@@ -1,0 +1,19 @@
+<div class="share-buttons">
+  <h4><i class="fa fa-heart"></i> Partagez cet article autour de vous</h4>
+  <div class="buttons-container">
+
+    <% link_to "javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=http://cforgood.com#{current_page.url}&redirect_uri=http://cforgood.com#{current_page.url}', '_blank', 'width=550,height=330');void(0);", alt: "Partagez sur Facebook" do %>
+      <div class="ripple-area js-ripple">
+        <span class="ripple-circle"></span>
+      </div>
+      <i class="fa fa-facebook"></i>
+    <% end %>
+
+    <% link_to "javascript:window.open('http://twitter.com/home?status=#{current_article.data.title} http://cforgood.com#{current_page.url}', '_blank', 'width=550,height=250');void(0);", alt: "Partagez sur Twitter"  do %>
+        <div class="ripple-area js-ripple">
+          <span class="ripple-circle"></span>
+        </div>
+        <i class="fa fa-twitter"></i>
+    <% end %>
+  </div>
+</div>
