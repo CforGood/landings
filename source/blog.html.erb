@@ -124,9 +124,19 @@ thumbnail: "page/default-meta-image.jpg"
     <div class="container-fluid medium-container">
       <img class="medium-logo" src="<%= image_path 'logos/medium.png' %>" alt="Logo Medium">
       <div class="container medium">
-        <% data.posts.each do |post| %>
-          <div class="medium-postcard">
-            <a data-width="100%" height="260" href="https://medium.com/cforgood/<%= post.url %>" class="m-story"></a>
+        <% data.mediums.each do |medium| %>
+          <div class="medium-post">
+            <div class="medium-card" style="background-image: url('../images/<%= medium.image %>');">
+              <a data-width="100%" height="260" href="https://medium.com/cforgood/<%= medium.url %>">
+                <%= image_tag 'logos/medium.png', class: 'icon-medium', width: "50px", height: "50px"%>
+                <h3><%= medium.title %></h3>
+                <p><%= medium.description %></p>
+                <div class="medium-author">
+                  <%= image_tag medium.pic_author, width: "30px", height: "30px" %>
+                  <%= medium.author %>
+                </div>
+              </a>
+            </div>
           </div>
         <% end %>
       </div>

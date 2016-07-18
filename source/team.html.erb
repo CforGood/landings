@@ -6,33 +6,38 @@ title: L'équipe CforGood
   <h1><%= data.page.title %></h1>
 </header>
 
-<div class="page-container">
-  <ul>
-    <% data.team.each do |member| %>
-      <li>
-        <div class="member-pic">
-          <%= image_tag member.pic %>
-        </div>
-        <div class="member-info <%= member.color %>">
-          <h2><%= member.first_name %> <%= member.last_name %></h2>
-          <span><%= member.job_position %></span>
-          <% if member.facebook.present? %>
-            <a href="http://facebook.com/<%= member.facebook %>" alt="Le comtpe Facebook de <%= member.first_name %>">Facebook</a>
-          <% end %>
-          <% if member.twitter.present? %>
-            <a href="http://twitter.com/<%= member.twitter %>" alt="Le comtpe Twitter de <%= member.first_name %>">Twitter</a>
-          <% end %>
-          <% if member.instagram.present? %>
-            <a href="http://instagram.com/in/<%= member.instagram %>" alt="Le comtpe Instagram de <%= member.first_name %>">Instagram</a>
-          <% end %>
-          <% if member.github.present? %>
-            <a href="http://github.com/<%= member.github %>" alt="Le comtpe Github de <%= member.first_name %>">Github</a>
-          <% end %>
-          <% if member.linkedin.present? %>
-            <a href="http://linkedin.com/<%= member.linkedin %>" alt="Le comtpe Linkedin de <%= member.first_name %>">Linkedin</a>
-          <% end %>
-        </div>
-      </li>
-    <% end %>
-  </ul>
+<div class="container">
+  <div class="page-container">
+    <div class="team-intro">
+      <h2>Découvrez l'équipe derrière CforGood</h2>
+      <p>Des gens passionnés avec des idées folles, parce que seuls les gens assez fou pour penser qu'ils peuvent changer le monde y parviennent.</p>
+    </div>
+    <ul>
+      <% data.team.each do |member| %>
+        <li>
+          <div class="member-pic">
+            <%= image_tag member.pic %>
+          </div>
+          <div class="member-info <%= member.color %>">
+            <h2><%= member.first_name %> <%= member.last_name %></h2>
+            <span><%= member.job_position %></span>
+            <div class="member-social">
+              <% if member.facebook.present? %>
+                <a href="http://facebook.com/<%= member.facebook %>" alt="Le comtpe Facebook de <%= member.first_name %>"><%= partial 'shared/svg/icon_facebook' %></a>
+              <% end %>
+              <% if member.twitter.present? %>
+                <a href="http://twitter.com/<%= member.twitter %>" alt="Le comtpe Twitter de <%= member.first_name %>"><%= partial 'shared/svg/icon_twitter' %></a>
+              <% end %>
+              <% if member.instagram.present? %>
+                <a href="http://instagram.com/in/<%= member.instagram %>" alt="Le comtpe Instagram de <%= member.first_name %>"><%= partial 'shared/svg/icon_instagram' %></a>
+              <% end %>
+              <% if member.linkedin.present? %>
+                <a href="http://linkedin.com/<%= member.linkedin %>" alt="Le comtpe Linkedin de <%= member.first_name %>"><%= partial 'shared/svg/icon_linkedin' %></a>
+              <% end %>
+            </div>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </div>

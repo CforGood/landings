@@ -1,0 +1,128 @@
+.presse {
+  header {
+    background: url("../images/web/pages/press/cover-press.jpg") no-repeat bottom;
+    background-size: cover;
+  }
+
+  .page-container {
+    margin: 80px 0 120px;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .press-intro {
+      position: relative;
+      width: 50%;
+      padding-right: 6%;
+
+      @media (max-width: 767px) {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 30px;
+      }
+
+      .email-me {
+        font-weight: 600;
+        color: $turquoise;
+      }
+
+      .download-me {
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 320px;
+        background-color: #FB3;
+        margin: 20px 0 10px;
+        padding: 15px 25px;
+        border-radius: 3px;
+        font-family: "Raleway", "Helvetica", "sans-serif";
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+        outline: none;
+        //@include transition(background-color 150ms ease-out);
+
+        &:hover {
+          background-color: #fcc861;
+        }
+
+        img {
+          margin-right: 10px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    .video-container {
+      width: 50%;
+      padding-bottom: 26.25%;
+
+      @media (max-width: 767px) {
+        margin: 0 auto;
+        padding-bottom: 46.25%;
+        width: 90%;
+      }
+    }
+
+    .press-articles {
+      margin-top: 60px;
+      width: 100%;
+
+      @media (max-width: 767px) {
+        width: 90%;
+        margin: 60px auto 0;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          display: flex;
+          padding: 10px;
+          margin-bottom: 30px;
+          width: 100%;
+          @include transition(all, 0.3s, ease-in-out);
+
+          @media (min-width: 500px) and (max-width: 991px) {
+            width: 50%;
+          }
+
+          @media (min-width: 992px) {
+            width: 33.33333%;
+          }
+
+          &:hover {
+            border-radius: 3px;
+            background-color: #f4f4f4;
+          }
+
+          a {
+            display: flex;
+
+            img {
+              width: 50px;
+              min-width: 50px;
+              height: 50px;
+            }
+
+            .article-info {
+              display: flex;
+              flex-direction: column;
+              margin-left: 10px;
+
+              .article-title {
+                font-size: 1.3rem;
+              }
+
+              .article-media {
+                font-size: 1rem;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

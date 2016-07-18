@@ -1,7 +1,42 @@
 ---
-title: Presse
+title: La maison de la presse
 ---
 
 <header>
   <h1><%= data.page.title %></h1>
 </header>
+
+<div class="container">
+  <div class="page-container">
+    <div class="press-intro">
+      <h2>Press Kit</h2>
+      <p>CforGood a pour vocation de redonner le pouvoir d’agir dans le bon sens, en rendant aussi simple que possible les comportements positifs au quotidien.</p>
+      <p>Pour toute demande : <a class="email-me" href="mailto:allan@cforgood.com">allan@cforgood.com</a></p>
+      <% link_to 'https://drive.google.com/folderview?id=0B2p2ldu_ZxjBS0ptOFZIanVJZjQ&usp=sharing', class: 'download-me' do %>
+        <%= image_tag 'web/pages/press/icon-googledrive.svg' %>
+        Télécharger le Kit Presse
+      <% end %>
+    </div>
+    <% data.videos.each do |video| %>
+      <div class="video-container">
+        <iframe width="560" height="315" src="<%= video.video_url %>" frameborder="0" allowfullscreen></iframe>
+      </div>
+    <% end %>
+    <div class="press-articles">
+      <h2>Ils parlent de nous</h2>
+        <ul>
+        <% data.articles.each do |article| %>
+          <li>
+            <% link_to article.url, class: '' do %>
+              <%= image_tag article.logo %>
+              <div class="article-info">
+                <span class="article-title"><%= truncate(article.title, length: 45) %></span>
+                <i class="article-media"><%= article.media %></i>
+              </div>
+            <% end %>
+          </li>
+        <% end %>
+        </ul>
+    </div>
+  </div>
+</div>
