@@ -14,6 +14,10 @@
     background: url("../images/causes/causes-cover.jpg") no-repeat;
     background-size: cover;
 
+    @media (max-width: 767px) {
+      margin-top: 50px;
+    }
+
     &:after {
       content: "";
       position: absolute;
@@ -165,7 +169,7 @@
         position: absolute;
         width: 3px;
         top: 10px;
-        bottom: 32%;
+        bottom: 33%;
         left: 50%;
         transform: translateX(-50%);
         background-color: $turquoise;
