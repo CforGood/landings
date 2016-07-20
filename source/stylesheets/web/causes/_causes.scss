@@ -100,13 +100,29 @@
     }
 
     h2 {
+      position: relative;
       margin: 0 0 50px;
       text-align: center;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $turquoise;
+      }
     }
 
     ul {
       display: flex;
       padding: 0 20px;
+
+      @media (max-width: 767px) {
+        flex-wrap: wrap;
+      }
 
 
       li {
@@ -117,6 +133,12 @@
         width: 31.33333%;
         background-color: #fff;
         border: 1px solid #E5E5E5;
+
+        @media (max-width: 767px) {
+          margin: 10px 0;
+          width: 100%;
+          text-align: center;
+        }
 
         img {
           margin-bottom: 20px;
