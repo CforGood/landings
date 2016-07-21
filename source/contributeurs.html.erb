@@ -3,39 +3,27 @@ title: Nos contributeurs
 ---
 
 <header>
-  <h1><%= data.page.title %></h1>
+  <h1><i class="fa fa-heart"></i> <%= data.page.title %></h1>
 </header>
 
 <div class="container">
   <div class="page-container">
-    <div class="team-intro">
-      <h2>Ils nous ont soutenu</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus sem quam, a convallis sapien finibus sed. Etiam eleifend tincidunt mollis. Donec nec quam ut lectus varius pulvinar.</p>
+    <div class="contributors-intro">
+      <h2>Ils nous ont soutenu sur Kiss Kiss Bank Bank</h2>
+      <p>Merci à KissKissBankBank.com et merci aux 160 personnes qui ont participé au financement de notre plateforme. Sans vous rien n'aurait été possible, c'est pourquoi on vous rend hommage, juste là, sur votre droite.</p>
+      <% link_to 'https://www.kisskissbankbank.com/cforgood-la-revolution-positive', target: 'blank_', class: 'go-to-kiss-kiss' do %>
+        <div class="ripple-area js-ripple">
+          <span class="ripple-circle"></span>
+        </div>
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        Voir la campagne
+      <% end %>
     </div>
     <ul>
-      <% data.team.each do |member| %>
+      <%= image_tag 'web/pages/contributors/success.png', class: 'success' %>
+      <% data.contributors.each do |contributor| %>
         <li>
-          <div class="member-pic">
-            <%= image_tag member.pic %>
-          </div>
-          <div class="member-info <%= member.color %>">
-            <h2><%= member.first_name %> <%= member.last_name %></h2>
-            <span><%= member.job_position %></span>
-            <div class="member-social">
-              <% if member.facebook.present? %>
-                <a href="http://facebook.com/<%= member.facebook %>" alt="Le comtpe Facebook de <%= member.first_name %>"><%= partial 'shared/svg/icon_facebook' %></a>
-              <% end %>
-              <% if member.twitter.present? %>
-                <a href="http://twitter.com/<%= member.twitter %>" alt="Le comtpe Twitter de <%= member.first_name %>"><%= partial 'shared/svg/icon_twitter' %></a>
-              <% end %>
-              <% if member.instagram.present? %>
-                <a href="http://instagram.com/in/<%= member.instagram %>" alt="Le comtpe Instagram de <%= member.first_name %>"><%= partial 'shared/svg/icon_instagram' %></a>
-              <% end %>
-              <% if member.linkedin.present? %>
-                <a href="http://linkedin.com/in/<%= member.linkedin %>" alt="Le comtpe Linkedin de <%= member.first_name %>"><%= partial 'shared/svg/icon_linkedin' %></a>
-              <% end %>
-            </div>
-          </div>
+          <%= image_tag contributor.pic %>
         </li>
       <% end %>
     </ul>

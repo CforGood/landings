@@ -1,0 +1,89 @@
+.contributeurs {
+  header {
+    background: url("../images/web/pages/contributors/cover-contributors.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .page-container {
+    margin: 80px 0 120px;
+    flex-direction: row;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      padding: 0 5%;
+    }
+
+    .contributors-intro{
+      width: 33.33333%;
+      padding-right: 6%;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      p {
+        margin-bottom: 40px;
+      }
+
+      a {
+        position: relative;
+        padding: 15px 20px;
+        width: 100%;
+        background-color: $turquoise;
+        border-radius: 2px;
+        font-family: "Raleway", "Helvetica", "sans-serif";
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        outline: none;
+
+        &:hover {
+          background-color: $darken-turquoise;
+        }
+
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      width: 66.66666%;
+
+      @media (max-width: 767px) {
+        margin-top: 50px;
+        width: 100%;
+
+        .success {
+          top: -30px;
+        left: -30px;
+        }
+      }
+
+      .success {
+        position: absolute;
+        width: 60px;
+        top: -20px;
+        left: -20px;
+      }
+
+      li {
+        width: 16.66666%;
+
+        img {
+          width: 100%;
+        }
+
+        @media (max-width: 420px) {
+          width: 25%;
+        }
+      }
+    }
+  }
+}
