@@ -45,6 +45,9 @@ activate :blog do |blog|
   blog.page_link = "page/{num}"
 end
 
+# GitHub Pages wants 404.html, not 404/index.html
+page '/404.html', :directory_index => false
+
 page "/feed.xml", layout: false
 
 ###
