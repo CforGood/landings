@@ -14,7 +14,7 @@
         <% end %>
         <!-- MENU LIST -->
         <ul>
-          <!-- Menbres -->
+          <!-- Membres -->
           <% if current_page.path == "index.html" %>
             <li><%= link_to 'Membres', '/index.html', class: "is-active" %></li>
           <% else %>
@@ -70,6 +70,11 @@
 ;(function($, window, document, undefined) {
 
   'use strict';
+
+  if (localStorage.getItem("Cforgood") == "connect") {
+    console.log(localStorage.getItem("Cforgood"));
+    document.location.href="https://app.cforgood.com/signin";
+  }
 
   var $ripple = $('.js-ripple');
 
