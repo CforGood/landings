@@ -71,9 +71,25 @@
 
   'use strict';
 
-  if (localStorage.getItem("Cforgood") == "connect") {
-    console.log(localStorage.getItem("Cforgood"));
-    document.location.href="https://app.cforgood.com/signin";
+  // redirection when user is connect
+  function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length,c.length);
+        }
+    }
+    return "";
+  }
+
+  var user_cforgood = getCookie("user_cforgood").split('&');
+  if (user_cforgood == 'login') {
+      window.location.href = "https://app.cforgood.com/signin"
   }
 
   var $ripple = $('.js-ripple');
